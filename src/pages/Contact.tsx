@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/Contact.scss";
 
 const ContactForm = () => {
@@ -10,15 +10,15 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    alert("Form submitted successfully!");
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(formData);
+  //   alert("Form submitted successfully!");
+  // };
 
   return (
     <>
@@ -38,7 +38,7 @@ const ContactForm = () => {
     </section>
     <div className="contact-page">
       <div className="contact-form">
-        <form onSubmit={handleSubmit}>
+        <form>
           
           <label>*Name</label>
           <input
