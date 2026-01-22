@@ -31,11 +31,11 @@ const Home = () => {
                 <a href="#">Learn More</a>
               </div>
             </div>
-            
+
             <div className="card">
               <div className="img">
                 <img src="https://www.safexpress.com/assets/images/home-surface.png" />
-                </div>
+              </div>
               <div className="text">
                 <h4>Express Distribution Surface</h4>
                 <ul>
@@ -47,11 +47,11 @@ const Home = () => {
                 <a href="#">Learn More</a>
               </div>
             </div>
-            
+
             <div className="card">
               <div className="img">
                 <img src="https://www.safexpress.com/assets/images/home-surface.png" />
-                </div>
+              </div>
               <div className="text">
                 <h4>Express Distribution Surface</h4>
                 <ul>
@@ -66,14 +66,88 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="how">
+        <div className="how__container">
+          {/* HEADER */}
+          <h2 className="how__title">HOW DO WE DO IT?</h2>
+          <p className="how__desc">
+            With its expertise & experience garnered in the last 28 years,
+            Safexpress has created a sustainable business model to cater the
+            businesses’ & individuals’ supply chain & logistics management needs,
+            through which it delivers value to all its stakeholders as a win-win
+            proposition, that further guarantees their future growth &
+            sustainability.
+          </p>
 
+          {/* ROW 1 */}
+          <div className="how__row">
+            <div className="how__image">
+              <img src="/assets/vision.jpg" alt="Vision" />
+              <div className="how__rating">★★★★★</div>
+            </div>
+
+            <div className="how__content">
+              <h3>Vision & Way Forward</h3>
+              <p>
+                Safexpress's vision is to become ‘Most Preferred Supply Chain &
+                Logistics Company’ by providing a supply chain & logistic support
+                that can serve as a tool to enhance customers future growth.
+              </p>
+            </div>
+
+            <div className="how__image">
+              <img src="/assets/technology-map.jpg" alt="Technology" />
+            </div>
+
+            <div className="how__content">
+              <h3>Technology</h3>
+              <p>
+                Safexpress leverages cutting-edge technological solutions to
+                ensure a uniform, seamless, and value-added experience for
+                customers nationwide.
+              </p>
+            </div>
+          </div>
+
+          {/* ROW 2 */}
+          <div className="how__row">
+            <div className="how__content">
+              <h3>Network</h3>
+              <p>
+                Safexpress operates it network 24*7*365 days in a year that
+                compromises of over 850 gateways, well connected with each other
+                through its direct and regular routes to ensure fastest
+                deliveries within the shortest transit time.
+              </p>
+            </div>
+
+            <div className="how__image">
+              <img src="/assets/network-map.jpg" alt="Network" />
+            </div>
+
+            <div className="how__content">
+              <h3>Infrastructure</h3>
+              <p>
+                Ultra Modern, cross-dock infrastructure strategically positioned
+                in close proximity to the major National Highways of India & with
+                an overall spread of over 21.2 million square feet area to
+                smoothly meet the logistics requirements of its customers.
+              </p>
+            </div>
+
+            <div className="how__image">
+              <img src="/assets/infrastructure.jpg" alt="Infrastructure" />
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="why-prefer-section">
         <h1 className="heading">WHY PREFER SAFEXPRESS?</h1>
         <p> Safexpress has been at the forefront of being a customer-centric organization by providing 100% ethical, compliant, efficient and reliable services as a one-stop shop for all supply chain & logistics requirements of its customers, ensuring fastest and safest connectivity across India. </p>
 
         <div className="cards">
 
-          
+
           <div className="card">
             <img src="https://www.safexpress.com/assets/images/customer-centric.jpg" />
             <h3>Customer-Centricity</h3>
@@ -101,7 +175,7 @@ const Home = () => {
               <li>100% adherence to the State & Central government norms along with GST & E-Waybill compliance</li>
             </ul>
           </div>
-          
+
           <div className="card">
             <img src="https://www.safexpress.com/assets/images/sustainable.jpg" />
             <h3>Sustainable Practices</h3>
