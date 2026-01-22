@@ -1,7 +1,63 @@
-import "../styles/home.scss";
+import "../styles/Home.scss";
 import Hero from "../components/Hero.tsx";
+import FAQ from "../components/FAQ.tsx";
+
 
 const Home = () => {
+
+  const services = [
+    {
+      title: "Corporate Moving",
+      image: "https://vedantapackersandmovers.com/img/y1.jpg",
+    },
+    {
+      title: "Industrial Moving",
+      image: "https://vedantapackersandmovers.com/img/y2.jpg",
+    },
+    {
+      title: "Residential Moving",
+      image: "https://vedantapackersandmovers.com/img/y3.jpg",
+    },
+    {
+      title: "Car Transfer / Transport / Moving",
+      image: "https://vedantapackersandmovers.com/img/y4.jpg",
+    },
+    {
+      title: "International Moving",
+      image: "https://vedantapackersandmovers.com/img/y5.jpg",
+    },
+    {
+      title: "Storage And Warehousing",
+      image: "https://vedantapackersandmovers.com/img/y6.webp",
+    },
+  ];
+
+  const stages = [
+  {
+    step: "1",
+    title: "Assign the Service",
+    desc: "Once you are content with our quotation, you proceed to reserve our services.",
+    image: "https://vedantapackersandmovers.com/img/assign.gif",
+  },
+  {
+    step: "2",
+    title: "Packing & Loading",
+    desc: "We will carefully pack all your belongings and securely load them into our vehicle.",
+    image: "https://vedantapackersandmovers.com/img/preloder.gif",
+  },
+  {
+    step: "3",
+    title: "Transportation",
+    desc: "Your goods will be delivered to your destination by our reliable vehicle.",
+    image: "https://vedantapackersandmovers.com/img/delivery-truck.gif",
+  },
+  {
+    step: "4",
+    title: "Unloading",
+    desc: "We will handle the unloading of the goods and ensure a secure relocation.",
+    image: "https://vedantapackersandmovers.com/img/unloading.gif",
+  },
+];
   return (
     <>
       <Hero />
@@ -66,6 +122,123 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+     <div className="services-grid">
+      {services.map((service, index) => (
+        <div className="service-card" key={index}>
+          
+          {/* Left Image */}
+          <div className="service-image">
+            <img src={service.image} alt={service.title} />
+          </div>
+
+          {/* Right Content */}
+          <div className="service-content">
+            <h3>{service.title}</h3>
+
+            {/* Tabs */}
+            <div className="tabs">
+              <span>Packing & Unpacking Assistance</span>
+              <span>Loading & Unloading</span>
+            </div>
+
+            {/* Why choose */}
+            <div className="why">
+              <p className="why-title">Why Choose Us?</p>
+              <div className="icons">
+                <div>
+                  <i className="fa-solid fa-user-check"></i>
+                  <span>Trained Professionals</span>
+                </div>
+                <div>
+                  <i className="fa-solid fa-truck-fast"></i>
+                  <span>Comprehensive Relocation</span>
+                </div>
+                <div>
+                  <i className="fa-solid fa-shield-halved"></i>
+                  <span>Superior Infrastructure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="service-actions">
+            <button className="call">📞 Call Now</button>
+            <button className="details">View Details</button>
+            <button className="quote">Get Quote</button>
+            <button className="chat">💬 Chat Now</button>
+          </div>
+
+        </div>
+      ))}
+    </div>
+
+     <section className="shifting-stages">
+      <h2>Our Shifting Stages</h2>
+
+      <div className="stages-grid">
+        {stages.map((item, index) => (
+          <div className="stage-card" key={index}>
+            
+            <span className="step">{item.step}</span>
+
+            <div className="icon">
+              <img src={item.image} alt={item.title} />
+            </div>
+
+            <h3>{item.title}</h3>
+            <p>{item.desc}</p>
+
+          </div>
+        ))}
+      </div>
+    </section>
+
+
+
+    <section className="question-cta">
+      <div className="cta-box">
+
+        {/* Left Icon */}
+        <div className="cta-icon">
+          <img src="https://vedantapackersandmovers.com/img/delivery-truck.gif" alt="Support Truck" />
+        </div>
+
+        {/* Center Content */}
+        <div className="cta-content">
+          <h3>
+            Have A <span>Q</span>uestion?
+          </h3>
+          <p>
+            Message us on Whatsapp or Call our Experts and plan your shifting
+            NOW!
+          </p>
+        </div>
+
+        {/* Right Contact */}
+        <div className="cta-contact">
+          <div className="icons">
+            <a href="tel:+8756319252" className="call">
+              <img src="https://vedantapackersandmovers.com/img/telephone.png" />
+            </a>
+            <a
+              href="https://wa.me/8756319252"
+              target="_blank"
+              rel="noreferrer"
+              className="whatsapp"
+            >
+              <img src="https://vedantapackersandmovers.com/img/whatsapp.png" />
+            </a>
+          </div>
+          <span className="number">+91 8756319252</span>
+        </div>
+
+      </div>
+    </section>
+
+
+
       <section className="how">
         <div className="how__container">
           {/* HEADER */}
@@ -187,6 +360,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <FAQ />
     </>
   );
 };

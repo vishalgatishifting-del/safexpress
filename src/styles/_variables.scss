@@ -1,0 +1,16 @@
+$primary-color: #0b6b3a;
+$text-dark: #252525;
+$text-light: #ffffff;
+$red-color: #ff0000;
+$secondary-color: #25d366;
+
+
+@mixin font-poppins-sans($weight: 400) {
+  font-family: "Poppins", sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
+  font-display: swap;
+}
