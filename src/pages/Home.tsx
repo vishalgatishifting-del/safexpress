@@ -1,4 +1,4 @@
-import "../styles/Home.scss";
+import "../styles/home.scss";
 import Hero from "../components/Hero.tsx";
 import FAQ from "../components/FAQ.tsx";
 
