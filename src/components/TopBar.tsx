@@ -7,7 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 
 import "../styles/TopBar.scss"
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 const TopBar = () => {
     return (
         <div className="topbar">
