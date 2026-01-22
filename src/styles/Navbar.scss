@@ -1,0 +1,25 @@
+.navbar{
+    position: sticky;
+    top: 36px;
+    z-index: 10000;
+    width: 100%;
+    box-sizing: border-box;
+    .logo{
+        img{
+            width: 140px;
+            border-radius: 10px;
+        }
+    }
+    ul{
+        li{
+            display: flex;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
