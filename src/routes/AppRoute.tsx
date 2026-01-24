@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "../pages/Home.tsx"
+import About from "../pages/About.tsx"
+import Service from "../pages/Service.tsx"
 import TopBar from "../components/TopBar.tsx";
 import Navbar from "../components/Navbar";
 import Contact from "../pages/Contact.tsx";
@@ -14,6 +16,8 @@ const AppRoutes = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home></Home>}></Route>
+                <Route path="/about" element={<About></About>}></Route>
+                <Route path="/Service" element={<Service></Service>}></Route>
                 <Route path="/contact" element={<Contact></Contact>}></Route>
             </Routes>
             <Footer></Footer>

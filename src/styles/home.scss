@@ -32,7 +32,7 @@ body {
   background: linear-gradient(to right,
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.2)),
-    url("https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg") center/cover no-repeat;
+    url("../assets/Home/HeroSectionBG.png") center/cover no-repeat;
   color: #fff;
   display: flex;
 }
@@ -118,7 +118,7 @@ body {
   p {
     text-align: center;
     // margin:30px 0;
-    font-size: 15px;
+    font-size: v.$text-size;
     margin-bottom: 30px;
   }
 
@@ -132,7 +132,7 @@ body {
       margin: 0 10px;
       border-radius: 5px;
       border: 1px solid #00000075;
-      font-size: 17px;
+      font-size: v.$text-size;
       border-bottom: none;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
@@ -152,6 +152,7 @@ body {
       .card {
         position: relative;
         border-radius: 20px;
+        height: 500px;
         overflow: hidden;
 
         .img {
@@ -164,7 +165,7 @@ body {
 
         .text {
           position: absolute;
-          top: 55%;
+          top: 57%;
           width: 100%;
           height: 100%;
           padding: 10px;
@@ -173,15 +174,31 @@ body {
           color: #fff;
           border-top-left-radius: 20px;
           border-top-right-radius: 20px;
+          text-align: center;
 
           h4 {
             text-align: center;
           }
 
           ul {
+            padding: 0;
+
             li {
-              margin: 40px 0;
+              margin: 22px 0;
+              font-size: v.$text-size;
             }
+          }
+
+          a {
+            text-decoration: none;
+            color: v.$text-light;
+            border: 1px solid #fff;
+            padding: 5px 10px;
+          }
+
+          a:hover {
+            background: #fff;
+            color: green;
           }
         }
       }
@@ -192,6 +209,16 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 1147px) {
+#our-services{
+  .details{
+    width: 100%;
+  }
+}
+}
+
+
 
 .shifting-stages {
   padding: 70px 20px;
@@ -266,6 +293,12 @@ body {
     font-size: 14px;
     color: v.$text-dark;
     line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 1323px) {
+  .stages-grid{
+    width: 100%;
   }
 }
 
@@ -388,7 +421,7 @@ body {
     text-align: center;
     width: 900px;
     margin: auto;
-    font-size: 14px;
+    font-size: v.$text-size;
   }
 
   .cards {
@@ -415,7 +448,7 @@ body {
         padding: 0;
 
         li {
-          font-size: 14px;
+          font-size: v.$text-size;
           margin: 10px 0;
         }
       }
@@ -423,34 +456,53 @@ body {
   }
 }
 
+@media screen and (max-width: 1267px) {
+#why-prefer-section {
+  p{
+    width: 100%;
+  }
+  .cards{
+    width: 100%;
+  }
+}
+}
+
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  padding: 20px;
+  // padding: 50px 100px;
+  width: 1200px;
+  margin: auto;
 
-  @media (max-width: 992px) {
-    grid-template-columns: 1fr;
+  // @media (max-width: 992px) {
+  //   grid-template-columns: 1fr;
+  // }
+}
+
+
+@media screen and (max-width: 1321px) {
+  .services-grid{
+    width: 100%;
   }
 }
 
 .service-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background: #fff;
   border-radius: 12px;
   padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   gap: 16px;
+  overflow: hidden;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
 }
 
 /* Image */
 .service-image {
-  width: 180px;
-  min-width: 180px;
+  width: 100%;
 
   img {
     width: 100%;
@@ -462,11 +514,13 @@ body {
 
 /* Content */
 .service-content {
+  width: 100%;
+  overflow: hidden;
   flex: 1;
 
   h3 {
     margin: 0 0 10px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
   }
 }
@@ -475,21 +529,31 @@ body {
 .tabs {
   display: flex;
   gap: 10px;
+  overflow-x: scroll;
+  width: 100%;
   margin-bottom: 10px;
+  white-space: nowrap;
+  width: 100%;
+  // &::-webkit-scrollbar {
+  //   height: 6px;
+  // }
 
   span {
-    font-size: 12px;
+    font-size: 10px;
     padding: 6px 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
     cursor: pointer;
     background: #f9f9f9;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 }
 
 /* Why choose */
 .why {
   margin-top: 10px;
+  overflow-x: scroll;
 
   .why-title {
     font-size: 13px;
@@ -522,7 +586,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  min-width: 140px;
+  min-width: 100px;
 
   button {
     border: none;
