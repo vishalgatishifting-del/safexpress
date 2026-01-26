@@ -15,8 +15,73 @@ import shipImg from "../assets/Home/ship.png"
 import OfficeLocation from "../components/OfficeLocation.tsx";
 
 
+import ProductImageSlider from "../components/PackingImageSlider"
+import feature1Img from "../assets/homePagePng/feature1.jpg"
+import feature2Img from "../assets/homePagePng/feature2.jpg"
+import feature3Img from "../assets/homePagePng/feature3.jpg"
+import feature4Img from "../assets/homePagePng/feature4.jpg"
+import feature5Img from "../assets/homePagePng/feature5.jpeg"
+import feature6Img from "../assets/homePagePng/feature6.jpeg"
+import feature7Img from "../assets/homePagePng/feature7.jpeg"
+import feature8Img from "../assets/homePagePng/feature8.jpeg"
+import feature9Img from "../assets/homePagePng/feature9.jpg"
+import feature10Img from "../assets/homePagePng/feature10.jpg"
+import feature11Img from "../assets/homePagePng/feature11.jpg"
+import feature12Img from "../assets/homePagePng/feature12.jpg"
+import feature13Img from "../assets/homePagePng/feature13.jpg"
+import feature14Img from "../assets/homePagePng/feature14.jpg"
+import feature15Img from "../assets/homePagePng/feature15.jpg"
+import feature16Img from "../assets/homePagePng/feature16.jpg"
+import feature17Img from "../assets/homePagePng/feature17.jpg"
+import feature18Img from "../assets/homePagePng/feature18.jpg"
+import feature19Img from "../assets/homePagePng/feature19.jpg"
+import feature20Img from "../assets/homePagePng/feature20.jpg"
+import feature21Img from "../assets/homePagePng/feature21.jpg"
+import feature22Img from "../assets/homePagePng/feature22.jpg"
+import feature23Img from "../assets/homePagePng/feature23.jpg"
+import feature24Img from "../assets/homePagePng/feature24.jpg"
+import feature25Img from "../assets/homePagePng/feature25.jpg"
+import feature26Img from "../assets/homePagePng/feature26.jpeg"
+import feature27Img from "../assets/homePagePng/feature27.png"
+
+
 
 const Home = () => {
+
+  
+    const sliderImages = [
+        feature1Img,
+        feature2Img,
+        feature3Img,
+        feature4Img,
+        feature5Img,
+        feature6Img,
+        feature7Img,
+        feature8Img,
+        feature9Img,
+        feature10Img,
+        feature11Img,
+        feature12Img,
+        feature13Img,
+        feature14Img,
+        feature15Img,
+        feature16Img,
+        feature17Img,
+        feature18Img,
+        feature19Img,
+        feature20Img,
+        feature21Img,
+        feature22Img,
+        feature23Img,
+        feature24Img,
+        feature25Img,
+        feature26Img,
+        feature27Img,
+    ]
+
+
+
+
 
   const services = [
     {
@@ -80,22 +145,24 @@ const Home = () => {
 
       <div className="form-container">
         <div className="container">
-        <div className="text">
-        <h1>Safe, Reliable & Budget-Friendly Moving Services</h1>
-        <span>Why Safe Shifting Packers and Movers is the Right Choice?</span>
-        <ul>
-          <li>Affordable pricing with uncompromised service quality</li>
-          <li>Skilled professionals for packing, loading, and transportation</li>
-          <li>On-time and hassle-free relocation experience</li>
-          <li>Premium-quality packing materials to ensure maximum safety</li>
-          <li>Complete solutions for home, office & corporate shifting</li>
-          <li>Secure and convenient storage facilities available</li>
-        </ul>
-        {/* <img src={formSVG} /> */}
-        </div>
-        <ZohoForm successCondition={successCondition}></ZohoForm>
+          <div className="text">
+            <h1>Safe, Reliable & Budget-Friendly Moving Services</h1>
+            <span>Why Safe Shifting Packers and Movers is the Right Choice?</span>
+            <ul>
+              <li>Affordable pricing with uncompromised service quality</li>
+              <li>Skilled professionals for packing, loading, and transportation</li>
+              <li>On-time and hassle-free relocation experience</li>
+              <li>Premium-quality packing materials to ensure maximum safety</li>
+              <li>Complete solutions for home, office & corporate shifting</li>
+              <li>Secure and convenient storage facilities available</li>
+            </ul>
+            {/* <img src={formSVG} /> */}
+          </div>
+          <ZohoForm successCondition={successCondition}></ZohoForm>
         </div>
       </div>
+
+      <ProductImageSlider images={sliderImages}></ProductImageSlider>
       <section id="our-services">
         <h1>Our Services</h1>
         <p>Tailor-made value added services to suit varied supply chain and logistics Pan India requirements for enterprises as well as individuals.   </p>
@@ -230,7 +297,7 @@ const Home = () => {
         </div>
       </section>
 
-<OfficeLocation></OfficeLocation>
+      <OfficeLocation></OfficeLocation>
 
       <section className="question-cta">
         <div className="cta-box">
