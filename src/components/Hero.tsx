@@ -1,6 +1,10 @@
+import { useState } from "react";
 import QuickMenu from "./QuickMenu";
+import ZohoForm from "./ZohoForm";
+import "../styles/Hero.scss"
 
 const Hero = () => {
+  const [, successCondition] = useState<boolean>(false)
   return (
     <section className="hero">
       <QuickMenu />
@@ -10,12 +14,9 @@ const Hero = () => {
           Experience the fastest and most reliable delivery anytime, anywhere
           in India
         </h1>
+        <p>365 days operational, fastest & safest logistics network across India.</p>
 
-        <p>
-          365 days operational, fastest & safest logistics network across India.
-        </p>
-
-        <button className="primary-btn">Get Started</button>
+      <ZohoForm successCondition={successCondition}></ZohoForm>
       </div>
     </section>
   );
