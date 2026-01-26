@@ -12,6 +12,8 @@ import infrastructure from "../assets/Home/infrastructure.png"
 import truckImg from "../assets/Home/truck.webp"
 import flightImg from "../assets/Home/flight.png"
 import shipImg from "../assets/Home/ship.png"
+import OfficeLocation from "../components/OfficeLocation.tsx";
+
 
 
 const Home = () => {
@@ -228,7 +230,7 @@ const Home = () => {
         </div>
       </section>
 
-
+<OfficeLocation></OfficeLocation>
 
       <section className="question-cta">
         <div className="cta-box">
