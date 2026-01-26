@@ -4,6 +4,8 @@ import FAQ from "../components/FAQ.tsx";
 import ZohoForm from "../components/ZohoForm.tsx";
 import { useState } from "react";
 
+import formSVG from "../assets/Home/formSVG.svg"
+
 
 const Home = () => {
 
@@ -68,8 +70,11 @@ const Home = () => {
       <Hero />
 
       <div className="form-container">
+        <div className="text">
         <h1>Get a free Quote</h1>
         <span>We’ll call you within 15 minutes</span>
+        <img src={formSVG} />
+        </div>
         <ZohoForm successCondition={successCondition}></ZohoForm>
       </div>
       <section id="our-services">
