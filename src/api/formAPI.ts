@@ -7,6 +7,7 @@ interface FormData {
   From: string;
   To: string;
   Goods: string;
+  landingPage: string;
 }
 
 export const submitForm = (data: FormData) => {

@@ -1,7 +1,14 @@
-import React, { useState, type FormEvent, type ChangeEvent } from 'react';
-import '../styles/ZohoForm.scss';
-import { submitForm } from '../api/formAPI.ts';
-import CircularProgress from '@mui/material/CircularProgress';
+import React, { useState, type FormEvent, type ChangeEvent } from "react";
+import "../styles/ZohoForm.scss";
+import { submitForm } from "../api/formAPI";
+import CircularProgress from "@mui/material/CircularProgress";
+
+// Icons
+import PersonIcon from "@mui/icons-material/Person";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 
 type FormData = {
   Name: string;
@@ -12,137 +19,111 @@ type FormData = {
   Goods: string;
 };
 
-interface props {
+interface Props {
   successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const ZohoForm: React.FC<props> = ({ successCondition }) => {
 
+const ZohoForm: React.FC<Props> = ({ successCondition }) => {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>({
-    Name: '',
-    Phone: '',
-    Email: '',
-    From: '',
-    To: '',
-    Goods: ''
+    Name: "",
+    Email: "",
+    Phone: "",
+    From: "",
+    To: "",
+    Goods: "",
   });
 
-  // Change Handler
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Email Validation
-  const validateEmail = (email: string) => {
-    const re = /\S+@\S+\.\S+/;
-    return re.test(email);
-  };
-
-  // Submit Handler
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-
-
     setLoading(true);
 
-    const mandatoryFields: { name: keyof FormData; label: string }[] = [
-      { name: 'Name', label: 'Name' },
-      { name: 'Email', label: 'Email' },
-      { name: 'Phone', label: 'Phone' },
-      { name: 'From', label: 'Pickup From' },
-      { name: 'To', label: 'Drop point' },
-      { name: 'Goods', label: 'Goods type' }
-    ];
-
-    for (let field of mandatoryFields) {
-      if (!formData[field.name].trim()) {
-        alert(`${field.label} cannot be empty.`);
-
-        setLoading(false);
-        return;
-      }
-    }
-
-    if (!validateEmail(formData.Email)) {
-      setLoading(false);
-      alert('Please enter a valid email address.');
-      return;
-    }
-
-    const payload = {
-      ...formData,
-      landingPage: window.location.href,
-    };
-
     try {
-
-      const response = await submitForm(payload);
-
-      if (response) {
-        setFormData({
-          Name: '',
-          Email: '',
-          Phone: '',
-          From: '',
-          To: '',
-          Goods: ''
-        });
-        successCondition(true)
-      } else {
-        alert('Failed to submit form...');
-      }
-
-      setLoading(false);
+      await submitForm({ ...formData, landingPage: window.location.href });
+      successCondition(true);
+      setFormData({
+        Name: "",
+        Email: "",
+        Phone: "",
+        From: "",
+        To: "",
+        Goods: "",
+      });
     } catch (err) {
-      alert('This error occured Error submitting form.' + err);
-
+      alert("Error submitting form");
+    } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div id="crmWebToEntityForm" className="zcwf_lblLeft crmWebToEntityForm">
-      <form onSubmit={handleSubmit}>
-        {(
-          Object.keys(formData) as Array<keyof FormData>
-        ).map((key) => (
-          <input
-            type={key === 'Email' ? 'email' : 'text'}
-            id={key}
-            name={key}
-            value={formData[key]}
-            onChange={handleChange}
-            placeholder={key + '*'}
-          />
-        ))}
+    <div className="zoho-contact-form">
+      <h3>Let us Contact You</h3>
 
-        <div className="zcwf_row">
-          <div className="zcwf_col_lab"></div>
-          <div className="zcwf_col_fld">
-            <button type='submit' disabled={loading}>
-              {loading ? <CircularProgress color='inherit'></CircularProgress> : "Get Free Quote"}</button>
-            <input
-              style={{ marginLeft: "10px", cursor: "pointer" }}
-              type="reset"
-              value="Reset"
-              className="zcwf_button"
-              onClick={() =>
-                setFormData({
-                  Name: '',
-                  Phone: '',
-                  Email: '',
-                  From: '',
-                  To: '',
-                  Goods: ''
-                })
-              }
-            />
-          </div>
+      <form onSubmit={handleSubmit}>
+        <div className="input-group">
+          <PersonIcon />
+          <input
+            type="text"
+            name="Name"
+            placeholder="Enter Your Name*"
+            value={formData.Name}
+            onChange={handleChange}
+          />
         </div>
+
+        <div className="input-group">
+          <EmailIcon />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Enter Your Email"
+            value={formData.Email}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="input-group">
+          <PhoneIcon />
+          <input
+            type="text"
+            name="Phone"
+            placeholder="Enter phone number*"
+            value={formData.Phone}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="input-group">
+          <LocationOnIcon />
+          <input
+            type="text"
+            name="From"
+            placeholder="Enter Your City*"
+            value={formData.From}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="input-group">
+          <ChatBubbleOutlineIcon />
+          <input
+            type="text"
+            name="Goods"
+            placeholder="Enquiry About"
+            value={formData.Goods}
+            onChange={handleChange}
+          />
+        </div>
+
+        <button type="submit" disabled={loading}>
+          {loading ? <CircularProgress size={22} /> : "REQUEST A CALLBACK"}
+        </button>
       </form>
     </div>
   );

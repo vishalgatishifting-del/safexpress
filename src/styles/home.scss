@@ -27,30 +27,79 @@ body {
 }
 
 
-.form-container{
-  display: flex;
-  // flex-direction: column;
-  width: 1200px;
-  margin: auto;
-  margin-top: 30px;
-  justify-content: space-evenly;
-  .text{
-    text-align: center;
+.form-container {
+  background: url("../assets/Home/formBG.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+
+  .container {
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    display: flex;
+
+
+    .text {
+      color: #fff;
+
+      h1 {
+        font-weight: 600;
+        font-size: 30px;
+        margin: 0;
+      }
+
+      span {
+        position: relative;
+        display: block;
+        font-style: italic;
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+
+      ul {
+        margin: 0;
+        margin-top: 5px;
+        padding-left: 30px;
+
+        li {
+          padding: 0;
+          margin: 5px 0;
+        }
+      }
+    }
+
   }
-  h1{
-    font-weight: 600;
-    font-size: 50px;
-    margin: 0;
-  }
-  span{
-    font-style: italic;
-    margin-bottom: 20px;
-  }
-  img{
-    width: 100%;
+
+}
+
+@media screen and (max-width: 1296px) {
+  .form-container {
+    padding: 20px;
+    .container {
+      width: 100%;
+    }
   }
 }
 
+
+@media screen and (max-width: 868px) {
+  .form-container {
+    .container {
+      flex-direction: column;
+      align-items: center;
+
+      .text{
+        margin-bottom: 30px;
+
+        .zoho-contact-form{
+          margin: auto;
+        }
+      }
+    }
+  }
+}
 
 #our-services {
   // padding: 20px;
@@ -157,11 +206,11 @@ body {
 }
 
 @media screen and (max-width: 1147px) {
-#our-services{
-  .details{
-    width: 100%;
+  #our-services {
+    .details {
+      width: 100%;
+    }
   }
-}
 }
 
 
@@ -243,7 +292,7 @@ body {
 }
 
 @media screen and (max-width: 1323px) {
-  .stages-grid{
+  .stages-grid {
     width: 100%;
   }
 }
@@ -403,14 +452,15 @@ body {
 }
 
 @media screen and (max-width: 1267px) {
-#why-prefer-section {
-  p{
-    width: 100%;
+  #why-prefer-section {
+    p {
+      width: 100%;
+    }
+
+    .cards {
+      width: 100%;
+    }
   }
-  .cards{
-    width: 100%;
-  }
-}
 }
 
 
@@ -429,7 +479,7 @@ body {
 
 
 @media screen and (max-width: 1321px) {
-  .services-grid{
+  .services-grid {
     width: 100%;
   }
 }

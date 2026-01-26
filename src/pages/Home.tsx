@@ -4,7 +4,14 @@ import FAQ from "../components/FAQ.tsx";
 import ZohoForm from "../components/ZohoForm.tsx";
 import { useState } from "react";
 
-import formSVG from "../assets/Home/formSVG.svg"
+import visionandforward from "../assets/Home/vissionandforward.png"
+import technology from "../assets/Home/technology.png"
+import network from "../assets/Home/network.png"
+import infrastructure from "../assets/Home/infrastructure.png"
+
+import truckImg from "../assets/Home/truck.webp"
+import flightImg from "../assets/Home/flight.png"
+import shipImg from "../assets/Home/ship.png"
 
 
 const Home = () => {
@@ -70,12 +77,22 @@ const Home = () => {
       <Hero />
 
       <div className="form-container">
+        <div className="container">
         <div className="text">
-        <h1>Get a free Quote</h1>
-        <span>We’ll call you within 15 minutes</span>
-        <img src={formSVG} />
+        <h1>Safe, Reliable & Budget-Friendly Moving Services</h1>
+        <span>Why Safe Shifting Packers and Movers is the Right Choice?</span>
+        <ul>
+          <li>Affordable pricing with uncompromised service quality</li>
+          <li>Skilled professionals for packing, loading, and transportation</li>
+          <li>On-time and hassle-free relocation experience</li>
+          <li>Premium-quality packing materials to ensure maximum safety</li>
+          <li>Complete solutions for home, office & corporate shifting</li>
+          <li>Secure and convenient storage facilities available</li>
+        </ul>
+        {/* <img src={formSVG} /> */}
         </div>
         <ZohoForm successCondition={successCondition}></ZohoForm>
+        </div>
       </div>
       <section id="our-services">
         <h1>Our Services</h1>
@@ -90,7 +107,7 @@ const Home = () => {
           <div className="images">
             <div className="card">
               <div className="img">
-                <img src="https://www.safexpress.com/assets/images/home-surface.png" />
+                <img src={truckImg} />
               </div>
               <div className="text">
                 <h4>Express Distribution Surface</h4>
@@ -106,14 +123,14 @@ const Home = () => {
 
             <div className="card">
               <div className="img">
-                <img src="https://www.safexpress.com/assets/images/home-surface.png" />
+                <img src={flightImg} />
               </div>
               <div className="text">
-                <h4>Express Distribution Surface</h4>
+                <h4>Express Distribution Air</h4>
                 <ul>
-                  <li>Fastest, daily & direct connectivity across India with Fastest Average Transit Time in industry.</li>
+                  <li>Fastest, regular, door-step connectivity enabled by largest, multimodal network of surface gateways and exclusive air hubs with 76 airport connectivity.</li>
                   <li>
-                    Continously expanded network of gateways with an average coverage radius per gateway-less than 33 kms.
+                    Strategic tie-up with all the major airlines with preferred slots for cargo to-and from 76 airport connectivity.
                   </li>
                 </ul>
                 <a href="#">Learn More</a>
@@ -122,10 +139,10 @@ const Home = () => {
 
             <div className="card">
               <div className="img">
-                <img src="https://www.safexpress.com/assets/images/home-surface.png" />
+                <img src={shipImg} />
               </div>
               <div className="text">
-                <h4>Express Distribution Surface</h4>
+                <h4>Express Distribution in Ships</h4>
                 <ul>
                   <li>Fastest, daily & direct connectivity across India with Fastest Average Transit Time in industry.</li>
                   <li>
@@ -271,7 +288,7 @@ const Home = () => {
           {/* ROW 1 */}
           <div className="how__row">
             <div className="how__image">
-              <img src="/assets/vision.jpg" alt="Vision" />
+              <img src={visionandforward} alt="Vision" />
               <div className="how__rating">★★★★★</div>
             </div>
 
@@ -285,7 +302,7 @@ const Home = () => {
             </div>
 
             <div className="how__image">
-              <img src="/assets/technology-map.jpg" alt="Technology" />
+              <img src={technology} alt="Technology" />
             </div>
 
             <div className="how__content">
@@ -311,7 +328,7 @@ const Home = () => {
             </div>
 
             <div className="how__image">
-              <img src="/assets/network-map.jpg" alt="Network" />
+              <img src={network} alt="Network" />
             </div>
 
             <div className="how__content">
@@ -325,7 +342,7 @@ const Home = () => {
             </div>
 
             <div className="how__image">
-              <img src="/assets/infrastructure.jpg" alt="Infrastructure" />
+              <img src={infrastructure} alt="Infrastructure" />
             </div>
           </div>
         </div>

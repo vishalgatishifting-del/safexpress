@@ -1,137 +1,57 @@
-/* ROOT WRAPPER */
-#crmWebToEntityForm {
+.zoho-contact-form {
   width: 100%;
   max-width: 420px;
-  padding: 26px 22px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(8px);
-}
-
-/* FORM */
-.crmWebToEntityForm form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-/* INPUT FIELDS */
-.crmWebToEntityForm input[type="text"],
-.crmWebToEntityForm input[type="email"] {
-  width: 100%;
-  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.556);
+  padding: 20px;
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  background: #ffffff;
-  font-size: 0.95rem;
-  color: #111827;
-  transition: all 0.25s ease;
+  backdrop-filter: blur(6px);
 
-  &::placeholder {
-    color: #9ca3af;
-    font-weight: 500;
+  h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
   }
 
-  &:focus {
-    outline: none;
-    border-color: #ef4444;
-    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
-  }
-}
-
-/* REMOVE AUTOFILL YELLOW */
-input:-webkit-autofill {
-  -webkit-text-fill-color: #111827;
-  transition: background-color 9999s ease-in-out 0s;
-}
-
-/* BUTTON ROW */
-.zcwf_row {
-  margin-top: 10px;
-}
-
-.zcwf_col_fld {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* SUBMIT BUTTON */
-.crmWebToEntityForm button {
-  flex: 1;
-  padding: 14px;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
-  background: linear-gradient(135deg, #ef4444, #dc2626);
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  box-shadow: 0 14px 30px rgba(239, 68, 68, 0.45);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* SUBMIT HOVER */
-.crmWebToEntityForm button:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 20px 45px rgba(239, 68, 68, 0.6);
-}
-
-/* SUBMIT ACTIVE */
-.crmWebToEntityForm button:active {
-  transform: translateY(0);
-  box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
-}
-
-/* DISABLED */
-.crmWebToEntityForm button:disabled {
-  cursor: not-allowed;
-  opacity: 0.75;
-  box-shadow: none;
-}
-
-/* RESET BUTTON */
-.zcwf_button {
-  padding: 13px 18px;
-  border-radius: 12px;
-  background: transparent;
-  border: 1px solid #d1d5db;
-  color: #374151;
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition: all 0.25s ease;
-
-  &:hover {
-    background: #f3f4f6;
-    border-color: #9ca3af;
-  }
-}
-
-/* LOADER SIZE FIX */
-.crmWebToEntityForm .MuiCircularProgress-root {
-  width: 22px !important;
-  height: 22px !important;
-  color: #ffffff;
-}
-
-/* MOBILE */
-@media (max-width: 480px) {
-  #crmWebToEntityForm {
-    padding: 22px 18px;
-  }
-
-  .zcwf_col_fld {
+  form {
+    display: flex;
     flex-direction: column;
+    gap: 12px;
   }
 
-  .zcwf_button {
-    width: 100%;
+  .input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 0 1px #ddd;
+
+    svg {
+      color: #555;
+      margin-right: 10px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
   }
 }
