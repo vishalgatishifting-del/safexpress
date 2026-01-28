@@ -53,7 +53,7 @@ import feature27Img from "../assets/homePagePng/feature27.png"
 
 
 
-import isoBadge from "../assets/HomePagePng/isoicon.png"
+import isoBadge from "../assets/Home/isoicon.png"
 import googleRatingBadge from "../assets/HomePagePng/5star.png"
 import trustedBadge from "../assets/HomePagePng/trusted.png"
 import HowWeMakeMoveEasy from "../components/HowWeMakeMoveEasy.tsx";
