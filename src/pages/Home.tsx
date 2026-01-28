@@ -54,8 +54,8 @@ import feature27Img from "../assets/homePagePng/feature27.png"
 
 
 import isoBadge from "../assets/Home/isoicon.png"
-import googleRatingBadge from "../assets/HomePagePng/5star.png"
-import trustedBadge from "../assets/HomePagePng/trusted.png"
+import googleRatingBadge from "../assets/Home/5star.png"
+import trustedBadge from "../assets/Home/trusted.png"
 import HowWeMakeMoveEasy from "../components/HowWeMakeMoveEasy.tsx";
 import HappyClients from "../components/HappyClients.tsx";
 
