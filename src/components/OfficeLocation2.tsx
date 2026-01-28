@@ -9,7 +9,7 @@ import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import HotelClassIcon from '@mui/icons-material/HotelClass';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/OfficeLocation.scss"
 // thi
 
@@ -38,7 +38,7 @@ const OfficeLocation = () => {
     };
     return (
         <section id="office-location-section">
-            {/* <div className="buttons">
+            <div className="buttons">
                 <Link to="https://gatishiftingpackers.com/city/delhi">Delhi</Link>
                 <Link to="https://gatishiftingpackers.com/city/Mumbai">Mumbai</Link>
                 <Link to="https://gatishiftingpackers.com/city/Kolkata">Kolkata</Link>
@@ -49,7 +49,8 @@ const OfficeLocation = () => {
                 <Link to="https://gatishiftingpackers.com/city/Goa">Goa</Link>
                 <Link to="https://gatishiftingpackers.com/city/Guwhati">Guwhati</Link>
                 <Link to="https://gatishiftingpackers.com/city/Imphal">Imphal</Link>
-            </div> */}
+                <a href="">Hoem</a>
+            </div>
             <div className="container">
                 <motion.div
                     ref={ref3}

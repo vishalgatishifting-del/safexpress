@@ -32,7 +32,6 @@ body {
   background-size: cover;
   background-position: center;
   padding: 50px;
-  margin-bottom: 100px;
 
   .container {
     width: 1200px;
@@ -100,6 +99,64 @@ body {
       }
     }
   }
+}
+
+#certificate-section {
+    padding: 30px 10px;
+    // background: linear-gradient(transparent, v.$primary-color, transparent);
+    // background: $primary-color;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat((3, 1fr));
+        gap: 10px;
+        width: 80%;
+        margin: auto;
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            padding: 20px;
+
+            .hidden {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #0000009f;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 30px;
+                text-decoration: none;
+                opacity: 0;
+            }
+
+            .hidden:hover {
+                opacity: 1;
+            }
+
+            img {
+                width: 200px;
+                // box-shadow: 0 1px 2px 0 rgba(48, 48, 48, .30), 0 1px 3px 1px rgba(48, 48, 48, .15);
+                // border: 1px solid #00000056;
+                border-radius: 10px;
+                height: 100%;
+            }
+
+            h3 {
+                margin-top: 10px;
+                text-align: center;
+                font-weight: 300;
+
+            }
+        }
+    }
 }
 
 #our-services {
@@ -232,7 +289,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   // gap: 40px;
-  width: 1300px;
+  width: 1200px;
   margin: auto;
 
   @media (max-width: 992px) {
@@ -266,8 +323,8 @@ body {
   }
 
   .icon {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 20px;
 
     img {
@@ -279,7 +336,7 @@ body {
 
   h3 {
     @include v.font-poppins-sans(600);
-    font-size: 25px;
+    font-size: 20px;
     color: v.$text-dark;
     margin-bottom: 10px;
   }
@@ -404,65 +461,6 @@ body {
 
 
 
-
-#why-prefer-section {
-
-  margin-bottom: 50px;
-
-  .heading {
-    text-align: center;
-  }
-
-  p {
-    text-align: center;
-    width: 900px;
-    margin: auto;
-    font-size: v.$text-size;
-  }
-
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 1200px;
-    margin: auto;
-    gap: 20px;
-    margin-top: 30px;
-
-    .card {
-      img {
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 5px 10px #0000004e;
-      }
-
-      h3 {
-        text-align: center;
-      }
-
-      ul {
-        margin: 0;
-        padding: 0;
-
-        li {
-          font-size: v.$text-size;
-          margin: 10px 0;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1267px) {
-  #why-prefer-section {
-    p {
-      width: 100%;
-    }
-
-    .cards {
-      width: 100%;
-    }
-  }
-}
 
 
 .services-grid {
@@ -613,91 +611,70 @@ body {
 }
 
 
+#badge-section {
+    padding: 10px;
+    margin: 30px 0;
 
-.how {
-  background: #f2f2f2;
-  padding: 60px 0;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 1200px;
+        margin: auto;
 
-  &__container {
-    max-width: 1300px;
-    margin: auto;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 16px;
-  }
+        .card {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
-  &__title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 15px;
-  }
+            img {
+                width: 200px;
+                margin-bottom: 20px;
+            }
 
-  &__desc {
-    text-align: center;
-    font-size: 15px;
-    max-width: 900px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
-    color: #333;
-  }
-
-  &__row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin-bottom: 40px;
-  }
-
-  &__image {
-    position: relative;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
+            p {
+                text-align: center;
+            }
+        }
     }
-  }
-
-  &__rating {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    color: gold;
-    font-size: 22px;
-  }
-
-  &__content {
-    h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 1.6;
-      color: #333;
-    }
-  }
 }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  .how__row {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media screen and (max-width: 1240px) {
+    #badge-section {
+        .container {
+            width: 100%;
+        }
+    }
 }
-
-@media (max-width: 600px) {
-  .how {
-    &__container {
-      padding: 25px;
+@media screen and (max-width: 789px) {
+    #badge-section {
+        .container {
+            .card{
+                img{
+                    width: 150px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
     }
-
-    &__row {
-      grid-template-columns: 1fr;
+}
+@media screen and (max-width: 659px) {
+    #badge-section {
+        .container {
+            grid-template-columns: repeat(1,1fr);
+            gap: 30px;
+            .card{
+                img{
+                    width: 150px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
     }
-  }
 }

@@ -4,10 +4,17 @@ import FAQ from "../components/FAQ.tsx";
 import ZohoForm from "../components/ZohoForm.tsx";
 import { useState } from "react";
 
-import visionandforward from "../assets/Home/vissionandforward.png"
-import technology from "../assets/Home/technology.png"
-import network from "../assets/Home/network.png"
-import infrastructure from "../assets/Home/infrastructure.png"
+import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.png"
+import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
+import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
+// import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
+// import ISOcertificate from "../assets/homePagePng/isoCertificate.png"
+// import gatiCertificate from "../assets/homePagePng/gatiCertificate.png"
+
+// import visionandforward from "../assets/Home/vissionandforward.png"
+// import technology from "../assets/Home/technology.png"
+// import network from "../assets/Home/network.png"
+// import infrastructure from "../assets/Home/infrastructure.png"
 
 import truckImg from "../assets/Home/truck.webp"
 import flightImg from "../assets/Home/flight.png"
@@ -46,38 +53,49 @@ import feature27Img from "../assets/homePagePng/feature27.png"
 
 
 
+import isoBadge from "../assets/HomePagePng/isoicon.png"
+import googleRatingBadge from "../assets/HomePagePng/5star.png"
+import trustedBadge from "../assets/HomePagePng/trusted.png"
+import HowWeMakeMoveEasy from "../components/HowWeMakeMoveEasy.tsx";
+import HappyClients from "../components/HappyClients.tsx";
+
+
+
+
+
+
 const Home = () => {
 
-  
-    const sliderImages = [
-        feature1Img,
-        feature2Img,
-        feature3Img,
-        feature4Img,
-        feature5Img,
-        feature6Img,
-        feature7Img,
-        feature8Img,
-        feature9Img,
-        feature10Img,
-        feature11Img,
-        feature12Img,
-        feature13Img,
-        feature14Img,
-        feature15Img,
-        feature16Img,
-        feature17Img,
-        feature18Img,
-        feature19Img,
-        feature20Img,
-        feature21Img,
-        feature22Img,
-        feature23Img,
-        feature24Img,
-        feature25Img,
-        feature26Img,
-        feature27Img,
-    ]
+
+  const sliderImages = [
+    feature1Img,
+    feature2Img,
+    feature3Img,
+    feature4Img,
+    feature5Img,
+    feature6Img,
+    feature7Img,
+    feature8Img,
+    feature9Img,
+    feature10Img,
+    feature11Img,
+    feature12Img,
+    feature13Img,
+    feature14Img,
+    feature15Img,
+    feature16Img,
+    feature17Img,
+    feature18Img,
+    feature19Img,
+    feature20Img,
+    feature21Img,
+    feature22Img,
+    feature23Img,
+    feature24Img,
+    feature25Img,
+    feature26Img,
+    feature27Img,
+  ]
 
 
 
@@ -161,6 +179,33 @@ const Home = () => {
           <ZohoForm successCondition={successCondition}></ZohoForm>
         </div>
       </div>
+
+      <section id="certificate-section">
+        {/* <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1> */}
+        <div className="container">
+          <div className="card">
+            <a href={justDialCertificateImg} className="hidden" target="_blank">
+              Click To View
+            </a>
+            <img src={justDialCertificateImg} />
+            <h3>JustDial Certificate</h3>
+          </div>
+          <div className="card">
+            <a href={MSMECertificateImg} className="hidden" target="_blank">
+              Click To View
+            </a>
+            <img src={MSMECertificateImg} />
+            <h3>MSME Ceritificate</h3>
+          </div>
+          <div className="card">
+            <a href={incorporationCertificate} className="hidden" target="_blank">
+              Click To View
+            </a>
+            <img src={incorporationCertificate} />
+            <h3>Incorporation Certificate</h3>
+          </div> 
+        </div>
+      </section>
 
       <ProductImageSlider images={sliderImages}></ProductImageSlider>
       <section id="our-services">
@@ -299,169 +344,31 @@ const Home = () => {
 
       <OfficeLocation></OfficeLocation>
 
-      <section className="question-cta">
-        <div className="cta-box">
-
-          {/* Left Icon */}
-          <div className="cta-icon">
-            <img src="https://vedantapackersandmovers.com/img/delivery-truck.gif" alt="Support Truck" />
+      <section id="badge-section">
+        <div className="container">
+          <div className="card">
+            <img src={isoBadge} />
+            <h3>ISO 9001:2015</h3>
+            <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
           </div>
 
-          {/* Center Content */}
-          <div className="cta-content">
-            <h3>
-              Have A <span>Q</span>uestion?
-            </h3>
-            <p>
-              Message us on Whatsapp or Call our Experts and plan your shifting
-              NOW!
-            </p>
-          </div>
 
-          {/* Right Contact */}
-          <div className="cta-contact">
-            <div className="icons">
-              <a href="tel:+8756319252" className="call">
-                <img src="https://vedantapackersandmovers.com/img/telephone.png" />
-              </a>
-              <a
-                href="https://wa.me/8756319252"
-                target="_blank"
-                rel="noreferrer"
-                className="whatsapp"
-              >
-                <img src="https://vedantapackersandmovers.com/img/whatsapp.png" />
-              </a>
-            </div>
-            <span className="number">+91 8756319252</span>
+          <div className="card">
+            <img src={googleRatingBadge} />
+            <h3>5 Star Ratings</h3>
+            <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
           </div>
-
+          <div className="card">
+            <img src={trustedBadge} />
+            <h3>15+ Years of Trust</h3>
+            <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
+          </div>
         </div>
       </section>
 
+      <HowWeMakeMoveEasy></HowWeMakeMoveEasy>
+      <HappyClients></HappyClients>
 
-
-      <section className="how">
-        <div className="how__container">
-          {/* HEADER */}
-          <h2 className="how__title">HOW DO WE DO IT?</h2>
-          <p className="how__desc">
-            With its expertise & experience garnered in the last 28 years,
-            Safexpress has created a sustainable business model to cater the
-            businesses’ & individuals’ supply chain & logistics management needs,
-            through which it delivers value to all its stakeholders as a win-win
-            proposition, that further guarantees their future growth &
-            sustainability.
-          </p>
-
-          {/* ROW 1 */}
-          <div className="how__row">
-            <div className="how__image">
-              <img src={visionandforward} alt="Vision" />
-              <div className="how__rating">★★★★★</div>
-            </div>
-
-            <div className="how__content">
-              <h3>Vision & Way Forward</h3>
-              <p>
-                Safexpress's vision is to become ‘Most Preferred Supply Chain &
-                Logistics Company’ by providing a supply chain & logistic support
-                that can serve as a tool to enhance customers future growth.
-              </p>
-            </div>
-
-            <div className="how__image">
-              <img src={technology} alt="Technology" />
-            </div>
-
-            <div className="how__content">
-              <h3>Technology</h3>
-              <p>
-                Safexpress leverages cutting-edge technological solutions to
-                ensure a uniform, seamless, and value-added experience for
-                customers nationwide.
-              </p>
-            </div>
-          </div>
-
-          {/* ROW 2 */}
-          <div className="how__row">
-            <div className="how__content">
-              <h3>Network</h3>
-              <p>
-                Safexpress operates it network 24*7*365 days in a year that
-                compromises of over 850 gateways, well connected with each other
-                through its direct and regular routes to ensure fastest
-                deliveries within the shortest transit time.
-              </p>
-            </div>
-
-            <div className="how__image">
-              <img src={network} alt="Network" />
-            </div>
-
-            <div className="how__content">
-              <h3>Infrastructure</h3>
-              <p>
-                Ultra Modern, cross-dock infrastructure strategically positioned
-                in close proximity to the major National Highways of India & with
-                an overall spread of over 21.2 million square feet area to
-                smoothly meet the logistics requirements of its customers.
-              </p>
-            </div>
-
-            <div className="how__image">
-              <img src={infrastructure} alt="Infrastructure" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="why-prefer-section">
-        <h1 className="heading">WHY PREFER SAFEXPRESS?</h1>
-        <p> Safexpress has been at the forefront of being a customer-centric organization by providing 100% ethical, compliant, efficient and reliable services as a one-stop shop for all supply chain & logistics requirements of its customers, ensuring fastest and safest connectivity across India. </p>
-
-        <div className="cards">
-
-
-          <div className="card">
-            <img src="https://www.safexpress.com/assets/images/customer-centric.jpg" />
-            <h3>Customer-Centricity</h3>
-            <ul>
-              <li>Customer-oriented processes & customized solutions offered as per customer requirements</li>
-              <li>No questions asked & zero conflict philosophy</li>
-              <li>Custodians first, Carriers later</li>
-            </ul>
-          </div>
-          <div className="card">
-            <img src="https://www.safexpress.com/assets/images/operations-excellence.jpg" />
-            <h3>Operational Excellence</h3>
-            <ul>
-              <li>India’s leading & largest logistics & supply chain organization - acknowledged by Limca Book of Records </li>
-              <li>Direct reach to every square inch of real Bharat – Tier II, III cities & Towns</li>
-              <li>24 by 7, 365 days live network operational on all holidays, Sundays</li>
-            </ul>
-          </div>
-          <div className="card">
-            <img src="https://www.safexpress.com/assets/images/reliable.jpg" />
-            <h3>Reliable & Ethical</h3>
-            <ul>
-              <li>ISO 27001 certified organization</li>
-              <li>100% legally compliant & ethical company</li>
-              <li>100% adherence to the State & Central government norms along with GST & E-Waybill compliance</li>
-            </ul>
-          </div>
-
-          <div className="card">
-            <img src="https://www.safexpress.com/assets/images/sustainable.jpg" />
-            <h3>Sustainable Practices</h3>
-            <ul>
-              <li>Regular ‘Go Green’ initiatives & drives to minimize the impact of its business operations</li>
-              <li>‘Special Green Zones’ & Rainwater harvesting facilities at all logistics parks</li>
-              <li>100% use of Euro VI standard fleet</li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
       <FAQ />
     </>

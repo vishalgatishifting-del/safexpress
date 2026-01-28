@@ -1,0 +1,80 @@
+@use "./variables" as v;
+.move-easy {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #000;
+  }
+
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .step-card {
+    background: v.$primary-color;
+    border-radius: 14px;
+    padding: 30px 20px;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .image-box {
+      width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+    //   background: #fff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width:100%;
+       height: 200px;
+        object-fit: cover;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    .steps-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .steps-container {
+      grid-template-columns: 1fr;
+    }
+
+    .section-title {
+      font-size: 26px;
+    }
+  }
+}
