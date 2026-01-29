@@ -1,8 +1,147 @@
 import "../styles/About.scss"
+// import { Link } from "react-router-dom";
+// import { Box } from "@mui/material";
+// import Slider from "react-slick";
+import about_company_photo from "../assets/AboutPage/about_company_photo.png"
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+
+import houseShiftingImg from "../assets/AboutPage/household.webp"
+import storageImg from "../assets/AboutPage/storage_img.jpg"
+import internationalImg from "../assets/AboutPage/international.png"
+import carImg from "../assets/AboutPage/Car.webp"
+import bikeImg from "../assets/AboutPage/Bike.webp"
+import petImg from "../assets/AboutPage/pet_img.jpg"
+import officeImg from "../assets/AboutPage/office.webp"
+import commercialImg from "../assets/AboutPage/commercial.webp"
+// import CheckIcon from '@mui/icons-material/Check';
+// import CloseIcon from '@mui/icons-material/Close';
+
+
+// Partners Logo
+// import dtdc from "../assets/dtdc.png";
+// import dhl from "../assets/dhl.png";
+// import bluedart from "../assets/blue_dart.png";
+// import xpressbees from "../assets/xpressbee.png";
+// import delhivery from "../assets/delhivery.png";
+// import aramex from "../assets/partners/aramex-logo-english.webp";
+// import ecom from "../assets/partners/ecom-express.webp";
+// import icWhite from "../assets/partners/ic-white-logo.abea573f.webp";
+// import fedex from "../assets/partners/logo-fedex.webp";
+// import ups from "../assets/partners/ups-logo.webp";
+// import sb from "../assets/partners/logo-sb.webp";
+// import professional from "../assets/partners/Professional-ouriers.webp";
+// import rmg from "../assets/partners/rmg_logo.webp";
+// import shadowfax from "../assets/partners/Shadowfax.webp";
+// import trackon from "../assets/partners/trackon_logo.webp";
+
+
+
+
+// Images for "Nationwide Presence" Section
+// import andhra_pradesh from "../assets/andhra-pradesh.jpeg"
+// import arunachal_pradesh from "../assets/arunachal-pradesh.jpeg"
+// import assam from "../assets/assam.jpeg"
+// import bihar from "../assets/bihar.jpeg"
+// import chhattisgarh from "../assets/chhattisgarh.jpeg"
+// import goa from "../assets/goa.jpeg"
+// import gujarat from "../assets/gujarat.jpeg"
+// import haryana from "../assets/haryana.jpeg"
+// import himachal_pradesh from "../assets/himachal-pradesh.jpeg"
+// import jharkhand from "../assets/jharkhand.jpeg"
+// import karnataka from "../assets/karnataka.jpeg"
+// import kerala from "../assets/kerala.jpeg"
+// import madhya_pradesh from "../assets/madhya-pradesh.jpeg"
+// import maharashtra from "../assets/maharashtra.jpeg"
+// import manipur from "../assets/manipur.jpeg"
+// import meghalaya from "../assets/meghalaya.jpeg"
+// import mizoram from "../assets/mizoram.jpeg"
+// import nagaland from "../assets/nagaland.jpeg"
+// import odisha from "../assets/odisha.jpeg"
+// import punjab from "../assets/punjab.jpeg"
+// import rajasthan from "../assets/rajasthan.jpeg"
+// import sikkim from "../assets/sikkim.jpeg"
+// import tamil_nadu from "../assets/tamil-nadu.jpeg"
+// import telangana from "../assets/telangana.jpeg"
+// import tripura from "../assets/tripura.jpeg"
+// import uttar_pradesh from "../assets/uttar-pradesh.jpeg"
+// import uttarakhand from "../assets/uttarakhand.jpeg"
+// import west_bengal from "../assets/west-bengal.jpeg"
+// import andaman_nicobar from "../assets/andaman-nicobar.jpeg"
+// import dadra_nagar_haveli from "../assets/dadra-nagar-haveli.jpeg"
+// import daman_diu from "../assets/daman-diu.jpeg"
+// import jammu_kashmir from "../assets/jammu-kashmir.jpeg"
+// import ladakh from "../assets/ladakh.jpeg"
+// import puducherry from "../assets/puducherry.jpeg"
+
+
+// Images for International Presence
+
+// import bangladesh from "../assets/internationalPresence/bangladesh.webp";
+// import canada from "../assets/internationalPresence/canada.webp";
+// import india from "../assets/internationalPresence/india.webp";
+// import malaysia from "../assets/internationalPresence/malaysia.webp";
+// import nepal from "../assets/internationalPresence/nepal.webp";
+// import portBlair from "../assets/internationalPresence/port-blair.webp";
+// import russia from "../assets/internationalPresence/russia.webp";
+// import singapore from "../assets/internationalPresence/singapore.webp";
+// import uae from "../assets/internationalPresence/uae.webp";
+// import uk from "../assets/internationalPresence/uk.webp";
+// import usa from "../assets/internationalPresence/usa.webp";
+
+
+
+// icons for "Why Gati Shiftin and Packers" Section
+// import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
+// import Groups3Icon from '@mui/icons-material/Groups3';
+// import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+// import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+// import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+
+// Images for Brand That Trusted Us
+
+// import ContactForm from "../components/ContactForm";
+
+// import { Helmet } from "react-helmet-async";
+
+
+// import {
+//     Table,
+//     TableBody,
+//     TableCell,
+//     TableContainer,
+//     TableHead,
+//     TableRow,
+//     Paper
+// } from "@mui/material";
+// import BrandList from "../components/BrandsList";
 
 const About = () => {
     return (
         <>
+            <section id="company-info">
+                <div className="container">
+                    <div className="img-bx">
+                        <img src={about_company_photo} alt="About Gati Shifting Packers – Trusted packers and movers" title="about gati shifting packers" loading="lazy" />
+                    </div>
+                    <div className="details">
+                        <h1>About Us</h1>
+                        <p>
+                            At Safexpress, we redefine the moving experience by offering end-to-end packers and movers solutions across India. Whether you're relocating locally or to another state, we make every transition seamless, stress-free, and efficient.
+
+                            Our expert team handles everything—from careful packing with premium materials to timely transportation and safe delivery. With clear, upfront pricing and personalized moving plans, we’ve become the go-to choice for individuals, families, and professionals.
+                        </p>
+
+                        <ul>
+                            <li><CheckCircleIcon className="icon"></CheckCircleIcon> 100% Safety Assurance</li>
+                            <li><CheckCircleIcon className="icon"></CheckCircleIcon> Skilled & Trained Manpower</li>
+                            <li><CheckCircleIcon className="icon"></CheckCircleIcon> 24/7 Real-Time Support</li>
+                            <li><CheckCircleIcon className="icon"></CheckCircleIcon> On-Time Pickup & Delivery</li>
+                            <li><CheckCircleIcon className="icon"></CheckCircleIcon> Premium Packing Supplies</li>
+                        </ul>
+                        <button className="contact-btn" >Enquiry Now</button>
+                    </div>
+                </div>
+            </section>
             <section className="about-overview">
                 <div className="container">
 
@@ -63,6 +202,61 @@ const About = () => {
                         </div>
                     </div>
 
+                </div>
+            </section>
+             <section id="our-services">
+                <h1>Our Services</h1>
+                <div className="container">
+                    <div className="card">
+                        <div className="img-bx">
+                            <img src={houseShiftingImg} alt="Professional house shifting services by Gati Shifting Packers in India" title="HouseShiftingservices" loading="lazy" />
+                        </div>
+                        <h4>Household</h4>
+                    </div>
+                    <div className="card">
+                        <div className="img-bx">
+                            <img src={commercialImg} alt="Safe and reliable commercial shifting by Gati Shifting Packers" title="commercialshifting" loading="lazy" />
+                        </div>
+                        <h4>Luggage</h4>
+                    </div>
+
+                    <div className="card">
+                        <div className="img-bx">
+                            <img src={bikeImg} alt="Gati Shifting Packers providing safe bike and motorcycle transportation services" title="biketransportation" loading="lazy" />
+                        </div>
+                        <h4>Bike</h4>
+                    </div>
+                    <div className="card">
+                        <div className="img-bx">
+                            <img src={carImg} alt="Gati Shifting Packers team handling secure vehicle transport" title="Carservice" loading="lazy" />
+                        </div>
+                        <h4>Car</h4>
+                    </div>
+                    <div className="card">
+                        <div className="img-bx">
+                            <img src={petImg} alt="Professional pet relocation services by Gati Shifting Packers" title="petTransportation" loading="lazy" />
+                        </div>
+                        <h4>Pet</h4>
+                    </div>
+                    <div className="card">
+                        <div className="img-bx">
+                            <img src={internationalImg} alt="Professional international movers and packers – Gati Shifting Packers" title="internationalservice" loading="lazy" />
+                        </div>
+                        <h4>International</h4>
+                    </div>
+                    <div className="card">
+                        <div className="img-bx">
+                            <img src={officeImg} alt="Secure and efficient office shifting by Gati Shifting Packers" title="officeshifting" loading="lazy" />
+                        </div>
+                        <h4>Office</h4>
+                    </div>
+
+                    <div className="card">
+                        <div className="img-bx">
+                            <img src={storageImg} alt="Safe and reliable storage services by Gati Shifting Packers" title="Storageservice" loading="lazy" />
+                        </div>
+                        <h4>Storage</h4>
+                    </div>
                 </div>
             </section>
 

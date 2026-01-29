@@ -208,6 +208,29 @@ const Home = () => {
       </section>
 
       <ProductImageSlider images={sliderImages}></ProductImageSlider>
+
+      
+      <section id="badge-section">
+        <div className="container">
+          <div className="card">
+            <img src={isoBadge} />
+            <h3>ISO 9001:2015</h3>
+            <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
+          </div>
+
+
+          <div className="card">
+            <img src={googleRatingBadge} />
+            <h3>5 Star Ratings</h3>
+            <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
+          </div>
+          <div className="card">
+            <img src={trustedBadge} />
+            <h3>15+ Years of Trust</h3>
+            <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
+          </div>
+        </div>
+      </section>
       <section id="our-services">
         <h1>Our Services</h1>
         <p>Tailor-made value added services to suit varied supply chain and logistics Pan India requirements for enterprises as well as individuals.   </p>
@@ -344,27 +367,6 @@ const Home = () => {
 
       <OfficeLocation></OfficeLocation>
 
-      <section id="badge-section">
-        <div className="container">
-          <div className="card">
-            <img src={isoBadge} />
-            <h3>ISO 9001:2015</h3>
-            <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
-          </div>
-
-
-          <div className="card">
-            <img src={googleRatingBadge} />
-            <h3>5 Star Ratings</h3>
-            <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
-          </div>
-          <div className="card">
-            <img src={trustedBadge} />
-            <h3>15+ Years of Trust</h3>
-            <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
-          </div>
-        </div>
-      </section>
 
       <HowWeMakeMoveEasy></HowWeMakeMoveEasy>
       <HappyClients></HappyClients>

@@ -7,6 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import XIcon from "@mui/icons-material/X";
 import logo from "../assets/Logo/logo.jpeg"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -37,11 +38,9 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Services</h4>
           <ul>
-            <li>Packers and Movers</li>
-            <li>Hire Truck Online</li>
-            <li>Storage Services</li>
-            <li>Car Transportation</li>
-            <li>Bike Transportation</li>
+            <Link to="/storage">Storage Services</Link>
+            <Link to="/car-storage">Car Storage</Link>
+            <Link to="/bike-storage">Bike Storage</Link>
           </ul>
         </div>
 
