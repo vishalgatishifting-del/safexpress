@@ -114,10 +114,31 @@ import commercialImg from "../assets/AboutPage/commercial.webp"
 //     Paper
 // } from "@mui/material";
 // import BrandList from "../components/BrandsList";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
     return (
         <>
+            <Helmet>
+
+                <title>About Safe Shifting Packers | Trusted Packers and Movers in India</title>
+                <meta name="description" content="Learn about Safe Shifting Packers – a reliable packers and movers company in India offering safe, affordable, and professional home, office, and vehicle relocation services." />
+                <meta name="keywords" content="About Safe Shifting Packers, Packers and Movers Company, Trusted Packers and Movers, Relocation Services India, Home Shifting Services, Office Relocation, Vehicle Transportation" />
+                <meta name="author" content="Safe Shifting Packers" />
+                <meta name="robots" content="index, follow" />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="About Safe Shifting Packers | Professional Relocation Services" />
+                <meta property="og:description" content="Know more about Safe Shifting Packers – your trusted partner for safe and hassle-free moving solutions across India." />
+                <meta property="og:url" content="https://safeshiftingpackers.com/about" />
+                <meta property="og:site_name" content="Safe Shifting Packers" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="About Safe Shifting Packers | Trusted Moving Company" />
+                <meta name="twitter:description" content="Safe Shifting Packers provides reliable, secure, and affordable packing and moving services across India." />
+
+                <link rel="canonical" href="https://safeshiftingpackers.com/about" />
+            </Helmet>
             <section id="company-info">
                 <div className="container">
                     <div className="img-bx">
@@ -204,7 +225,7 @@ const About = () => {
 
                 </div>
             </section>
-             <section id="our-services">
+            <section id="our-services">
                 <h1>Our Services</h1>
                 <div className="container">
                     <div className="card">

@@ -1,7 +1,27 @@
+import { Helmet } from "react-helmet-async"
 import "../styles/Service.scss"
 const Service = () => {
     return (
         <>
+            <Helmet>
+                <title>Our Services | Safe Shifting Packers – Complete Packers & Movers Solutions</title>
+                <meta name="description" content="Explore complete packing and moving services by Safe Shifting Packers including household shifting, office relocation, vehicle transportation, packing, loading, unloading, storage, and warehousing services across India." />
+                <meta name="keywords" content="Packers and Movers Services, Household Shifting Services, Office Relocation Services, Car Transportation, Bike Transportation, Packing and Unpacking Services, Loading Unloading Services, Storage and Warehousing, Local Shifting, Domestic Relocation, Safe Shifting Packers Services" />
+                <meta name="author" content="Safe Shifting Packers" />
+                <meta name="robots" content="index, follow" />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Packers and Movers Services | Safe Shifting Packers" />
+                <meta property="og:description" content="Safe Shifting Packers offers end-to-end packers and movers services including home shifting, office relocation, vehicle transport, packing, storage, and warehousing across India." />
+                <meta property="og:url" content="https://safeshiftingpackers.com/service" />
+                <meta property="og:site_name" content="Safe Shifting Packers" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Our Services | Safe Shifting Packers" />
+                <meta name="twitter:description" content="Professional household shifting, office relocation, vehicle transportation, packing, storage and complete moving solutions by Safe Shifting Packers." />
+
+                <link rel="canonical" href="https://safeshiftingpackers.com/service" />
+            </Helmet>
             <section className="surface-network">
                 <div className="surface-overlay">
                     <div className="surface-container">
