@@ -62,6 +62,8 @@ import HappyClients from "../components/HappyClients.tsx";
 
 
 
+import googleRatingImg from "../assets/Home/ghs-google-rating.png"
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -203,13 +205,13 @@ const Home = () => {
             </a>
             <img src={incorporationCertificate} />
             <h3>Incorporation Certificate</h3>
-          </div> 
+          </div>
         </div>
       </section>
 
       <ProductImageSlider images={sliderImages}></ProductImageSlider>
 
-      
+
       <section id="badge-section">
         <div className="container">
           <div className="card">
@@ -234,12 +236,12 @@ const Home = () => {
       <section id="our-services">
         <h1>Our Services</h1>
         <p>Tailor-made value added services to suit varied supply chain and logistics Pan India requirements for enterprises as well as individuals.   </p>
-        <div className="btns">
+        {/* <div className="btns">
           <button>Core Services</button>
           <button>Enterprise Services</button>
           <button>Individual Services</button>
           <button>Other Services</button>
-        </div>
+        </div> */}
         <div className="details">
           <div className="images">
             <div className="card">
@@ -344,6 +346,25 @@ const Home = () => {
         ))}
       </div>
 
+      
+      <section id="google-review-sec">
+        <div className="container">
+          <div className="text-box">
+            <h1>Trusted by Thousands of <span className="primary-color">Happy Customers</span></h1>
+            <p>Real experiences from customers who trusted Gati Shifting Packers for safe, timely, and stress-free relocation.</p>
+          </div>
+          <div className="img-rating-box">
+            <Link className="detail-link" to="/review">
+              <img src={googleRatingImg} alt="googt rating png" />
+              <span>4.9 ★★★★★</span>
+              <span>1000+ Reviews</span>
+              <span>Based on genuine customer reviews</span>
+            </Link>
+            <Link to="/review" className="review-btn">Leave a Review</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="shifting-stages">
         <h2>Our Shifting Stages</h2>
 
@@ -364,6 +385,7 @@ const Home = () => {
           ))}
         </div>
       </section>
+
 
       <OfficeLocation></OfficeLocation>
 

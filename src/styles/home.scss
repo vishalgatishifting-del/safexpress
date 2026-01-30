@@ -6,6 +6,10 @@
   @include v.font-poppins-sans;
 }
 
+.primary-color{
+  color: v.$primary-color;
+}
+
 body {
   margin: 0;
 }
@@ -165,7 +169,7 @@ body {
 
   h1 {
     text-align: center;
-    margin: 0;
+    // margin: 0;
   }
 
   p {
@@ -673,6 +677,118 @@ body {
                 }
                 p{
                     font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+#google-review-sec {
+    margin-top: 50px;
+    padding: 10px;
+
+    .container {
+        display: grid;
+        width: 1200px;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 20px;
+
+        .text-box {
+            h1 {
+                margin-bottom: 10px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .img-rating-box {
+
+            .detail-link {
+                img {
+                    width: 400px;
+                }
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            .review-btn {
+                padding: 10px 20px;
+                background: v.$primary-color;
+                display: inline-block;
+                margin-top: 20px;
+                border-radius: 30px;
+                color: #fff;
+                box-shadow: 0 5px 10px #00000055;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1234px) {
+    #google-review-sec {
+
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 801px) {
+    #google-review-sec {
+
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+
+            .img-rating-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 801px) {
+    #google-review-sec {
+
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+
+            .text-box {
+                h1 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:495px) {
+    #google-review-sec {
+
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+
+            .img-rating-box {
+                .detail-link {
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }

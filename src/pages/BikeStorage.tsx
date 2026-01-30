@@ -1,4 +1,4 @@
-import "../styles/BikeStorage.scss"
+import "../styles/Storage.scss"
 import heroSectionImg from "../assets/BikeStorage/hero-section-img.png"
 import { Link } from "react-router-dom";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
@@ -56,22 +56,61 @@ const BikeStorage = () => {
     const imgArr = [sampleImg1, sampleImg2, sampleImg3, sampleImg4, sampleImg5, sampleImg6, sampleImg7, sampleImg8];
     return (
         <>
-            <section id="hero-section">
+            <section id="serivce-hero-section" >
                 <div className="container">
+
                     <div className="content">
-                        <h1><span className="primary-color">Bike</span> Storage Services | Safe & Secure <span className="primary-color">Two-Wheeler</span> Storage</h1>
-                        <p>If you are looking for a safe and secure place to store your bike or two-wheeler, Gati Shifting Packers provides professional bike storage services to keep your vehicle protected from damage, theft, and harsh weather conditions.</p>
-                        <p>🎉Book Today For 20% OFF!!!🎉</p>
+                        <span className="badge">Secure Two-Wheeler Storage</span>
+
+                        <h1>
+                            <span className="primary-color">Bike</span> Storage Services
+                            <br />
+                            Safe & Secure <span className="primary-color">Two-Wheeler</span> Storage
+                        </h1>
+
+                        <p className="subtitle">
+                            Professional bike storage solutions to protect your vehicle from
+                            damage, theft, dust, and harsh weather conditions.
+                        </p>
+
+                        <div className="offer">
+                            🎉 <strong>15% OFF</strong> on Bike Storage — Limited Time
+                        </div>
+
                         <div className="links">
-                            <a className="call-btn" href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon> +91 8756319252</a>
-                            <Link className="quote-btn" to="/contact-us">Get a Free Quote </Link>
+                            <a className="call-btn" href="tel:+919422799477">
+                                <LocalPhoneIcon />
+                                Call Now
+                            </a>
+
+                            <Link className="quote-btn" to="/contact-us">
+                                Get a Free Quote
+                            </Link>
+                        </div>
+
+                        <div className="trust-points">
+                            <span>✔ Covered Storage</span>
+                            <span>✔ CCTV Surveillance</span>
+                            <span>✔ Insurance Support</span>
                         </div>
                     </div>
+
                     <div className="img-bx">
-                        <img src={heroSectionImg} />
+                        <div className="img-card">
+                            <img
+                                src={heroSectionImg}
+                                alt="Secure bike and two-wheeler storage services"
+                                width="500"
+                                height="420"
+                                loading="eager"
+                            //   fetchpriority="high"
+                            />
+                        </div>
                     </div>
+
                 </div>
             </section>
+
 
             <section id="about-car-storage">
                 <h1>Bike Storage Services | Safe & Secure Vehicle Storage</h1>

@@ -55,27 +55,64 @@ const CarStorage = () => {
 
     const imgArr = [sampleImg1, sampleImg2, sampleImg3, sampleImg4, sampleImg5, sampleImg6, sampleImg7, sampleImg8];
     return (
-       <>
+        <>
 
-       
-        {/* <div className="bg-attached">
+
+            {/* <div className="bg-attached">
                 </div> */}
-            <section id="hero-section">
+            <section id="serivce-hero-section" className="car-hero">
                 <div className="container">
+
                     <div className="content">
-                        <h1>Safe & Secure <span className="primary-color">Car</span> Storage Services</h1>
-                        <p>Protect your car with our reliable, monitored and affordable car storage solutions.</p>
-                        <p>🎉Book Today For 20% OFF!!!🎉</p>
+                        <span className="badge">Secure Car Storage Solutions</span>
+
+                        <h1>
+                            Safe & Secure <span className="primary-color">Car</span> Storage Services
+                        </h1>
+
+                        <p className="subtitle">
+                            Protect your car with our reliable, monitored, and affordable
+                            car storage facilities designed for maximum safety and care.
+                        </p>
+
+                        <div className="offer">
+                            🎉 <strong>15% OFF</strong> on Car Storage — Limited Time
+                        </div>
+
                         <div className="links">
-                            <a className="call-btn" href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon> +91 8756319252</a>
-                            <Link className="quote-btn" to="/contact-us">Get a Free Quote </Link>
+                            <a className="call-btn" href="tel:+919422799477">
+                                <LocalPhoneIcon />
+                                Call Now
+                            </a>
+
+                            <Link className="quote-btn" to="/contact-us">
+                                Get a Free Quote
+                            </Link>
+                        </div>
+
+                        <div className="trust-points">
+                            <span>✔ Covered Parking</span>
+                            <span>✔ CCTV Surveillance</span>
+                            <span>✔ Regular Vehicle Checks</span>
                         </div>
                     </div>
+
                     <div className="img-bx">
-                        <img src={heroSectionImg} />
+                        <div className="img-card">
+                            <img
+                                src={heroSectionImg}
+                                alt="Safe and secure car storage services"
+                                width="500"
+                                height="420"
+                                loading="eager"
+                            //   fetchpriority="high"
+                            />
+                        </div>
                     </div>
+
                 </div>
             </section>
+
 
             <section id="about-car-storage">
                 <h1>Car Storage Services | Safe & Secure Vehicle Storage</h1>
@@ -164,7 +201,7 @@ const CarStorage = () => {
                 </div>
             </section>
 
- <section id="numbers-section">
+            <section id="numbers-section">
                 <div className="numbers-container">
                     <div>
                         <h4>70K+</h4>

@@ -69,25 +69,69 @@ const Storage = () => {
     const imgArr = [sampleImg1, sampleImg2, sampleImg3, sampleImg4, sampleImg5, sampleImg6, sampleImg7, sampleImg8];
     return (
         <>
-          
-            <div className="bg-attached">
-                <h1>Storage</h1>
-            </div>
-            <section id="hero-section">
+
+            <section id="serivce-hero-section">
                 <div className="container">
+
                     <div className="content">
-                        <h1>We Store Anything You Care...Best Storage Services</h1>
-                        <p>🎉Book Today For 20% OFF!!!🎉</p>
+                        <span className="badge">India’s Trusted Storage Partner</span>
+
+                        <h1>
+                            We Store What <span className="primary-color">Matters</span> to You
+                        </h1>
+
+                        <p className="subtitle">
+                            Secure • Affordable • Climate-Controlled Storage Solutions
+                        </p>
+
+                        <div className="offer">
+                            🎉 <strong>15% OFF</strong> on First Booking — Limited Time
+                        </div>
+
                         <div className="links">
-                            <a className="call-btn" href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon> +91 9422799477</a>
-                            <Link className="quote-btn" to="/contact-us">Get a Free Quote </Link>
+                            <a className="call-btn" href="tel:+919422799477">
+                                <LocalPhoneIcon />
+                                Call Now
+                            </a>
+
+                            <Link className="quote-btn" to="/contact-us">
+                                Get Free Quote
+                            </Link>
+                        </div>
+
+                        <div className="trust-stats">
+                            <div>
+                                <strong>10,000+</strong>
+                                <span>Happy Customers</span>
+                            </div>
+                            <div>
+                                <strong>24/7</strong>
+                                <span>Security</span>
+                            </div>
+                            <div>
+                                <strong>100%</strong>
+                                <span>Safe Storage</span>
+                            </div>
                         </div>
                     </div>
+
                     <div className="img-bx">
-                        <img src={heroSectionImg} />
+                        <div className="img-card">
+                            <img
+                                src={heroSectionImg}
+                                alt="Secure storage services"
+                                width="500"
+                                height="420"
+                                loading="eager"
+                                // fetchpriority="high"
+                            />
+                        </div>
                     </div>
+
                 </div>
             </section>
+
+
 
             <section id="brands-section">
                 <div className="heading-container">
