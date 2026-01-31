@@ -9,7 +9,11 @@ import Footer from "../components/Footer.tsx";
 import Storage from "../pages/Storage.tsx";
 import CarStorage from "../pages/CarStorage.tsx";
 import BikeStorage from "../pages/BikeStorage.tsx";
-
+import PrivacyPolicy from "../pages/PrivacyPolicy.tsx";
+import TermsCondition from "../pages/TermsCondition.tsx";
+import PhotoGallery from "../pages/PhotoGallery.tsx";
+import VideoGallery from "../pages/VideoGallery.tsx";
+VideoGallery
 
 
 
@@ -27,6 +31,10 @@ const AppRoutes = () => {
                 <Route path="/storage" element={<Storage></Storage>}></Route>
                 <Route path="/car-storage" element={<CarStorage></CarStorage>}></Route>
                 <Route path="/bike-storage" element={<BikeStorage></BikeStorage>}></Route>
+                <Route path="/privacy-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
+                <Route path="/terms-condition" element={<TermsCondition></TermsCondition>}></Route>
+                <Route path="/photo-gallery" element={<PhotoGallery></PhotoGallery>}></Route>
+                <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
             </Routes>
             <Footer></Footer>
         </section>

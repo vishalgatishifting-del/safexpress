@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Pages</h4>
           <ul>
-            <li>Contact</li>
+            <li><Link to="/contact-us">Contact</Link></li>
             <li>Blogs</li>
           </ul>
         </div>
@@ -102,11 +102,11 @@ const Footer = () => {
         <p>© 2026 Safexpress Logistics Pvt Ltd. All Rights Reserved.</p>
 
         <div className="bottom-links">
-          <span>Our partner sites</span>
-          <span className="partner">MOVER</span>
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
-        </div>
+          <span><Link to="/privacy-policy">Our partner sites</Link></span>
+          <span className="partner"><Link to="/privacy-policy">MOVER</Link></span>
+          <span><Link to="/terms-condition">Terms & Conditions</Link></span>
+          <span><Link to="/privacy-policy">Privacy Policy</Link></span>
+        </div> 
       </div>
     </footer>
   );
