@@ -1,14 +1,26 @@
 @use "./variables" as v;
+
 .move-easy {
-  padding: 60px 20px;
-  background: #ffffff;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #f9fafc, #ffffff);
   text-align: center;
 
   .section-title {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 700;
-    margin-bottom: 50px;
-    color: #000;
+    margin-bottom: 60px;
+    color: #111;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: v.$primary-color;
+      display: block;
+      margin: 14px auto 0;
+      border-radius: 2px;
+    }
   }
 
   .steps-container {
@@ -20,46 +32,73 @@
   }
 
   .step-card {
-    background: v.$primary-color;
-    border-radius: 14px;
-    padding: 30px 20px;
-    color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px;
+    color: #222;
+    border: 1px solid #00000014;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     &:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+
+      img {
+        transform: scale(1.1);
+      }
     }
 
     .image-box {
       width: 100%;
-      height: auto;
-      margin: 0 auto 20px;
-    //   background: #fff;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      height: 200px;
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 22px;
+      background: #f1f3f7;
 
       img {
-        width:100%;
-       height: 200px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
+        transition: transform 0.5s ease;
       }
     }
 
     h3 {
       font-size: 20px;
       font-weight: 600;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      color: v.$primary-color;
     }
 
     p {
       font-size: 14px;
-      line-height: 1.6;
-      opacity: 0.95;
+      line-height: 1.65;
+      color: #555;
+      flex-grow: 1;
     }
   }
+
+//   .step-card::before {
+//   content: attr(data-step);
+//   position: absolute;
+//   top: -14px;
+//   right: -14px;
+//   background: v.$primary-color;
+//   color: #fff;
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-weight: 600;
+// }
+
 
   /* Responsive */
   @media (max-width: 992px) {
@@ -69,12 +108,20 @@
   }
 
   @media (max-width: 576px) {
-    .steps-container {
-      grid-template-columns: 1fr;
-    }
+    padding: 60px 14px;
 
     .section-title {
       font-size: 26px;
+      margin-bottom: 40px;
+    }
+
+    .steps-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .step-card .image-box {
+      height: 180px;
     }
   }
 }

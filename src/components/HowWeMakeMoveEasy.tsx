@@ -34,7 +34,7 @@ const HowWeMakeMoveEasy = () => {
 
       <div className="steps-container">
         {steps.map((step, index) => (
-          <div className="step-card" key={index}>
+          <div className="step-card"  data-step={index + 1} key={index}>
             <div className="image-box">
               <img src={step.image} alt={step.title} />
             </div>

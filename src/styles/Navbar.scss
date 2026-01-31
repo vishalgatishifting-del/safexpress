@@ -1,25 +1,104 @@
-.navbar{
-    position: sticky;
-    top: 37.6px;
-    z-index: 10000;
+@use "./variables" as v;
+
+.navbar {
+  position: sticky;
+  top: 33px;
+  z-index: 9999;
+
+  width: 100%;
+  padding: 14px 28px;
+  background: v.$primary-color;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+  width: 140px;
+  border-radius: 10px;
+}
+
+/* NAV LINKS (DESKTOP) */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+
+  li a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 6px 0;
+    transition: color 0.3s ease;
+
+    /* underline animation */
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background: v.$primary-color;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+/* HAMBURGER ICON */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: #111827;
+
+  svg {
+    font-size: 28px;
+  }
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    box-sizing: border-box;
-    .logo{
-        img{
-            width: 140px;
-            border-radius: 10px;
-        }
+    background: #fff;
+
+    flex-direction: column;
+    gap: 0;
+
+    border-top: 1px solid #e5e7eb;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+
+    li {
+      width: 100%;
+      text-align: center;
+      padding: 14px 0;
+
+      a {
+        font-size: 15px;
+      }
     }
-    ul{
-        li{
-            display: flex;
-            a{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #fff;
-                text-decoration: none;
-            }
-        }
-    }
+  }
+
+  .nav-links.open {
+    max-height: 300px;
+  }
 }

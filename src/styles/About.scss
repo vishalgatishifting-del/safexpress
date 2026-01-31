@@ -347,7 +347,7 @@
 
 
 
-#our-services {
+#our-services-about-section {
     @include v.font-poppins-sans(400);
     margin-top: 50px;
     margin-bottom: 20px;
@@ -613,7 +613,7 @@
 }
 
 @media screen and (max-width: 1050px) {
-    #our-services {
+    #our-services-about-section {
         margin-bottom: 50px;
 
         h1 {
@@ -735,7 +735,7 @@
 
 
 @media screen and (max-width: 806px) {
-    #our-services {
+    #our-services-about-section {
         .container {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -825,7 +825,7 @@
 
 
 @media screen and (max-width: 481px) {
-    #our-services {
+    #our-services-about-section {
         .container {
             grid-gap: 7px;
 

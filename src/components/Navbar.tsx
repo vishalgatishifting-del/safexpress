@@ -1,20 +1,41 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Logo/logo.jpeg" 
-import "../styles/Navbar.scss"
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
+import Logo from "../assets/Logo/logo.jpeg";
+import "../styles/Navbar.scss";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <div className="logo">
-        <img src={Logo} />
+      <div className="nav-left">
+        <div className="logo">
+          <img src={Logo} alt="Safexpress Logo" />
+        </div>
       </div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/service">Services</Link></li>
-        <li><Link to="/contact-us">Contact</Link></li>
+
+      <ul className={`nav-links ${open ? "open" : ""}`}>
+        <li onClick={() => setOpen(false)}>
+          <Link to="/">Home</Link>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <Link to="/about">About Us</Link>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <Link to="/service">Services</Link>
+        </li>
+        <li onClick={() => setOpen(false)}>
+          <Link to="/contact-us">Contact</Link>
+        </li>
       </ul>
+
+      {/* Toggle Button */}
+      <div className="menu-toggle" onClick={() => setOpen(!open)}>
+        {open ? <CloseIcon /> : <MenuIcon />}
+      </div>
     </nav>
   );
 };

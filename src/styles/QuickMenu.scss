@@ -1,6 +1,8 @@
 .quick-menu{
+    position: absolute;
     display: flex;
     flex-direction: column;
+    height: 100%;
     a{
         height: calc(100% / 5);
         width: 100%;

@@ -225,7 +225,7 @@ const About = () => {
 
                 </div>
             </section>
-            <section id="our-services">
+            <section id="our-services-about-section">
                 <h1>Our Services</h1>
                 <div className="container">
                     <div className="card">

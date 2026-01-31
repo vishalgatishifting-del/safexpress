@@ -64,6 +64,17 @@ import HappyClients from "../components/HappyClients.tsx";
 
 import googleRatingImg from "../assets/Home/ghs-google-rating.png"
 import { Link } from "react-router-dom";
+import TrustUsSection from "../components/TrustUsSection.tsx";
+
+
+import truck3Img from "../assets/Home/truck3.webp"
+import carLoadingImg from "../assets/Home/carLoading.webp"
+import ship2Img from "../assets/Home/ship.webp"
+import ship2 from "../assets/Home/ship2.webp"
+import airplaneImg from "../assets/Home/airplane.webp"
+import truck2 from "../assets/Home/truck2.webp"
+
+
 
 
 const Home = () => {
@@ -346,12 +357,12 @@ const Home = () => {
         ))}
       </div>
 
-      
+
       <section id="google-review-sec">
         <div className="container">
           <div className="text-box">
             <h1>Trusted by Thousands of <span className="primary-color">Happy Customers</span></h1>
-            <p>Real experiences from customers who trusted Gati Shifting Packers for safe, timely, and stress-free relocation.</p>
+            <p>Real experiences from customers who trusted Safexpress for safe, timely, and stress-free relocation.</p>
           </div>
           <div className="img-rating-box">
             <Link className="detail-link" to="/review">
@@ -389,9 +400,47 @@ const Home = () => {
 
       <OfficeLocation></OfficeLocation>
 
+      <TrustUsSection></TrustUsSection>
+
 
       <HowWeMakeMoveEasy></HowWeMakeMoveEasy>
       <HappyClients></HappyClients>
+
+      <section id="about-company-cards">
+        <div className="container">
+          <div className="card">
+            <img src={truck3Img} alt="truck png" />
+            <h2>PACKING AND MOVING</h2>
+            <p>We offer a range of packing and moving services from packing your entire household to packing selected items only or fragile item and any other furniture.</p>
+          </div>
+          <div className="card">
+            <img src={carLoadingImg} alt="car png" />
+            <h2>CAR TRANSPORT SERVICES</h2>
+            <p>Movers Aryavarta Association, are one of India's finest car carrier service providers. Our car transport services have been satisfactorily used by clients from corporates.</p>
+          </div>
+          <div className="card">
+            <img src={ship2Img} alt="ship png" />
+            <h2>CORP. GOODS RELOCATION</h2>
+            <p>Reckoned across the country for our efficient and reliable cargo moving and packing services, we undertake corporate Goods Relocation Service as per the requirements.</p>
+          </div>
+          <div className="card">
+            <img src={ship2} alt="ship png" />
+            <h2>FREIGHT FORWARDING</h2>
+            <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...</p>
+          </div>
+          <div className="card">
+            <img src={airplaneImg} alt="airplane png" />
+            <h2>INTERNATIONAL LOGISTICS</h2>
+            <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...
+              (neeche thoda cut ho gaya hai image me)</p>
+          </div>
+          <div className="card">
+            <img src={truck2} alt="truck png" />
+            <h2>LOADING & UNLOADING</h2>
+            <p>A crucial part of every relocation process, the loading and unloading is executed by highly skilled teams. The goods are loaded and unloaded with the use of pulleys,lifters etc...</p>
+          </div>
+        </div>
+      </section>
 
 
       <FAQ />
