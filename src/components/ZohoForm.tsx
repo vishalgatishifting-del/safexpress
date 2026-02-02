@@ -78,17 +78,6 @@ const ZohoForm: React.FC<Props> = ({ successCondition }) => {
         </div>
 
         <div className="input-group">
-          <EmailIcon />
-          <input
-            type="email"
-            name="Email"
-            placeholder="Enter Your Email"
-            value={formData.Email}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="input-group">
           <PhoneIcon />
           <input
             type="text"
@@ -100,11 +89,32 @@ const ZohoForm: React.FC<Props> = ({ successCondition }) => {
         </div>
 
         <div className="input-group">
+          <EmailIcon />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Enter Your Email"
+            value={formData.Email}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="input-group">
           <LocationOnIcon />
           <input
             type="text"
             name="From"
-            placeholder="Enter Your City*"
+            placeholder="Enter Your Pick Up Point*"
+            value={formData.From}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="input-group">
+          <LocationOnIcon />
+          <input
+            type="text"
+            name="From"
+            placeholder="Enter Your Delivery Point*"
             value={formData.From}
             onChange={handleChange}
           />
@@ -115,7 +125,7 @@ const ZohoForm: React.FC<Props> = ({ successCondition }) => {
           <input
             type="text"
             name="Goods"
-            placeholder="Enquiry About"
+            placeholder="Good Details"
             value={formData.Goods}
             onChange={handleChange}
           />

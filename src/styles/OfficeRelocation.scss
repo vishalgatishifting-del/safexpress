@@ -1,0 +1,237 @@
+
+@use "./variables" as v;
+
+* {
+
+    scroll-behavior: smooth;
+}
+
+
+#pet-relocation-sec {
+    @include v.font-poppins-sans(400);
+    overflow: visible;
+    padding: 10px;
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+
+        background: #f2f2f2;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+
+        p {
+
+            color: #303030;
+        }
+
+        h1 {
+            margin: 20px 0;
+            color: v.$primary-color;
+        }
+
+        .content {
+            h2 {
+                margin-top: 40px;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            p {
+
+                color: #303030;
+            }
+
+            ul,
+            ol {
+                margin-left: 20px;
+                margin-bottom: 40px;
+                color: #303030;
+            }
+
+            img {
+                width: 800px;
+                margin: 10px auto 40px auto;
+                display: flex;
+                border-radius: 20px;
+                // margin-bottom: 40px;
+                // margin-top: 10px;
+            }
+        }
+
+    }
+
+    .left-area {
+        position: -webkit-sticky;
+        /* for Safari */
+        position: sticky;
+        top: 140px;
+        width: 250px;
+        background: #f2f2f2;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        z-index: 10;
+        border-radius: 10px;
+
+        a {
+            text-decoration: none;
+            margin: 6px 0;
+            color: #000;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #007bff;
+            }
+        }
+    }
+
+    .right-area {
+        background: #f2f2f2;
+        border: 1px solid #ccc;
+        flex: 1;
+        padding: 10px;
+        border-radius: 10px;
+        width: 900px;
+
+        .card {
+            scroll-margin-top: 160px;
+            margin-bottom: 50px;
+
+            h1 {
+                margin-bottom: 10px;
+                font-size: 27px;
+            }
+
+            ul {
+                margin-left: 40px;
+            }
+
+            a {
+                display: flex;
+                justify-self: center;
+                padding: 10px 20px;
+            color: v.$primary-color;
+                border-radius: 6px;
+                border: none;
+                color: #fff;
+                font-size: 17px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1101px) {
+    #pet-relocation-sec {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1077px) {
+    #pet-relocation-sec {
+        .container {
+            .content {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 983px) {
+    #pet-relocation-sec {
+
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 731px) {
+    #pet-relocation-sec {
+
+        .container {
+            width: 100%;
+
+            h1 {
+                font-size: 24px;
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            .content {
+                h2 {
+                    font-size: 18px;
+                }
+
+                h3 {
+                    font-size: 15px;
+                }
+
+                ol,
+                li {
+                    font-size: 13px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 565px) {
+    #pet-relocation-sec {
+
+        .container {
+            width: 100%;
+            padding: 10px;
+
+            h1 {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .content {
+                h2 {
+                    font-size: 16px;
+                }
+
+                h3 {
+                    font-size: 14px;
+                }
+
+                ol,
+                li {
+                    font-size: 12px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

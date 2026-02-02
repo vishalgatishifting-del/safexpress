@@ -41,6 +41,8 @@ const Footer = () => {
             <Link to="/storage">Storage Services</Link>
             <Link to="/car-storage">Car Storage</Link>
             <Link to="/bike-storage">Bike Storage</Link>
+            <Link to="/home-shifting">Home Shifting</Link>
+            <Link to="/office-relocation">Office Relocation</Link>
           </ul>
         </div>
 
@@ -49,13 +51,18 @@ const Footer = () => {
           <h4>Pages</h4>
           <ul>
             <li><Link to="/contact-us">Contact</Link></li>
-            <li>Blogs</li>
+            <li><Link to="/who-we-are">Who We Are</Link></li>
+            <li><Link to="/why-safexpress">Why Safexpress</Link></li>
+            <li><Link to="/photo-gallery">Photo Gallery</Link></li>
+            <li><Link to="/video-gallery">Video Gallery</Link></li>
+            {/* <li><Link to="/video-gallery">Photo Gallery</Link></li> */}
+            <li><Link to="/blogs">Blogs</Link></li>
           </ul>
         </div>
 
         {/* Map */}
         <div className="footer-col map">
-          <a className="trustpilot" href="#">
+          <a className="trustpilot" href="https://www.trustpilot.com/">
             Review us on ⭐ Trustpilot
           </a>
 

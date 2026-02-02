@@ -13,8 +13,10 @@ import PrivacyPolicy from "../pages/PrivacyPolicy.tsx";
 import TermsCondition from "../pages/TermsCondition.tsx";
 import PhotoGallery from "../pages/PhotoGallery.tsx";
 import VideoGallery from "../pages/VideoGallery.tsx";
-VideoGallery
-
+import WhoWeAre from "../pages/WhoWeAre.tsx";
+import WhySafexpress from "../pages/WhySafexpress.tsx";
+import HomeShifting from "../pages/HomeShifting.tsx";
+import OfficeRelocation from "../pages/OfficeRelocation.tsx";
 
 
 
@@ -35,6 +37,10 @@ const AppRoutes = () => {
                 <Route path="/terms-condition" element={<TermsCondition></TermsCondition>}></Route>
                 <Route path="/photo-gallery" element={<PhotoGallery></PhotoGallery>}></Route>
                 <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
+                <Route path="/who-we-are" element={<WhoWeAre></WhoWeAre>}></Route>
+                <Route path="/why-safexpress" element={<WhySafexpress></WhySafexpress>}></Route>
+                <Route path="/home-shifting" element={<HomeShifting></HomeShifting>}></Route>
+                <Route path="/office-relocation" element={<OfficeRelocation></OfficeRelocation>}></Route>
             </Routes>
             <Footer></Footer>
         </section>
