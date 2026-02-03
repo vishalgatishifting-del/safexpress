@@ -39,14 +39,14 @@ import PestControlIcon from '@mui/icons-material/PestControl';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
-import sampleImg1 from "../assets/BikeStorage/sample1.png"
-import sampleImg2 from "../assets/BikeStorage/sample2.png"
-import sampleImg3 from "../assets/BikeStorage/sample3.png"
-import sampleImg4 from "../assets/BikeStorage/sample4.png"
-import sampleImg5 from "../assets/BikeStorage/sample5.png"
-import sampleImg6 from "../assets/BikeStorage/sample6.png"
-import sampleImg7 from "../assets/BikeStorage/sample7.png"
-import sampleImg8 from "../assets/BikeStorage/sample8.png"
+import sampleImg1 from "../assets/BikeStorage/sample1.jpeg"
+import sampleImg2 from "../assets/BikeStorage/sample2.jpeg"
+import sampleImg3 from "../assets/BikeStorage/sample3.jpeg"
+import sampleImg4 from "../assets/BikeStorage/sample4.jpeg"
+import sampleImg5 from "../assets/BikeStorage/sample5.jpeg"
+import sampleImg6 from "../assets/BikeStorage/sample6.jpeg"
+import sampleImg7 from "../assets/BikeStorage/sample7.jpeg"
+import sampleImg8 from "../assets/BikeStorage/sample8.jpeg"
 
 
 import priceImg from "../assets/BikeStorage/priceImg.jpeg"

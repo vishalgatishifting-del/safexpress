@@ -17,6 +17,11 @@ import WhoWeAre from "../pages/WhoWeAre.tsx";
 import WhySafexpress from "../pages/WhySafexpress.tsx";
 import HomeShifting from "../pages/HomeShifting.tsx";
 import OfficeRelocation from "../pages/OfficeRelocation.tsx";
+import CarBikeTransport from "../pages/CarBikeTransport.tsx";
+import PetRelocation from "../pages/PetRelocation.tsx";
+import CommercialShifting from "../pages/CommercialShifting.tsx";
+import FAQ from "../pages/FAQ.tsx";
+import SafetyStandard from "../pages/SafetyStandard.tsx";
 
 
 
@@ -41,6 +46,11 @@ const AppRoutes = () => {
                 <Route path="/why-safexpress" element={<WhySafexpress></WhySafexpress>}></Route>
                 <Route path="/home-shifting" element={<HomeShifting></HomeShifting>}></Route>
                 <Route path="/office-relocation" element={<OfficeRelocation></OfficeRelocation>}></Route>
+                <Route path="/car-bike-transport" element={<CarBikeTransport></CarBikeTransport>}></Route>
+                <Route path="/pet-relocation" element={<PetRelocation></PetRelocation>}></Route>
+                <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
+                <Route path="/faq" element={<FAQ></FAQ>}></Route>
+                <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
             </Routes>
             <Footer></Footer>
         </section>

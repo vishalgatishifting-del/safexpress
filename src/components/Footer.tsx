@@ -43,6 +43,9 @@ const Footer = () => {
             <Link to="/bike-storage">Bike Storage</Link>
             <Link to="/home-shifting">Home Shifting</Link>
             <Link to="/office-relocation">Office Relocation</Link>
+            <Link to="/car-bike-transport">Car/Bike Transport</Link>
+            <Link to="/pet-relocation">Pet Relocation</Link>
+            <Link to="/commercial-shifting">Commercial Shifting</Link>
           </ul>
         </div>
 
@@ -57,6 +60,8 @@ const Footer = () => {
             <li><Link to="/video-gallery">Video Gallery</Link></li>
             {/* <li><Link to="/video-gallery">Photo Gallery</Link></li> */}
             <li><Link to="/blogs">Blogs</Link></li>
+            <li><Link to="/faq">FAQs</Link></li>
+            <li><Link to="/safety-standard">Safety Standard</Link></li>
           </ul>
         </div>
 
