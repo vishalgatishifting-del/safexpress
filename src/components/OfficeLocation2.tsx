@@ -39,17 +39,16 @@ const OfficeLocation = () => {
     return (
         <section id="office-location-section">
             <div className="buttons">
-                <Link to="https://gatishiftingpackers.com/city/delhi">Delhi</Link>
-                <Link to="https://gatishiftingpackers.com/city/Mumbai">Mumbai</Link>
-                <Link to="https://gatishiftingpackers.com/city/Kolkata">Kolkata</Link>
-                <Link to="https://gatishiftingpackers.com/city/Chennai">Chennai</Link>
-                <Link to="https://gatishiftingpackers.com/city/Bengaluru">Bengaluru</Link>
-                <Link to="https://gatishiftingpackers.com/city/Hyderabad">Hyderabad</Link>
-                <Link to="https://gatishiftingpackers.com/city/Pune">Pune</Link>
-                <Link to="https://gatishiftingpackers.com/city/Goa">Goa</Link>
-                <Link to="https://gatishiftingpackers.com/city/Guwhati">Guwhati</Link>
-                <Link to="https://gatishiftingpackers.com/city/Imphal">Imphal</Link>
-                <a href="">Hoem</a>
+                 <Link to="/city/delhi">Delhi</Link>
+                <Link to="/city/mumbai">Mumbai</Link>
+                <Link to="/city/kolkata">Kolkata</Link>
+                <Link to="/city/chennai">Chennai</Link>
+                <Link to="/city/bengaluru">Bengaluru</Link>
+                <Link to="/city/hyderabad">Hyderabad</Link>
+                <Link to="/city/pune">Pune</Link>
+                <Link to="/city/goa">Goa</Link>
+                <Link to="/city/guwhati">Guwhati</Link>
+                <Link to="/city/imphal">Imphal</Link>
             </div>
             <div className="container">
                 <motion.div

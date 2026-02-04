@@ -22,7 +22,16 @@ import PetRelocation from "../pages/PetRelocation.tsx";
 import CommercialShifting from "../pages/CommercialShifting.tsx";
 import FAQ from "../pages/FAQ.tsx";
 import SafetyStandard from "../pages/SafetyStandard.tsx";
-
+import Delhi from "../pages/CityPages/Delhi.tsx";
+import Mumbai from "../pages/CityPages/Mumbai.tsx";
+import Kolkata from "../pages/CityPages/Kolkata.tsx";
+import Chennai from "../pages/CityPages/Chennai.tsx";
+import Bengaluru from "../pages/CityPages/Bengaluru.tsx";
+import Hyderabad from "../pages/CityPages/Hyderabad.tsx";
+import Pune from "../pages/CityPages/Pune.tsx";
+import Goa from "../pages/CityPages/Goa.tsx";
+import Guwahati from "../pages/CityPages/Guwahati.tsx";
+import Imphal from "../pages/CityPages/Imphal.tsx";
 
 
 const AppRoutes = () => {
@@ -51,6 +60,16 @@ const AppRoutes = () => {
                 <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
                 <Route path="/faq" element={<FAQ></FAQ>}></Route>
                 <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
+                <Route path="/city/delhi" element={<Delhi></Delhi>}></Route>
+                <Route path="/city/guwahati" element={<Guwahati></Guwahati>}></Route>
+                <Route path="/city/imphal" element={<Imphal></Imphal>}></Route>
+                <Route path="/city/goa" element={<Goa></Goa>}></Route>
+                <Route path="/city/pune" element={<Pune></Pune>}></Route>
+                <Route path="/city/hyderabad" element={<Hyderabad></Hyderabad>}></Route>
+                <Route path="/city/bengaluru" element={<Bengaluru></Bengaluru>}></Route>
+                <Route path="/city/chennai" element={<Chennai></Chennai>}></Route>
+                <Route path="/city/kolkata" element={<Kolkata></Kolkata>}></Route>
+                <Route path="/city/mumbai" element={<Mumbai></Mumbai>}></Route>
             </Routes>
             <Footer></Footer>
         </section>

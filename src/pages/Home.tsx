@@ -244,118 +244,94 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="our-services">
-        <h1>Our Services</h1>
-        <p>Tailor-made value added services to suit varied supply chain and logistics Pan India requirements for enterprises as well as individuals.   </p>
-        {/* <div className="btns">
-          <button>Core Services</button>
-          <button>Enterprise Services</button>
-          <button>Individual Services</button>
-          <button>Other Services</button>
-        </div> */}
-        <div className="details">
-          <div className="images">
-            <div className="card">
-              <div className="img">
-                <img src={truckImg} />
-              </div>
-              <div className="text">
-                <h4>Express Distribution Surface</h4>
-                <ul>
-                  <li>Fastest, daily & direct connectivity across India with Fastest Average Transit Time in industry.</li>
-                  <li>
-                    Continously expanded network of gateways with an average coverage radius per gateway-less than 33 kms.
-                  </li>
-                </ul>
-                <a href="#">Learn More</a>
-              </div>
-            </div>
+     <section id="our-services">
+  <h1>Our Services</h1>
+  <p>
+    Tailor-made value added services to suit varied supply chain and logistics
+    Pan India requirements for enterprises as well as individuals.
+  </p>
 
-            <div className="card">
-              <div className="img">
-                <img src={flightImg} />
-              </div>
-              <div className="text">
-                <h4>Express Distribution Air</h4>
-                <ul>
-                  <li>Fastest, regular, door-step connectivity enabled by largest, multimodal network of surface gateways and exclusive air hubs with 76 airport connectivity.</li>
-                  <li>
-                    Strategic tie-up with all the major airlines with preferred slots for cargo to-and from 76 airport connectivity.
-                  </li>
-                </ul>
-                <a href="#">Learn More</a>
-              </div>
-            </div>
+  <div className="details">
+    <div className="images">
+      {[ 
+        { img: truckImg, title: "Express Distribution Surface" },
+        { img: flightImg, title: "Express Distribution Air" },
+        { img: shipImg, title: "Express Distribution in Ships" }
+      ].map((item, i) => (
+        <div className="card" key={i}>
+          <div className="img">
+            <img src={item.img} alt={item.title} />
+          </div>
+          <div className="text">
+            <h4>{item.title}</h4>
+            <ul>
+              <li>
+                Fastest connectivity across India with industry-leading transit
+                time.
+              </li>
+              <li>
+                Strong network coverage with strategically placed gateways.
+              </li>
+            </ul>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
-            <div className="card">
-              <div className="img">
-                <img src={shipImg} />
-              </div>
-              <div className="text">
-                <h4>Express Distribution in Ships</h4>
-                <ul>
-                  <li>Fastest, daily & direct connectivity across India with Fastest Average Transit Time in industry.</li>
-                  <li>
-                    Continously expanded network of gateways with an average coverage radius per gateway-less than 33 kms.
-                  </li>
-                </ul>
-                <a href="#">Learn More</a>
-              </div>
+
+      <div className="services-grid">
+  {services.map((service, index) => (
+    <div className="service-card" key={index}>
+
+      {/* Image */}
+      <div className="service-image">
+        <img src={service.image} alt={service.title} />
+      </div>
+
+      {/* Content */}
+      <div className="service-content">
+        <h3>{service.title}</h3>
+
+        <div className="tabs">
+          <span>Packing & Unpacking</span>
+          <span>Loading & Unloading</span>
+          <span>Door to Door Service</span>
+        </div>
+
+        <div className="why">
+          <p className="why-title">Why Choose Us</p>
+          <div className="icons">
+            <div>
+              <i className="fa-solid fa-user-check"></i>
+              <span>Trained Staff</span>
+            </div>
+            <div>
+              <i className="fa-solid fa-truck-fast"></i>
+              <span>Fast Delivery</span>
+            </div>
+            <div>
+              <i className="fa-solid fa-shield-halved"></i>
+              <span>Safe Handling</span>
             </div>
           </div>
         </div>
-      </section>
-
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <div className="service-card" key={index}>
-
-            {/* Left Image */}
-            <div className="service-image">
-              <img src={service.image} alt={service.title} />
-            </div>
-
-            {/* Right Content */}
-            <div className="service-content">
-              <h3>{service.title}</h3>
-
-              {/* Tabs */}
-              <div className="tabs">
-                <span>Packing & Unpacking Assistance</span>
-                <span>Loading & Unloading</span>
-              </div>
-
-              {/* Why choose */}
-              <div className="why">
-                <p className="why-title">Why Choose Us?</p>
-                <div className="icons">
-                  <div>
-                    <i className="fa-solid fa-user-check"></i>
-                    <span>Trained Professionals</span>
-                  </div>
-                  <div>
-                    <i className="fa-solid fa-truck-fast"></i>
-                    <span>Comprehensive Relocation</span>
-                  </div>
-                  <div>
-                    <i className="fa-solid fa-shield-halved"></i>
-                    <span>Superior Infrastructure</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="service-actions">
-              <button className="call">📞 Call Now</button>
-              <button className="details">View Details</button>
-              <button className="quote">Get Quote</button>
-              <button className="chat">💬 Chat Now</button>
-            </div>
-
-          </div>
-        ))}
       </div>
+
+      {/* Actions */}
+      <div className="service-actions">
+        <button className="primary"><a href="tel:8756319252">📞 Call Now</a></button>
+        <button className="primary whatsapp">💬 WhatsApp</button>
+        <button className="secondary"><Link to="/contact-us">Get Quote</Link></button>
+        <button className="secondary"><Link to="/service">View Details</Link></button>
+      </div>
+
+    </div>
+  ))}
+</div>
+
 
 
       <section id="google-review-sec">
