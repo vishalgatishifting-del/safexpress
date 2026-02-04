@@ -9,7 +9,7 @@ import "../../styles/CityPage.scss"
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import HyderabadImg from "../../assets/CityPages/Hyderabad.webp"
+import HyderabadImg from "../../assets/CityPages/hyderabad.webp"
 
 const Hyderabad = () => {
 
