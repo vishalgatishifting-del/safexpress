@@ -9,7 +9,7 @@ import "../../styles/CityPage.scss"
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import GuwahatiImg from "../../assets/CityPages/Guwahati.webp"
+import GuwahatiImg from "../../assets/CityPages/guwahati.webp"
 
 const Guwahati = () => {
 

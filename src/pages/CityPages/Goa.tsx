@@ -9,7 +9,7 @@ import "../../styles/CityPage.scss"
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import GoaImg from "../../assets/CityPages/Goa.webp"
+import GoaImg from "../../assets/CityPages/goa.webp"
 
 const Goa = () => {
 

@@ -9,7 +9,7 @@ import "../../styles/CityPage.scss"
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import PuneImg from "../../assets/CityPages/Pune.webp"
+import PuneImg from "../../assets/CityPages/pune.webp"
 
 const Pune = () => {
 
