@@ -67,6 +67,10 @@
 
 /* 📱 MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+  .navbar{
+    top: 0;
+    // padding: 10px;
+  }
   .menu-toggle {
     display: block;
 

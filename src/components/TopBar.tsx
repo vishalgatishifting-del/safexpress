@@ -4,12 +4,20 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 import "../styles/TopBar.scss";
 
 const TopBar = () => {
   return (
-    <div className="topbar">
+    <>
+    
+      {/* <div className="mobile-friendly-whatsapp-strip">
+        <WhatsAppIcon></WhatsAppIcon>
+        <span>Click to Chat Now</span>
+      </div> */}
+
+      <div className="topbar">
       <div className="topbar-left">
         <a href="mailto:safexpressshifting@gmail.com">
           <EmailIcon className="icon" />
@@ -37,6 +45,8 @@ const TopBar = () => {
         </a>
       </div>
     </div>
+    </>
+    
   );
 };
 

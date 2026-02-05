@@ -126,7 +126,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="footer-bottom">
-        <p>© 2026 Safexpress Logistics Pvt Ltd. All Rights Reserved.</p>
+        <p>© 2026 Safexpress Logistics Pvt Ltd In Collaboration with Gatisafe Express Private Limited. All Rights Reserved.</p>
 
         <div className="bottom-links">
           <span><Link to="/privacy-policy">Our partner sites</Link></span>
