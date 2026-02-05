@@ -80,6 +80,9 @@ const AppRoutes = () => {
                 <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
                 <Route path="/faq" element={<FAQ></FAQ>}></Route>
                 <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
+
+
+
                 <Route path="/city/delhi" element={<Delhi></Delhi>}></Route>
                 <Route path="/city/guwahati" element={<Guwahati></Guwahati>}></Route>
                 <Route path="/city/imphal" element={<Imphal></Imphal>}></Route>
@@ -90,8 +93,6 @@ const AppRoutes = () => {
                 <Route path="/city/chennai" element={<Chennai></Chennai>}></Route>
                 <Route path="/city/kolkata" element={<Kolkata></Kolkata>}></Route>
                 <Route path="/city/mumbai" element={<Mumbai></Mumbai>}></Route>
-
-
                 <Route path="/city/ajmer" element={<Ajmer></Ajmer>}></Route>
                 <Route path="/city/aizawl" element={<Aizawl></Aizawl>}></Route>
                 <Route path="/city/ahmednagar" element={<Ahmednagar></Ahmednagar>}></Route>

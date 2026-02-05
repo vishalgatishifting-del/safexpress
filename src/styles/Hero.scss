@@ -2,6 +2,7 @@
 
 .hero {
   position: relative;
+  margin-top: 97px;
   min-height: 85vh;
   width: 100%;
 
@@ -161,6 +162,7 @@
   .hero-content {
     padding: 60px 24px;
     max-width: 100%;
+    margin-left: 0;
 
     h1 {
       font-size: 32px;
