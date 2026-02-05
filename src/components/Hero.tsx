@@ -1,5 +1,7 @@
 import QuickMenu from "./QuickMenu";
 import "../styles/Hero.scss";
+import { Link } from "react-router-dom";
+Link
 
 const Hero = () => {
   return (
@@ -17,7 +19,7 @@ const Hero = () => {
         </p>
 
         <div className="hero-actions">
-          <button className="primary-btn">Get Quote</button>
+          <button className="primary-btn"><Link to="/contact-us">Get Quote</Link></button>
           <button className="secondary-btn">Track Order</button>
         </div>
 {/* 

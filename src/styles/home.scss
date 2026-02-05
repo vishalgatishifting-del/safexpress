@@ -648,20 +648,36 @@ body {
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
+
+    a{
+      text-decoration: none;
+    }
   }
 
   .primary {
     background: #ff3b3b;
     color: #fff;
+
+    a{
+
+      color: #fff;
+    }
   }
 
   .primary.whatsapp {
     background: #25d366;
+
+    a{
+
+      color: #fff;
+    }
   }
 
   .secondary {
     background: #f4f4f4;
-    color: #333;
+    a{
+      color: #333;
+    }
   }
 }
 

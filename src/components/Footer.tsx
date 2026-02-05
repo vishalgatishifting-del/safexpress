@@ -87,24 +87,39 @@ const Footer = () => {
 
         <div className="cities">
           <div>
-            <p>Packers and Movers in Delhi</p>
-            <p>Packers and Movers in Ghaziabad</p>
-            <p>Packers and Movers in Gurgaon</p>
-            <p>Packers and Movers in Noida</p>
+            <p><Link to="/city/delhi">Packers and Movers in Delhi</Link></p>
+            <p><Link to="/city/ghaziabad">Packers and Movers in Ghaziabad</Link></p>
+            <p><Link to="/city/gurgaon">Packers and Movers in Gurgaon</Link></p>
+            <p><Link to="/city/noida">Packers and Movers in Noida</Link></p>
+
+            <p><Link to="/city/ajmer">Packers and Movers in Ajmer</Link></p>
+            <p><Link to="/city/aizawl">Packers and Movers in Aizawl</Link></p>
+            <p><Link to="/city/ahmednagar">Packers and Movers in Ahmednagar</Link></p>
+
           </div>
 
           <div>
-            <p>Packers and Movers in Faridabad</p>
-            <p>Packers and Movers in Chennai</p>
-            <p>Packers and Movers in Mumbai</p>
-            <p>Packers and Movers in Pune</p>
+            <p><Link to="/city/faridabad">Packers and Movers in Faridabad</Link></p>
+            <p><Link to="/city/chennai">Packers and Movers in Chennai</Link></p>
+            <p><Link to="/city/mumbai">Packers and Movers in Mumbai</Link></p>
+            <p><Link to="/city/pune">Packers and Movers in Pune</Link></p>
+
+            <p><Link to="/city/adoni">Packers and Movers in Adoni</Link></p>
+            <p><Link to="/city/adilabad">Packers and Movers in Adilabad</Link></p>
+            <p><Link to="/city/ahmedabad">Packers and Movers in Ahmedabad</Link></p>
+
           </div>
 
           <div>
-            <p>Packers and Movers in Hyderabad</p>
-            <p>Packers and Movers in Bangalore</p>
-            <p>Packers and Movers in Ahmedabad</p>
-            <p>Packers and Movers in Kolkata</p>
+            <p><Link to="/city/hyderabad">Packers and Movers in Hyderabad</Link></p>
+            <p><Link to="/city/banglore">Packers and Movers in Bangalore</Link></p>
+            <p><Link to="/city/ahmedabad">Packers and Movers in Ahmedabad</Link></p>
+            <p><Link to="/city/kolkata">Packers and Movers in Kolkata</Link></p>
+
+            <p><Link to="/city/gurgaon">Packers and Movers in Gurgaon</Link></p>
+            <p><Link to="/city/ghaziabad">Packers and Movers in Ghaziabad</Link></p>
+            <p><Link to="/city/agartala">Packers and Movers in Agartala</Link></p>
+
           </div>
         </div>
       </div>

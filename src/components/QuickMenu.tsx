@@ -10,19 +10,19 @@ Link
 const QuickMenu = () => {
     return (
         <div className="quick-menu">
-            <a href="/">
+            <a href="https://www.instagram.com/saf_eexpress/">
                 <InstagramIcon className='icon'></InstagramIcon>
             </a>
-            <a href="/">
+            <a href="https://www.facebook.com/profile.php?id=61587270281087">
                 <FacebookIcon className='icon'></FacebookIcon>
             </a>
-            <a href="/">
+            <a href="https://x.com/SPackers48232">
                 <XIcon className='icon'></XIcon>
             </a>
-            <a href="/">
+            <a href="https://in.pinterest.com/shiftingsafexpress/">
                 <PinterestIcon className='icon'></PinterestIcon>
             </a>
-            <a href="/">
+            <a href="https://www.youtube.com/@Safeexpress11">
                 <YouTubeIcon className='icon'></YouTubeIcon>
             </a>
         </div>

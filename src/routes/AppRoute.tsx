@@ -32,11 +32,31 @@ import Pune from "../pages/CityPages/Pune.tsx";
 import Goa from "../pages/CityPages/Goa.tsx";
 import Guwahati from "../pages/CityPages/Guwahati.tsx";
 import Imphal from "../pages/CityPages/Imphal.tsx";
+import Ahmedabad from "../pages/CityPages/Ahmedabad.tsx";
+import Ghaziabad from "../pages/CityPages/Ghaziabad.tsx";
+import Gurgaon from "../pages/CityPages/Gurgaon.tsx";
+import Noida from "../pages/CityPages/Noida.tsx";
+import Adilabad from "../pages/CityPages/Adilabad.tsx";
+import Adoni from "../pages/CityPages/Adoni.tsx";
+import Agartala from "../pages/CityPages/Agartala.tsx";
+import Ahmednagar from "../pages/CityPages/Ahmednagar.tsx";
+import Aizawl from "../pages/CityPages/Aizwal.tsx";
+import Ajmer from "../pages/CityPages/Ajmer.tsx";
+
+
+
+
+
+
+
+
+
+
 
 
 const AppRoutes = () => {
     return (
-        <section>
+        <section style={{width:"100%", overflowX:"hidden"}}>
             <TopBar />
             <Navbar />
             <Routes>
@@ -70,6 +90,19 @@ const AppRoutes = () => {
                 <Route path="/city/chennai" element={<Chennai></Chennai>}></Route>
                 <Route path="/city/kolkata" element={<Kolkata></Kolkata>}></Route>
                 <Route path="/city/mumbai" element={<Mumbai></Mumbai>}></Route>
+
+
+                <Route path="/city/ajmer" element={<Ajmer></Ajmer>}></Route>
+                <Route path="/city/aizawl" element={<Aizawl></Aizawl>}></Route>
+                <Route path="/city/ahmednagar" element={<Ahmednagar></Ahmednagar>}></Route>
+                <Route path="/city/agartala" element={<Agartala></Agartala>}></Route>
+                <Route path="/city/adoni" element={<Adoni></Adoni>}></Route>
+                <Route path="/city/adilabad" element={<Adilabad></Adilabad>}></Route>
+                <Route path="/city/noida" element={<Noida></Noida>}></Route>
+                <Route path="/city/gurgaon" element={<Gurgaon></Gurgaon>}></Route>
+                <Route path="/city/ghaziabad" element={<Ghaziabad></Ghaziabad>}></Route>
+                <Route path="/city/ahmedabad" element={<Ahmedabad></Ahmedabad>}></Route>
+
             </Routes>
             <Footer></Footer>
         </section>

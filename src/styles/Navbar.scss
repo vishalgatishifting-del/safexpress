@@ -1,7 +1,7 @@
 @use "./variables" as v;
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 9999;
 
