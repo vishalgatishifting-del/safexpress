@@ -34,7 +34,7 @@ const Navbar = () => {
 
       {/* Toggle Button */}
       <div className="menu-toggle" onClick={() => setOpen(!open)}>
-        {open ? <CloseIcon /> : <MenuIcon />}
+        {open ? <CloseIcon className="toogleIcon" /> : <MenuIcon className="toogleIcon"/>}
       </div>
     </nav>
   );

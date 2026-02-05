@@ -1,580 +1,580 @@
 
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
+// header {
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+//     display: flex;
+//     flex-direction: column;
+//     background: #fff;
 
 
 
-    z-index: 30;
-    // margin-bottom: 100%;
+//     z-index: 30;
+//     // margin-bottom: 100%;
 
 
-    // diwali theme
+//     // diwali theme
 
-    .top-area {
-        background-color: #5aaa04;
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
+//     .top-area {
+//         background-color: #5aaa04;
+//         display: flex;
+//         justify-content: space-around;
+//         padding: 10px;
 
-        a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #fff;
-            font-size: 15px;
+//         a {
+//             display: flex;
+//             align-items: center;
+//             text-decoration: none;
+//             color: #fff;
+//             font-size: 15px;
             
 
-            span {
-                margin-left: 5px;
+//             span {
+//                 margin-left: 5px;
 
-                .no {
-                    display: none;
-                }
-            }
-        }
-    }
+//                 .no {
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
 
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px;
+//     nav {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-around;
+//         padding: 10px;
 
-        .logo {
-            a {
-                display: flex;
-                align-items: center;
+//         .logo {
+//             a {
+//                 display: flex;
+//                 align-items: center;
 
-                img {
-                    width: 100px;
-                }
-            }
-        }
+//                 img {
+//                     width: 100px;
+//                 }
+//             }
+//         }
 
-        ul {
-            display: flex;
+//         ul {
+//             display: flex;
 
-            li {
-                list-style: none;
+//             li {
+//                 list-style: none;
 
-                a {
-                    text-decoration: none;
+//                 a {
+//                     text-decoration: none;
                     
-                    color: #000;
-                    display: flex;
-                    align-items: center;
-                    padding: 8px 20px;
-                    margin: 0 5px;
-                    border-radius: 8px;
-                    font-size: 14px;
-                    transition: .2s;
+//                     color: #000;
+//                     display: flex;
+//                     align-items: center;
+//                     padding: 8px 20px;
+//                     margin: 0 5px;
+//                     border-radius: 8px;
+//                     font-size: 14px;
+//                     transition: .2s;
 
-                    .icon {
-                        font-size: 24px;
-                        margin-right: 1px;
-                    }
-                }
+//                     .icon {
+//                         font-size: 24px;
+//                         margin-right: 1px;
+//                     }
+//                 }
 
-                a.active {
+//                 a.active {
 
-                    background-color: #5aaa04;
-                    color: #fff;
-                }
+//                     background-color: #5aaa04;
+//                     color: #fff;
+//                 }
 
-                a:hover {
-                    background-color: #5aaa04;
-                    color: #fff;
-                }
-            }
-        }
+//                 a:hover {
+//                     background-color: #5aaa04;
+//                     color: #fff;
+//                 }
+//             }
+//         }
 
-        .get-in-touch-btns {
-            display: flex;
-            align-items: center;
-
-
-
-            button {
-                margin-left: 10px;
-                background-color: #5aaa04;
-                padding: 0px 20px;
-                height: 40px;
-                border: none;
-                color: #fff;
-                font-size: 15px;
-                border-radius: 50px;
-                cursor: pointer;
-            }
-
-            .nav-Toggle-Btn {
-                display: none;
-            }
-        }
-
-    }
+//         .get-in-touch-btns {
+//             display: flex;
+//             align-items: center;
 
 
-}
+
+//             button {
+//                 margin-left: 10px;
+//                 background-color: #5aaa04;
+//                 padding: 0px 20px;
+//                 height: 40px;
+//                 border: none;
+//                 color: #fff;
+//                 font-size: 15px;
+//                 border-radius: 50px;
+//                 cursor: pointer;
+//             }
+
+//             .nav-Toggle-Btn {
+//                 display: none;
+//             }
+//         }
+
+//     }
 
 
-header.diwali {
-    // background: linear-gradient(360deg, #ff271e, #ff8901);
-    background: url("../assets/diwaliTheme/christmas2.png");
-    background-size: cover;
-    background-position: bottom;
+// }
 
-    .top-area {
-        background: transparent;
 
-        a {
-            color: #000;
-        }
-    }
+// header.diwali {
+//     // background: linear-gradient(360deg, #ff271e, #ff8901);
+//     background: url("../assets/diwaliTheme/christmas2.png");
+//     background-size: cover;
+//     background-position: bottom;
 
-    nav {
-        .logo {
-            img {
-                width: 150px;
-            }
-        }
+//     .top-area {
+//         background: transparent;
 
-        ul {
-            li {
+//         a {
+//             color: #000;
+//         }
+//     }
 
-                a.active {
-                    background-color: #ff0000;
-                }
+//     nav {
+//         .logo {
+//             img {
+//                 width: 150px;
+//             }
+//         }
 
-                a:hover {
+//         ul {
+//             li {
 
-                    background-color: #ff0000;
-                    backdrop-filter: blur(10px);
-                }
-            }
-        }
+//                 a.active {
+//                     background-color: #ff0000;
+//                 }
 
-        .get-in-touch-btns {
-            a {
-                color: #000;
-            }
+//                 a:hover {
 
-            button {
-                background-color: #ff0000;
-            }
-        }
-    }
-}
+//                     background-color: #ff0000;
+//                     backdrop-filter: blur(10px);
+//                 }
+//             }
+//         }
 
-// @media screen and (max-width: 1141px) {
-//     header.diwali{
-//         nav{
-//             .logo{
-//                 img{
-//                     width: 90px;
+//         .get-in-touch-btns {
+//             a {
+//                 color: #000;
+//             }
+
+//             button {
+//                 background-color: #ff0000;
+//             }
+//         }
+//     }
+// }
+
+// // @media screen and (max-width: 1141px) {
+// //     header.diwali{
+// //         nav{
+// //             .logo{
+// //                 img{
+// //                     width: 90px;
+// //                 }
+// //             }
+// //         }
+// //     }
+// // }
+
+// @media screen and (max-width: 1101px) {
+//     header {
+//         .top-area {
+//             padding: 5px;
+//             background: #4FCE5D;
+
+//             a {
+//                 justify-content: center;
+
+//                 span {
+//                     .no {
+//                         display: inline;
+//                     }
+//                 }
+//             }
+
+//             .phone {
+//                 display: none;
+//             }
+
+//             .email {
+//                 display: none;
+//             }
+//         }
+
+//         nav {
+//             justify-content: space-between;
+//             padding: 5px 7px;
+
+//             .logo {
+//                 a {
+//                     img {
+//                         width: 80px;
+//                     }
+
+//                 }
+//             }
+
+//             ul {
+//                 top: 100%;
+//                 left: 0;
+//                 flex-direction: column;
+//                 position: absolute;
+//                 background: #fff;
+//                 width: 100%;
+//                 // display: none;
+//                 max-height: 0;
+//                 overflow: hidden;
+//                 transition: .5s;
+
+//                 li {
+//                     a {
+//                         padding: 20px;
+//                     }
+//                 }
+//             }
+
+//             ul.active {
+//                 max-height: 468px;
+//                 padding: 5px 0;
+//                 box-shadow: 0 20px 20px #00000063;
+//                 // overflow: visible;
+//             }
+
+//             .get-in-touch-btns {
+//                 .nav-Toggle-Btn {
+//                     display: block;
 //                 }
 //             }
 //         }
 //     }
 // }
 
-@media screen and (max-width: 1101px) {
-    header {
-        .top-area {
-            padding: 5px;
-            background: #4FCE5D;
 
-            a {
-                justify-content: center;
-
-                span {
-                    .no {
-                        display: inline;
-                    }
-                }
-            }
-
-            .phone {
-                display: none;
-            }
-
-            .email {
-                display: none;
-            }
-        }
-
-        nav {
-            justify-content: space-between;
-            padding: 5px 7px;
-
-            .logo {
-                a {
-                    img {
-                        width: 80px;
-                    }
-
-                }
-            }
-
-            ul {
-                top: 100%;
-                left: 0;
-                flex-direction: column;
-                position: absolute;
-                background: #fff;
-                width: 100%;
-                // display: none;
-                max-height: 0;
-                overflow: hidden;
-                transition: .5s;
-
-                li {
-                    a {
-                        padding: 20px;
-                    }
-                }
-            }
-
-            ul.active {
-                max-height: 468px;
-                padding: 5px 0;
-                box-shadow: 0 20px 20px #00000063;
-                // overflow: visible;
-            }
-
-            .get-in-touch-btns {
-                .nav-Toggle-Btn {
-                    display: block;
-                }
-            }
-        }
-    }
-}
+// // @media screen and (max-width:500px) {
+// //     .css-10d30g3-MuiPaper-root-MuiDialog-paper{
+// //         width: 100%!important;
+// //         margin: 10px!important;
+// //     }
+// // }
 
 
-// @media screen and (max-width:500px) {
-//     .css-10d30g3-MuiPaper-root-MuiDialog-paper{
-//         width: 100%!important;
-//         margin: 10px!important;
+// @media screen and (max-width: 382px) {
+//     header {
+//         nav {
+//             padding: 5px;
+//         }
+//     }
+
+//     header {
+//         nav {
+//             .logo {
+//                 a {
+
+//                     img {
+//                         width: 70px;
+//                     }
+//                 }
+//             }
+
+//         }
+//     }
+
+//     header nav .get-in-touch-btns a {
+//         display: flex;
+//     }
+
+//     header nav .get-in-touch-btns button {
+//         font-size: 12px;
+//         padding: 0 15px;
+//         height: 35px;
+//         margin-left: 7px;
 //     }
 // }
 
+// .action-button {
+//     position: fixed;
+//     right: 0;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     display: flex;
+//     flex-direction: column;
+//     z-index: 100;
 
-@media screen and (max-width: 382px) {
-    header {
-        nav {
-            padding: 5px;
-        }
-    }
+//     a {
+//         padding: 10px;
+//         background: #5aaa04;
+//         margin: 7px 0;
+//         font-size: 30px;
+//         color: #fff;
+//         border-top-left-radius: 10px;
+//         border-bottom-left-radius: 10px;
+//         box-shadow: 0 5px 10px #00000070;
+//         display: flex;
 
-    header {
-        nav {
-            .logo {
-                a {
+//         img {
+//             width: 35px;
+//             height: 35px;
+//             border-radius: 50%;
+//             transition: .3s;
+//         }
+//     }
 
-                    img {
-                        width: 70px;
-                    }
-                }
-            }
+//     a:hover img {
+//         transform: scale(1.2);
+//     }
+// }
 
-        }
-    }
+// .social-button {
+//     position: fixed;
+//     left: 0.9em;
+//     // bottom: 3.7%;
+//     bottom: 1.4285714286em;
+//     display: flex;
+//     z-index: 100;
 
-    header nav .get-in-touch-btns a {
-        display: flex;
-    }
+//     a {
+//         margin: 0 5px;
+//         width: 50px;
+//         height: 50px;
+//         font-size: 30px;
+//         color: #fff;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         border-radius: 50px;
+//         box-shadow: 0 5px 38px rgba(0, 0, 0, 0.15);
 
-    header nav .get-in-touch-btns button {
-        font-size: 12px;
-        padding: 0 15px;
-        height: 35px;
-        margin-left: 7px;
-    }
-}
+//         .icon {
+//             font-size: 23px;
+//         }
+//     }
 
-.action-button {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
+//     a.social-link-insta {
+//         background: #E4405F;
+//     }
 
-    a {
-        padding: 10px;
-        background: #5aaa04;
-        margin: 7px 0;
-        font-size: 30px;
-        color: #fff;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        box-shadow: 0 5px 10px #00000070;
-        display: flex;
+//     a.social-link-facebook {
+//         background: #1877F2;
+//     }
 
-        img {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            transition: .3s;
-        }
-    }
+//     a.social-link-x {
+//         background: #1DA1F2;
+//     }
 
-    a:hover img {
-        transform: scale(1.2);
-    }
-}
+//     a.social-link-linkedin {
+//         background: #0A66C2;
+//     }
 
-.social-button {
-    position: fixed;
-    left: 0.9em;
-    // bottom: 3.7%;
-    bottom: 1.4285714286em;
-    display: flex;
-    z-index: 100;
+//     a.social-link-youtube {
+//         background: #CD201F;
+//     }
 
-    a {
-        margin: 0 5px;
-        width: 50px;
-        height: 50px;
-        font-size: 30px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50px;
-        box-shadow: 0 5px 38px rgba(0, 0, 0, 0.15);
-
-        .icon {
-            font-size: 23px;
-        }
-    }
-
-    a.social-link-insta {
-        background: #E4405F;
-    }
-
-    a.social-link-facebook {
-        background: #1877F2;
-    }
-
-    a.social-link-x {
-        background: #1DA1F2;
-    }
-
-    a.social-link-linkedin {
-        background: #0A66C2;
-    }
-
-    a.social-link-youtube {
-        background: #CD201F;
-    }
-
-    a.social-link-pinterest {
-        background: #BD081C;
-    }
+//     a.social-link-pinterest {
+//         background: #BD081C;
+//     }
 
 
-}
+// }
 
 
-// @media screen and (max-width: 550px) {
+// // @media screen and (max-width: 550px) {
+// //     .social-button {
+// //         left: 3%;
+// //         transform: translateX(0%);
+// //     }
+// // }
+
+
+// @media screen and (max-width: 488px) {
 //     .social-button {
-//         left: 3%;
-//         transform: translateX(0%);
+//         bottom: 1.828571em;
+
+//         // left: 3%;
+//         a {
+//             width: 40px;
+//             height: 40px;
+
+//             .icon {
+//                 font-size: 20px;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 400px) {
+//     .social-button {
+//         a {
+//             margin: 0 3px;
+//             width: 35px;
+//             height: 35px;
+
+//             .icon {
+//                 font-size: 18px;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 345px) {
+//     .social-button {
+//         bottom: 2.028571em;
+
+//         a {
+//             margin: 0 3px;
+//             width: 30px;
+//             height: 30px;
+
+//             .icon {
+//                 font-size: 18px;
+//             }
+//         }
 //     }
 // }
 
 
-@media screen and (max-width: 488px) {
-    .social-button {
-        bottom: 1.828571em;
-
-        // left: 3%;
-        a {
-            width: 40px;
-            height: 40px;
-
-            .icon {
-                font-size: 20px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .social-button {
-        a {
-            margin: 0 3px;
-            width: 35px;
-            height: 35px;
-
-            .icon {
-                font-size: 18px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 345px) {
-    .social-button {
-        bottom: 2.028571em;
-
-        a {
-            margin: 0 3px;
-            width: 30px;
-            height: 30px;
-
-            .icon {
-                font-size: 18px;
-            }
-        }
-    }
-}
 
 
+// .santaClouse {
+//     position: fixed;
+//     bottom: -1%;
+//     left: -2.5%;
+//     width: 150px;
+//     z-index: 1000;
+// }
+
+// .tree {
+//     position: fixed;
+//     bottom: -0.5%;
+//     right: 3%;
+//     width: 150px;
+//     z-index: 1000000;
+// }
+
+// #christmas-theme {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+//     background: linear-gradient(#0e5689, #207bad, transparent);
+//     z-index: -1;
 
 
-.santaClouse {
-    position: fixed;
-    bottom: -1%;
-    left: -2.5%;
-    width: 150px;
-    z-index: 1000;
-}
+//     .gifts {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background: url("../assets/diwaliTheme/gifts.png");
+//         background-size: cover;
+//         background-position: center;
+//     }
 
-.tree {
-    position: fixed;
-    bottom: -0.5%;
-    right: 3%;
-    width: 150px;
-    z-index: 1000000;
-}
+//     .particle {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background: url("../assets/diwaliTheme/particles.png");
+//         background-size: cover;
 
-#christmas-theme {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(#0e5689, #207bad, transparent);
-    z-index: -1;
+//         animation: fall 15s linear infinite;
 
+//         @keyframes fall {
+//             0% {
+//                 top: 0;
+//             }
 
-    .gifts {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../assets/diwaliTheme/gifts.png");
-        background-size: cover;
-        background-position: center;
-    }
+//             100% {
+//                 top: 100%;
+//             }
+//         }
+//     }
 
-    .particle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../assets/diwaliTheme/particles.png");
-        background-size: cover;
+//     .particle2 {
+//         position: absolute;
+//         top: -100%;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background: url("../assets/diwaliTheme/particles.png");
+//         background-size: cover;
 
-        animation: fall 15s linear infinite;
+//         animation: fall2 15s linear infinite;
+//         // animation-delay: 5s;
 
-        @keyframes fall {
-            0% {
-                top: 0;
-            }
+//         @keyframes fall2 {
+//             0% {
+//                 top: -100%;
+//             }
 
-            100% {
-                top: 100%;
-            }
-        }
-    }
-
-    .particle2 {
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../assets/diwaliTheme/particles.png");
-        background-size: cover;
-
-        animation: fall2 15s linear infinite;
-        // animation-delay: 5s;
-
-        @keyframes fall2 {
-            0% {
-                top: -100%;
-            }
-
-            100% {
-                top: 0%;
-            }
-        }
-    }
-}
+//             100% {
+//                 top: 0%;
+//             }
+//         }
+//     }
+// }
 
 
-@media screen and (max-width: 660px) {
-    .santaClouse {
-        width: 100px;
-    }
+// @media screen and (max-width: 660px) {
+//     .santaClouse {
+//         width: 100px;
+//     }
 
-    .tree {
-        width: 100px;
-    }
-}
+//     .tree {
+//         width: 100px;
+//     }
+// }
 
 
 
 
-.crackers-png {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
+// .crackers-png {
+//     position: fixed;
+//     top: 0;
+//     z-index: 1000;
+// }
 
 
 
-.newYearTheme {
-    background: url("../assets/Themes/NewYear/navBGcrackers.png") #fff;
-    background-size: cover;
-    background-position: center;
-}
+// .newYearTheme {
+//     background: url("../assets/Themes/NewYear/navBGcrackers.png") #fff;
+//     background-size: cover;
+//     background-position: center;
+// }
 
-.star1,
-.star2 {
-    position: fixed;
-    z-index: 1;
-    top: -100px;
+// .star1,
+// .star2 {
+//     position: fixed;
+//     z-index: 1;
+//     top: -100px;
 
-    img {
-        width: 160px;
-    }
-}
+//     img {
+//         width: 160px;
+//     }
+// }
 
-.star2 {
-    right: 0%;
-}
+// .star2 {
+//     right: 0%;
+// }
 
-@media screen and (max-width: 660px) {
+// @media screen and (max-width: 660px) {
 
-    .star1,
-    .star2 {
-        top: -30px;
+//     .star1,
+//     .star2 {
+//         top: -30px;
 
-        img {
-            width: 100px;
-        }
-    }
-}
+//         img {
+//             width: 100px;
+//         }
+//     }
+// }
