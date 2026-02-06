@@ -25,12 +25,12 @@ const Footer = () => {
           </p>
 
           <div className="social-icons">
-            <InstagramIcon />
-            <FacebookIcon />
-            <YouTubeIcon />
-            <LinkedInIcon />
-            <XIcon />
-            <WhatsAppIcon />
+            <a href="https://www.instagram.com/saf_eexpress/"><InstagramIcon /></a>
+             <a href="https://www.facebook.com/profile.php?id=61587270281087"><FacebookIcon /></a>
+             <a href="https://www.youtube.com/@Safeexpress11"><YouTubeIcon /></a>
+             <a href="https://www.linkedin.com/in/safeexpress-packers-2116813aa/"><LinkedInIcon /></a>
+             <a href="https://x.com/SPackers48232"><XIcon /></a>
+             <a href="https://wa.me/919217486901"><WhatsAppIcon /></a>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ const Footer = () => {
             <li><Link to="/photo-gallery">Photo Gallery</Link></li>
             <li><Link to="/video-gallery">Video Gallery</Link></li>
             {/* <li><Link to="/video-gallery">Photo Gallery</Link></li> */}
-            <li><Link to="/blogs">Blogs</Link></li>
+            {/* <li><Link to="/blogs">Blogs</Link></li> */}
             <li><Link to="/faq">FAQs</Link></li>
             <li><Link to="/safety-standard">Safety Standard</Link></li>
           </ul>
@@ -129,8 +129,8 @@ const Footer = () => {
         <p>© 2026 Safexpress Logistics Pvt Ltd In Collaboration with Gatisafe Express Private Limited. All Rights Reserved.</p>
 
         <div className="bottom-links">
-          <span><Link to="/privacy-policy">Our partner sites</Link></span>
-          <span className="partner"><Link to="/privacy-policy">MOVER</Link></span>
+          {/* <span><Link to="/privacy-policy">Our partner sites</Link></span> */}
+          {/* <span className="partner"><Link to="/privacy-policy">MOVER</Link></span> */}
           <span><Link to="/terms-condition">Terms & Conditions</Link></span>
           <span><Link to="/privacy-policy">Privacy Policy</Link></span>
         </div> 

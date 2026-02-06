@@ -42,6 +42,17 @@ import Agartala from "../pages/CityPages/Agartala.tsx";
 import Ahmednagar from "../pages/CityPages/Ahmednagar.tsx";
 import Aizawl from "../pages/CityPages/Aizwal.tsx";
 import Ajmer from "../pages/CityPages/Ajmer.tsx";
+import ScrollToTop from "../config/ScrollToTop.tsx";
+import Agra from "../pages/CityPages/Agra.tsx";
+import Ankleshwar from "../pages/CityPages/Ankleshwar.tsx";
+import Bhiwandi from "../pages/CityPages/Bhiwandi.tsx";
+import Calicut from "../pages/CityPages/Calicut.tsx";
+import Cuttack from "../pages/CityPages/Cuttack.tsx";
+import Gandhidham from "../pages/CityPages/Gandhidham.tsx";
+import Jamshedpur from "../pages/CityPages/Jamshedpur.tsx";
+import Kolhapur from "../pages/CityPages/Kolhapur.tsx";
+import Lucknow from "../pages/CityPages/Lucknow.tsx";
+import Meerut from "../pages/CityPages/Meerut.tsx";
 
 
 
@@ -56,57 +67,71 @@ import Ajmer from "../pages/CityPages/Ajmer.tsx";
 
 const AppRoutes = () => {
     return (
-        <section style={{width:"100%", overflowX:"hidden"}}>
-            <TopBar />
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home></Home>}></Route>
-                <Route path="/about" element={<About></About>}></Route>
-                <Route path="/Service" element={<Service></Service>}></Route>
-                <Route path="/contact-us" element={<Contact></Contact>}></Route>
-                <Route path="/storage" element={<Storage></Storage>}></Route>
-                <Route path="/car-storage" element={<CarStorage></CarStorage>}></Route>
-                <Route path="/bike-storage" element={<BikeStorage></BikeStorage>}></Route>
-                <Route path="/privacy-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
-                <Route path="/terms-condition" element={<TermsCondition></TermsCondition>}></Route>
-                <Route path="/photo-gallery" element={<PhotoGallery></PhotoGallery>}></Route>
-                <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
-                <Route path="/who-we-are" element={<WhoWeAre></WhoWeAre>}></Route>
-                <Route path="/why-safexpress" element={<WhySafexpress></WhySafexpress>}></Route>
-                <Route path="/home-shifting" element={<HomeShifting></HomeShifting>}></Route>
-                <Route path="/office-relocation" element={<OfficeRelocation></OfficeRelocation>}></Route>
-                <Route path="/car-bike-transport" element={<CarBikeTransport></CarBikeTransport>}></Route>
-                <Route path="/pet-relocation" element={<PetRelocation></PetRelocation>}></Route>
-                <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
-                <Route path="/faq" element={<FAQ></FAQ>}></Route>
-                <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
+        <ScrollToTop>
+            <section style={{ width: "100%", overflowX: "hidden" }}>
+                <TopBar />
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home></Home>}></Route>
+                    <Route path="/about" element={<About></About>}></Route>
+                    <Route path="/Service" element={<Service></Service>}></Route>
+                    <Route path="/contact-us" element={<Contact></Contact>}></Route>
+                    <Route path="/storage" element={<Storage></Storage>}></Route>
+                    <Route path="/car-storage" element={<CarStorage></CarStorage>}></Route>
+                    <Route path="/bike-storage" element={<BikeStorage></BikeStorage>}></Route>
+                    <Route path="/privacy-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
+                    <Route path="/terms-condition" element={<TermsCondition></TermsCondition>}></Route>
+                    <Route path="/photo-gallery" element={<PhotoGallery></PhotoGallery>}></Route>
+                    <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
+                    <Route path="/who-we-are" element={<WhoWeAre></WhoWeAre>}></Route>
+                    <Route path="/why-safexpress" element={<WhySafexpress></WhySafexpress>}></Route>
+                    <Route path="/home-shifting" element={<HomeShifting></HomeShifting>}></Route>
+                    <Route path="/office-relocation" element={<OfficeRelocation></OfficeRelocation>}></Route>
+                    <Route path="/car-bike-transport" element={<CarBikeTransport></CarBikeTransport>}></Route>
+                    <Route path="/pet-relocation" element={<PetRelocation></PetRelocation>}></Route>
+                    <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
+                    <Route path="/faq" element={<FAQ></FAQ>}></Route>
+                    <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
 
 
 
-                <Route path="/city/delhi" element={<Delhi></Delhi>}></Route>
-                <Route path="/city/guwahati" element={<Guwahati></Guwahati>}></Route>
-                <Route path="/city/imphal" element={<Imphal></Imphal>}></Route>
-                <Route path="/city/goa" element={<Goa></Goa>}></Route>
-                <Route path="/city/pune" element={<Pune></Pune>}></Route>
-                <Route path="/city/hyderabad" element={<Hyderabad></Hyderabad>}></Route>
-                <Route path="/city/bengaluru" element={<Bengaluru></Bengaluru>}></Route>
-                <Route path="/city/chennai" element={<Chennai></Chennai>}></Route>
-                <Route path="/city/kolkata" element={<Kolkata></Kolkata>}></Route>
-                <Route path="/city/mumbai" element={<Mumbai></Mumbai>}></Route>
-                <Route path="/city/ajmer" element={<Ajmer></Ajmer>}></Route>
-                <Route path="/city/aizawl" element={<Aizawl></Aizawl>}></Route>
-                <Route path="/city/ahmednagar" element={<Ahmednagar></Ahmednagar>}></Route>
-                <Route path="/city/agartala" element={<Agartala></Agartala>}></Route>
-                <Route path="/city/adoni" element={<Adoni></Adoni>}></Route>
-                <Route path="/city/adilabad" element={<Adilabad></Adilabad>}></Route>
-                <Route path="/city/noida" element={<Noida></Noida>}></Route>
-                <Route path="/city/gurgaon" element={<Gurgaon></Gurgaon>}></Route>
-                <Route path="/city/ghaziabad" element={<Ghaziabad></Ghaziabad>}></Route>
-                <Route path="/city/ahmedabad" element={<Ahmedabad></Ahmedabad>}></Route>
+                    <Route path="/city/delhi" element={<Delhi></Delhi>}></Route>
+                    <Route path="/city/guwahati" element={<Guwahati></Guwahati>}></Route>
+                    <Route path="/city/imphal" element={<Imphal></Imphal>}></Route>
+                    <Route path="/city/goa" element={<Goa></Goa>}></Route>
+                    <Route path="/city/pune" element={<Pune></Pune>}></Route>
+                    <Route path="/city/hyderabad" element={<Hyderabad></Hyderabad>}></Route>
+                    <Route path="/city/bengaluru" element={<Bengaluru></Bengaluru>}></Route>
+                    <Route path="/city/chennai" element={<Chennai></Chennai>}></Route>
+                    <Route path="/city/kolkata" element={<Kolkata></Kolkata>}></Route>
+                    <Route path="/city/mumbai" element={<Mumbai></Mumbai>}></Route>
+                    <Route path="/city/ajmer" element={<Ajmer></Ajmer>}></Route>
+                    <Route path="/city/aizawl" element={<Aizawl></Aizawl>}></Route>
+                    <Route path="/city/ahmednagar" element={<Ahmednagar></Ahmednagar>}></Route>
+                    <Route path="/city/agartala" element={<Agartala></Agartala>}></Route>
+                    <Route path="/city/adoni" element={<Adoni></Adoni>}></Route>
+                    <Route path="/city/adilabad" element={<Adilabad></Adilabad>}></Route>
+                    <Route path="/city/noida" element={<Noida></Noida>}></Route>
+                    <Route path="/city/gurgaon" element={<Gurgaon></Gurgaon>}></Route>
+                    <Route path="/city/ghaziabad" element={<Ghaziabad></Ghaziabad>}></Route>
+                    <Route path="/city/ahmedabad" element={<Ahmedabad></Ahmedabad>}></Route>
 
-            </Routes>
-            <Footer></Footer>
-        </section>
+
+                    <Route path="/city/meerut" element={<Meerut></Meerut>}></Route>
+                    <Route path="/city/lucknow" element={<Lucknow></Lucknow>}></Route>
+                    <Route path="/city/kolhapur" element={<Kolhapur></Kolhapur>}></Route>
+                    <Route path="/city/jamshedpur" element={<Jamshedpur></Jamshedpur>}></Route>
+                    <Route path="/city/gandhidham" element={<Gandhidham></Gandhidham>}></Route>
+                    <Route path="/city/cuttack" element={<Cuttack></Cuttack>}></Route>
+                    <Route path="/city/calicut" element={<Calicut></Calicut>}></Route>
+                    <Route path="/city/bhiwandi" element={<Bhiwandi></Bhiwandi>}></Route>
+                    <Route path="/city/ankleshwar" element={<Ankleshwar></Ankleshwar>}></Route>
+                    <Route path="/city/agra" element={<Agra></Agra>}></Route>
+
+                </Routes>
+                <Footer></Footer>
+            </section>
+        </ScrollToTop>
     )
 
 }

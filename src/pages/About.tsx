@@ -13,6 +13,8 @@ import bikeImg from "../assets/AboutPage/Bike.webp"
 import petImg from "../assets/AboutPage/pet_img.jpg"
 import officeImg from "../assets/AboutPage/office.webp"
 import commercialImg from "../assets/AboutPage/commercial.webp"
+
+import "../styles/Common.scss";
 // import CheckIcon from '@mui/icons-material/Check';
 // import CloseIcon from '@mui/icons-material/Close';
 
@@ -139,7 +141,7 @@ const About = () => {
 
                 <link rel="canonical" href="https://safeshiftingpackers.com/about" />
             </Helmet>
-            <section id="company-info">
+            <section id="company-info" className="top-element">
                 <div className="container">
                     <div className="img-bx">
                         <img src={about_company_photo} alt="About Gati Shifting Packers – Trusted packers and movers" title="about gati shifting packers" loading="lazy" />

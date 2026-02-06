@@ -12,10 +12,10 @@ const TrustUsSection = () => {
             <h1>Trust Us With Confidence</h1>
             <p>Verify our reliability through real reviews, videos, images, or even a direct call:</p>
             <div className="cards">
-                <Link className="card" to="/review">
+                {/* <Link className="card" to="/review">
                     <StarRateIcon className="icon"></StarRateIcon>
                     <span>Customer Review</span>
-                </Link>
+                </Link> */}
                 <Link className="card" to="/photo-gallery">
                     <CollectionsIcon className="icon"></CollectionsIcon>
                     <span>Photo Gallery</span>

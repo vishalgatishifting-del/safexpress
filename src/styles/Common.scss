@@ -1,0 +1,9 @@
+.top-element {
+  margin-top: calc(32.8px + 97.81px);
+}
+
+@media screen and (max-width: 786px) {
+    .top-element{
+        margin-top: 97.81px;
+    }
+}

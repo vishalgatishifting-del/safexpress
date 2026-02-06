@@ -76,6 +76,7 @@ import truck2 from "../assets/Home/truck2.webp"
 
 
 
+import {COMPANY} from "../config/Company"
 
 const Home = () => {
 
@@ -273,7 +274,7 @@ const Home = () => {
                 Strong network coverage with strategically placed gateways.
               </li>
             </ul>
-            <a href="#">Learn More</a>
+            <Link to="/contact-us">Get Quote</Link>
           </div>
         </div>
       ))}
@@ -322,8 +323,8 @@ const Home = () => {
 
       {/* Actions */}
       <div className="service-actions">
-        <button className="primary"><a href="tel:8756319252">📞 Call Now</a></button>
-        <button className="primary whatsapp">💬 WhatsApp</button>
+        <button className="primary"><a href={`tel:${COMPANY.phone}`}>📞 Call Now</a></button>
+        <button className="primary whatsapp"><a href={COMPANY.whatsapp}>💬 WhatsApp</a></button>
         <button className="secondary"><Link to="/contact-us">Get Quote</Link></button>
         <button className="secondary"><Link to="/service">View Details</Link></button>
       </div>

@@ -113,9 +113,9 @@ const ZohoForm: React.FC<Props> = ({ successCondition }) => {
           <LocationOnIcon />
           <input
             type="text"
-            name="From"
+            name="To"
             placeholder="Enter Your Delivery Point*"
-            value={formData.From}
+            value={formData.To}
             onChange={handleChange}
           />
         </div>

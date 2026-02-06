@@ -16,6 +16,8 @@ import Storage_icon_png from "../assets/servicesPageImg/storage.webp"
 import Cold_icon_png from "../assets/servicesPageImg/cold.webp"
 import heroImg from "../assets/servicesPageImg/hero-image.png"
 
+import "../styles/Common.scss";
+
 
 type Services = {
     id: number;
@@ -47,7 +49,7 @@ const Service = () => {
             <Helmet>
              
             </Helmet>
-            <section className="surface-network">
+            <section className="surface-network top-element">
                 <div className="surface-overlay">
                     <div className="surface-container">
 

@@ -5,6 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 // import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import {COMPANY} from "../config/Company"
 
 import "../styles/TopBar.scss";
 
@@ -19,14 +20,14 @@ const TopBar = () => {
 
       <div className="topbar">
       <div className="topbar-left">
-        <a href="mailto:safexpressshifting@gmail.com">
+        <a href={`mailto:${COMPANY.email}`}>
           <EmailIcon className="icon" />
-          <span>safexpressshifting@gmail.com</span>
+          <span>{COMPANY.email}</span>
         </a>
 
-        <a href="tel:8756319252">
+        <a href={`tel:${COMPANY.phone}`}>
           <CallIcon className="icon" />
-          <span>8756319252</span>
+          <span>{COMPANY.phone}</span>
         </a>
       </div>
 
