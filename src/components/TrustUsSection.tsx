@@ -1,4 +1,4 @@
-import StarRateIcon from '@mui/icons-material/StarRate';
+// import StarRateIcon from '@mui/icons-material/StarRate';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
