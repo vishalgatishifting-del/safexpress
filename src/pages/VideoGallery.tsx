@@ -5,6 +5,7 @@
 // import TrustUsSection from "../components/TrustUsSection";
 import "../styles/VideoGallery.scss"
 
+import "../styles/Common.scss"
 const VideoGallery = () => {
     const videoIds = [
         "kNzBhEgHX_0",
@@ -21,7 +22,7 @@ const VideoGallery = () => {
     ];
     return (
         <>
-            <section id="video-gallery-sec">
+            <section id="video-gallery-sec" className="top-element">
                 <div className="container">
                     <h1>Our Videos</h1>
                     <p>Real Stories. Real Relocations. Here’s what our happy customers have to say.</p>

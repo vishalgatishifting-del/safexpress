@@ -1,6 +1,6 @@
 import "../styles/home.scss"; 1
 import Hero from "../components/Hero.tsx";
-import FAQ from "../components/FAQ.tsx";
+// import FAQ from "../components/FAQ.tsx";
 import ZohoForm from "../components/ZohoForm.tsx";
 import { useState } from "react";
 
@@ -325,8 +325,8 @@ const Home = () => {
       <div className="service-actions">
         <button className="primary"><a href={`tel:${COMPANY.phone}`}>📞 Call Now</a></button>
         <button className="primary whatsapp"><a href={COMPANY.whatsapp}>💬 WhatsApp</a></button>
-        <button className="secondary"><Link to="/contact-us">Get Quote</Link></button>
-        <button className="secondary"><Link to="/service">View Details</Link></button>
+        <Link className="secondary" to="/contact-us">Get Quote</Link>
+        <Link to="/service" className="secondary">View Details</Link>
       </div>
 
     </div>
@@ -419,8 +419,6 @@ const Home = () => {
         </div>
       </section>
 
-
-      <FAQ />
     </>
   );
 };

@@ -9,7 +9,11 @@ import XIcon from "@mui/icons-material/X";
 import logo from "../assets/Logo/logo.jpeg"
 import { Link } from "react-router-dom";
 
+import { cities2 } from "./CitiesData";
+import { useState } from "react";
 const Footer = () => {
+  
+    const [visibleCount, setVisibleCount] = useState(28);
   return (
     <footer className="footer">
       {/* Top Footer */}
@@ -26,11 +30,11 @@ const Footer = () => {
 
           <div className="social-icons">
             <a href="https://www.instagram.com/saf_eexpress/"><InstagramIcon /></a>
-             <a href="https://www.facebook.com/profile.php?id=61587270281087"><FacebookIcon /></a>
-             <a href="https://www.youtube.com/@Safeexpress11"><YouTubeIcon /></a>
-             <a href="https://www.linkedin.com/in/safeexpress-packers-2116813aa/"><LinkedInIcon /></a>
-             <a href="https://x.com/SPackers48232"><XIcon /></a>
-             <a href="https://wa.me/919217486901"><WhatsAppIcon /></a>
+            <a href="https://www.facebook.com/profile.php?id=61587270281087"><FacebookIcon /></a>
+            <a href="https://www.youtube.com/@Safeexpress11"><YouTubeIcon /></a>
+            <a href="https://www.linkedin.com/in/safeexpress-packers-2116813aa/"><LinkedInIcon /></a>
+            <a href="https://x.com/SPackers48232"><XIcon /></a>
+            <a href="https://wa.me/919217486901"><WhatsAppIcon /></a>
           </div>
         </div>
 
@@ -77,49 +81,31 @@ const Footer = () => {
 
       {/* Middle Section */}
       <div className="footer-middle">
-        <div className="service-tabs">
+        {/* <div className="service-tabs">
           <button className="active">PACKERS AND MOVERS</button>
           <button>HIRE MINI TRUCK</button>
           <button>STORAGE</button>
           <button>CAR TRANSPORT</button>
           <button>BIKE TRANSPORT</button>
-        </div>
+        </div> */}
 
         <div className="cities">
-          <div>
-            <p><Link to="/city/delhi">Packers and Movers in Delhi</Link></p>
-            <p><Link to="/city/ghaziabad">Packers and Movers in Ghaziabad</Link></p>
-            <p><Link to="/city/gurgaon">Packers and Movers in Gurgaon</Link></p>
-            <p><Link to="/city/noida">Packers and Movers in Noida</Link></p>
+          <div className="container">
+            <ul>
+              {cities2.slice(0, visibleCount).map((item, i) => (
+                <li key={i}>
+                  <Link to={`/city/${item.city}`}>
+                    <span>Movers and Packers {item.city}</span>
+                  </Link>
+                </li>
+              ))}
 
-            <p><Link to="/city/ajmer">Packers and Movers in Ajmer</Link></p>
-            <p><Link to="/city/aizawl">Packers and Movers in Aizawl</Link></p>
-            <p><Link to="/city/ahmednagar">Packers and Movers in Ahmednagar</Link></p>
-
-          </div>
-
-          <div>
-            <p><Link to="/city/faridabad">Packers and Movers in Faridabad</Link></p>
-            <p><Link to="/city/chennai">Packers and Movers in Chennai</Link></p>
-            <p><Link to="/city/mumbai">Packers and Movers in Mumbai</Link></p>
-            <p><Link to="/city/pune">Packers and Movers in Pune</Link></p>
-
-            <p><Link to="/city/adoni">Packers and Movers in Adoni</Link></p>
-            <p><Link to="/city/adilabad">Packers and Movers in Adilabad</Link></p>
-            <p><Link to="/city/ahmedabad">Packers and Movers in Ahmedabad</Link></p>
-
-          </div>
-
-          <div>
-            <p><Link to="/city/hyderabad">Packers and Movers in Hyderabad</Link></p>
-            <p><Link to="/city/banglore">Packers and Movers in Bangalore</Link></p>
-            <p><Link to="/city/ahmedabad">Packers and Movers in Ahmedabad</Link></p>
-            <p><Link to="/city/kolkata">Packers and Movers in Kolkata</Link></p>
-
-            <p><Link to="/city/gurgaon">Packers and Movers in Gurgaon</Link></p>
-            <p><Link to="/city/ghaziabad">Packers and Movers in Ghaziabad</Link></p>
-            <p><Link to="/city/agartala">Packers and Movers in Agartala</Link></p>
-
+            </ul>
+            {visibleCount < cities2.length && (
+              <button className="show-more-btn" onClick={() => setVisibleCount(prev => prev + 28)}>
+                Show More
+              </button>
+            )}
           </div>
         </div>
       </div>
@@ -133,7 +119,7 @@ const Footer = () => {
           {/* <span className="partner"><Link to="/privacy-policy">MOVER</Link></span> */}
           <span><Link to="/terms-condition">Terms & Conditions</Link></span>
           <span><Link to="/privacy-policy">Privacy Policy</Link></span>
-        </div> 
+        </div>
       </div>
     </footer>
   );

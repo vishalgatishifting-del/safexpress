@@ -22,41 +22,11 @@ import PetRelocation from "../pages/PetRelocation.tsx";
 import CommercialShifting from "../pages/CommercialShifting.tsx";
 import FAQ from "../pages/FAQ.tsx";
 import SafetyStandard from "../pages/SafetyStandard.tsx";
-import Delhi from "../pages/CityPages/Delhi.tsx";
-import Mumbai from "../pages/CityPages/Mumbai.tsx";
-import Kolkata from "../pages/CityPages/Kolkata.tsx";
-import Chennai from "../pages/CityPages/Chennai.tsx";
-import Bengaluru from "../pages/CityPages/Bengaluru.tsx";
-import Hyderabad from "../pages/CityPages/Hyderabad.tsx";
-import Pune from "../pages/CityPages/Pune.tsx";
-import Goa from "../pages/CityPages/Goa.tsx";
-import Guwahati from "../pages/CityPages/Guwahati.tsx";
-import Imphal from "../pages/CityPages/Imphal.tsx";
-import Ahmedabad from "../pages/CityPages/Ahmedabad.tsx";
-import Ghaziabad from "../pages/CityPages/Ghaziabad.tsx";
-import Gurgaon from "../pages/CityPages/Gurgaon.tsx";
-import Noida from "../pages/CityPages/Noida.tsx";
-import Adilabad from "../pages/CityPages/Adilabad.tsx";
-import Adoni from "../pages/CityPages/Adoni.tsx";
-import Agartala from "../pages/CityPages/Agartala.tsx";
-import Ahmednagar from "../pages/CityPages/Ahmednagar.tsx";
-import Aizawl from "../pages/CityPages/Aizwal.tsx";
-import Ajmer from "../pages/CityPages/Ajmer.tsx";
 import ScrollToTop from "../config/ScrollToTop.tsx";
-import Agra from "../pages/CityPages/Agra.tsx";
-import Ankleshwar from "../pages/CityPages/Ankleshwar.tsx";
-import Bhiwandi from "../pages/CityPages/Bhiwandi.tsx";
-import Calicut from "../pages/CityPages/Calicut.tsx";
-import Cuttack from "../pages/CityPages/Cuttack.tsx";
-import Gandhidham from "../pages/CityPages/Gandhidham.tsx";
-import Jamshedpur from "../pages/CityPages/Jamshedpur.tsx";
-import Kolhapur from "../pages/CityPages/Kolhapur.tsx";
-import Lucknow from "../pages/CityPages/Lucknow.tsx";
-import Meerut from "../pages/CityPages/Meerut.tsx";
 
+import { pagesData } from "../pages/city-wise-pages-data"
 
-
-
+import CityPage from "../pages/CityPage"
 
 
 
@@ -92,42 +62,16 @@ const AppRoutes = () => {
                     <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
                     <Route path="/faq" element={<FAQ></FAQ>}></Route>
                     <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
+                  
 
+                    {
+                        pagesData.map((page) => (
+                            <Route path={`/city/${page.slug}`} element={<CityPage city={page.city} img={page.img} metaData={page.metaDetails} offer={page.offer} pageData={page.pageData} address={page.address}></CityPage>
+                            }>
 
-
-                    <Route path="/city/delhi" element={<Delhi></Delhi>}></Route>
-                    <Route path="/city/guwahati" element={<Guwahati></Guwahati>}></Route>
-                    <Route path="/city/imphal" element={<Imphal></Imphal>}></Route>
-                    <Route path="/city/goa" element={<Goa></Goa>}></Route>
-                    <Route path="/city/pune" element={<Pune></Pune>}></Route>
-                    <Route path="/city/hyderabad" element={<Hyderabad></Hyderabad>}></Route>
-                    <Route path="/city/bengaluru" element={<Bengaluru></Bengaluru>}></Route>
-                    <Route path="/city/chennai" element={<Chennai></Chennai>}></Route>
-                    <Route path="/city/kolkata" element={<Kolkata></Kolkata>}></Route>
-                    <Route path="/city/mumbai" element={<Mumbai></Mumbai>}></Route>
-                    <Route path="/city/ajmer" element={<Ajmer></Ajmer>}></Route>
-                    <Route path="/city/aizawl" element={<Aizawl></Aizawl>}></Route>
-                    <Route path="/city/ahmednagar" element={<Ahmednagar></Ahmednagar>}></Route>
-                    <Route path="/city/agartala" element={<Agartala></Agartala>}></Route>
-                    <Route path="/city/adoni" element={<Adoni></Adoni>}></Route>
-                    <Route path="/city/adilabad" element={<Adilabad></Adilabad>}></Route>
-                    <Route path="/city/noida" element={<Noida></Noida>}></Route>
-                    <Route path="/city/gurgaon" element={<Gurgaon></Gurgaon>}></Route>
-                    <Route path="/city/ghaziabad" element={<Ghaziabad></Ghaziabad>}></Route>
-                    <Route path="/city/ahmedabad" element={<Ahmedabad></Ahmedabad>}></Route>
-
-
-                    <Route path="/city/meerut" element={<Meerut></Meerut>}></Route>
-                    <Route path="/city/lucknow" element={<Lucknow></Lucknow>}></Route>
-                    <Route path="/city/kolhapur" element={<Kolhapur></Kolhapur>}></Route>
-                    <Route path="/city/jamshedpur" element={<Jamshedpur></Jamshedpur>}></Route>
-                    <Route path="/city/gandhidham" element={<Gandhidham></Gandhidham>}></Route>
-                    <Route path="/city/cuttack" element={<Cuttack></Cuttack>}></Route>
-                    <Route path="/city/calicut" element={<Calicut></Calicut>}></Route>
-                    <Route path="/city/bhiwandi" element={<Bhiwandi></Bhiwandi>}></Route>
-                    <Route path="/city/ankleshwar" element={<Ankleshwar></Ankleshwar>}></Route>
-                    <Route path="/city/agra" element={<Agra></Agra>}></Route>
-
+                            </Route>
+                        ))
+                    }
                 </Routes>
                 <Footer></Footer>
             </section>

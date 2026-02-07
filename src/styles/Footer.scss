@@ -1,11 +1,9 @@
 @use "./variables" as v;
 
 .footer {
-  background: linear-gradient(
-    180deg,
-    lighten(v.$primary-color, 2%),
-    v.$primary-color
-  );
+  background: linear-gradient(180deg,
+      lighten(v.$primary-color, 2%),
+      v.$primary-color );
   color: #d0d0d0;
   font-size: 14px;
 
@@ -180,9 +178,52 @@
 
     .cities {
       display: grid;
-      grid-template-columns: repeat(3, minmax(200px, 1fr));
-      gap: 40px;
+      // grid-template-columns: repeat(3, minmax(200px, 1fr));
+      // gap: 40px;
       margin-top: 30px;
+
+      ul {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-left: 0;
+        padding-left: 0;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            display: flex;
+            // flex-direction: column;
+            // background: #23acf138;
+            // background: #fff;
+            // box-shadow: 0 0 20px #00000014;
+            align-items: center;
+            border-radius: 20px;
+            padding: 3px;
+            font-size: 14px;
+
+            img {
+              // width: 100%;
+              border-radius: 13px;
+              height: 50px;
+              object-fit: cover;
+            }
+
+            span {
+              // padding-top: 10px;
+              font-size: 14px;
+              // font-weight: bold;
+              text-align: center;
+              display: flex;
+              margin-left: 10px;
+            }
+          }
+        }
+
+      }
 
       p {
         font-size: 14px;
@@ -196,6 +237,19 @@
         }
       }
     }
+  }
+
+  .show-more-btn {
+    padding: 10px 20px;
+    display: flex;
+    justify-self: center;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    background: #0c542f;
+    color: #fff;
+    font-size: 16px;
   }
 
   /* ================= BOTTOM ================= */
@@ -250,6 +304,97 @@
       flex-direction: column;
       gap: 10px;
       text-align: center;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1370px) {
+  .footer {
+    .cities {
+      padding: 50px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1182px) {
+  .footer {
+    .cities {
+      ul {
+        gap: 10px;
+
+        li {
+          a {
+            span {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1061px) {
+  .footer {
+    .cities {
+      ul {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (max-width:751px) {
+  .footer {
+    .cities {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+
+        li {
+          a {
+            span {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:537px) {
+
+    .footer-middle {
+      padding: 20px 10px;
+      
+    }
+  .footer {
+
+      .cities {
+        ul {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+  }
+}
+
+
+
+@media screen and (max-width:436px) {
+
+  .footer {
+    .cities {
+      ul {
+        li {
+          a {
+            padding: 10px;
+          }
+        }
+      }
     }
   }
 }

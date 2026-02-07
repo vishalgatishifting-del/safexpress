@@ -14,6 +14,7 @@ import petImg from "../assets/AboutPage/pet_img.jpg"
 import officeImg from "../assets/AboutPage/office.webp"
 import commercialImg from "../assets/AboutPage/commercial.webp"
 
+import FAQ from "../components/FAQ.tsx";
 import "../styles/Common.scss";
 // import CheckIcon from '@mui/icons-material/Check';
 // import CloseIcon from '@mui/icons-material/Close';
@@ -144,7 +145,7 @@ const About = () => {
             <section id="company-info" className="top-element">
                 <div className="container">
                     <div className="img-bx">
-                        <img src={about_company_photo} alt="About Gati Shifting Packers – Trusted packers and movers" title="about gati shifting packers" loading="lazy" />
+                        <img src={about_company_photo} alt="About safexpress – Trusted packers and movers" title="about safexpress" loading="lazy" />
                     </div>
                     <div className="details">
                         <h1>About Us</h1>
@@ -232,51 +233,51 @@ const About = () => {
                 <div className="container">
                     <div className="card">
                         <div className="img-bx">
-                            <img src={houseShiftingImg} alt="Professional house shifting services by Gati Shifting Packers in India" title="HouseShiftingservices" loading="lazy" />
+                            <img src={houseShiftingImg} alt="Professional house shifting services by safexpress in India" title="HouseShiftingservices" loading="lazy" />
                         </div>
                         <h4>Household</h4>
                     </div>
                     <div className="card">
                         <div className="img-bx">
-                            <img src={commercialImg} alt="Safe and reliable commercial shifting by Gati Shifting Packers" title="commercialshifting" loading="lazy" />
+                            <img src={commercialImg} alt="Safe and reliable commercial shifting by safexpress" title="commercialshifting" loading="lazy" />
                         </div>
                         <h4>Luggage</h4>
                     </div>
 
                     <div className="card">
                         <div className="img-bx">
-                            <img src={bikeImg} alt="Gati Shifting Packers providing safe bike and motorcycle transportation services" title="biketransportation" loading="lazy" />
+                            <img src={bikeImg} alt="safexpress providing safe bike and motorcycle transportation services" title="biketransportation" loading="lazy" />
                         </div>
                         <h4>Bike</h4>
                     </div>
                     <div className="card">
                         <div className="img-bx">
-                            <img src={carImg} alt="Gati Shifting Packers team handling secure vehicle transport" title="Carservice" loading="lazy" />
+                            <img src={carImg} alt="safexpress team handling secure vehicle transport" title="Carservice" loading="lazy" />
                         </div>
                         <h4>Car</h4>
                     </div>
                     <div className="card">
                         <div className="img-bx">
-                            <img src={petImg} alt="Professional pet relocation services by Gati Shifting Packers" title="petTransportation" loading="lazy" />
+                            <img src={petImg} alt="Professional pet relocation services by safexpress" title="petTransportation" loading="lazy" />
                         </div>
                         <h4>Pet</h4>
                     </div>
                     <div className="card">
                         <div className="img-bx">
-                            <img src={internationalImg} alt="Professional international movers and packers – Gati Shifting Packers" title="internationalservice" loading="lazy" />
+                            <img src={internationalImg} alt="Professional international movers and packers – safexpress" title="internationalservice" loading="lazy" />
                         </div>
                         <h4>International</h4>
                     </div>
                     <div className="card">
                         <div className="img-bx">
-                            <img src={officeImg} alt="Secure and efficient office shifting by Gati Shifting Packers" title="officeshifting" loading="lazy" />
+                            <img src={officeImg} alt="Secure and efficient office shifting by safexpress" title="officeshifting" loading="lazy" />
                         </div>
                         <h4>Office</h4>
                     </div>
 
                     <div className="card">
                         <div className="img-bx">
-                            <img src={storageImg} alt="Safe and reliable storage services by Gati Shifting Packers" title="Storageservice" loading="lazy" />
+                            <img src={storageImg} alt="Safe and reliable storage services by safexpress" title="Storageservice" loading="lazy" />
                         </div>
                         <h4>Storage</h4>
                     </div>
@@ -332,7 +333,7 @@ const About = () => {
                 </div>
             </section>
 
-
+            <FAQ />
         </>
     )
 }

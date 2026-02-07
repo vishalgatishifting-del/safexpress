@@ -51,12 +51,19 @@ import sampleImg8 from "../assets/BikeStorage/sample8.jpeg"
 
 import priceImg from "../assets/BikeStorage/priceImg.jpeg"
 
+import "../styles/Common.scss"
+
+
+import {COMPANY} from "../config/Company"
+
+
+import FAQ from "../components/FAQ.tsx";
 const BikeStorage = () => {
 
     const imgArr = [sampleImg1, sampleImg2, sampleImg3, sampleImg4, sampleImg5, sampleImg6, sampleImg7, sampleImg8];
     return (
         <>
-            <section id="serivce-hero-section" >
+            <section id="serivce-hero-section" className="top-element" >
                 <div className="container">
 
                     <div className="content">
@@ -78,7 +85,7 @@ const BikeStorage = () => {
                         </div>
 
                         <div className="links">
-                            <a className="call-btn" href="tel:+919422799477">
+                            <a className="call-btn" href={`tel:${COMPANY.phone}`}>
                                 <LocalPhoneIcon />
                                 Call Now
                             </a>
@@ -115,20 +122,20 @@ const BikeStorage = () => {
             <section id="about-car-storage">
                 <h1>Bike Storage Services | Safe & Secure Vehicle Storage</h1>
                 <h2>Reliable Bike Storage Solutions You Can Trust</h2>
-                <p>If you are looking for a safe and secure place to store your bike for a short or long duration, Gati Shifting Packers offers professional bike storage services designed to protect your vehicle from damage, theft, and weather conditions. Our modern storage facilities ensure your bike remains in perfect condition until you need it again.</p>
+                <p>If you are looking for a safe and secure place to store your bike for a short or long duration, safexpress offers professional bike storage services designed to protect your vehicle from damage, theft, and weather conditions. Our modern storage facilities ensure your bike remains in perfect condition until you need it again.</p>
 
 
                 <div className="contact-container">
                     <div className="links">
                         <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        <a className="call-btn" href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon> +91 8756319252</a>
+                        <a className="call-btn" href={`tel:${COMPANY.phone}`}><LocalPhoneIcon></LocalPhoneIcon> +91 {COMPANY.phone}</a>
                     </div>
                 </div>
             </section>
 
             <section id="brands-section">
                 <div className="heading-container">
-                    <h2>Leading Businesses Trust <span className="primary-color">Gati Shifting Packers</span></h2>
+                    <h2>Leading Businesses Trust <span className="primary-color">safexpress</span></h2>
                     <p>Providing secure storage solutions to India's top companies and organizations</p>
                 </div>
                 <div className="container">
@@ -202,15 +209,15 @@ const BikeStorage = () => {
             <section id="numbers-section">
                 <div className="numbers-container">
                     <div>
-                        <h4>70K+</h4>
+                        <h4>65K+</h4>
                         <span>Verified Experts</span>
                     </div>
                     <div>
-                        <h4>5.2L+</h4>
+                        <h4>4.8L+</h4>
                         <span>Happy Users</span>
                     </div>
                     <div>
-                        <h4>18+</h4>
+                        <h4>22+</h4>
                         <span>Years of Expertise</span>
                     </div>
                 </div>
@@ -218,7 +225,7 @@ const BikeStorage = () => {
                     <span>Trusted by lot of Indians for secure and reliable car storage solutions.</span>
                     <div className="links">
                         <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        <a className="call-btn" href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon> +91 8756319252</a>
+                        <a className="call-btn" href={`tel:${COMPANY.phone}`}><LocalPhoneIcon></LocalPhoneIcon> +91 {COMPANY.phone}</a>
                     </div>
                 </div>
             </section>
@@ -433,7 +440,7 @@ const BikeStorage = () => {
             <section id="safe-secure-section">
                 <div className="container">
                     <h1>Why Choose Our Bike Storage Services?</h1>
-                    <p>Gati Shifting Packers offers trusted bike storage services all over India, ensuring your belongings remain safe, protected, and well-managed for both short-term and long-term needs.
+                    <p>safexpress offers trusted bike storage services all over India, ensuring your belongings remain safe, protected, and well-managed for both short-term and long-term needs.
                         Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Gurugram, Kolkata, Coimbatore, Jaipur 7 All Over India delivering secure and reliable car storage solutions wherever you are.</p>
 
                     <div className="content">
@@ -468,6 +475,8 @@ const BikeStorage = () => {
                     })}
                 </div>
             </section>
+
+            <FAQ />
         </>
     )
 }

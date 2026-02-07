@@ -5,7 +5,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallIcon from '@mui/icons-material/Call';
 import { Link } from "react-router-dom";
 import "../styles/TrustUsSection.scss"
-
+import {COMPANY} from "../config/Company"
 const TrustUsSection = () => {
     return (
         <section id="trust-us-section">
@@ -28,7 +28,7 @@ const TrustUsSection = () => {
                     <WhatsAppIcon className="icon"></WhatsAppIcon>
                     <span>Chat With Us</span>
                 </a>
-                <a className="card" href="tel:+919422799477">
+                <a className="card" href={`tel:${COMPANY.phone}`}>
                     <CallIcon className="icon"></CallIcon>
                     <span>Call Now</span>
                 </a>

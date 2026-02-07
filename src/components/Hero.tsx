@@ -20,7 +20,7 @@ const Hero = () => {
 
         <div className="hero-actions">
           <button className="primary-btn"><Link to="/contact-us">Get Quote</Link></button>
-          <button className="secondary-btn">Track Order</button>
+          {/* <button className="secondary-btn">Track Order</button> */}
         </div>
 {/* 
         <div className="track-box">

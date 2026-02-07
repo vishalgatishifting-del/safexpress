@@ -4,10 +4,13 @@
 // import GetInTouch from "../components/GetInTouch";
 // import ReviewVideo from "../components/ReviewVideos";
 // import TrustUsSection from "../components/TrustUsSection";
-import commercialShiftingImg from "../assets/CommercialShifting/commercialShiftingPriceImg.jpg"
+import commercialShiftingImg from "../assets/CommercialShifting/commercialShiftingPriceImg.png"
 import { Helmet } from "react-helmet-async";
+import "../styles/Common.scss"
 // import ReviewDialog from "../components/ReviewDialog";
 // import "./CommercialShifting.scss"
+
+import FAQ from "../components/FAQ.tsx";
 
 const CommercialShifting = () => {
 
@@ -42,11 +45,11 @@ const CommercialShifting = () => {
             {/* <div className="bg-attached">
                 <h1>Commercial Shifting</h1>
             </div> */}
-            <div className="bg-attached-sec">
+            {/* <div className="bg-attached-sec top-element">
                 <h1>Commercial Vehicle Transport Services in India</h1>
-            </div>
+            </div> */}
 
-            <section id="pet-relocation-sec">
+            <section id="pet-relocation-sec" className="top-element">
                 <div className="container">
                     <h1>Safexpress – Trusted commercial vehicle transport services in India</h1>
                     <p>Safexpress is one of the leading and most reliable names in commercial vehicle transport services across India. We specialize in relocating large-scale commercial spaces, including warehouses, showrooms, retail outlets, manufacturing units, and corporate establishments. Our professional team ensures a seamless, secure, and timely relocation that minimizes downtime and business disruption.
@@ -175,6 +178,8 @@ const CommercialShifting = () => {
                     })}
                 </div>
             </section> */}
+
+            <FAQ />
         </>
     )
 }

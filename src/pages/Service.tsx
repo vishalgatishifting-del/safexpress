@@ -16,6 +16,8 @@ import Storage_icon_png from "../assets/servicesPageImg/storage.webp"
 import Cold_icon_png from "../assets/servicesPageImg/cold.webp"
 import heroImg from "../assets/servicesPageImg/hero-image.png"
 
+import FAQ from "../components/FAQ.tsx";
+
 import "../styles/Common.scss";
 
 
@@ -141,7 +143,7 @@ const Service = () => {
 
                 </div>
             </section>
-
+                <FAQ />
 
         </>
     )

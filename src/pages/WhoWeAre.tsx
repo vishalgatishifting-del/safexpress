@@ -6,6 +6,7 @@ import "../styles/WhoWeAre.scss"
 // import TrustUsSection from "../components/TrustUsSection";
 
 
+import "../styles/Common.scss"
 
 
 const WhoWeAre = () => {
@@ -27,7 +28,7 @@ const WhoWeAre = () => {
     // };
 
 //     const keywords = [
-//   "Gati Shifting Packers about us",
+//   "safexpress about us",
 //   "gati packers and movers",
 //   "trusted packers and movers in India",
 //   "reliable packers and movers",
@@ -49,7 +50,7 @@ const WhoWeAre = () => {
                 {/* <div className="bg-attached-who-we-are">
                     <h1>Who we are?</h1>
                 </div> */}
-            <section id="who-we-are-section">
+            <section id="who-we-are-section" className="top-element">
                 <div className="container">
                     <div className="content">
                         <h1>Who We Are</h1>

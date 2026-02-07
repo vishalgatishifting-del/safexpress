@@ -4,11 +4,14 @@
 // import GetInTouch from "../components/GetInTouch";
 // import ReviewVideo from "../components/ReviewVideos";
 // import TrustUsSection from "../components/TrustUsSection";
-import carPricingImg from "../assets/CarBikeTransport/carPricingImg.jpg"
-import bikePricingImg from "../assets/CarBikeTransport/bikePricingImg.jpg"
+import carPricingImg from "../assets/CarBikeTransport/carPricingImg.png"
+import bikePricingImg from "../assets/CarBikeTransport/bikePricingImg.png"
 import { Helmet } from "react-helmet-async";
 // import ReviewDialog from "../components/ReviewDialog";
 
+import "../styles/Common.scss"
+
+import FAQ from "../components/FAQ.tsx";
 
 const CarBikeTransport = () => {
     // const keywords = [
@@ -63,7 +66,7 @@ const CarBikeTransport = () => {
             {/* <div className="bg-attached">
                 <h1>Car/Bike Transport</h1>
             </div> */}
-            <section id="pet-relocation-sec">
+            <section id="pet-relocation-sec" className="top-element">
                 <div className="container">
                     <h1>Safexpress – Reliable Car & Bike Transport Services in India</h1>
                     <p>Safexpress is a trusted name in vehicle transportation services across India, offering safe, fast, and affordable solutions for moving cars and bikes anywhere in the country. Whether you’re relocating to a new city or moving vehicles for personal or commercial reasons, we ensure a smooth and hassle-free transport experience.
@@ -190,6 +193,8 @@ const CarBikeTransport = () => {
                     })}
                 </div>
             </section> */}
+
+            <FAQ />
         </>
     )
 }

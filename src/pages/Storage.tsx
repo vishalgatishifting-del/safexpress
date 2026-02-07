@@ -64,13 +64,18 @@ import sampleImg7 from "../assets/Storage/sample7.jpeg"
 import sampleImg8 from "../assets/Storage/sample8.jpeg"
 // import { Helmet } from "react-helmet-async";
 
+import "../styles/Common.scss"
+import { COMPANY } from "../config/Company";
+
+
+import FAQ from "../components/FAQ.tsx";
 const Storage = () => {
 
     const imgArr = [sampleImg1, sampleImg2, sampleImg3, sampleImg4, sampleImg5, sampleImg6, sampleImg7, sampleImg8];
     return (
         <>
 
-            <section id="serivce-hero-section">
+            <section id="serivce-hero-section" className="top-element">
                 <div className="container">
 
                     <div className="content">
@@ -89,7 +94,7 @@ const Storage = () => {
                         </div>
 
                         <div className="links">
-                            <a className="call-btn" href="tel:+919422799477">
+                            <a className="call-btn" href={`tel:${COMPANY.phone}`}>
                                 <LocalPhoneIcon />
                                 Call Now
                             </a>
@@ -101,7 +106,7 @@ const Storage = () => {
 
                         <div className="trust-stats">
                             <div>
-                                <strong>10,000+</strong>
+                                <strong>14,500+</strong>
                                 <span>Happy Customers</span>
                             </div>
                             <div>
@@ -135,7 +140,7 @@ const Storage = () => {
 
             <section id="brands-section">
                 <div className="heading-container">
-                    <h2>Leading Businesses Trust <span className="primary-color">Gati Shifting Packers</span></h2>
+                    <h2>Leading Businesses Trust <span className="primary-color">safexpress</span></h2>
                     <p>Providing secure storage solutions to India's top companies and organizations</p>
                 </div>
                 <div className="container">
@@ -229,7 +234,7 @@ const Storage = () => {
                     <span>Trusted by top Indian companies for secure and reliable storage solutions.</span>
                     <div className="links">
                         <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        <a className="call-btn" href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon> +91 9422799477</a>
+                        <a className="call-btn" href={`tel:${COMPANY.phone}`}><LocalPhoneIcon></LocalPhoneIcon> +91 {COMPANY.phone}</a>
                     </div>
                 </div>
             </section>
@@ -465,7 +470,7 @@ const Storage = () => {
                     <div className="card">
                         <div className="detail">
                             <h2><span className="icon"><InventoryIcon></InventoryIcon></span> Box Storage</h2>
-                            <p>Gati Shifting Packers provides corrugated boxes in different sizes to store your clothes, decor, utensils, and documents — available for all use cases. These sturdy boxes are perfect for safe packing and easy organization.</p>
+                            <p>safexpress provides corrugated boxes in different sizes to store your clothes, decor, utensils, and documents — available for all use cases. These sturdy boxes are perfect for safe packing and easy organization.</p>
                             <div className="features-box">
                                 <span>📦 Different Sizes</span>
                                 <span>💼 Versatile Use</span>
@@ -482,7 +487,7 @@ const Storage = () => {
                     <div className="card">
                         <div className="detail">
                             <h2><span className="icon"><TwoWheelerIcon></TwoWheelerIcon></span> Bike Storage</h2>
-                            <p>Gati Shifting Packers offers safe and monitored bike storage services, ensuring your two-wheeler remains protected, clean, and ready to ride whenever needed.</p>
+                            <p>safexpress offers safe and monitored bike storage services, ensuring your two-wheeler remains protected, clean, and ready to ride whenever needed.</p>
                             <div className="features-box">
                                 <span>📦 Different Sizes</span>
                                 <span>💼 Versatile Use</span>
@@ -497,7 +502,7 @@ const Storage = () => {
                     <div className="card">
                         <div className="detail">
                             <h2><span className="icon"><DirectionsCarIcon></DirectionsCarIcon></span> Car Storage</h2>
-                            <p>Gati Shifting Packers provides secure car storage facilities to protect your vehicle from damage, theft, and weather conditions with complete peace of mind.</p>
+                            <p>safexpress provides secure car storage facilities to protect your vehicle from damage, theft, and weather conditions with complete peace of mind.</p>
                             <div className="features-box">
                                 <span>📦 Different Sizes</span>
                                 <span>💼 Versatile Use</span>
@@ -515,7 +520,7 @@ const Storage = () => {
                     <div className="card">
                         <div className="detail">
                             <h2><span className="icon"><DescriptionIcon></DescriptionIcon></span> Document Storage</h2>
-                            <p>Gati Shifting Packers provides records management document storage services for professionals and small businesses for the safe and secure business storage space of official files and documents.</p>
+                            <p>safexpress provides records management document storage services for professionals and small businesses for the safe and secure business storage space of official files and documents.</p>
                             <div className="features-box">
                                 <span>👔 Professional Service</span>
                                 <span>🏢 Business Storage</span>
@@ -532,7 +537,7 @@ const Storage = () => {
                     <div className="card">
                         <div className="detail">
                             <h2><span className="icon"><DirectionsCarFilledIcon></DirectionsCarFilledIcon></span> Commercial Storage</h2>
-                            <p>Gati Shifting Packers offers reliable commercial storage solutions for businesses, providing secure and well-managed space for inventory, equipment, and operational assets.</p>
+                            <p>safexpress offers reliable commercial storage solutions for businesses, providing secure and well-managed space for inventory, equipment, and operational assets.</p>
                             <div className="features-box">
                                 <span>🎥 24x7 Monitoring</span>
                                 <span>🐭 Rodent Proof</span>
@@ -552,7 +557,7 @@ const Storage = () => {
             <section id="safe-secure-section">
                 <div className="container">
                     <h1>🔐 Safe • Secure • Reliable Storage Solutions</h1>
-                    <p>Gati Shifting Packers offers trusted storage services all over India, ensuring your belongings remain safe, protected, and well-managed for both short-term and long-term needs.
+                    <p>safexpress offers trusted storage services all over India, ensuring your belongings remain safe, protected, and well-managed for both short-term and long-term needs.
                         Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Gurugram, Kolkata, Coimbatore, Jaipur 7 All Over India delivering secure and reliable storage solutions wherever you are.</p>
 
                     <div className="content">
@@ -587,6 +592,8 @@ const Storage = () => {
                     })}
                 </div>
             </section>
+
+            <FAQ />
         </>
     )
 }

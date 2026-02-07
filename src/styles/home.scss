@@ -641,7 +641,7 @@ body {
   gap: 10px;
   margin-top: auto;
 
-  button {
+  button, a {
     border: none;
     padding: 12px;
     border-radius: 10px;
@@ -649,9 +649,13 @@ body {
     font-weight: 600;
     cursor: pointer;
 
-    a{
-      text-decoration: none;
-    }
+    
+  }
+  a{
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-weight: normal;
   }
 
   .primary {

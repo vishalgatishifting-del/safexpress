@@ -3,6 +3,7 @@ import "../styles/Contact.scss";
 import { submitForm } from "../api/formAPI";
 import "../styles/Common.scss";
 
+import FAQ from "../components/FAQ.tsx";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     Name: "",
@@ -22,7 +23,8 @@ const ContactForm = () => {
       // setLoading(true);
   
       try {
-        await submitForm({ ...formData, landingPage: window.location.href });
+        const a = await submitForm({ ...formData, landingPage: window.location.href });
+        console.log(a)
         // successCondition(true);
         setFormData({
           Name: "",
@@ -126,7 +128,7 @@ const ContactForm = () => {
 
             <div className="form-group">
               <label>Goods Details</label>
-              <textarea
+              <input
                 name="Goods"
                 placeholder="Household items, office goods, etc."
                 value={formData.Goods}
@@ -141,6 +143,8 @@ const ContactForm = () => {
           </form>
         </div>
       </section>
+
+      <FAQ />
     </>
   );
 };

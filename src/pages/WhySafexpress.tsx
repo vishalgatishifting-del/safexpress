@@ -4,6 +4,7 @@
 import "../styles/WhySafexpress.scss"
 
 
+import "../styles/Common.scss"
 
 // interface props {
 //     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
@@ -25,7 +26,7 @@ const WhySafexpress = () => {
 
     return (
         <>
-            <section id="why-gati-sec">
+            <section id="why-gati-sec" className="top-element">
                 {/* <div className="bg-attached">
                     <h1>Why Safexpress?</h1>
                 </div> */}

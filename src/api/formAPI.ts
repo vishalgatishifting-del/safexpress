@@ -11,6 +11,13 @@ interface FormData {
   SourceWebsite?: string; 
 }
 
+// export const submitForm = (data: FormData) => {
+//   return axiosInstance.post("/create-lead", {
+//     ...data,
+//     SourceWebsite: data.SourceWebsite || "Safexpress",
+//   });
+// };
+
 export const submitForm = (data: FormData) => {
   return axiosInstance.post("/create-lead", {
     ...data,

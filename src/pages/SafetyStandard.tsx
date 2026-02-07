@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet-async";
 // import safetystandardImg from "../assets/SafetyStandard/safetystandardimg.jpg"
 import "../styles/SafetyStandard.scss"
 
+import "../styles/Common.scss"
 const SafetyStandard = () => {
     return (
         <>
@@ -19,7 +20,7 @@ const SafetyStandard = () => {
             {/* <div className="bg-attached">
                 <h1>Safety Standard</h1>
             </div> */}
-            <section id="pet-relocation-sec">
+            <section id="pet-relocation-sec" className="top-element">
                 <div className="container">
                     <h1>Our Safety Standards</h1>
                     <p>At Safexpress, we place the utmost importance on the safety and security of your belongings. From packing to delivery, every step of our process follows strict safety protocols to ensure a smooth and damage-free relocation experience.

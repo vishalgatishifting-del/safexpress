@@ -1,9 +1,9 @@
 import "../styles/PrivacyPolicy.scss";
-
+import "../styles/Common.scss"
 const PrivacyPolicy = () => {
   return (
     <>
-      <section id="privacypolicysec">
+      <section id="privacypolicysec" className="top-element">
         <div className="container">
           <div className="content">
             <h1>Privacy Policy for Safexpress</h1>

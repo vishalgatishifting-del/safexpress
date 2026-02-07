@@ -28,13 +28,14 @@
 
 .faq-question {
   width: 100%;
-  background: #ffffff;
+  // background: #ffffff;
   border: none;
   padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  background: #0b6b3a5e;
 
   @include v.font-poppins-sans(500);
   font-size: 16px;
@@ -52,7 +53,8 @@
 
 .faq-answer {
   padding: 10px 18px;
-  background: #fafafa;
+  // background: #fafafa;
+  background: #0b6b3a5e;
 
   p {
     margin: 0;

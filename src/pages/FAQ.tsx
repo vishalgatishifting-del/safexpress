@@ -4,6 +4,7 @@ import car5 from "../assets/FAQPageImg/hero-section-img.png"
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
+import "../styles/Common.scss"
 
 const FAQ = () => {
     return (
@@ -28,7 +29,7 @@ const FAQ = () => {
 
                 <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
             </Helmet>
-            <section className="info-section">
+            <section className="info-section top-element">
                 <div className="info-left">
                     <span className="badge">Trusted Movers Across India</span>
 

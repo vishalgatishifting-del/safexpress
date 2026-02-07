@@ -11,6 +11,9 @@ import "../styles/HomeShifting.scss"
 // import ReviewDialog from "../components/ReviewDialog";
 
 
+import "../styles/Common.scss"
+
+import FAQ from "../components/FAQ.tsx";
 const HomeShifting = () => {
 
     // const keywords = [
@@ -43,7 +46,7 @@ const HomeShifting = () => {
             {/* <div className="bg-attached">
                 <h1>Home Shifting</h1>
             </div> */}
-            <section id="home-shifting-sec">
+            <section id="home-shifting-sec" className="top-element">
                 <div className="container">
                     <h1>Safexpress – Affordable House Shifting Services in India</h1>
                     <p>Safexpress is a trusted name in house shifting and relocation services across India, offering reliable, fast, and cost-effective moving solutions. Whether you're planning a local move or a domestic relocation, we ensure a seamless experience from start to finish. Our team specializes in door-to-door household shifting, taking care of everything — from packing and loading to safe delivery at your new home.
@@ -150,7 +153,7 @@ const HomeShifting = () => {
                 </div>
             </section>
 
-
+                <FAQ />
             {/* <ReviewVideo></ReviewVideo>
             <GetInTouch></GetInTouch>
             <AwardCertification></AwardCertification>

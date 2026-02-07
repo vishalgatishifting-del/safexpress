@@ -1,9 +1,10 @@
 import "../styles/PrivacyPolicy.scss"
 
+import "../styles/Common.scss"
 const TermsCondition = () => {
     return (
         <>
-            <section id="privacypolicysec">
+            <section id="privacypolicysec" className="top-element">
                 <div className="container">
                     <div className="content">
                         <h1>Terms and Conditions for Safexpress</h1>

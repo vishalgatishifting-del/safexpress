@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/PhotoGallery.scss";
 import { Helmet } from "react-helmet-async";
 
+import "../styles/Common.scss"
 // Lazy Image Component
 const LazyImage = ({ src, alt }: { src: string; alt?: string }) => (
   <img
@@ -15,7 +16,6 @@ const PhotoGallery = () => {
   const [category, setCategory] = useState("all");
 
   const images = [
-  // ================= BIKE =================
   { src: "b 54.webp", category: "bike" },
   { src: "b 55.webp", category: "bike" },
   { src: "b 56.webp", category: "bike" },
@@ -49,7 +49,6 @@ const PhotoGallery = () => {
   { src: "IMG-20250815-WA0006.webp", category: "bike" },
   { src: "IMG-20250815-WA0008.webp", category: "bike" },
 
-  // ================= HOUSEHOLD =================
   { src: "ahou1.webp", category: "household" },
   { src: "House1.webp", category: "household" },
   { src: "House10.webp", category: "household" },
@@ -87,7 +86,6 @@ const PhotoGallery = () => {
   { src: "other3.webp", category: "household" },
   { src: "other4.webp", category: "household" },
 
-  // ================= WOODEN =================
   { src: "wood1.webp", category: "wooden" },
   { src: "wood3.webp", category: "wooden" },
   { src: "wood4.webp", category: "wooden" },
@@ -115,7 +113,6 @@ const PhotoGallery = () => {
   { src: "wooden8.webp", category: "wooden" },
   { src: "wooden9.webp", category: "wooden" },
 
-  // ================= STORAGE =================
   { src: "stor1.webp", category: "storage" },
   { src: "stor2.webp", category: "storage" },
   { src: "stor4.webp", category: "storage" },
@@ -129,7 +126,6 @@ const PhotoGallery = () => {
   { src: "store4.webp", category: "storage" },
   { src: "store5.webp", category: "storage" },
 
-  // ================= CAR =================
   { src: "10.webp", category: "car" },
   { src: "2.webp", category: "car" },
   { src: "c 3.webp", category: "car" },
@@ -143,7 +139,6 @@ const PhotoGallery = () => {
 ];
 
 
-  // 🔥 FILTER LOGIC
   const filteredImages =
     category === "all"
       ? images
@@ -155,10 +150,9 @@ const PhotoGallery = () => {
         <title>Photo Gallery</title>
       </Helmet>
 
-      <section id="photogallerysec">
+      <section id="photogallerysec" className="top-element">
         <div className="container">
 
-          {/* BUTTONS */}
           <div className="btns">
             {["all", "bike", "household", "storage", "car", "wooden"].map(
               (cat) => (

@@ -4,33 +4,85 @@
 // import GetInTouch from "../components/GetInTouch";
 // import ReviewVideo from "../components/ReviewVideos";
 // import TrustUsSection from "../components/TrustUsSection";
-import chargesImg from "../../assets/CityPages/packers & movers charges.webp"
-import "../../styles/CityPage.scss"
+import chargesImg from "../assets/CityPages/packers & movers charges.webp"
+import "../styles/CityPage.scss"
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import AnkleshwarImg from "../../assets/CityPages/ankleshwar.webp"
+import "../styles/Common.scss"
 
-const Ankleshwar = () => {
+
+interface MetaDataProps {
+    title?: string;
+    description?: string;
+    keywords?: string;
+    ogDescription?: string;
+    twitterDescription?: string;
+}
+
+interface PageDataProps {
+    mainHeading?: string;
+    h11?: string;
+    paragraph1?: string;
+    h12?: string;
+    h21?: string;
+    paragraph2?: string;
+    h22?: string;
+    paragraph3?: string;
+}
+interface PageProps {
+    city: string;
+    img?: string;
+    metaData?: MetaDataProps;
+    offer?: string;
+    pageData?: PageDataProps;
+    address?: string;
+}
+
+const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer, address }) => {
 
     return (
         <>
             <Helmet>
+                <title>{metaData?.title}</title>
 
+                <meta name="description" content={metaData?.description} />
+                <meta name="keywords" content={metaData?.keywords} />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
+
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Packers and Movers in Bhiwandi | Safexpress" />
+                <meta property="og:description" content={metaData?.ogDescription} />
+                <meta property="og:url" content="https://gatishiftingpackers.com/city/bhiwandi" />
+                <meta property="og:site_name" content="Safexpress" />
+                <meta property="og:image" content="" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Packers and Movers in Bhiwandi | Safexpress" />
+                <meta name="twitter:description" content={metaData?.twitterDescription} />
+                <meta name="twitter:image" content="" />
+
+                <meta http-equiv="Content-Language" content="en" />
+
+                {/* Canonical URL */}
+                <link rel="canonical" href={`https://gatishiftingpackers.com/city/${city}`} />
             </Helmet>
-            <section id="city-page">
+            <section id="city-page" className="top-element">
                 {/* HERO */}
                 <div className="city-hero">
                     <div className="hero-text">
                         <h1>Safexpress</h1>
-                        <h2>Best Packers & Movers in <span>Ankleshwar</span></h2>
+                        <h2>Best Packers & Movers in <span>{city}</span></h2>
 
                         <p className="address">
                             <LocationOnIcon />
-                            	Plot No. D-2529, Brahmanpuri, Ankleshwar GIDC, 6th Road, near Asian Paint, Chokdi, Ankleshwar, Gujarat 393002			
+                           {address}
                         </p>
 
-                        <div className="offer">🎉 Get 10% OFF on Your Next Move</div>
+                        <div className="offer">🎉 Get {offer} OFF on Your Next Move</div>
 
                         <Link to="/contact-us" className="cta-btn">
                             Get Free Quote
@@ -38,25 +90,25 @@ const Ankleshwar = () => {
                     </div>
 
                     <div className="hero-image">
-                        <img src={AnkleshwarImg} alt="Packers and Movers in Ankleshwar" />
+                        <img src={img} alt="Packers and Movers in{city}" />
                     </div>
                 </div>
 
                 {/* CONTENT */}
                 <div className="city-content">
                     <p>
-                        Welcome to <strong>Safexpress Ankleshwar</strong>. We provide safe,
+                        Welcome to <strong>Safexpress {city}</strong>. We provide safe,
                         affordable and professional relocation services for homes, offices,
                         vehicles and international moves.
                     </p>
 
-                    <h2>🌍 International Packers & Movers in Ankleshwar</h2>
+                    <h2>🌍 International Packers & Movers in {city}</h2>
                     <p>
                         We manage complete international relocation including packing, customs
                         clearance and global delivery through our trusted logistics network.
                     </p>
 
-                    <h2>Our Packers & Movers Services in Ankleshwar</h2>
+                    <h2>Our Packers & Movers Services in {city}</h2>
 
                     <div className="service-list">
                         <div>🏠 Home Shifting Services</div>
@@ -69,7 +121,7 @@ const Ankleshwar = () => {
                         <div>🏬 Warehouse & Storage</div>
                     </div>
 
-                    <h2>Why Choose Safexpress Ankleshwar?</h2>
+                    <h2>Why Choose Safexpress {city}?</h2>
                     <ul className="why-list">
                         <li>Experienced & Verified Movers</li>
                         <li>Premium Packing Materials</li>
@@ -79,9 +131,9 @@ const Ankleshwar = () => {
                         <li>24×7 Support</li>
                     </ul>
 
-                    <h2>Packers & Movers Charges in Ankleshwar</h2>
+                    <h2>Packers & Movers Charges in {city}</h2>
                     <div className="charges">
-                        <img src={chargesImg} alt="Packers and Movers Charges Ankleshwar" />
+                        <img src={chargesImg} alt="Packers and Movers Charges{city}" />
                     </div>
 
                     <h2>Factors Affecting Moving Cost</h2>
@@ -106,4 +158,4 @@ const Ankleshwar = () => {
     )
 }
 
-export default Ankleshwar;
+export default CityPage;

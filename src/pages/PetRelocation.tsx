@@ -4,12 +4,15 @@
 // import GetInTouch from "../components/GetInTouch";
 // import ReviewVideo from "../components/ReviewVideos";
 // import TrustUsSection from "../components/TrustUsSection";
-import petrelocationImg from "../assets/PetRelocation/petrelocation.jpg"
+import petrelocationImg from "../assets/PetRelocation/petrelocation.png"
 import { Helmet } from "react-helmet-async";
 
 // import "./PetRelocation.scss"
 // import ReviewDialog from "../components/ReviewDialog";
 
+import "../styles/Common.scss"
+
+import FAQ from "../components/FAQ.tsx";
 const PetRelocation = () => {
 
     // const keywords = [
@@ -43,7 +46,7 @@ const PetRelocation = () => {
             {/* <div className="bg-attached">
                 <h1>Pet Relocation</h1>
             </div> */}
-            <section id="pet-relocation-sec">
+            <section id="pet-relocation-sec" className="top-element">
                 <div className="container">
                     <h1>Safexpress – Trusted Pet Relocation Services in India</h1>
                     <p>Safexpress is a reliable name in pet relocation services across India, ensuring safe, comfortable, and stress-free travel for your beloved pets. Whether you’re moving to a new city or state, our professional team handles every aspect of your pet’s journey with care, making relocation hassle-free for both pets and owners.
@@ -169,6 +172,8 @@ const PetRelocation = () => {
                     })}
                 </div>
             </section> */}
+
+            <FAQ />
 
         </>
     )

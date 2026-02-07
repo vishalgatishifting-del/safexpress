@@ -10,6 +10,9 @@
 // import "../styles/OfficeRelocation.scss"
 import "../styles/OfficeRelocation.scss"
 
+import "../styles/Common.scss"
+
+import FAQ from "../components/FAQ.tsx";
 const OfficeRelocation = () => {
     // const keywords = [
     //     "office relocation services",
@@ -37,7 +40,7 @@ const OfficeRelocation = () => {
             {/* <div className="bg-attached">
                 <h1>Office Relocation</h1>
             </div> */}
-            <section id="pet-relocation-sec">
+            <section id="pet-relocation-sec" className="top-element">
                 <div className="container">
                     <h1>Safexpress – Reliable Office Shifting Services in India</h1>
                     <p>Safexpress is one of the most trusted names in office relocation and commercial moving services in India. We provide smooth, professional, and affordable office shifting solutions that help businesses move without affecting productivity. Whether you’re relocating a small office or a large corporate setup, our expert team ensures a safe and organized move from start to finish.
@@ -153,7 +156,7 @@ const OfficeRelocation = () => {
                     </div>
                 </div>
             </section>
-
+                <FAQ />
 
             {/* <ReviewVideo></ReviewVideo>
             <GetInTouch></GetInTouch>
