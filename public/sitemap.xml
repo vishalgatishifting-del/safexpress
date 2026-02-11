@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://safeshiftingpackers.com/</loc>
+    <lastmod>2026-02-11</lastmod>
+    <priority>1.0</priority>
+
+    <!-- Favicon Image Reference -->
+    <image:image>
+      <image:loc>https://safeshiftingpackers.com/safexpress.png</image:loc>
+      <image:caption>Safexpress | Trusted Packers and Movers - 15% off</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://safeshiftingpackers.com/about</loc>
+    <lastmod>2026-02-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://safeshiftingpackers.com/services</loc>
+    <lastmod>2026-02-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Review Page -->
+  <!-- <url>
+    <loc>https://safeshiftingpackers.com/review</loc>
+    <lastmod>2025-10-01</lastmod>
+    <priority>0.7</priority>
+  </url> -->
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://safeshiftingpackers.com/contact-us</loc>
+    <lastmod>2026-02-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://safeshiftingpackers.com/faqs</loc>
+    <lastmod>2026-02-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,7 @@
+# robots.txt for Safexpress
+
+User-agent: *
+Allow: /
+
+# Sitemap for better crawling
+Sitemap: https://safeshiftingpackers.com//sitemap.xml
