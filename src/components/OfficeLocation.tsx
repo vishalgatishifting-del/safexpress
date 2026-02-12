@@ -11,7 +11,9 @@ import HotelClassIcon from '@mui/icons-material/HotelClass';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import { Link } from "react-router-dom";
 import "../styles/OfficeLocation.scss"
+import { COMPANY } from "../config/Company";
 // thi
+
 
 const OfficeLocation = () => {
 
@@ -84,8 +86,8 @@ const OfficeLocation = () => {
                         <ul>
 
                             <li><LocationOnIcon></LocationOnIcon><span>Office No. 04 Shree Sadguru Niwas Opp MSEB OFFICE Sector 21 Ghansoli Navi Mumbai 400701, India</span></li>
-                            <li><CallIcon></CallIcon> <span>+91 8756319252</span></li>
-                            <li><EmailIcon></EmailIcon> <span>safexpressshifting@gmail.com</span></li>
+                            <li><CallIcon></CallIcon> <span>+91 {COMPANY.phone}</span></li>
+                            <li><EmailIcon></EmailIcon> <span>{COMPANY.email}</span></li>
                             <li><WatchLaterIcon></WatchLaterIcon><span>Mon - Sun: 8:00 AM - 8:00 PM</span></li>
                             <li><BadgeIcon></BadgeIcon><span>GST Number: 06AAMCG3191P1ZZ</span></li>
                             <li><BrandingWatermarkIcon></BrandingWatermarkIcon><span>MSME Number: UDYAM-MH-19-0373918</span></li>

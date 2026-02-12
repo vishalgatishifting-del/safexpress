@@ -4,6 +4,12 @@ import { submitForm } from "../api/formAPI";
 import "../styles/Common.scss";
 
 import FAQ from "../components/FAQ.tsx";
+import { COMPANY } from "../config/Company.ts";
+import OfficeLocation from "../components/OfficeLocation.tsx";
+import TrustUsSection from "../components/TrustUsSection.tsx";
+import HappyClients from "../components/HappyClients.tsx";
+
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     Name: "",
@@ -52,8 +58,8 @@ const ContactForm = () => {
             Our team is here to help you anytime.
           </p>
           <p className="contact-info">
-            📞 <strong>8756319252</strong> &nbsp; | &nbsp;
-            ✉️ <span>safexpressshifting@gmail.com</span>
+            📞 <strong>{COMPANY.phone}</strong> &nbsp; | &nbsp;
+            ✉️ <span>{COMPANY.email}</span>
           </p>
         </div>
       </section>
@@ -143,7 +149,9 @@ const ContactForm = () => {
           </form>
         </div>
       </section>
-
+    <OfficeLocation />
+      <TrustUsSection />
+      <HappyClients />
       <FAQ />
     </>
   );

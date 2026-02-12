@@ -5,41 +5,58 @@ import CloseIcon from "@mui/icons-material/Close";
 
 import Logo from "../assets/Logo/logo.jpeg";
 import "../styles/Navbar.scss";
+import whatsappIcon from "../assets/whatsappIcon.webp";
+import callIcon from "../assets/call.webp";
+import gmailIcon from "../assets/gmailIcon.webp";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="navbar">
-      <div className="nav-left">
-        <div className="logo">
-          <img src={Logo} alt="Safexpress Logo" />
+    <>
+      <nav className="navbar">
+        <div className="nav-left">
+          <div className="logo">
+            <img src={Logo} alt="Safexpress Logo" />
+          </div>
         </div>
-      </div>
 
-      <ul className={`nav-links ${open ? "open" : ""}`}>
-        <li onClick={() => setOpen(false)}>
-          <Link to="/">Home</Link>
-        </li>
-        <li onClick={() => setOpen(false)}>
-          <Link to="/about">About Us</Link>
-        </li>
-         <li onClick={() => setOpen(false)}>
-          <Link to="/faq">FAQs</Link>
-        </li>
-        <li onClick={() => setOpen(false)}>
-          <Link to="/services">Services</Link>
-        </li>
-        <li onClick={() => setOpen(false)}>
-          <Link to="/contact-us">Contact</Link>
-        </li>
-      </ul>
+        <ul className={`nav-links ${open ? "open" : ""}`}>
+          <li onClick={() => setOpen(false)}>
+            <Link to="/">Home</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link to="/faq">FAQs</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link to="/services">Services</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link to="/contact-us">Contact</Link>
+          </li>
+        </ul>
 
-      {/* Toggle Button */}
-      <div className="menu-toggle" onClick={() => setOpen(!open)}>
-        {open ? <CloseIcon className="toogleIcon" /> : <MenuIcon className="toogleIcon"/>}
+        {/* Toggle Button */}
+        <div className="menu-toggle" onClick={() => setOpen(!open)}>
+          {open ? <CloseIcon className="toogleIcon" /> : <MenuIcon className="toogleIcon" />}
+        </div>
+      </nav>
+      <div className="action-button">
+        <a href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
+          <img src={whatsappIcon} alt="WhatsApp" />
+        </a>
+        <a href="tel:+919422799477">
+          <img src={callIcon} alt="Call" />
+        </a>
+        <a href="mailto:gatishiftingpackers@gmail.com">
+          <img src={gmailIcon} alt="Email" />
+        </a>
       </div>
-    </nav>
+    </>
+
   );
 };
 

@@ -7,7 +7,7 @@ import { useState } from "react";
 import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.png"
 import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
 import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
-// import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
+import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
 // import ISOcertificate from "../assets/homePagePng/isoCertificate.png"
 // import gatiCertificate from "../assets/homePagePng/gatiCertificate.png"
 
@@ -217,6 +217,13 @@ const Home = () => {
             </a>
             <img src={incorporationCertificate} />
             <h3>Incorporation Certificate</h3>
+          </div>
+          <div className="card">
+            <a href={GSTIncorporation} className="hidden" target="_blank">
+              Click To View
+            </a>
+            <img src={GSTIncorporation} />
+            <h3>GST Certificate</h3>
           </div>
         </div>
       </section>

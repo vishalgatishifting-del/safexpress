@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 
 import { cities2 } from "./CitiesData";
 import { useState } from "react";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 const Footer = () => {
   
     const [visibleCount, setVisibleCount] = useState(28);
@@ -95,7 +96,8 @@ const Footer = () => {
               {cities2.slice(0, visibleCount).map((item, i) => (
                 <li key={i}>
                   <Link to={`/city/${item.city}`}>
-                    <span>Movers and Packers {item.city}</span>
+
+                    <span><LocationOnIcon></LocationOnIcon> Movers and Packers {item.city}</span>
                   </Link>
                 </li>
               ))}
