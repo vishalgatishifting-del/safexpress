@@ -32,16 +32,16 @@ const TopBar = () => {
       </div>
 
       <div className="topbar-right">
-        <a href="#" aria-label="Facebook">
+        <a href={COMPANY.facebook} aria-label="Facebook">
           <FacebookIcon />
         </a>
-        <a href="#" aria-label="Instagram">
+        <a href={COMPANY.intagram} aria-label="Instagram">
           <InstagramIcon />
         </a>
-        <a href="#" aria-label="LinkedIn">
+        <a href={COMPANY.linkedin} aria-label="LinkedIn">
           <LinkedInIcon />
         </a>
-        <a href="#" aria-label="Pinterest">
+        <a href={COMPANY.pinterest} aria-label="Pinterest">
           <PinterestIcon />
         </a>
       </div>

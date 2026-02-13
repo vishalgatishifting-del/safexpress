@@ -76,7 +76,7 @@ import truck2 from "../assets/Home/truck2.webp"
 
 
 
-import {COMPANY} from "../config/Company"
+import { COMPANY } from "../config/Company"
 
 const Home = () => {
 
@@ -252,113 +252,160 @@ const Home = () => {
           </div>
         </div>
       </section>
-     <section id="our-services">
-  <h1>Our Services</h1>
-  <p>
-    Tailor-made value added services to suit varied supply chain and logistics
-    Pan India requirements for enterprises as well as individuals.
-  </p>
+      <section id="our-services">
+        <h1>Our Services</h1>
+        <p>
+          Tailor-made value added services to suit varied supply chain and logistics
+          Pan India requirements for enterprises as well as individuals.
+        </p>
 
-  <div className="details">
-    <div className="images">
-      {[ 
-        { img: truckImg, title: "Express Distribution Surface" },
-        { img: flightImg, title: "Express Distribution Air" },
-        { img: shipImg, title: "Express Distribution in Ships" }
-      ].map((item, i) => (
-        <div className="card" key={i}>
-          <div className="img">
-            <img src={item.img} alt={item.title} />
-          </div>
-          <div className="text">
-            <h4>{item.title}</h4>
-            <ul>
-              <li>
-                Fastest connectivity across India with industry-leading transit
-                time.
-              </li>
-              <li>
-                Strong network coverage with strategically placed gateways.
-              </li>
-            </ul>
-            <Link to="/contact-us">Get Quote</Link>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-      <div className="services-grid">
-  {services.map((service, index) => (
-    <div className="service-card" key={index}>
-
-      {/* Image */}
-      <div className="service-image">
-        <img src={service.image} alt={service.title} />
-      </div>
-
-      {/* Content */}
-      <div className="service-content">
-        <h3>{service.title}</h3>
-
-        <div className="tabs">
-          <span>Packing & Unpacking</span>
-          <span>Loading & Unloading</span>
-          <span>Door to Door Service</span>
-        </div>
-
-        <div className="why">
-          <p className="why-title">Why Choose Us</p>
-          <div className="icons">
-            <div>
-              <i className="fa-solid fa-user-check"></i>
-              <span>Trained Staff</span>
-            </div>
-            <div>
-              <i className="fa-solid fa-truck-fast"></i>
-              <span>Fast Delivery</span>
-            </div>
-            <div>
-              <i className="fa-solid fa-shield-halved"></i>
-              <span>Safe Handling</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Actions */}
-      <div className="service-actions">
-        <button className="primary"><a href={`tel:${COMPANY.phone}`}>📞 Call Now</a></button>
-        <button className="primary whatsapp"><a href={COMPANY.whatsapp}>💬 WhatsApp</a></button>
-        <Link className="secondary" to="/contact-us">Get Quote</Link>
-        <Link to="/service" className="secondary">View Details</Link>
-      </div>
-
-    </div>
-  ))}
-</div>
-
-
-
-      <section id="google-review-sec">
-        <div className="container">
-          <div className="text-box">
-            <h1>Trusted by Thousands of <span className="primary-color">Happy Customers</span></h1>
-            <p>Real experiences from customers who trusted Safexpress for safe, timely, and stress-free relocation.</p>
-          </div>
-          <div className="img-rating-box">
-            <Link className="detail-link" to="/review">
-              <img src={googleRatingImg} alt="googt rating png" />
-              <span>4.9 ★★★★★</span>
-              <span>1000+ Reviews</span>
-              <span>Based on genuine customer reviews</span>
-            </Link>
-            <Link to="/review" className="review-btn">Leave a Review</Link>
+        <div className="details">
+          <div className="images">
+            {[
+              { img: truckImg, title: "Express Distribution Surface" },
+              { img: flightImg, title: "Express Distribution Air" },
+              { img: shipImg, title: "Express Distribution in Ships" }
+            ].map((item, i) => (
+              <div className="card" key={i}>
+                <div className="img">
+                  <img src={item.img} alt={item.title} />
+                </div>
+                <div className="text">
+                  <h4>{item.title}</h4>
+                  <ul>
+                    <li>
+                      Fastest connectivity across India with industry-leading transit
+                      time.
+                    </li>
+                    <li>
+                      Strong network coverage with strategically placed gateways.
+                    </li>
+                  </ul>
+                  <Link to="/contact-us">Get Quote</Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+
+      <div className="services-grid">
+        {services.map((service, index) => (
+          <div className="service-card" key={index}>
+
+            {/* Image */}
+            <div className="service-image">
+              <img src={service.image} alt={service.title} />
+            </div>
+
+            {/* Content */}
+            <div className="service-content">
+              <h3>{service.title}</h3>
+
+              <div className="tabs">
+                <span>Packing & Unpacking</span>
+                <span>Loading & Unloading</span>
+                <span>Door to Door Service</span>
+              </div>
+
+              <div className="why">
+                <p className="why-title">Why Choose Us</p>
+                <div className="icons">
+                  <div>
+                    <i className="fa-solid fa-user-check"></i>
+                    <span>Trained Staff</span>
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-truck-fast"></i>
+                    <span>Fast Delivery</span>
+                  </div>
+                  <div>
+                    <i className="fa-solid fa-shield-halved"></i>
+                    <span>Safe Handling</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Actions */}
+            <div className="service-actions">
+              <button className="primary"><a href={`tel:${COMPANY.phone}`}>📞 Call Now</a></button>
+              <button className="primary whatsapp"><a href={COMPANY.whatsapp}>💬 WhatsApp</a></button>
+              <Link className="secondary" to="/contact-us">Get Quote</Link>
+              <Link to="/service" className="secondary">View Details</Link>
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+
+
+      <section id="google-review">
+
+        <div className="container">
+
+          <div className="left">
+
+            <div className="badge">
+              ⭐ Google Verified Business
+            </div>
+
+            <h2>
+              Trusted by Thousands of
+              <span> Happy Customers</span>
+            </h2>
+
+            <p>
+              Real experiences from customers who trusted Safexpress
+              for safe, timely, and stress-free relocation across India.
+            </p>
+
+            <Link to="/review" className="cta-btn">
+              View All Reviews
+            </Link>
+
+          </div>
+
+
+          <div className="right">
+
+            <Link to="/review" className="rating-card">
+
+              <img
+                src={googleRatingImg}
+                alt="Google Rating"
+              />
+
+              <div className="rating-info">
+
+                <div className="stars">
+                  ★★★★★
+                </div>
+
+                <div className="rating">
+                  4.9 out of 5
+                </div>
+
+                <div className="reviews">
+                  Based on 1000+ genuine reviews
+                </div>
+
+              </div>
+
+            </Link>
+
+            <Link to="/review" className="review-btn">
+              Leave Your Review
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       <section className="shifting-stages">
         <h2>Our Shifting Stages</h2>

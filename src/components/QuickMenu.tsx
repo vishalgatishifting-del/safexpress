@@ -4,25 +4,25 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import { Link } from 'react-router-dom';
-Link
+import { COMPANY } from "../config/Company";
+
 
 const QuickMenu = () => {
     return (
         <div className="quick-menu">
-            <a href="https://www.instagram.com/saf_eexpress/">
+            <a href={COMPANY.intagram}>
                 <InstagramIcon className='icon'></InstagramIcon>
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61587270281087">
+            <a href={COMPANY.facebook}>
                 <FacebookIcon className='icon'></FacebookIcon>
             </a>
-            <a href="https://x.com/SPackers48232">
+            <a href={COMPANY.twitter}>
                 <XIcon className='icon'></XIcon>
             </a>
-            <a href="https://in.pinterest.com/shiftingsafexpress/">
+            <a href={COMPANY.pinterest}>
                 <PinterestIcon className='icon'></PinterestIcon>
             </a>
-            <a href="https://www.youtube.com/@Safeexpress11">
+            <a href={COMPANY.youtube}>
                 <YouTubeIcon className='icon'></YouTubeIcon>
             </a>
         </div>

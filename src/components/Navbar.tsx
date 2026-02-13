@@ -8,6 +8,7 @@ import "../styles/Navbar.scss";
 import whatsappIcon from "../assets/whatsappIcon.webp";
 import callIcon from "../assets/call.webp";
 import gmailIcon from "../assets/gmailIcon.webp";
+import { COMPANY } from "../config/Company";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -45,13 +46,14 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="action-button">
-        <a href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
+
+        <a href={COMPANY.whatsapp} target="_blank" rel="noopener noreferrer">
           <img src={whatsappIcon} alt="WhatsApp" />
         </a>
-        <a href="tel:+919422799477">
+        <a href={`tel:+91${COMPANY.phone}`}>
           <img src={callIcon} alt="Call" />
         </a>
-        <a href="mailto:gatishiftingpackers@gmail.com">
+        <a href={`mailto:${COMPANY.email}`}>
           <img src={gmailIcon} alt="Email" />
         </a>
       </div>

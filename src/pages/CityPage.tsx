@@ -10,6 +10,11 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import "../styles/Common.scss"
+import { COMPANY } from "../config/Company";
+
+import FAQ from "../components/FAQ";
+import TrustUsSection from "../components/TrustUsSection";
+
 
 
 interface MetaDataProps {
@@ -73,26 +78,64 @@ const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer, address }) 
             <section id="city-page" className="top-element">
                 {/* HERO */}
                 <div className="city-hero">
-                    <div className="hero-text">
-                        <h1>Safexpress</h1>
-                        <h2>Best Packers & Movers in <span>{city}</span></h2>
+
+                    {/* LEFT CONTENT */}
+                    <div className="hero-content">
+
+                        <div className="badge">
+                            🚚 Trusted Packers & Movers
+                        </div>
+
+                        <h1>
+                            Best Packers & Movers in
+                            <span> {city}</span>
+                        </h1>
 
                         <p className="address">
                             <LocationOnIcon />
-                           {address}
+                            {address}
                         </p>
 
-                        <div className="offer">🎉 Get {offer} OFF on Your Next Move</div>
+                        <div className="offer">
+                            🎉 Flat {offer} OFF • Limited Time Offer
+                        </div>
 
-                        <Link to="/contact-us" className="cta-btn">
-                            Get Free Quote
-                        </Link>
+                        <div className="buttons">
+
+                            <Link to="/contact-us" className="primary-btn">
+                                Get Free Quote
+                            </Link>
+
+                            <a href={`tel:+91${COMPANY.phone}`} className="secondary-btn">
+                                Call Now
+                            </a>
+
+                        </div>
+
+                        <div className="trust">
+                            ⭐ 4.9 Rating • 1000+ Happy Customers
+                        </div>
+
                     </div>
 
+
+                    {/* RIGHT IMAGE */}
                     <div className="hero-image">
-                        <img src={img} alt="Packers and Movers in{city}" />
+
+                        <div className="image-box">
+
+                            <img
+                                src={img}
+                                alt={`Packers and Movers in ${city}`}
+                                loading="eager"
+                            />
+
+                        </div>
+
                     </div>
+
                 </div>
+
 
                 {/* CONTENT */}
                 <div className="city-content">
@@ -154,6 +197,8 @@ const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer, address }) 
             <TrustUsSection></TrustUsSection>
             <BrandList></BrandList>
             <FAQList></FAQList> */}
+            <TrustUsSection />
+            <FAQ />
         </>
     )
 }

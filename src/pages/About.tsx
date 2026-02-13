@@ -1,5 +1,5 @@
 import "../styles/About.scss"
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { Box } from "@mui/material";
 // import Slider from "react-slick";
 import about_company_photo from "../assets/AboutPage/about_company_photo.png"
@@ -16,6 +16,7 @@ import commercialImg from "../assets/AboutPage/commercial.webp"
 
 import FAQ from "../components/FAQ.tsx";
 import "../styles/Common.scss";
+
 // import CheckIcon from '@mui/icons-material/Check';
 // import CloseIcon from '@mui/icons-material/Close';
 
@@ -228,7 +229,7 @@ const About = () => {
 
                 </div>
             </section>
-            <section id="our-services-about-section">
+            {/* <section id="our-services-about-section">
                 <h1>Our Services</h1>
                 <div className="container">
                     <div className="card">
@@ -282,6 +283,56 @@ const About = () => {
                         <h4>Storage</h4>
                     </div>
                 </div>
+            </section> */}
+
+            <section id="our-services-about-page">
+
+                <div className="header">
+
+                    <h2>Our Services</h2>
+
+                    <p>
+                        Professional packing and moving solutions for every need
+                    </p>
+
+                </div>
+
+
+                <div className="grid">
+
+                    {[
+                        { img: houseShiftingImg, title: "Household Shifting" },
+                        { img: commercialImg, title: "Luggage Shifting" },
+                        { img: bikeImg, title: "Bike Transport" },
+                        { img: carImg, title: "Car Transport" },
+                        { img: petImg, title: "Pet Relocation" },
+                        { img: internationalImg, title: "International Moving" },
+                        { img: officeImg, title: "Office Shifting" },
+                        { img: storageImg, title: "Storage Services" },
+                    ].map((service, index) => (
+
+                        <div key={index} className="card">
+
+                            <div className="image">
+
+                                <img
+                                    src={service.img}
+                                    alt={service.title}
+                                    loading="lazy"
+                                />
+
+                                <div className="overlay" />
+
+                            </div>
+
+                            <h3>{service.title}</h3>
+
+                        </div>
+
+                    ))}
+
+                </div>
+
             </section>
 
 
@@ -299,7 +350,7 @@ const About = () => {
                             Safexpress aims to fulfil its social and environmental commitments
                             through its foundation.
                         </p>
-                        <a href="#">More</a>
+                        <Link to="/contact-us">More</Link>
                     </div>
 
                     <div className="grid-item image">
@@ -313,7 +364,7 @@ const About = () => {
                             solutions to cater to the supply chain and logistics requirements
                             of its customers.
                         </p>
-                        <a href="#">More</a>
+                        <Link to="/contact-us">More</Link>
                     </div>
 
                     <div className="grid-item image">
@@ -327,7 +378,7 @@ const About = () => {
                             who wishes to associate and work with India’s most preferred logistics
                             and SCM brand.
                         </p>
-                        <a href="#">More</a>
+                        <Link to="/contact-us">More</Link>
                     </div>
 
                 </div>
