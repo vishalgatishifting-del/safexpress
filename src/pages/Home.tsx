@@ -201,28 +201,28 @@ const Home = () => {
             <a href={justDialCertificateImg} className="hidden" target="_blank">
               Click To View
             </a>
-            <img src={justDialCertificateImg} />
+            <img src={justDialCertificateImg} alt="Certificate" title="JustDial"/>
             <h3>JustDial Certificate</h3>
           </div>
           <div className="card">
             <a href={MSMECertificateImg} className="hidden" target="_blank">
               Click To View
             </a>
-            <img src={MSMECertificateImg} />
+            <img src={MSMECertificateImg} alt="Certificate" title="MSME"/>
             <h3>MSME Ceritificate</h3>
           </div>
           <div className="card">
             <a href={incorporationCertificate} className="hidden" target="_blank">
               Click To View
             </a>
-            <img src={incorporationCertificate} />
+            <img src={incorporationCertificate} alt="Certificate" title="Incorporation"/>
             <h3>Incorporation Certificate</h3>
           </div>
           <div className="card">
             <a href={GSTIncorporation} className="hidden" target="_blank">
               Click To View
             </a>
-            <img src={GSTIncorporation} />
+            <img src={GSTIncorporation} alt="Certificate" title="GST"/>
             <h3>GST Certificate</h3>
           </div>
         </div>
@@ -234,19 +234,19 @@ const Home = () => {
       <section id="badge-section">
         <div className="container">
           <div className="card">
-            <img src={isoBadge} />
+            <img src={isoBadge} alt="Badge" title="ISO" />
             <h3>ISO 9001:2015</h3>
             <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
           </div>
 
 
           <div className="card">
-            <img src={googleRatingBadge} />
+            <img src={googleRatingBadge} alt="Badge" title="Google Rating" />
             <h3>5 Star Ratings</h3>
             <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
           </div>
           <div className="card">
-            <img src={trustedBadge} />
+            <img src={trustedBadge} alt="Badge" title="Trust Badge" />
             <h3>15+ Years of Trust</h3>
             <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
           </div>
@@ -268,7 +268,7 @@ const Home = () => {
             ].map((item, i) => (
               <div className="card" key={i}>
                 <div className="img">
-                  <img src={item.img} alt={item.title} />
+                  <img src={item.img} alt={item.title} title={item.title} />
                 </div>
                 <div className="text">
                   <h4>{item.title}</h4>
@@ -296,7 +296,7 @@ const Home = () => {
 
             {/* Image */}
             <div className="service-image">
-              <img src={service.image} alt={service.title} />
+              <img src={service.image} alt={service.title} title={service.title} />
             </div>
 
             {/* Content */}
@@ -376,6 +376,7 @@ const Home = () => {
               <img
                 src={googleRatingImg}
                 alt="Google Rating"
+                title="Google Rating"
               />
 
               <div className="rating-info">
@@ -417,7 +418,7 @@ const Home = () => {
               <span className="step">{item.step}</span>
 
               <div className="icon">
-                <img src={item.image} alt={item.title} />
+                <img src={item.image} alt={item.title} title={item.title} />
               </div>
 
               <h3>{item.title}</h3>
@@ -440,33 +441,33 @@ const Home = () => {
       <section id="about-company-cards">
         <div className="container">
           <div className="card">
-            <img src={truck3Img} alt="truck png" />
+            <img src={truck3Img} alt="truck png" title="truck" />
             <h2>PACKING AND MOVING</h2>
             <p>We offer a range of packing and moving services from packing your entire household to packing selected items only or fragile item and any other furniture.</p>
           </div>
           <div className="card">
-            <img src={carLoadingImg} alt="car png" />
+            <img src={carLoadingImg} alt="car png" title="car" />
             <h2>CAR TRANSPORT SERVICES</h2>
             <p>Movers Aryavarta Association, are one of India's finest car carrier service providers. Our car transport services have been satisfactorily used by clients from corporates.</p>
           </div>
           <div className="card">
-            <img src={ship2Img} alt="ship png" />
+            <img src={ship2Img} alt="ship png" title="ship" />
             <h2>CORP. GOODS RELOCATION</h2>
             <p>Reckoned across the country for our efficient and reliable cargo moving and packing services, we undertake corporate Goods Relocation Service as per the requirements.</p>
           </div>
           <div className="card">
-            <img src={ship2} alt="ship png" />
+            <img src={ship2} alt="ship png" title="ship" />
             <h2>FREIGHT FORWARDING</h2>
             <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...</p>
           </div>
           <div className="card">
-            <img src={airplaneImg} alt="airplane png" />
+            <img src={airplaneImg} alt="airplane png" title="airplane" />
             <h2>INTERNATIONAL LOGISTICS</h2>
             <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...
               (neeche thoda cut ho gaya hai image me)</p>
           </div>
           <div className="card">
-            <img src={truck2} alt="truck png" />
+            <img src={truck2} alt="truck png" title="truck" />
             <h2>LOADING & UNLOADING</h2>
             <p>A crucial part of every relocation process, the loading and unloading is executed by highly skilled teams. The goods are loaded and unloaded with the use of pulleys,lifters etc...</p>
           </div>

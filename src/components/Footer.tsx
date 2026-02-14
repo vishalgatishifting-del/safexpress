@@ -76,7 +76,7 @@ const Footer = () => {
             Review us on ⭐ Trustpilot
           </a>
 
-          <img className="logo" src={logo} />
+          <img className="logo" src={logo} alt="Logo" />
         </div>
       </div>
 
