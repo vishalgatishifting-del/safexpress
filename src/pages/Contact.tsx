@@ -10,7 +10,12 @@ import TrustUsSection from "../components/TrustUsSection.tsx";
 import HappyClients from "../components/HappyClients.tsx";
 
 
+import { useVisibility } from "../context/AppContext";
+
+
 const ContactForm = () => {
+  
+    const {  setVisibilityCondition } = useVisibility();
   const [formData, setFormData] = useState({
     Name: "",
     Email: "",
@@ -40,6 +45,8 @@ const ContactForm = () => {
           To: "",
           Goods: "",
         });
+
+        setVisibilityCondition(true)
       } catch (err) {
         alert("Error submitting form");
       } finally {

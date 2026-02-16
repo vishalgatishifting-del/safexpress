@@ -9,6 +9,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import { useVisibility } from "../context/AppContext";
+
 
 type FormData = {
   Name: string;
@@ -24,6 +26,9 @@ interface Props {
 }
 
 const ZohoForm: React.FC<Props> = ({ successCondition }) => {
+
+  const {  setVisibilityCondition } = useVisibility();
+
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     Name: "",
@@ -54,6 +59,7 @@ const ZohoForm: React.FC<Props> = ({ successCondition }) => {
         To: "",
         Goods: "",
       });
+      setVisibilityCondition(true)
     } catch (err) {
       alert("Error submitting form");
     } finally {

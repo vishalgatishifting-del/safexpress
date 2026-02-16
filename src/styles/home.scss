@@ -339,7 +339,7 @@ body {
     }
 
     .details .images .card .img {
-      height: 220px;
+      height: 265px;
     }
   }
 }
@@ -555,7 +555,8 @@ body {
 }
 
 .service-card {
-  background: #fff;
+  // background: linear-gradient(135deg, #081c15, #1b4332);
+  background: v.$primary-color;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -568,7 +569,6 @@ body {
   }
 }
 
-/* Image */
 .service-image {
   height: 200px;
 
@@ -579,17 +579,16 @@ body {
   }
 }
 
-/* Content */
 .service-content {
   padding: 16px;
 
   h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #fff;
   }
 }
 
-/* Tabs */
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -623,6 +622,7 @@ body {
     div {
       text-align: center;
       font-size: 11px;
+      color: #fff;
 
       i {
         font-size: 18px;
