@@ -24,13 +24,14 @@ import FAQ from "../pages/FAQ.tsx";
 import SafetyStandard from "../pages/SafetyStandard.tsx";
 import ScrollToTop from "../config/ScrollToTop.tsx";
 
-import { pagesData } from "../pages/city-wise-pages-data"
 
 import CityPage from "../pages/CityPage"
 import SuccessScreen from "../components/SuccessScreen.tsx";
+
 // import { useState } from "react";
 
 import { VisibilityProvider } from "../context/AppContext.tsx";
+import Review from "../pages/Review.tsx";
 
 
 
@@ -43,7 +44,7 @@ const AppRoutes = () => {
         <VisibilityProvider>
             <ScrollToTop>
 
-                <SuccessScreen/>
+                <SuccessScreen />
                 <section style={{ width: "100%", overflowX: "hidden" }}>
 
                     <TopBar />
@@ -69,16 +70,21 @@ const AppRoutes = () => {
                         <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
                         <Route path="/faq" element={<FAQ></FAQ>}></Route>
                         <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
+                        <Route path="/review" element={<Review></Review>}></Route>
 
 
-                        {
+                        {/* {
                             pagesData.map((page) => (
                                 <Route path={`/city/${page.slug}`} element={<CityPage city={page.city} img={page.img} metaData={page.metaDetails} offer={page.offer} pageData={page.pageData} address={page.address}></CityPage>
                                 }>
 
                                 </Route>
                             ))
-                        }
+                        } */}
+                        <Route
+                            path="/city/:slug"
+                            element={<CityPage />}
+                        />
                     </Routes>
                     <Footer></Footer>
                 </section>

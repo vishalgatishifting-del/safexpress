@@ -10,7 +10,7 @@ import { COMPANY } from "../config/Company";
 const QuickMenu = () => {
     return (
         <div className="quick-menu">
-            <a href={COMPANY.intagram}>
+            <a href={COMPANY.instagram}>
                 <InstagramIcon className='icon'></InstagramIcon>
             </a>
             <a href={COMPANY.facebook}>

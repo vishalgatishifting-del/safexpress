@@ -34,7 +34,7 @@ import Delhi from "../assets/CityPages/delhi.webp"
 import Dwarka from "../assets/CityPages/dwarka.webp"
 import Faridabad from "../assets/CityPages/faridabad.webp"
 import Goa from "../assets/CityPages/goa.webp"
-import GreaterNoida from "../assets/CityPages/greater noida.webp"
+import GreaterNoida from "../assets/CityPages/greater-noida.webp"
 import Gurgaon from "../assets/CityPages/gurgaon.webp"
 import Hubli from "../assets/CityPages/hubli.webp"
 import Jammu from "../assets/CityPages/jammu.webp"
@@ -79,15 +79,15 @@ import Kendrapara from "../assets/CityPages/Kendrapara.webp"
 import Rayagada from "../assets/CityPages/Rayagada.webp"
 
 import Whitefield from "../assets/CityPages/Whitefield.webp"
-import Electronic_City from "../assets/CityPages/Electronic City.webp"
+import Electronic_City from "../assets/CityPages/Electronic-City.webp"
 import Koramangala from "../assets/CityPages/Koramangala.webp"
 import Indiranagar from "../assets/CityPages/Indiranagar.webp"
 import Marathahalli from "../assets/CityPages/Marathahalli.webp"
 import Yelahanka from "../assets/CityPages/Yelahanka.webp"
 import Jayanagar from "../assets/CityPages/Jayanagar.webp"
 import Rajajinagar from "../assets/CityPages/Rajajinagar.webp"
-import HSR_Layout from "../assets/CityPages/HSR Layout.webp"
-import BTM_Layout from "../assets/CityPages/BTM Layout.webp"
+import HSR_Layout from "../assets/CityPages/HSR-Layout.webp"
+import BTM_Layout from "../assets/CityPages/BTM-Layout.webp"
 
 import Hebbal from "../assets/CityPages/Hebbal.webp"
 import Malleshwaram from "../assets/CityPages/Malleshwaram.webp"
@@ -207,8 +207,8 @@ import Samba from "../assets/CityPages/Samba.webp"
 
 
 import Shopian from "../assets/CityPages/Shopian.webp"
-import Leh from "../assets/CityPages/Leh (Ladakh).webp"
-import Kargil from "../assets/CityPages/Kargil (Ladakh).webp"
+import Leh from "../assets/CityPages/Leh.webp"
+import Kargil from "../assets/CityPages/Kargil.webp"
 import Itanagar from "../assets/CityPages/Itanagar.webp"
 import Naharlagun from "../assets/CityPages/Naharlagun.webp"
 
@@ -283,8 +283,8 @@ import Guntur from "../assets/CityPages/Guntur.webp"
 import Nellore from "../assets/CityPages/Nellore.webp"
 import Tirupati from "../assets/CityPages/Tirupati.webp"
 import Kurnool from "../assets/CityPages/Kurnool.webp"
-import Rajahmundry from "../assets/CityPages/Rajahmundry (Rajamahendravaram).webp"
-import Kadapa from "../assets/CityPages/Kadapa (Cuddapah).webp"
+import Rajahmundry from "../assets/CityPages/Rajahmundry.webp"
+import Kadapa from "../assets/CityPages/Kadapa.webp"
 import Anantapur from "../assets/CityPages/Anantapur.webp"
 import Eluru from "../assets/CityPages/Eluru.webp"
 import Ongole from "../assets/CityPages/Ongole.webp"
@@ -336,7 +336,7 @@ import Jalpaiguri from "../assets/CityPages/Jalpaiguri.webp"
 
 
 import Berhampore from "../assets/CityPages/Berhampore.webp"
-import Cooch from "../assets/CityPages/Cooch Behar.webp"
+import Cooch from "../assets/CityPages/Cooch-Behar.webp"
 import Krishnanagar from "../assets/CityPages/Krishnanagar.webp"
 import Chandannagar from "../assets/CityPages/Chandannagar.webp"
 import Panaji from "../assets/CityPages/Panaji.webp"
@@ -347,15 +347,15 @@ import Ponda from "../assets/CityPages/Ponda.webp"
 import Margao from "../assets/CityPages/Margao.webp"
 
 
-import Vasco_da_Gama from "../assets/CityPages/Vasco da Gama.webp"
+import Vasco_da_Gama from "../assets/CityPages/Vasco-da-Gama.webp"
 import Madurai from "../assets/CityPages/Madurai.webp"
-import Tiruchirappalli from "../assets/CityPages/Tiruchirappalli (Trichy).webp"
+import Tiruchirappalli from "../assets/CityPages/Tiruchirappalli.webp"
 import Salem from "../assets/CityPages/Salem.webp"
 import Tirunelveli from "../assets/CityPages/Tirunelveli.webp"
 import Erode from "../assets/CityPages/Erode.webp"
 import Vellore from "../assets/CityPages/Vellore.webp"
 import Thanjavur from "../assets/CityPages/Thanjavur.webp"
-import Thoothukudi from "../assets/CityPages/Thoothukudi (Tuticorin).webp"
+import Thoothukudi from "../assets/CityPages/Thoothukudi.webp"
 import Dindigul from "../assets/CityPages/Dindigul.webp"
 
 
@@ -419,11 +419,11 @@ import Yamunanagar from "../assets/CityPages/Yamunanagar.webp"
 import Karnal from "../assets/CityPages/Karnal.webp" 
 import Dhanbad from "../assets/CityPages/Dhanbad.webp" 
 import Hazaribagh from "../assets/CityPages/Hazaribagh.webp" 
-import Bokaro from "../assets/CityPages/Bokaro Steel City.webp" 
+import Bokaro from "../assets/CityPages/Bokaro-Steel-City.webp" 
 
 
 
-import Bangalore from "../assets/CityPages/Bangalore.webp"
+// import Bangalore from "../assets/CityPages/Bangalore.webp"
 import Mysore from "../assets/CityPages/Mysore.webp"
 import Jabalpur from "../assets/CityPages/Jabalpur.webp"
 import Ujjain from "../assets/CityPages/Ujjain.webp"
@@ -777,7 +777,7 @@ export const pagesData = [
     }
   },
   {
-    slug: "greaternoida", city: "Greater Noida", img: GreaterNoida, offer: "10%", address: "Shop no.109 CH. Hansraj Bhati Market Accher, Eldeco Green Meadows, Greater Noida, Uttar Pradesh 201315", metaDetails: {
+    slug: "greater-noida", city: "Greater Noida", img: GreaterNoida, offer: "10%", address: "Shop no.109 CH. Hansraj Bhati Market Accher, Eldeco Green Meadows, Greater Noida, Uttar Pradesh 201315", metaDetails: {
       title: "Packers and Movers in Greater Noida | safexpress",
       description: "Hire trusted Packers and Movers in Greater Noida with safexpress. We provide secure, affordable and professional home, office and vehicle relocation services in Greater Noida and across Uttar Pradesh.",
       keywords: "Local movers near me Greater Noida, Packers and Movers in Greater Noida, safexpress Greater Noida, Best Packers and Movers Greater Noida, Affordable Packers and Movers Greater Noida, Trusted Packers and Movers Greater Noida Uttar Pradesh, Local Packers and Movers Greater Noida, Professional Movers and Packers Greater Noida, Home Shifting Services Greater Noida, Office Relocation Greater Noida, Vehicle Transport Greater Noida, Car Transport Service Greater Noida, Bike Transport Greater Noida, Household Goods Shifting Greater Noida, Industrial Packers and Movers Greater Noida, Door-to-Door Shifting Services Greater Noida, Packing and Unpacking Services Greater Noida, Furniture Movers Greater Noida, Intercity Packers and Movers Greater Noida, Packers and Movers Greater Noida to Delhi, Packers and Movers Greater Noida to Mumbai, Packers and Movers Greater Noida to Bengaluru, Packers and Movers Greater Noida to Kolkata, Reliable Relocation Company Greater Noida, Cost-Effective Packers and Movers Greater Noida, Quick Packers and Movers Greater Noida, 24x7 Packers and Movers Greater Noida, Mini Truck for Shifting Greater Noida, Tempo Service Greater Noida, Best Relocation Services Greater Noida, Safe and Secure Moving Services Greater Noida, Budget-Friendly Movers Greater Noida, Professional Relocation Company Greater Noida, Long-Distance Packers and Movers Greater Noida, Trusted Shifting Company Greater Noida, Goods Transport Services Greater Noida, Moving Experts Greater Noida, Packers Movers with Insurance Greater Noida, Verified Packers and Movers Greater Noida, Logistics and Transport Services Greater Noida, Gati Shifting Movers Greater Noida, Local Movers Greater Noida, Home Shifting Services in Greater Noida, Office Shifting Services in Greater Noida, Factory Relocation Services Greater Noida, Vehicle Shifting Greater Noida, Household Shifting Greater Noida, Movers and Packers near me Greater Noida, Relocation Company in Greater Noida, Moving Company Greater Noida, IBA Approved Packers and Movers Greater Noida, Packers and Movers Greater Noida Price, Packers and Movers Greater Noida Charges, Packers and Movers Greater Noida Cost, Reliable Packers and Movers Greater Noida, Door to Door Packers and Movers Greater Noida, Packers and Movers for Local Shifting in Greater Noida, Packers and Movers for Long Distance in Greater Noida, Loading and Unloading Services Greater Noida, Warehouse Shifting Greater Noida, Logistics Services Greater Noida, Transport Services Greater Noida, Relocation Company Greater Noida Uttar Pradesh, Household Relocation Services Greater Noida, Home Packers Greater Noida, Professional Packers and Movers Greater Noida, Intercity Movers Greater Noida, Shifting Services Greater Noida, Goods Transport Greater Noida, Safe Relocation Services Greater Noida, Local Household Movers Greater Noida, Best Shifting Company Greater Noida, Trusted Relocation Services Greater Noida, safexpress and Movers Uttar Pradesh.",
@@ -1164,7 +1164,7 @@ export const pagesData = [
     }
   },
   {
-    slug: "Electronic-City", city: "Electronic City", img: Electronic_City, offer: "19%", address: "Shop 104, Bettadasanapura Main Rd, Doddathoguru, Electronic City Phase I, Electronic City, Bengaluru, Karnataka 560100", metaDetails: {
+    slug: "electronic-city", city: "Electronic City", img: Electronic_City, offer: "19%", address: "Shop 104, Bettadasanapura Main Rd, Doddathoguru, Electronic City Phase I, Electronic City, Bengaluru, Karnataka 560100", metaDetails: {
       title: "Packers and Movers in Electronic City | safexpress",
       description: "Hire trusted Packers and Movers in Electronic City with safexpress. We provide secure, affordable and professional home, office and vehicle relocation services in Electronic City and across Bangalore.",
       keywords: "Local movers near me Electronic City, Packers and Movers in Electronic City, safexpress Electronic City, Best Packers and Movers Electronic City, Affordable Packers and Movers Electronic City, Trusted Packers and Movers Electronic City Bangalore, Local Packers and Movers Electronic City, Professional Movers and Packers Electronic City, Home Shifting Services Electronic City, Office Relocation Electronic City, Vehicle Transport Electronic City, Car Transport Service Electronic City, Bike Transport Electronic City, Household Goods Shifting Electronic City, Industrial Packers and Movers Electronic City, Door-to-Door Shifting Services Electronic City, Packing and Unpacking Services Electronic City, Furniture Movers Electronic City, Intercity Packers and Movers Electronic City, Packers and Movers Electronic City to Whitefield, Packers and Movers Electronic City to Koramangala, Packers and Movers Electronic City to HSR Layout, Packers and Movers Electronic City to Bannerghatta, Reliable Relocation Company Electronic City, Cost-Effective Packers and Movers Electronic City, Quick Packers and Movers Electronic City, 24x7 Packers and Movers Electronic City, Mini Truck for Shifting Electronic City, Tempo Service Electronic City, Best Relocation Services Electronic City, Safe and Secure Moving Services Electronic City, Budget-Friendly Movers Electronic City, Professional Relocation Company Electronic City, Long-Distance Packers and Movers Electronic City, Trusted Shifting Company Electronic City, Goods Transport Services Electronic City.",
@@ -1180,12 +1180,12 @@ export const pagesData = [
   { slug: "Yelahanka", city: "Yelahanka", img: Yelahanka, offer: "24%", address: "Bellary Rd, Palanahalli, Maruthi Nagar, Yelahanka, Bengaluru, Karnataka 560064" },
   { slug: "Jayanagar", city: "Jayanagar", img: Jayanagar, offer: "24%", address: "7th Main Rd, 4th Block, Jayanagar, Bengaluru, Karnataka 560011" },
   { slug: "Rajajinagar", city: "Rajajinagar", img: Rajajinagar, offer: "24%", address: "17th E Main Rd, 5th Block, Rajajinagar, Bengaluru, Karnataka 560010" },
-  { slug: "HSR-Layout", city: "HSR Layout", img: HSR_Layout, offer: "24%", address: "256, 7th St, Sector 2, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102" },
-  { slug: "BTM-Layout", city: "BTM Layout", img: BTM_Layout, offer: "24%", address: "Masjid Omar Farooq Complex, No. 24, Shop 5, 1st Floor, 8th Cross, 20th Main, BTM Layout, Bengaluru, Karnataka 560068" },
+  { slug: "hsr-layout", city: "HSR Layout", img: HSR_Layout, offer: "24%", address: "256, 7th St, Sector 2, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102" },
+  { slug: "btm-layout", city: "BTM Layout", img: BTM_Layout, offer: "24%", address: "Masjid Omar Farooq Complex, No. 24, Shop 5, 1st Floor, 8th Cross, 20th Main, BTM Layout, Bengaluru, Karnataka 560068" },
 
   { slug: "Hebbal", city: "Hebbal", img: Hebbal, offer: "27%", address: "Mariya St, opposite Kensari School, Fortune Valley, Mariyan Palya, Hebbal, Bengaluru, Karnataka 560045" },
   { slug: "Malleshwaram", city: "Malleshwaram", img: Malleshwaram, offer: "27%", address: "V8, Dattathreya Temple Road, 10th Cross Road, Pipeline, Malleshwaram, Bengaluru, Karnataka 56000" },
-  { slug: "Kalyan-Dombivli", city: "Kalyan-Dombivli", img: Kalyan_Dombivli, offer: "27%", address: "Gala No 6, Shree Swami Samarth CHS, Regency Estate Rd, near Church, Prayag Nagar, Dawadi, Dombivli, Maharashtra 421201" },
+  { slug: "kalyan-dombivli", city: "Kalyan-Dombivli", img: Kalyan_Dombivli, offer: "27%", address: "Gala No 6, Shree Swami Samarth CHS, Regency Estate Rd, near Church, Prayag Nagar, Dawadi, Dombivli, Maharashtra 421201" },
   { slug: "Banashankari", city: "Banashankari", img: Banashankari, offer: "27%", address: "11th Main, 50 Feet Main Rd, Nagendra Block, Banashankari 1st Stage, Bengaluru, Karnataka 560050" },
   { slug: "Nagpur", city: "Nagpur", img: Nagpur, offer: "27%", address: "Plot 56, Rai Vatika , Row House, Khadgaon Rd, Sonba Nagar, Wadi, Nagpur, Davlameti, Maharashtra 440021" },
 
@@ -1330,7 +1330,7 @@ export const pagesData = [
   },
 
   {
-    slug: "Bengaluru", city: "Bengaluru", img: Bengaluru, offer: "17%", address: "Block MS residency, behind masjid e aqsa, Rajiv Gandhi Nagar, 7th sector, HSR Layout, Bengaluru, Karnataka 560068", metaDetails: {
+    slug: "Bengaluru", city: "Bengaluru (Bangalore)", img: Bengaluru, offer: "17%", address: "Block MS residency, behind masjid e aqsa, Rajiv Gandhi Nagar, 7th sector, HSR Layout, Bengaluru, Karnataka 560068", metaDetails: {
       title: "Packers and Movers in Bengaluru | safexpress",
       description: "Hire trusted Packers and Movers in Bengaluru with safexpress. We provide secure, affordable and professional home, office and vehicle relocation services across all locations in Bengaluru.",
       keywords: "Local movers near me Bengaluru, Packers and Movers in Bengaluru, safexpress Bengaluru, Best Packers and Movers Bengaluru, Affordable Packers and Movers Bengaluru, Trusted Packers and Movers Bengaluru Karnataka, Local Packers and Movers Bengaluru, Professional Movers and Packers Bengaluru, Home Shifting Services Bengaluru, Office Relocation Bengaluru, Vehicle Transport Bengaluru, Car Transport Service Bengaluru, Bike Transport Bengaluru, Household Goods Shifting Bengaluru, Industrial Packers and Movers Bengaluru, Door-to-Door Shifting Services Bengaluru, Packing and Unpacking Services Bengaluru, Furniture Movers Bengaluru, Intercity Packers and Movers Bengaluru, Packers and Movers Bengaluru to Mumbai, Packers and Movers Bengaluru to Delhi, Packers and Movers Bengaluru to Hyderabad, Packers and Movers Bengaluru to Chennai, Reliable Relocation Company Bengaluru, Cost-Effective Packers and Movers Bengaluru, Quick Packers and Movers Bengaluru, 24x7 Packers and Movers Bengaluru, Mini Truck for Shifting Bengaluru, Tempo Service Bengaluru, Best Relocation Services Bengaluru, Safe and Secure Moving Services Bengaluru, Budget-Friendly Movers Bengaluru, Professional Relocation Company Bengaluru, Long-Distance Packers and Movers Bengaluru, Trusted Shifting Company Bengaluru, Goods Transport Services Bengaluru.",
@@ -2745,7 +2745,7 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Bardhaman by safexpress. Book your smooth relocation today!",
   canonical: "https://gatishiftingpackers.com/city/Bardhaman"
 } },
-  { slug: "Cooch", city: "Cooch Behar", img: Cooch, offer: "23%", address: "Chilakhana, Cooch Behar (near AP School) 736177", metaDetails: {
+  { slug: "cooch", city: "Cooch Behar", img: Cooch, offer: "23%", address: "Chilakhana, Cooch Behar (near AP School) 736177", metaDetails: {
   title: "Packers and Movers in Cooch | safexpress",
   description: "Hire trusted Packers and Movers in Cooch with safexpress. We provide safe, affordable and professional home, office and vehicle relocation services in Cooch and across West Bengal.",
   keywords: "Local movers near me Cooch, Packers and Movers in Cooch, safexpress Cooch, Best Packers and Movers Cooch, Affordable Packers and Movers Cooch, Trusted Packers and Movers Cooch West Bengal, Local Packers and Movers Cooch, Professional Movers and Packers Cooch, Home Shifting Services Cooch, Office Relocation Cooch, Vehicle Transport Cooch, Car Transport Service Cooch, Bike Transport Cooch, Household Goods Shifting Cooch, Industrial Packers and Movers Cooch, Door-to-Door Shifting Services Cooch, Packing and Unpacking Services Cooch, Furniture Movers Cooch, Intercity Packers and Movers Cooch, Packers and Movers Cooch to Siliguri, Packers and Movers Cooch to Howrah, Packers and Movers Cooch to Durgapur, Packers and Movers Cooch to Asansol, Packers and Movers Cooch to Kolkata, Packers and Movers Cooch to Delhi, Reliable Relocation Company Cooch, Cost-Effective Packers and Movers Cooch, Quick Packers and Movers Cooch, 24x7 Packers and Movers Cooch, Mini Truck for Shifting Cooch, Tempo Service Cooch, Best Relocation Services Cooch, Safe and Secure Moving Services Cooch, Budget-Friendly Movers Cooch, Professional Relocation Company Cooch, Long-Distance Packers and Movers Cooch, Trusted Shifting Company Cooch, Goods Transport Services Cooch.",
@@ -2822,7 +2822,7 @@ export const pagesData = [
 
   
 
-  { slug: "Vasco-da-Gama", city: "Vasco da Gama", img: Vasco_da_Gama, offer: "23%", address: "Ground Floor, Anand Chambers, opposite to SBI Bank, Vaddem, Vasco Da Gama, Goa 403802", metaDetails: {
+  { slug: "vasco-da-gama", city: "Vasco da Gama", img: Vasco_da_Gama, offer: "23%", address: "Ground Floor, Anand Chambers, opposite to SBI Bank, Vaddem, Vasco Da Gama, Goa 403802", metaDetails: {
   title: "Packers and Movers in Vasco da Gama | safexpress",
   description: "Hire trusted Packers and Movers in Vasco da Gama with safexpress. We provide safe, affordable and professional home, office and vehicle relocation services in Vasco da Gama and across Goa.",
   keywords: "Local movers near me Vasco da Gama, Packers and Movers in Vasco da Gama, safexpress Vasco da Gama, Best Packers and Movers Vasco da Gama, Affordable Packers and Movers Vasco da Gama, Trusted Packers and Movers Vasco da Gama Goa, Local Packers and Movers Vasco da Gama, Professional Movers and Packers Vasco da Gama, Home Shifting Services Vasco da Gama, Office Relocation Vasco da Gama, Vehicle Transport Vasco da Gama, Car Transport Service Vasco da Gama, Bike Transport Vasco da Gama, Household Goods Shifting Vasco da Gama, Industrial Packers and Movers Vasco da Gama, Door-to-Door Shifting Services Vasco da Gama, Packing and Unpacking Services Vasco da Gama, Furniture Movers Vasco da Gama, Intercity Packers and Movers Vasco da Gama, Packers and Movers Vasco da Gama to Panaji, Packers and Movers Vasco da Gama to Mapusa, Packers and Movers Vasco da Gama to Margao, Packers and Movers Vasco da Gama to Ponda, Packers and Movers Vasco da Gama to Delhi, Packers and Movers Vasco da Gama to Bangalore, Reliable Relocation Company Vasco da Gama, Cost-Effective Packers and Movers Vasco da Gama, Quick Packers and Movers Vasco da Gama, 24x7 Packers and Movers Vasco da Gama, Mini Truck for Shifting Vasco da Gama, Tempo Service Vasco da Gama, Best Relocation Services Vasco da Gama, Safe and Secure Moving Services Vasco da Gama, Budget-Friendly Movers Vasco da Gama, Professional Relocation Company Vasco da Gama, Long-Distance Packers and Movers Vasco da Gama, Trusted Shifting Company Vasco da Gama, Goods Transport Services Vasco da Gama.",
@@ -3310,7 +3310,7 @@ export const pagesData = [
   canonical: "https://gatishiftingpackers.com/city/Hazaribagh"
 }
  },
-  { slug: "Bokaro-Steel-City", city: "Bokaro Steel City", img: Bokaro, offer: "16%", address: "Plot No-102 City Centre, Sector-4, Bokaro Steel City, Jharkhand 827004, India. ", metaDetails: {
+  { slug: "bokaro-steel-city", city: "Bokaro Steel City", img: Bokaro, offer: "16%", address: "Plot No-102 City Centre, Sector-4, Bokaro Steel City, Jharkhand 827004, India. ", metaDetails: {
   title: "Packers and Movers in Bokaro Steel City | safexpress",
   description: "Looking for trusted Packers and Movers in Bokaro Steel City? safexpress offers safe, affordable and professional home shifting, office relocation and vehicle transport services in Bokaro and across Jharkhand.",
   keywords: "Packers and Movers in Bokaro Steel City, safexpress Bokaro, Best Packers and Movers Bokaro, Affordable Packers and Movers Bokaro, Trusted Packers and Movers Bokaro Jharkhand, Local Packers and Movers near me Bokaro, Professional Movers and Packers Bokaro, Home Shifting Services Bokaro Steel City, Office Relocation Services Bokaro, Car Transport Service Bokaro, Bike Transport Bokaro, Vehicle Relocation Bokaro, Household Goods Shifting Bokaro, Industrial Packers and Movers Bokaro Steel City, Door to Door Shifting Services Bokaro, Packing and Unpacking Services Bokaro, Furniture Movers Bokaro, Intercity Packers and Movers Bokaro, Packers and Movers Bokaro to Ranchi, Packers and Movers Bokaro to Dhanbad, Packers and Movers Bokaro to Jamshedpur, Packers and Movers Bokaro to Kolkata, Packers and Movers Bokaro to Patna, Reliable Relocation Company Bokaro, Cost Effective Packers and Movers Bokaro, Safe and Secure Moving Services Bokaro, Budget Packers and Movers Bokaro, Professional Relocation Services Bokaro, Long Distance Packers and Movers Bokaro, Trusted Shifting Company Bokaro, Mini Truck for Shifting Bokaro, Tempo Service Bokaro",
@@ -3322,15 +3322,15 @@ export const pagesData = [
 
 
 
-  { slug: "Bangalore", city: "Bangalore", img: Bangalore, offer: "16%", address: "Shop no 102 - Between Spring Fields & Mantri Flora Apartments, Bellandur, Koramangala, Bangalore-560034, Karnataka, India", metaDetails: {
-  title: "Packers and Movers in Bangalore | safexpress",
-  description: "Looking for reliable Packers and Movers in Bangalore? safexpress provides safe, affordable and professional home shifting, office relocation and vehicle transport services across Bangalore and Karnataka.",
-  keywords: "Packers and Movers in Bangalore, safexpress Bangalore, Best Packers and Movers Bangalore, Affordable Packers and Movers Bangalore, Trusted Packers and Movers Bangalore Karnataka, Local Packers and Movers near me Bangalore, Professional Movers and Packers Bangalore, Home Shifting Services Bangalore, Office Relocation Services Bangalore, Car Transport Service Bangalore, Bike Transport Bangalore, Vehicle Relocation Bangalore, Household Goods Shifting Bangalore, Industrial Packers and Movers Bangalore, Door to Door Shifting Services Bangalore, Packing and Unpacking Services Bangalore, Furniture Movers Bangalore, Intercity Packers and Movers Bangalore, Packers and Movers Bangalore to Chennai, Packers and Movers Bangalore to Hyderabad, Packers and Movers Bangalore to Pune, Packers and Movers Bangalore to Mumbai, Packers and Movers Bangalore to Coimbatore, Reliable Relocation Company Bangalore, Cost Effective Packers and Movers Bangalore, Safe and Secure Moving Services Bangalore, Budget Packers and Movers Bangalore, Professional Relocation Services Bangalore, Long Distance Packers and Movers Bangalore, Trusted Shifting Company Bangalore, Mini Truck for Shifting Bangalore, Tempo Service Bangalore",
-  ogDescription: "Hire trusted Packers and Movers in Bangalore with safexpress for safe, timely and affordable home, office and vehicle relocation services across Bangalore and Karnataka.",
-  twitterDescription: "Safe, affordable and professional Packers and Movers in Bangalore by safexpress. Get a hassle-free relocation experience today!",
-  canonical: "https://gatishiftingpackers.com/city/Bangalore"
-}
- },
+//   { slug: "Bangalore", city: "Bangalore", img: Bangalore, offer: "16%", address: "Shop no 102 - Between Spring Fields & Mantri Flora Apartments, Bellandur, Koramangala, Bangalore-560034, Karnataka, India", metaDetails: {
+//   title: "Packers and Movers in Bangalore | safexpress",
+//   description: "Looking for reliable Packers and Movers in Bangalore? safexpress provides safe, affordable and professional home shifting, office relocation and vehicle transport services across Bangalore and Karnataka.",
+//   keywords: "Packers and Movers in Bangalore, safexpress Bangalore, Best Packers and Movers Bangalore, Affordable Packers and Movers Bangalore, Trusted Packers and Movers Bangalore Karnataka, Local Packers and Movers near me Bangalore, Professional Movers and Packers Bangalore, Home Shifting Services Bangalore, Office Relocation Services Bangalore, Car Transport Service Bangalore, Bike Transport Bangalore, Vehicle Relocation Bangalore, Household Goods Shifting Bangalore, Industrial Packers and Movers Bangalore, Door to Door Shifting Services Bangalore, Packing and Unpacking Services Bangalore, Furniture Movers Bangalore, Intercity Packers and Movers Bangalore, Packers and Movers Bangalore to Chennai, Packers and Movers Bangalore to Hyderabad, Packers and Movers Bangalore to Pune, Packers and Movers Bangalore to Mumbai, Packers and Movers Bangalore to Coimbatore, Reliable Relocation Company Bangalore, Cost Effective Packers and Movers Bangalore, Safe and Secure Moving Services Bangalore, Budget Packers and Movers Bangalore, Professional Relocation Services Bangalore, Long Distance Packers and Movers Bangalore, Trusted Shifting Company Bangalore, Mini Truck for Shifting Bangalore, Tempo Service Bangalore",
+//   ogDescription: "Hire trusted Packers and Movers in Bangalore with safexpress for safe, timely and affordable home, office and vehicle relocation services across Bangalore and Karnataka.",
+//   twitterDescription: "Safe, affordable and professional Packers and Movers in Bangalore by safexpress. Get a hassle-free relocation experience today!",
+//   canonical: "https://gatishiftingpackers.com/city/Bangalore"
+// }
+//  },
   { slug: "Mysore", city: "Mysore", img: Mysore, offer: "16%", address: "12/a Mahadevapura Road, Udayagiri, Mysore, Karnataka 570020, India. ", metaDetails: {
   title: "Packers and Movers in Mysore | safexpress",
   description: "Hire trusted Packers and Movers in Mysore with safexpress. We provide safe, affordable and professional home, office and vehicle relocation services in Mysore and across Karnataka.",

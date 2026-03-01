@@ -35,7 +35,7 @@ const TopBar = () => {
         <a href={COMPANY.facebook} aria-label="Facebook">
           <FacebookIcon />
         </a>
-        <a href={COMPANY.intagram} aria-label="Instagram">
+        <a href={COMPANY.instagram} aria-label="Instagram">
           <InstagramIcon />
         </a>
         <a href={COMPANY.linkedin} aria-label="LinkedIn">

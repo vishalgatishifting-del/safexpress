@@ -1,51 +1,73 @@
-// import AwardCertification from "../components/AwardCertification";
-// import BrandList from "../components/BrandsList";
-// import FAQList from "../components/FAQList";
-// import GetInTouch from "../components/GetInTouch";
-// import ReviewVideo from "../components/ReviewVideos";
-// import TrustUsSection from "../components/TrustUsSection";
-import chargesImg from "../assets/CityPages/packers & movers charges.webp"
-import "../styles/CityPage.scss"
+import "../styles/CityPage.scss";
+import "../styles/Common.scss";
+
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import "../styles/Common.scss"
-import { COMPANY } from "../config/Company";
+import { useParams, Link } from "react-router-dom";
+
+import LocationOnIcon
+    from "@mui/icons-material/LocationOn";
+
+import chargesImg
+    from "../assets/CityPages/packers & movers charges.webp";
+
+import { COMPANY }
+    from "../config/Company";
 
 import FAQ from "../components/FAQ";
-import TrustUsSection from "../components/TrustUsSection";
+import TrustUsSection
+    from "../components/TrustUsSection";
+
+import { cities }
+    from "../components/CitiesData";
+
+import { pagesData }
+    from "./city-wise-pages-data";
 
 
 
-interface MetaDataProps {
-    title?: string;
-    description?: string;
-    keywords?: string;
-    ogDescription?: string;
-    twitterDescription?: string;
-}
 
-interface PageDataProps {
-    mainHeading?: string;
-    h11?: string;
-    paragraph1?: string;
-    h12?: string;
-    h21?: string;
-    paragraph2?: string;
-    h22?: string;
-    paragraph3?: string;
-}
-interface PageProps {
-    city: string;
-    img?: string;
-    metaData?: MetaDataProps;
-    offer?: string;
-    pageData?: PageDataProps;
-    address?: string;
-}
+const CityPage = () => {
 
-const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer, address }) => {
+    const { slug } = useParams();
 
+const normalizedSlug =
+  slug?.toLowerCase();
+
+const cityImage = cities.find(
+  c => c.slug.toLowerCase() === normalizedSlug
+);
+
+const cityMeta = pagesData.find(
+  p => p.slug.toLowerCase() === normalizedSlug
+);
+
+    // const capitalizeFirst = (text: string = "") =>
+    //     text.charAt(0).toUpperCase() +
+    //     text.slice(1);
+
+    // IMAGE FIND
+    // const formattedCity =
+    //     capitalizeFirst(slug || "");
+
+    // const cityImage = cities.find(
+    //     c => c.city === formattedCity
+    // );
+
+    // // META FIND
+    // const cityMeta = pagesData.find(
+    //     p =>
+    //         p.slug.toLowerCase()
+    //         === slug?.toLowerCase()
+    // );
+
+    if (!cityImage || !cityMeta)
+        return <h1>City Not Found</h1>;
+
+    const city = cityMeta.city;
+    const img = cityImage.img;
+    const metaData = cityMeta.metaDetails;
+    const offer = cityMeta.offer;
+    const address = cityMeta.address;
     return (
         <>
             <Helmet>

@@ -9,9 +9,11 @@ import XIcon from "@mui/icons-material/X";
 import logo from "../assets/Logo/logo.jpeg"
 import { Link } from "react-router-dom";
 
-import { cities2 } from "./CitiesData";
+import { cities } from "./CitiesData";
 import { useState } from "react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { COMPANY } from "../config/Company";
+
 const Footer = () => {
   
     const [visibleCount, setVisibleCount] = useState(28);
@@ -30,12 +32,12 @@ const Footer = () => {
           </p>
 
           <div className="social-icons">
-            <a href="https://www.instagram.com/saf_eexpress/"><InstagramIcon /></a>
-            <a href="https://www.facebook.com/profile.php?id=61587270281087"><FacebookIcon /></a>
-            <a href="https://www.youtube.com/@Safeexpress11"><YouTubeIcon /></a>
-            <a href="https://www.linkedin.com/in/safeexpress-packers-2116813aa/"><LinkedInIcon /></a>
-            <a href="https://x.com/SPackers48232"><XIcon /></a>
-            <a href="https://wa.me/919217486901"><WhatsAppIcon /></a>
+            <a href={COMPANY.instagram}><InstagramIcon /></a>
+            <a href={COMPANY.facebook}><FacebookIcon /></a>
+            <a href={COMPANY.youtube}><YouTubeIcon /></a>
+            <a href={COMPANY.linkedin}><LinkedInIcon /></a>
+            <a href={COMPANY.twitter}><XIcon /></a>
+            <a href={COMPANY.whatsapp}><WhatsAppIcon /></a>
           </div>
         </div>
 
@@ -93,9 +95,9 @@ const Footer = () => {
         <div className="cities">
           <div className="container">
             <ul>
-              {cities2.slice(0, visibleCount).map((item, i) => (
+              {cities.slice(0, visibleCount).map((item, i) => (
                 <li key={i}>
-                  <Link to={`/city/${item.city}`}>
+                  <Link to={`/city/${item.slug}`}>
 
                     <span><LocationOnIcon></LocationOnIcon> Movers and Packers {item.city}</span>
                   </Link>
@@ -103,7 +105,7 @@ const Footer = () => {
               ))}
 
             </ul>
-            {visibleCount < cities2.length && (
+            {visibleCount < cities.length && (
               <button className="show-more-btn" onClick={() => setVisibleCount(prev => prev + 28)}>
                 Show More
               </button>

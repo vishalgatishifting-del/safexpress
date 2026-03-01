@@ -1,0 +1,96 @@
+@use "./variables" as v;
+
+#customer-review-list{
+    margin-top: 107.01px;
+    .container{
+        margin-bottom: 20px;
+    }
+}
+
+#get-in-touch-form{
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width: 1101px) {
+    #customer-review-list {
+        margin-top: 63.01px !important;
+    }
+}
+
+#customer-review-list {
+    @include v.font-poppins-sans(400);
+    // background: url("../assets/reviewbg.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // padding: 30px;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #081c15, #1b4332);
+    padding: 50px 0;
+
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+    }
+
+    .para {
+        text-align: center;
+        margin-bottom: 50px;
+        color: #fff;
+    }
+
+    .container {
+        // display: flex;
+
+        .card {
+            margin: 0 10px;
+            width: 350px;
+            // border: 2px solid #000;
+            // background: rgb(219, 219, 219);
+            // box-shadow: 0 5px 10px #919191;
+            border-radius: 20px;
+            padding: 20px;
+            background: #ffffff13;
+            border: 0.1px solid #b6d2ff39;
+            color: #fff;
+
+            .details .rating {
+                font-size: 30px;
+            }
+
+            h4 {
+                color: rgb(0, 201, 80);
+                font-weight: normal;
+            }
+
+            p {
+                margin: 10px 0;
+            }
+
+            .customer-name {
+                margin-top: 10px;
+                display: flex;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 714px) {
+    #customer-review-list {
+        h1 {
+            font-size: 25px;
+        }
+
+        .para {
+            font-size: 15px;
+            margin-bottom: 25px;
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,15 +1,30 @@
-const images = import.meta.glob("../assets/CityPages/*.webp", { eager: true });
-
-type City = {
+export type City = {
+  slug: string;
   city: string;
   img: string;
 };
 
-export const cities2: City[] = Object.entries(images).map(([path, module]: any) => {
-  const filename = path.split("/").pop()?.replace(".webp", "") || "";
+const images = import.meta.glob(
+  "../assets/CityPages/*.webp",
+  { eager: true }
+);
 
-  return {
-    city: filename.replace(/[-_]/g, " "),
-    img: module.default
-  };
+const makeSlug = (name: string) =>
+  name.toLowerCase();
+
+export const cities: City[] =
+  Object.entries(images).map(
+    ([path, module]: any) => {
+
+      const filename =
+        path.split("/").pop()
+        ?.replace(".webp", "") || "";
+
+        console.log(makeSlug("https://safeshiftingpackers.com/city/"+filename))
+
+      return {
+        slug: makeSlug(filename), // ⭐ lowercase slug
+        city: filename,
+        img: module.default
+      };
 });
