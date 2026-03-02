@@ -68,6 +68,8 @@ const cityMeta = pagesData.find(
     const metaData = cityMeta.metaDetails;
     const offer = cityMeta.offer;
     const address = cityMeta.address;
+    const keywords = cityMeta.keywords
+    console.log(keywords)
     return (
         <>
             <Helmet>

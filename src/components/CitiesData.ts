@@ -23,7 +23,7 @@ export const cities: City[] =
         console.log(makeSlug("https://safeshiftingpackers.com/city/"+filename))
 
       return {
-        slug: makeSlug(filename), // ⭐ lowercase slug
+        slug: makeSlug(filename),
         city: filename,
         img: module.default
       };
