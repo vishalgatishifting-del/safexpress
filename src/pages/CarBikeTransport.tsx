@@ -46,7 +46,7 @@ const CarBikeTransport = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Car & Bike Transport Services | Safexpress" />
                 <meta property="og:description" content="Reliable and professional Car & Bike Transport Services by Safexpress. Move your vehicles safely anywhere in India." />
-                <meta property="og:url" content="https://gatishiftingpackers.com/car-bike-transport" />
+                <meta property="og:url" content="safeshiftingpackers.comcar-bike-transport" />
                 <meta property="og:site_name" content="Safexpress" />
                 <meta property="og:image" content="" />
 
@@ -59,7 +59,7 @@ const CarBikeTransport = () => {
                 <meta http-equiv="Content-Language" content="en" />
 
                 {/* Canonical URL */}
-                <link rel="canonical" href="https://gatishiftingpackers.com/car-bike-transport" />
+                <link rel="canonical" href="safeshiftingpackers.comcar-bike-transport" />
 
 
             </Helmet>
