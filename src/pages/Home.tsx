@@ -442,33 +442,33 @@ const Home = () => {
         <div className="container">
           <div className="card">
             <img src={truck3Img} alt="truck png" title="truck" />
-            <h2>PACKING AND MOVING</h2>
+            <h3>PACKING AND MOVING</h3>
             <p>We offer a range of packing and moving services from packing your entire household to packing selected items only or fragile item and any other furniture.</p>
           </div>
           <div className="card">
             <img src={carLoadingImg} alt="car png" title="car" />
-            <h2>CAR TRANSPORT SERVICES</h2>
+            <h3>CAR TRANSPORT SERVICES</h3>
             <p>Movers Aryavarta Association, are one of India's finest car carrier service providers. Our car transport services have been satisfactorily used by clients from corporates.</p>
           </div>
           <div className="card">
             <img src={ship2Img} alt="ship png" title="ship" />
-            <h2>CORP. GOODS RELOCATION</h2>
+            <h3>CORP. GOODS RELOCATION</h3>
             <p>Reckoned across the country for our efficient and reliable cargo moving and packing services, we undertake corporate Goods Relocation Service as per the requirements.</p>
           </div>
           <div className="card">
             <img src={ship2} alt="ship png" title="ship" />
-            <h2>FREIGHT FORWARDING</h2>
+            <h3>FREIGHT FORWARDING</h3>
             <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...</p>
           </div>
           <div className="card">
             <img src={airplaneImg} alt="airplane png" title="airplane" />
-            <h2>INTERNATIONAL LOGISTICS</h2>
+            <h3>INTERNATIONAL LOGISTICS</h3>
             <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...
               (neeche thoda cut ho gaya hai image me)</p>
           </div>
           <div className="card">
             <img src={truck2} alt="truck png" title="truck" />
-            <h2>LOADING & UNLOADING</h2>
+            <h3>LOADING & UNLOADING</h3>
             <p>A crucial part of every relocation process, the loading and unloading is executed by highly skilled teams. The goods are loaded and unloaded with the use of pulleys,lifters etc...</p>
           </div>
         </div>
