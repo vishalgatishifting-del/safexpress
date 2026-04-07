@@ -178,7 +178,7 @@ const Home = () => {
       <div className="form-container">
         <div className="container">
           <div className="text">
-            <h1>Safe, Reliable & Budget-Friendly Moving Services</h1>
+            <h2>Safe, Reliable & Budget-Friendly Moving Services</h2>
             <span>Why Safe Shifting Packers and Movers is the Right Choice?</span>
             <ul>
               <li>Affordable pricing with uncompromised service quality</li>
@@ -253,7 +253,7 @@ const Home = () => {
         </div>
       </section>
       <section id="our-services">
-        <h1>Our Services</h1>
+        <h2>Our Services</h2>
         <p>
           Tailor-made value added services to suit varied supply chain and logistics
           Pan India requirements for enterprises as well as individuals.
@@ -271,7 +271,7 @@ const Home = () => {
                   <img src={item.img} alt={item.title} title={item.title} />
                 </div>
                 <div className="text">
-                  <h4>{item.title}</h4>
+                  <h3>{item.title}</h3>
                   <ul>
                     <li>
                       Fastest connectivity across India with industry-leading transit
