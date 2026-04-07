@@ -111,10 +111,10 @@ const cityMeta = pagesData.find(
                             🚚 Trusted Packers & Movers
                         </div>
 
-                        <h1>
+                        <div className="hero-heading">
                             Best Packers & Movers in
                             <span> {city}</span>
-                        </h1>
+                        </div>
 
                         <p className="address">
                             <LocationOnIcon />

@@ -22,6 +22,18 @@
   position: relative;
   overflow: hidden;
 
+  .hero-heading{
+    
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+    span{
+      color: #52b788;
+    }
+
+  }
+
   .hero-content {
 
     display: flex;
@@ -48,21 +60,6 @@
 
   }
 
-
-  .hero-content h1 {
-
-    font-size: 42px;
-    font-weight: 600;
-    margin-bottom: 15px;
-
-  }
-
-
-  .hero-content h1 span {
-
-    color: #52b788;
-
-  }
 
 
   .address {
