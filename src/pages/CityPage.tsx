@@ -68,15 +68,16 @@ const cityMeta = pagesData.find(
     const metaData = cityMeta.metaDetails;
     const offer = cityMeta.offer;
     const address = cityMeta.address;
-    const keywords = cityMeta.keywords
-    console.log(keywords)
+    // const keywords = cityMeta.keywords
+    const pageData = cityMeta.pageData;
+    console.log(pageData)
     return (
         <>
             <Helmet>
                 <title>{metaData?.title}</title>
 
                 <meta name="description" content={metaData?.description} />
-                <meta name="keywords" content={metaData?.keywords} />
+                {/* <meta name="keywords" content={metaData?.keywords} /> */}
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Abhishek" />
 
@@ -163,6 +164,7 @@ const cityMeta = pagesData.find(
 
                 {/* CONTENT */}
                 <div className="city-content">
+                    <h1>{(pageData != undefined ? pageData.mainHeading : "")}</h1>
                     <p>
                         Welcome to <strong>Safexpress {city}</strong>. We provide safe,
                         affordable and professional relocation services for homes, offices,
