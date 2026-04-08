@@ -85,7 +85,7 @@ const cityMeta = pagesData.find(
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Packers and Movers in Bhiwandi | Safexpress" />
                 <meta property="og:description" content={metaData?.ogDescription} />
-                <meta property="og:url" content={`https://safeshiftingpackers.com/city/${city}` }/>
+                <meta property="og:url" content={`https://safeshiftingpackers.com/city/${slug}` }/>
                 <meta property="og:site_name" content="Safexpress" />
                 <meta property="og:image" content="" />
 
@@ -98,7 +98,7 @@ const cityMeta = pagesData.find(
                 <meta http-equiv="Content-Language" content="en" />
 
                 {/* Canonical URL */}
-                <link rel="canonical" href={`https://safeshiftingpackers.com/city/${city.toLowerCase()}`} />
+                <link rel="canonical" href={`https://safeshiftingpackers.com/city/${slug}`} />
             </Helmet>
             <section id="city-page" className="top-element">
                 {/* HERO */}
