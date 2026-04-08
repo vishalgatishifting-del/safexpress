@@ -59,7 +59,7 @@ const CarBikeTransport = () => {
                 <meta http-equiv="Content-Language" content="en" />
 
                 {/* Canonical URL */}
-                <link rel="canonical" href="safeshiftingpackers.comcar-bike-transport" />
+                <link rel="canonical" href="https://safeshiftingpackers.com/car-bike-transport" />
 
 
             </Helmet>

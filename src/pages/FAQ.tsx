@@ -28,6 +28,7 @@ const FAQ = () => {
                 <meta name="twitter:description" content="Find answers to FAQs about Safexpress, including services, pricing, and relocation tips." />
 
                 <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
+                <link rel="canonical" href={`https://safeshiftingpackers.com/faq`} />
             </Helmet>
             <section className="info-section top-element">
                 <div className="info-left">
