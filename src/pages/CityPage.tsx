@@ -98,7 +98,7 @@ const cityMeta = pagesData.find(
                 <meta http-equiv="Content-Language" content="en" />
 
                 {/* Canonical URL */}
-                <link rel="canonical" href={`https://safeshiftingpackers.com/city/${city}`} />
+                <link rel="canonical" href={`https://safeshiftingpackers.com/city/${city.toLowerCase()}`} />
             </Helmet>
             <section id="city-page" className="top-element">
                 {/* HERO */}
