@@ -1,53 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Home Page -->
-  <url>
-    <loc>https://safeshiftingpackers.com/</loc>
-    <lastmod>2026-02-11</lastmod>
-    <priority>1.0</priority>
+  <!-- Main Pages -->
+  <url><loc>https://safeshiftingpackers.com/</loc></url>
+  <url><loc>https://safeshiftingpackers.com/about</loc></url>
+  <url><loc>https://safeshiftingpackers.com/service</loc></url>
+  <url><loc>https://safeshiftingpackers.com/contact</loc></url>
+  <url><loc>https://safeshiftingpackers.com/car-storage</loc></url>
+  <url><loc>https://safeshiftingpackers.com/storage</loc></url>
+  <url><loc>https://safeshiftingpackers.com/bike-storage</loc></url>
+  <url><loc>https://safeshiftingpackers.com/home-shifting</loc></url>
+  <url><loc>https://safeshiftingpackers.com/office-relocation</loc></url>
+  <url><loc>https://safeshiftingpackers.com/car-bike-transport</loc></url>
+  <url><loc>https://safeshiftingpackers.com/pet-relocation</loc></url>
+  <url><loc>https://safeshiftingpackers.com/commercial-shifting</loc></url>
+  <url><loc>https://safeshiftingpackers.com/who-we-are</loc></url>
+  <url><loc>https://safeshiftingpackers.com/why-safexpress</loc></url>
+  <url><loc>https://safeshiftingpackers.com/photo-gallery</loc></url>
+  <url><loc>https://safeshiftingpackers.com/video-gallery</loc></url>
+  <url><loc>https://safeshiftingpackers.com/faq</loc></url>
+  <url><loc>https://safeshiftingpackers.com/safety-standard</loc></url>
 
-    <!-- Favicon Image Reference -->
-    <image:image>
-      <image:loc>https://safeshiftingpackers.com/safexpress.png</image:loc>
-      <image:caption>Safexpress | Trusted Packers and Movers - 15% off</image:caption>
-    </image:image>
-  </url>
-
-  <!-- About Page -->
-  <url>
-    <loc>https://safeshiftingpackers.com/about</loc>
-    <lastmod>2026-02-11</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Services Page -->
-  <url>
-    <loc>https://safeshiftingpackers.com/services</loc>
-    <lastmod>2026-02-11</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Review Page -->
-  <!-- <url>
-    <loc>https://safeshiftingpackers.com/review</loc>
-    <lastmod>2025-10-01</lastmod>
-    <priority>0.7</priority>
-  </url> -->
-
-  <!-- Contact Page -->
-  <url>
-    <loc>https://safeshiftingpackers.com/contact-us</loc>
-    <lastmod>2026-02-11</lastmod>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- FAQ Page -->
-  <url>
-    <loc>https://safeshiftingpackers.com/faqs</loc>
-    <lastmod>2026-02-11</lastmod>
-    <priority>0.6</priority>
-  </url>
+  <!-- City Pages -->
+  <url><loc>https://safeshiftingpackers.com/city/adilabad</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/adoni</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/agartala</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/agra</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/ahmedabad</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/ahmednagar</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/aizawl</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/ajmer</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/akola</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/alappuzha</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/aligarh</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/almora</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/ambala</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/amravati</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/amritsar</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/anantapur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/anantnag</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/asansol</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/aurangabad</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/ayodhya</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/bareilly</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/bengaluru</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/bhopal</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/bhubaneswr</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/bikaner</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/bilaspur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/chandigarh</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/chennai</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/coimbatore</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/cuttack</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/dehradun</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/delhi</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/dhanbad</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/faridabad</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/ghaziabad</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/goa</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/gorakhpur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/greater-noida</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/gurgaon</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/guwahati</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/gwalior</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/haridwar</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/hyderabad</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/indore</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/jaipur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/jalandhar</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/jammu</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/jamshedpur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/jodhpur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/kanpur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/karnal</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/kochi</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/kolkata</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/kota</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/lucknow</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/ludhiana</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/madurai</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/meerut</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/mumbai</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/mysore</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/nagpur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/nashik</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/noida</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/patna</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/pune</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/raipur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/rajkot</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/ranchi</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/surat</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/thane</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/udaipur</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/vadodara</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/varanasi</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/vijayawada</loc></url>
+  <url><loc>https://safeshiftingpackers.com/city/visakhapatnam</loc></url>
 
 </urlset>
