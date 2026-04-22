@@ -74,7 +74,7 @@ import ship2 from "../assets/Home/ship2.webp"
 import airplaneImg from "../assets/Home/airplane.webp"
 import truck2 from "../assets/Home/truck2.webp"
 
-
+import { Helmet } from "react-helmet-async";
 
 import { COMPANY } from "../config/Company"
 
@@ -173,6 +173,25 @@ const Home = () => {
   const [, successCondition] = useState<boolean>(false)
   return (
     <>
+      <Helmet>
+        <title>Safe Shifting Packers Logistics | Home, Office & Vehicle Moving</title>
+        <meta name="description" content="Learn about Safe Shifting Packers – a reliable packers and movers company in India offering safe, affordable, and professional home, office, and vehicle relocation services." />
+        <meta name="keywords" content="About Safe Shifting Packers, Packers and Movers Company, Trusted Packers and Movers, Relocation Services India, Home Shifting Services, Office Relocation, Vehicle Transportation" />
+        <meta name="author" content="Safe Shifting Packers" />
+        <meta name="robots" content="index, follow" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="About Safe Shifting Packers | Professional Relocation Services" />
+        <meta property="og:description" content="Know more about Safe Shifting Packers – your trusted partner for safe and hassle-free moving solutions across India." />
+        <meta property="og:url" content="https://safeshiftingpackers.com/about" />
+        <meta property="og:site_name" content="Safe Shifting Packers" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Safe Shifting Packers | Trusted Moving Company" />
+        <meta name="twitter:description" content="Safe Shifting Packers provides reliable, secure, and affordable packing and moving services across India." />
+
+        <link rel="canonical" href="https://safeshiftingpackers.com/about" />
+      </Helmet>
       <Hero />
 
       <div className="form-container">
@@ -201,28 +220,28 @@ const Home = () => {
             <a href={justDialCertificateImg} className="hidden" target="_blank">
               Click To View
             </a>
-            <img src={justDialCertificateImg} alt="Certificate" title="JustDial"/>
+            <img src={justDialCertificateImg} alt="Certificate" title="JustDial" />
             <h3>JustDial Certificate</h3>
           </div>
           <div className="card">
             <a href={MSMECertificateImg} className="hidden" target="_blank">
               Click To View
             </a>
-            <img src={MSMECertificateImg} alt="Certificate" title="MSME"/>
+            <img src={MSMECertificateImg} alt="Certificate" title="MSME" />
             <h3>MSME Ceritificate</h3>
           </div>
           <div className="card">
             <a href={incorporationCertificate} className="hidden" target="_blank">
               Click To View
             </a>
-            <img src={incorporationCertificate} alt="Certificate" title="Incorporation"/>
+            <img src={incorporationCertificate} alt="Certificate" title="Incorporation" />
             <h3>Incorporation Certificate</h3>
           </div>
           <div className="card">
             <a href={GSTIncorporation} className="hidden" target="_blank">
               Click To View
             </a>
-            <img src={GSTIncorporation} alt="Certificate" title="GST"/>
+            <img src={GSTIncorporation} alt="Certificate" title="GST" />
             <h3>GST Certificate</h3>
           </div>
         </div>
