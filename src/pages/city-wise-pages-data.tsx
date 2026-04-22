@@ -475,7 +475,7 @@ export const pagesData = [
     ],
     metaDetails: {
       title: "Affordable Packers and Movers Agra | No Hidden Charges",
-      desc: "Save big on your next move! Safe Shifting Packers provides affordable packers and movers in Agra with 100% transparent pricing. Book your secure move today!"
+      description: "Save big on your next move! Safe Shifting Packers provides affordable packers and movers in Agra with 100% transparent pricing."
     },
     pageData: {
       mainHeading: "Affordable Packers and Movers in Agra: Quality Shifting at Best Prices",
