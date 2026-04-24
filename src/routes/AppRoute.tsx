@@ -33,7 +33,7 @@ import SuccessScreen from "../components/SuccessScreen.tsx";
 import { VisibilityProvider } from "../context/AppContext.tsx";
 import Review from "../pages/Review.tsx";
 
-
+import MultiStepMoving from "../pages/ItemSelection.tsx"
 
 
 
@@ -71,6 +71,7 @@ const AppRoutes = () => {
                         <Route path="/faq" element={<FAQ></FAQ>}></Route>
                         <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
                         <Route path="/review" element={<Review></Review>}></Route>
+                        <Route path="/item-selection" element={<MultiStepMoving></MultiStepMoving>}></Route>
 
 
                         {/* {
