@@ -454,149 +454,329 @@ import Manipal from "../assets/CityPages/Manipal.webp"
 
 
 export const pagesData = [
+  // {
+  //   slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007", keywords: [
+  //     "gati packers and movers",
+  //     "packers and movers in Agra",
+  //     "Agra packers and movers",
+  //     "home shifting services in Agra",
+  //     "office relocation in Agra",
+  //     "Agra movers and packers near me",
+  //     "bike transport service in Agra",
+  //     "car transport in Agra",
+  //     "warehouse services in Agra",
+  //     "home storage services Agra",
+  //     "pet relocation in Agra",
+  //     "international moving from Agra",
+  //     "long distance movers from Agra",
+  //     "local packers movers Agra",
+  //     "best packers and movers Agra",
+  //     "affordable packers and movers in Agra"
+  //   ],
+  //   metaDetails: {
+  //     title: "Affordable Packers and Movers Agra | No Hidden Charges",
+  //     description: "Save big on your next move! Safe Shifting Packers provides affordable packers and movers in Agra with 100% transparent pricing."
+  //   },
+  //   pageData: {
+  //     mainHeading: "Affordable Packers and Movers in Agra: Quality Shifting at Best Prices",
+
+  //     paragraph: [
+  //       "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+  //       "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
+  //     ],
+
+  //     servicesHeading: "Professional Packing and Moving Services in Agra",
+
+  //     services: [
+  //       {
+  //         title: "Household Shifting Services in Agra",
+  //         desc: "Secure home shifting services for apartments, villas, and residential houses using high-quality packing materials for safety.",
+  //         link: "https://gatishiftingpackers.com/home-shifting",
+  //         linkText: "Home Shifting Services"
+  //       },
+  //       {
+  //         title: "Office Relocation Services",
+  //         desc: "Professional office relocation services for safe movement of office furniture, workstations, files, and IT equipment.",
+  //         link: "https://gatishiftingpackers.com/office-relocation",
+  //         linkText: "Office Relocation Services"
+  //       },
+  //       {
+  //         title: "Car Transportation and Bike Shifting",
+  //         desc: "Reliable car and bike transport services using specialized carriers for safe vehicle relocation across cities.",
+  //         link: "https://gatishiftingpackers.com/car-bike-transport",
+  //         linkText: "Car & Bike Transport Services"
+  //       },
+  //       {
+  //         title: "Commercial Shifting Services",
+  //         desc: "Professional commercial relocation services for warehouses, shops, and industrial equipment with safe handling.",
+  //         link: "https://gatishiftingpackers.com/commercial-shifting",
+  //         linkText: "Commercial Shifting Services"
+  //       },
+  //       {
+  //         title: "Packing and Unpacking Services",
+  //         desc: "High-quality packing and unpacking services using bubble wrap, foam sheets, and durable cartons for safety.",
+  //         link: "https://gatishiftingpackers.com/home-shifting",
+  //         linkText: "Packing Services"
+  //       },
+  //       {
+  //         title: "Storage and Warehouse Services",
+  //         desc: "Secure warehouse and home storage solutions for temporary and long-term storage of household goods.",
+  //         link: "https://gatishiftingpackers.com/warehouse",
+  //         linkText: "Warehouse Services"
+  //       }
+  //     ],
+
+  //     whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+
+  //     whyChoose: [
+  //       "Experienced relocation professionals",
+  //       "High-quality packing materials",
+  //       "Affordable relocation pricing",
+  //       "Timely pickup and delivery",
+  //       "Secure vehicle transportation",
+  //       "Complete relocation support"
+  //     ],
+
+  //     routeHeading: "Long Distance Movers from Agra",
+
+  //     routeDesc: "We provide interstate relocation services including major routes such as Agra to Delhi, Agra to Mumbai, Agra to Bangalore, Agra to Pune, and other cities across India with safe packing and timely delivery.",
+
+  //     nearbyCitiesHeading: "Cities We Also Serve",
+
+  //     nearbyCities: [
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi",
+  //         linkText: "Packers and Movers in Delhi",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-noida",
+  //         linkText: "Packers and Movers in Noida",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-ghaziabad",
+  //         linkText: "Packers and Movers in Ghaziabad",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-jaipur",
+  //         linkText: "Packers and Movers in Jaipur",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-kanpur",
+  //         linkText: "Packers and Movers in Kanpur",
+  //         text: ""
+  //       }
+  //     ],
+
+  //     faqHeading: "FAQs – Packers and Movers in Agra",
+
+  //     faqs: [
+  //       {
+  //         q: "What are the charges for packers and movers in Agra?",
+  //         a: "The relocation cost depends on distance, number of goods, packing materials, and transport vehicle required."
+  //       },
+  //       {
+  //         q: "Do you provide local shifting in Agra?",
+  //         a: "Yes, we provide reliable local relocation services for household and office shifting within Agra."
+  //       },
+  //       {
+  //         q: "Do you offer car transportation from Agra?",
+  //         a: "Yes, we provide secure car and bike transport services to major cities across India."
+  //       },
+  //       {
+  //         q: "Do you provide storage services in Agra?",
+  //         a: "Yes, we offer warehouse and home storage services for temporary and long-term storage."
+  //       },
+  //       {
+  //         q: "Do you provide interstate relocation from Agra?",
+  //         a: "Yes, we provide long-distance relocation services including Agra to Delhi and other interstate routes."
+  //       }
+  //     ]
+  //   }
+  // },
   {
-    slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007", keywords: [
-      "gati packers and movers",
-      "packers and movers in Agra",
-      "Agra packers and movers",
-      "home shifting services in Agra",
-      "office relocation in Agra",
-      "Agra movers and packers near me",
-      "bike transport service in Agra",
-      "car transport in Agra",
-      "warehouse services in Agra",
-      "home storage services Agra",
-      "pet relocation in Agra",
-      "international moving from Agra",
-      "long distance movers from Agra",
-      "local packers movers Agra",
-      "best packers and movers Agra",
-      "affordable packers and movers in Agra"
-    ],
-    metaDetails: {
-      title: "Affordable Packers and Movers Agra | No Hidden Charges",
-      description: "Save big on your next move! Safe Shifting Packers provides affordable packers and movers in Agra with 100% transparent pricing."
-    },
-    pageData: {
-      mainHeading: "Affordable Packers and Movers in Agra: Quality Shifting at Best Prices",
+  slug: "agra",
+  city: "Agra",
+  img: agraImg,
+  offer: "15%",
+  address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043",
 
-      paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
-        "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
-      ],
+  keywords: [
+    "packers and movers Agra",
+    "best packers and movers in Agra",
+    "home shifting Agra",
+    "office relocation Agra",
+    "car transport Agra",
+    "bike transport Agra",
+    "international movers Agra",
+    "affordable packers movers Agra"
+  ],
 
-      servicesHeading: "Professional Packing and Moving Services in Agra",
-
-      services: [
-        {
-          title: "Household Shifting Services in Agra",
-          desc: "Secure home shifting services for apartments, villas, and residential houses using high-quality packing materials for safety.",
-          link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "Home Shifting Services"
-        },
-        {
-          title: "Office Relocation Services",
-          desc: "Professional office relocation services for safe movement of office furniture, workstations, files, and IT equipment.",
-          link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "Office Relocation Services"
-        },
-        {
-          title: "Car Transportation and Bike Shifting",
-          desc: "Reliable car and bike transport services using specialized carriers for safe vehicle relocation across cities.",
-          link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "Car & Bike Transport Services"
-        },
-        {
-          title: "Commercial Shifting Services",
-          desc: "Professional commercial relocation services for warehouses, shops, and industrial equipment with safe handling.",
-          link: "https://gatishiftingpackers.com/commercial-shifting",
-          linkText: "Commercial Shifting Services"
-        },
-        {
-          title: "Packing and Unpacking Services",
-          desc: "High-quality packing and unpacking services using bubble wrap, foam sheets, and durable cartons for safety.",
-          link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "Packing Services"
-        },
-        {
-          title: "Storage and Warehouse Services",
-          desc: "Secure warehouse and home storage solutions for temporary and long-term storage of household goods.",
-          link: "https://gatishiftingpackers.com/warehouse",
-          linkText: "Warehouse Services"
-        }
-      ],
-
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
-
-      whyChoose: [
-        "Experienced relocation professionals",
-        "High-quality packing materials",
-        "Affordable relocation pricing",
-        "Timely pickup and delivery",
-        "Secure vehicle transportation",
-        "Complete relocation support"
-      ],
-
-      routeHeading: "Long Distance Movers from Agra",
-
-      routeDesc: "We provide interstate relocation services including major routes such as Agra to Delhi, Agra to Mumbai, Agra to Bangalore, Agra to Pune, and other cities across India with safe packing and timely delivery.",
-
-      nearbyCitiesHeading: "Cities We Also Serve",
-
-      nearbyCities: [
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi",
-          linkText: "Packers and Movers in Delhi",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-noida",
-          linkText: "Packers and Movers in Noida",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-ghaziabad",
-          linkText: "Packers and Movers in Ghaziabad",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-jaipur",
-          linkText: "Packers and Movers in Jaipur",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-kanpur",
-          linkText: "Packers and Movers in Kanpur",
-          text: ""
-        }
-      ],
-
-      faqHeading: "FAQs – Packers and Movers in Agra",
-
-      faqs: [
-        {
-          q: "What are the charges for packers and movers in Agra?",
-          a: "The relocation cost depends on distance, number of goods, packing materials, and transport vehicle required."
-        },
-        {
-          q: "Do you provide local shifting in Agra?",
-          a: "Yes, we provide reliable local relocation services for household and office shifting within Agra."
-        },
-        {
-          q: "Do you offer car transportation from Agra?",
-          a: "Yes, we provide secure car and bike transport services to major cities across India."
-        },
-        {
-          q: "Do you provide storage services in Agra?",
-          a: "Yes, we offer warehouse and home storage services for temporary and long-term storage."
-        },
-        {
-          q: "Do you provide interstate relocation from Agra?",
-          a: "Yes, we provide long-distance relocation services including Agra to Delhi and other interstate routes."
-        }
-      ]
-    }
+  metaDetails: {
+    title: "Best Packers & Movers in Agra | Safe & Affordable Relocation",
+    description: "Looking for reliable Packers and Movers in Agra? Get safe, affordable, and professional relocation services for homes, offices, and vehicles.",
+    keywords: "packers and movers Agra, home shifting Agra, office relocation Agra, car transport Agra, bike transport Agra",
+    ogDescription: "Trusted Packers & Movers in Agra for safe and hassle-free relocation services.",
+    twitterDescription: "Professional Packers & Movers in Agra with secure and affordable moving services.",
+    canonical: "https://safeshiftingpackers.com/city/agra"
   },
+
+  pageData: {
+    mainHeading: "Best Packers & Movers in Agra",
+
+    paragraph: [
+      "Shifting your home or office in a historic and busy city like Agra can feel overwhelming, but with experienced packers and movers like Safexpress, the entire process becomes easy, secure, and well-organized.",
+      "Whether you are moving within the city or relocating to another destination, professional movers ensure careful handling, strong packing, and timely delivery of your belongings without stress."
+    ],
+
+    servicesHeading: "Our Packers & Movers Services in Agra",
+
+      serviceSecondHeading: "Packers & Movers in Ghaziabad: Safe, Reliable & Affordable Relocation Services ",
+    services: [
+      {
+        title: "Home Shifting Services",
+        desc: "Safe and secure household shifting with professional packing and handling.",
+        link: "/home-shifting",
+        linkText: "Home Shifting"
+      },
+      {
+        title: "Office Relocation",
+        desc: "Efficient office relocation ensuring minimal downtime.",
+        link: "/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Domestic Relocation",
+        desc: "Reliable intercity relocation services across India.",
+        link: "/domestic-relocation",
+        linkText: "Domestic Moving"
+      },
+      {
+        title: "International Moving",
+        desc: "Complete international relocation including packing and customs clearance.",
+        link: "/international-moving",
+        linkText: "International Moving"
+      },
+      {
+        title: "Car & Bike Transport",
+        desc: "Safe vehicle transport using specialized carriers.",
+        link: "/car-bike-transport",
+        linkText: "Vehicle Transport"
+      },
+      {
+        title: "Packing & Unpacking",
+        desc: "High-quality packing materials for damage-free relocation.",
+        link: "/packing-services",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Corporate Relocation",
+        desc: "Professional relocation services for corporate offices and industries.",
+        link: "/corporate-relocation",
+        linkText: "Corporate Moving"
+      },
+      {
+        title: "Warehouse & Storage",
+        desc: "Secure storage solutions for short-term and long-term needs.",
+        link: "/warehouse",
+        linkText: "Storage Services"
+      }
+    ],
+
+    whyChooseHeading: "Benefits of Hiring Professional Packers and Movers in Agra",
+
+    whyChoose: [
+      "No risk of damage to goods",
+      "Time-saving and efficient shifting",
+      "Stress-free relocation experience",
+      "Proper handling of fragile items",
+      "Access to insurance coverage"
+    ],
+
+    processHeading: "Step-by-Step Moving Process",
+
+    process: [
+      "Request a Quote – Fill out your details online",
+      "Pre-Move Survey – Assess items and requirements",
+      "Packing – Secure packing with quality materials",
+      "Loading – Safe handling and loading",
+      "Transportation – Timely and secure transit",
+      "Unloading & Setup – Placement and unpacking"
+    ],
+
+    costHeading: "Packers & Movers Charges in Agra",
+
+    costDesc: "Charges depend on distance, volume of goods, services required, and moving date. For accurate pricing, request a personalized quote.",
+
+    factorsHeading: "Key Factors That Influence Moving Costs in Agra",
+
+    factors: [
+      "Relocation Distance",
+      "Quantity of Belongings",
+      "Floor Level & Lift Access",
+      "Moving Date & Season",
+      "Service Requirements"
+    ],
+
+    nearbyCitiesHeading: "Our Service Locations",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-delhi",
+        linkText: "Packers and Movers in Delhi",
+        text: ""
+      },
+      {
+        link: "/packers-and-movers-in-chennai",
+        linkText: "Packers and Movers in Chennai",
+        text: ""
+      },
+      {
+        link: "/packers-and-movers-in-mumbai",
+        linkText: "Packers and Movers in Mumbai",
+        text: ""
+      },
+      {
+        link: "/packers-and-movers-in-bengaluru",
+        linkText: "Packers and Movers in Bengaluru",
+        text: ""
+      },
+      {
+        link: "/packers-and-movers-in-noida",
+        linkText: "Packers and Movers in Noida",
+        text: ""
+      }
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      {
+        q: "How are packers and movers charges calculated in Agra?",
+        a: "Charges depend on distance, volume of goods, type of services, packing quality, insurance, and labor requirements."
+      },
+      {
+        q: "Do movers in Agra handle fragile items safely?",
+        a: "Yes, professionals use bubble wrap, foam sheets, and proper techniques to protect fragile items."
+      },
+      {
+        q: "Can I track my goods during shifting?",
+        a: "Yes, most movers provide GPS tracking or regular updates via calls and messages."
+      },
+      {
+        q: "Do you offer packing and unpacking services?",
+        a: "Yes, complete packing and unpacking services are provided for hassle-free relocation."
+      },
+      {
+        q: "Are urgent or weekend shifting services available?",
+        a: "Yes, flexible scheduling including urgent and weekend shifting is available."
+      }
+    ]
+  }
+},
   {
     slug: "ankleshwar", city: "Ankleshwar", img: ankleshwarImg, offer: "15%", address: "Plot No. D-2529, Brahmanpuri, Ankleshwar GIDC, 6th Road, near Asian Paint, Chokdi, Ankleshwar, Gujarat 393002", keywords: [
       "gati packers and movers",
@@ -1927,135 +2107,316 @@ export const pagesData = [
       canonical: "https://gatishiftingpackers.com/city/kochi"
     }
   },
+  // {
+  //   slug: "delhi", city: "Delhi", img: Delhi, offer: "10%", address: "Shop - 124, Kapoor Wali Gali, Rama Market, Munirka, New Delhi, Delhi 110067", metaDetails: {
+  //     title: "Reliable Packers and Movers Delhi | 100% Safe Shifting",
+  //     description: "Don't risk your furniture! Safe Shifting Packers and Movers in Delhi use multi-layer waterproof packing for ultimate safety. Call for a 2026 price guide!",
+  //     keywords: "Local movers near me Delhi, Packers and Movers in Delhi, safexpress Delhi, Best Packers and Movers Delhi, Affordable Packers and Movers Delhi, Trusted Packers and Movers Delhi NCR, Local Packers and Movers Delhi, Professional Movers and Packers Delhi, Home Shifting Services Delhi, Office Relocation Delhi, Vehicle Transport Delhi, Car Transport Service Delhi, Bike Transport Delhi, Household Goods Shifting Delhi, Industrial Packers and Movers Delhi, Door-to-Door Shifting Services Delhi, Packing and Unpacking Services Delhi, Furniture Movers Delhi, Intercity Packers and Movers Delhi, Packers and Movers Delhi to Mumbai, Packers and Movers Delhi to Bengaluru, Packers and Movers Delhi to Kolkata, Reliable Relocation Company Delhi, Cost-Effective Packers and Movers Delhi, Quick Packers and Movers Delhi, 24x7 Packers and Movers Delhi, Mini Truck for Shifting Delhi, Tempo Service Delhi, Best Relocation Services Delhi, Safe and Secure Moving Services Delhi, Budget-Friendly Movers Delhi, Professional Relocation Company Delhi, Long-Distance Packers and Movers Delhi, Trusted Shifting Company Delhi, Goods Transport Services Delhi, Moving Experts Delhi, Packers Movers with Insurance Delhi, Verified Packers and Movers Delhi, Logistics and Transport Services Delhi, Gati Shifting Movers Delhi, Local Movers Delhi, Home Shifting Services in Delhi, Office Shifting Services in Delhi, Factory Relocation Services Delhi, Vehicle Shifting Delhi, Household Shifting Delhi, Movers and Packers near me Delhi, Relocation Company in Delhi, Moving Company Delhi, IBA Approved Packers and Movers Delhi, Packers and Movers Delhi Price, Packers and Movers Delhi Charges, Packers and Movers Delhi Cost, Reliable Packers and Movers Delhi, Door to Door Packers and Movers Delhi, Packers and Movers for Local Shifting in Delhi, Packers and Movers for Long Distance in Delhi, Loading and Unloading Services Delhi, Warehouse Shifting Delhi, Logistics Services Delhi, Transport Services Delhi, Relocation Company Delhi NCR, Household Relocation Services Delhi, Home Packers Delhi, Professional Packers and Movers Delhi, Intercity Movers Delhi, Shifting Services Delhi, Goods Transport Delhi, Safe Relocation Services Delhi, Local Household Movers Delhi, Best Shifting Company Delhi, Trusted Relocation Services Delhi, safexpress and Movers NCR.",
+  //     ogDescription: "Looking for reliable Packers and Movers in Delhi? safexpress offers secure, timely and affordable relocation for homes, offices and vehicles in Delhi NCR.",
+  //     twitterDescription: "Safe, professional and affordable Packers and Movers in Delhi by safexpress. Make your relocation smooth and stress-free today!",
+  //     canonical: "https://gatishiftingpackers.com/city/delhi"
+  //   },
+  //   pageData: {
+  //     mainHeading: "Reliable Packers and Movers in Delhi: Damage-Free & Secure Shifting",
+
+  //     paragraph: [
+  //       "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+  //       "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
+  //     ],
+
+  //     servicesHeading: "Professional Packing and Moving Services in Agra",
+
+  //     services: [
+  //       {
+  //         title: "Household Shifting Services in Agra",
+  //         desc: "Secure home shifting services for apartments, villas, and residential houses using high-quality packing materials for safety.",
+  //         link: "https://gatishiftingpackers.com/home-shifting",
+  //         linkText: "Home Shifting Services"
+  //       },
+  //       {
+  //         title: "Office Relocation Services",
+  //         desc: "Professional office relocation services for safe movement of office furniture, workstations, files, and IT equipment.",
+  //         link: "https://gatishiftingpackers.com/office-relocation",
+  //         linkText: "Office Relocation Services"
+  //       },
+  //       {
+  //         title: "Car Transportation and Bike Shifting",
+  //         desc: "Reliable car and bike transport services using specialized carriers for safe vehicle relocation across cities.",
+  //         link: "https://gatishiftingpackers.com/car-bike-transport",
+  //         linkText: "Car & Bike Transport Services"
+  //       },
+  //       {
+  //         title: "Commercial Shifting Services",
+  //         desc: "Professional commercial relocation services for warehouses, shops, and industrial equipment with safe handling.",
+  //         link: "https://gatishiftingpackers.com/commercial-shifting",
+  //         linkText: "Commercial Shifting Services"
+  //       },
+  //       {
+  //         title: "Packing and Unpacking Services",
+  //         desc: "High-quality packing and unpacking services using bubble wrap, foam sheets, and durable cartons for safety.",
+  //         link: "https://gatishiftingpackers.com/home-shifting",
+  //         linkText: "Packing Services"
+  //       },
+  //       {
+  //         title: "Storage and Warehouse Services",
+  //         desc: "Secure warehouse and home storage solutions for temporary and long-term storage of household goods.",
+  //         link: "https://gatishiftingpackers.com/warehouse",
+  //         linkText: "Warehouse Services"
+  //       }
+  //     ],
+
+  //     whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+
+  //     whyChoose: [
+  //       "Experienced relocation professionals",
+  //       "High-quality packing materials",
+  //       "Affordable relocation pricing",
+  //       "Timely pickup and delivery",
+  //       "Secure vehicle transportation",
+  //       "Complete relocation support"
+  //     ],
+
+  //     routeHeading: "Long Distance Movers from Agra",
+
+  //     routeDesc: "We provide interstate relocation services including major routes such as Agra to Delhi, Agra to Mumbai, Agra to Bangalore, Agra to Pune, and other cities across India with safe packing and timely delivery.",
+
+  //     nearbyCitiesHeading: "Cities We Also Serve",
+
+  //     nearbyCities: [
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi",
+  //         linkText: "Packers and Movers in Delhi",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-noida",
+  //         linkText: "Packers and Movers in Noida",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-ghaziabad",
+  //         linkText: "Packers and Movers in Ghaziabad",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-jaipur",
+  //         linkText: "Packers and Movers in Jaipur",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-kanpur",
+  //         linkText: "Packers and Movers in Kanpur",
+  //         text: ""
+  //       }
+  //     ],
+
+  //     faqHeading: "FAQs – Packers and Movers in Agra",
+
+  //     faqs: [
+  //       {
+  //         q: "What are the charges for packers and movers in Agra?",
+  //         a: "The relocation cost depends on distance, number of goods, packing materials, and transport vehicle required."
+  //       },
+  //       {
+  //         q: "Do you provide local shifting in Agra?",
+  //         a: "Yes, we provide reliable local relocation services for household and office shifting within Agra."
+  //       },
+  //       {
+  //         q: "Do you offer car transportation from Agra?",
+  //         a: "Yes, we provide secure car and bike transport services to major cities across India."
+  //       },
+  //       {
+  //         q: "Do you provide storage services in Agra?",
+  //         a: "Yes, we offer warehouse and home storage services for temporary and long-term storage."
+  //       },
+  //       {
+  //         q: "Do you provide interstate relocation from Agra?",
+  //         a: "Yes, we provide long-distance relocation services including Agra to Delhi and other interstate routes."
+  //       }
+  //     ]
+  //   }
+  // },
   {
-    slug: "delhi", city: "Delhi", img: Delhi, offer: "10%", address: "Shop - 124, Kapoor Wali Gali, Rama Market, Munirka, New Delhi, Delhi 110067", metaDetails: {
-      title: "Reliable Packers and Movers Delhi | 100% Safe Shifting",
-      description: "Don't risk your furniture! Safe Shifting Packers and Movers in Delhi use multi-layer waterproof packing for ultimate safety. Call for a 2026 price guide!",
-      keywords: "Local movers near me Delhi, Packers and Movers in Delhi, safexpress Delhi, Best Packers and Movers Delhi, Affordable Packers and Movers Delhi, Trusted Packers and Movers Delhi NCR, Local Packers and Movers Delhi, Professional Movers and Packers Delhi, Home Shifting Services Delhi, Office Relocation Delhi, Vehicle Transport Delhi, Car Transport Service Delhi, Bike Transport Delhi, Household Goods Shifting Delhi, Industrial Packers and Movers Delhi, Door-to-Door Shifting Services Delhi, Packing and Unpacking Services Delhi, Furniture Movers Delhi, Intercity Packers and Movers Delhi, Packers and Movers Delhi to Mumbai, Packers and Movers Delhi to Bengaluru, Packers and Movers Delhi to Kolkata, Reliable Relocation Company Delhi, Cost-Effective Packers and Movers Delhi, Quick Packers and Movers Delhi, 24x7 Packers and Movers Delhi, Mini Truck for Shifting Delhi, Tempo Service Delhi, Best Relocation Services Delhi, Safe and Secure Moving Services Delhi, Budget-Friendly Movers Delhi, Professional Relocation Company Delhi, Long-Distance Packers and Movers Delhi, Trusted Shifting Company Delhi, Goods Transport Services Delhi, Moving Experts Delhi, Packers Movers with Insurance Delhi, Verified Packers and Movers Delhi, Logistics and Transport Services Delhi, Gati Shifting Movers Delhi, Local Movers Delhi, Home Shifting Services in Delhi, Office Shifting Services in Delhi, Factory Relocation Services Delhi, Vehicle Shifting Delhi, Household Shifting Delhi, Movers and Packers near me Delhi, Relocation Company in Delhi, Moving Company Delhi, IBA Approved Packers and Movers Delhi, Packers and Movers Delhi Price, Packers and Movers Delhi Charges, Packers and Movers Delhi Cost, Reliable Packers and Movers Delhi, Door to Door Packers and Movers Delhi, Packers and Movers for Local Shifting in Delhi, Packers and Movers for Long Distance in Delhi, Loading and Unloading Services Delhi, Warehouse Shifting Delhi, Logistics Services Delhi, Transport Services Delhi, Relocation Company Delhi NCR, Household Relocation Services Delhi, Home Packers Delhi, Professional Packers and Movers Delhi, Intercity Movers Delhi, Shifting Services Delhi, Goods Transport Delhi, Safe Relocation Services Delhi, Local Household Movers Delhi, Best Shifting Company Delhi, Trusted Relocation Services Delhi, safexpress and Movers NCR.",
-      ogDescription: "Looking for reliable Packers and Movers in Delhi? safexpress offers secure, timely and affordable relocation for homes, offices and vehicles in Delhi NCR.",
-      twitterDescription: "Safe, professional and affordable Packers and Movers in Delhi by safexpress. Make your relocation smooth and stress-free today!",
-      canonical: "https://gatishiftingpackers.com/city/delhi"
-    },
-    pageData: {
-      mainHeading: "Reliable Packers and Movers in Delhi: Damage-Free & Secure Shifting",
+  slug: "delhi",
+  city: "Delhi",
+  img: Delhi,
+  offer: "15%",
+  address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043",
 
-      paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
-        "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
-      ],
+  keywords: [
+    "packers and movers Delhi",
+    "best packers and movers in Delhi",
+    "home shifting Delhi",
+    "office relocation Delhi",
+    "car transport Delhi",
+    "bike transport Delhi",
+    "international movers Delhi",
+    "affordable packers movers Delhi"
+  ],
 
-      servicesHeading: "Professional Packing and Moving Services in Agra",
-
-      services: [
-        {
-          title: "Household Shifting Services in Agra",
-          desc: "Secure home shifting services for apartments, villas, and residential houses using high-quality packing materials for safety.",
-          link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "Home Shifting Services"
-        },
-        {
-          title: "Office Relocation Services",
-          desc: "Professional office relocation services for safe movement of office furniture, workstations, files, and IT equipment.",
-          link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "Office Relocation Services"
-        },
-        {
-          title: "Car Transportation and Bike Shifting",
-          desc: "Reliable car and bike transport services using specialized carriers for safe vehicle relocation across cities.",
-          link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "Car & Bike Transport Services"
-        },
-        {
-          title: "Commercial Shifting Services",
-          desc: "Professional commercial relocation services for warehouses, shops, and industrial equipment with safe handling.",
-          link: "https://gatishiftingpackers.com/commercial-shifting",
-          linkText: "Commercial Shifting Services"
-        },
-        {
-          title: "Packing and Unpacking Services",
-          desc: "High-quality packing and unpacking services using bubble wrap, foam sheets, and durable cartons for safety.",
-          link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "Packing Services"
-        },
-        {
-          title: "Storage and Warehouse Services",
-          desc: "Secure warehouse and home storage solutions for temporary and long-term storage of household goods.",
-          link: "https://gatishiftingpackers.com/warehouse",
-          linkText: "Warehouse Services"
-        }
-      ],
-
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
-
-      whyChoose: [
-        "Experienced relocation professionals",
-        "High-quality packing materials",
-        "Affordable relocation pricing",
-        "Timely pickup and delivery",
-        "Secure vehicle transportation",
-        "Complete relocation support"
-      ],
-
-      routeHeading: "Long Distance Movers from Agra",
-
-      routeDesc: "We provide interstate relocation services including major routes such as Agra to Delhi, Agra to Mumbai, Agra to Bangalore, Agra to Pune, and other cities across India with safe packing and timely delivery.",
-
-      nearbyCitiesHeading: "Cities We Also Serve",
-
-      nearbyCities: [
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi",
-          linkText: "Packers and Movers in Delhi",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-noida",
-          linkText: "Packers and Movers in Noida",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-ghaziabad",
-          linkText: "Packers and Movers in Ghaziabad",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-jaipur",
-          linkText: "Packers and Movers in Jaipur",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-kanpur",
-          linkText: "Packers and Movers in Kanpur",
-          text: ""
-        }
-      ],
-
-      faqHeading: "FAQs – Packers and Movers in Agra",
-
-      faqs: [
-        {
-          q: "What are the charges for packers and movers in Agra?",
-          a: "The relocation cost depends on distance, number of goods, packing materials, and transport vehicle required."
-        },
-        {
-          q: "Do you provide local shifting in Agra?",
-          a: "Yes, we provide reliable local relocation services for household and office shifting within Agra."
-        },
-        {
-          q: "Do you offer car transportation from Agra?",
-          a: "Yes, we provide secure car and bike transport services to major cities across India."
-        },
-        {
-          q: "Do you provide storage services in Agra?",
-          a: "Yes, we offer warehouse and home storage services for temporary and long-term storage."
-        },
-        {
-          q: "Do you provide interstate relocation from Agra?",
-          a: "Yes, we provide long-distance relocation services including Agra to Delhi and other interstate routes."
-        }
-      ]
-    }
+  metaDetails: {
+    title: "Best Packers & Movers in Delhi | Safe & Reliable Shifting Services",
+    description: "Looking for trusted Packers and Movers in Delhi? Get secure, fast, and affordable relocation services for homes, offices, and vehicles.",
+    keywords: "packers and movers Delhi, home shifting Delhi, office relocation Delhi, car transport Delhi, bike transport Delhi",
+    ogDescription: "Reliable Packers & Movers in Delhi offering damage-free and secure relocation services.",
+    twitterDescription: "Professional Packers & Movers in Delhi for safe and hassle-free shifting.",
+    canonical: "https://safeshiftingpackers.com/city/delhi"
   },
+
+  pageData: {
+    mainHeading: "Best Packers & Movers in Delhi",
+
+    paragraph: [
+      "Relocating your home or office in a busy city like Delhi can be stressful, but with the best packers and movers, your move becomes smooth, secure, and hassle-free.",
+      "Whether you are shifting locally within Delhi NCR or moving to another city, professional movers ensure your belongings are handled with care, packed securely, and delivered on time."
+    ],
+
+    servicesHeading: "Our Packers & Movers Services in Delhi",
+    serviceSecondHeading: "Reliable Packers and Movers in Delhi: Damage-Free & Secure Shifting",
+
+    services: [
+      {
+        title: "Home Shifting Services",
+        desc: "Safe and secure household shifting using high-quality packing materials.",
+        link: "/home-shifting",
+        linkText: "Home Shifting"
+      },
+      {
+        title: "Office Relocation",
+        desc: "Efficient office relocation with minimal downtime.",
+        link: "/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Domestic Relocation",
+        desc: "Reliable intercity relocation services across India.",
+        link: "/domestic-relocation",
+        linkText: "Domestic Moving"
+      },
+      {
+        title: "International Moving",
+        desc: "Complete international relocation including packing and customs clearance.",
+        link: "/international-moving",
+        linkText: "International Moving"
+      },
+      {
+        title: "Car & Bike Transport",
+        desc: "Safe vehicle transport using specialized carriers.",
+        link: "/car-bike-transport",
+        linkText: "Vehicle Transport"
+      },
+      {
+        title: "Packing & Unpacking",
+        desc: "Professional packing and unpacking for damage-free relocation.",
+        link: "/packing-services",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Corporate Relocation",
+        desc: "Professional relocation for offices, factories, and businesses.",
+        link: "/corporate-relocation",
+        linkText: "Corporate Moving"
+      },
+      {
+        title: "Warehouse & Storage",
+        desc: "Secure storage solutions for short-term and long-term needs.",
+        link: "/warehouse",
+        linkText: "Storage Services"
+      }
+    ],
+
+    whyChooseHeading: "Why We Are the Best Packers & Movers in Delhi",
+
+    whyChoose: [
+      "Experienced and trained professionals",
+      "Affordable and transparent pricing",
+      "Modern equipment and transport vehicles",
+      "Timely delivery with real-time updates",
+      "24/7 customer support",
+      "100% safety assurance"
+    ],
+
+    processHeading: "How Packers & Movers Work?",
+
+    process: [
+      "Pre-Move Survey – Assessment of goods and requirements",
+      "Quotation & Planning – Transparent pricing based on volume and distance",
+      "Packing – High-quality materials used for safety",
+      "Loading – Proper handling using tools and manpower",
+      "Transportation – Secure and timely delivery",
+      "Unloading & Unpacking – Safe placement at your new location"
+    ],
+
+    costHeading: "Packers & Movers Charges in Delhi",
+
+    costDesc: "Charges depend on distance, volume of goods, type of services, and moving date. Request a quote for accurate pricing.",
+
+    factorsHeading: "Factors Affecting Moving Cost",
+
+    factors: [
+      "Distance",
+      "Volume of Goods",
+      "Floor & Lift Availability",
+      "Season & Timing",
+      "Type of Services"
+    ],
+
+    nearbyCitiesHeading: "Our Service Locations",
+
+    nearbyCities: [
+      {
+        link: "/city/agra",
+        linkText: "Packers and Movers in Agra",
+        text: ""
+      },
+      {
+        link: "/city/chennai",
+        linkText: "Packers and Movers in Chennai",
+        text: ""
+      },
+      {
+        link: "/city/mumbai",
+        linkText: "Packers and Movers in Mumbai",
+        text: ""
+      },
+      {
+        link: "/city/bengaluru",
+        linkText: "Packers and Movers in Bengaluru",
+        text: ""
+      },
+      {
+        link: "/city/noida",
+        linkText: "Packers and Movers in Noida",
+        text: ""
+      }
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      {
+        q: "What is the cost of packers and movers in Delhi?",
+        a: "The cost depends on distance, volume of goods, and services required. Additional services like packing and insurance may affect pricing."
+      },
+      {
+        q: "How long does shifting take?",
+        a: "Local shifting in Delhi usually takes 4–8 hours, depending on the size of the move."
+      },
+      {
+        q: "Do you provide insurance for goods?",
+        a: "Yes, we provide transit insurance to ensure safety of your belongings during relocation."
+      },
+      {
+        q: "Is same-day shifting available?",
+        a: "Yes, same-day shifting services are available depending on availability."
+      },
+      {
+        q: "How do I book your service?",
+        a: "You can call us or fill out the enquiry form on our website to schedule your move."
+      }
+    ]
+  }
+},
   {
     slug: "dwarka", city: "Dwarka", img: Dwarka, offer: "10%", address: "khatri vatika, 188, near Rivigo logistic, Bharthal, Sector 26 Dwarka, Dwarka, New Delhi, Delhi, 110077", metaDetails: {
       title: "Packers and Movers in Dwarka | safexpress",
@@ -2215,135 +2576,323 @@ export const pagesData = [
       ]
     }
   },
+  // {
+  //   slug: "gurgaon", city: "Gurgaon", img: Gurgaon, offer: "25%", address: "Plot No. 134, Gali Number B-10, Block B, Ashok Vihar Phase III Extension, Gurugram, Haryana 122001", metaDetails: {
+  //     title: "Packers and Movers Gurgaon | Safe & Affordable Move",
+  //     description: "Hire trusted Packers and Movers in Gurgaon with safexpress. We provide secure, affordable and professional home, office and vehicle relocation services in Gurgaon and across the Delhi NCR region.",
+  //     keywords: "Hire expert packers and movers in Gurgaon for a smooth move. Safe Shifting Packers provides fast, secure, and cost-effective relocation solutions.",
+  //     ogDescription: "Looking for reliable Packers and Movers in Gurgaon? safexpress offers secure, timely and affordable relocation for homes, offices and vehicles in Gurgaon and the Delhi NCR region.",
+  //     twitterDescription: "Safe, professional, and affordable Packers and Movers in Gurgaon by safexpress. Make your relocation smooth and stress-free today!",
+  //     canonical: "https://gatishiftingpackers.com/city/gurgaon"
+  //   },
+  //   pageData: {
+  //     mainHeading: "Reliable Packers and Movers in Gurgaon for a Safe & Stress-Free Move",
+
+  //     paragraph: [
+  //       "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+  //       "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
+  //     ],
+
+  //     servicesHeading: "Professional Packing and Moving Services in Agra",
+
+  //     services: [
+  //       {
+  //         title: "Household Shifting Services in Agra",
+  //         desc: "Secure home shifting services for apartments, villas, and residential houses using high-quality packing materials for safety.",
+  //         link: "https://gatishiftingpackers.com/home-shifting",
+  //         linkText: "Home Shifting Services"
+  //       },
+  //       {
+  //         title: "Office Relocation Services",
+  //         desc: "Professional office relocation services for safe movement of office furniture, workstations, files, and IT equipment.",
+  //         link: "https://gatishiftingpackers.com/office-relocation",
+  //         linkText: "Office Relocation Services"
+  //       },
+  //       {
+  //         title: "Car Transportation and Bike Shifting",
+  //         desc: "Reliable car and bike transport services using specialized carriers for safe vehicle relocation across cities.",
+  //         link: "https://gatishiftingpackers.com/car-bike-transport",
+  //         linkText: "Car & Bike Transport Services"
+  //       },
+  //       {
+  //         title: "Commercial Shifting Services",
+  //         desc: "Professional commercial relocation services for warehouses, shops, and industrial equipment with safe handling.",
+  //         link: "https://gatishiftingpackers.com/commercial-shifting",
+  //         linkText: "Commercial Shifting Services"
+  //       },
+  //       {
+  //         title: "Packing and Unpacking Services",
+  //         desc: "High-quality packing and unpacking services using bubble wrap, foam sheets, and durable cartons for safety.",
+  //         link: "https://gatishiftingpackers.com/home-shifting",
+  //         linkText: "Packing Services"
+  //       },
+  //       {
+  //         title: "Storage and Warehouse Services",
+  //         desc: "Secure warehouse and home storage solutions for temporary and long-term storage of household goods.",
+  //         link: "https://gatishiftingpackers.com/warehouse",
+  //         linkText: "Warehouse Services"
+  //       }
+  //     ],
+
+  //     whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+
+  //     whyChoose: [
+  //       "Experienced relocation professionals",
+  //       "High-quality packing materials",
+  //       "Affordable relocation pricing",
+  //       "Timely pickup and delivery",
+  //       "Secure vehicle transportation",
+  //       "Complete relocation support"
+  //     ],
+
+  //     routeHeading: "Long Distance Movers from Agra",
+
+  //     routeDesc: "We provide interstate relocation services including major routes such as Agra to Delhi, Agra to Mumbai, Agra to Bangalore, Agra to Pune, and other cities across India with safe packing and timely delivery.",
+
+  //     nearbyCitiesHeading: "Cities We Also Serve",
+
+  //     nearbyCities: [
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi",
+  //         linkText: "Packers and Movers in Delhi",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-noida",
+  //         linkText: "Packers and Movers in Noida",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-ghaziabad",
+  //         linkText: "Packers and Movers in Ghaziabad",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-jaipur",
+  //         linkText: "Packers and Movers in Jaipur",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-kanpur",
+  //         linkText: "Packers and Movers in Kanpur",
+  //         text: ""
+  //       }
+  //     ],
+
+  //     faqHeading: "FAQs – Packers and Movers in Agra",
+
+  //     faqs: [
+  //       {
+  //         q: "What are the charges for packers and movers in Agra?",
+  //         a: "The relocation cost depends on distance, number of goods, packing materials, and transport vehicle required."
+  //       },
+  //       {
+  //         q: "Do you provide local shifting in Agra?",
+  //         a: "Yes, we provide reliable local relocation services for household and office shifting within Agra."
+  //       },
+  //       {
+  //         q: "Do you offer car transportation from Agra?",
+  //         a: "Yes, we provide secure car and bike transport services to major cities across India."
+  //       },
+  //       {
+  //         q: "Do you provide storage services in Agra?",
+  //         a: "Yes, we offer warehouse and home storage services for temporary and long-term storage."
+  //       },
+  //       {
+  //         q: "Do you provide interstate relocation from Agra?",
+  //         a: "Yes, we provide long-distance relocation services including Agra to Delhi and other interstate routes."
+  //       }
+  //     ]
+  //   }
+  // },
   {
-    slug: "gurgaon", city: "Gurgaon", img: Gurgaon, offer: "25%", address: "Plot No. 134, Gali Number B-10, Block B, Ashok Vihar Phase III Extension, Gurugram, Haryana 122001", metaDetails: {
-      title: "Packers and Movers Gurgaon | Safe & Affordable Move",
-      description: "Hire trusted Packers and Movers in Gurgaon with safexpress. We provide secure, affordable and professional home, office and vehicle relocation services in Gurgaon and across the Delhi NCR region.",
-      keywords: "Hire expert packers and movers in Gurgaon for a smooth move. Safe Shifting Packers provides fast, secure, and cost-effective relocation solutions.",
-      ogDescription: "Looking for reliable Packers and Movers in Gurgaon? safexpress offers secure, timely and affordable relocation for homes, offices and vehicles in Gurgaon and the Delhi NCR region.",
-      twitterDescription: "Safe, professional, and affordable Packers and Movers in Gurgaon by safexpress. Make your relocation smooth and stress-free today!",
-      canonical: "https://gatishiftingpackers.com/city/gurgaon"
-    },
-    pageData: {
-      mainHeading: "Reliable Packers and Movers in Gurgaon for a Safe & Stress-Free Move",
+  slug: "gurgaon",
+  city: "Gurgaon",
+  img: Gurgaon,
+  offer: "15%",
+  address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043",
 
-      paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
-        "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
-      ],
+  keywords: [
+    "packers and movers Gurgaon",
+    "best packers and movers in Gurgaon",
+    "home shifting Gurgaon",
+    "office relocation Gurgaon",
+    "car transport Gurgaon",
+    "bike transport Gurgaon",
+    "international movers Gurgaon",
+    "affordable packers movers Gurgaon"
+  ],
 
-      servicesHeading: "Professional Packing and Moving Services in Agra",
-
-      services: [
-        {
-          title: "Household Shifting Services in Agra",
-          desc: "Secure home shifting services for apartments, villas, and residential houses using high-quality packing materials for safety.",
-          link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "Home Shifting Services"
-        },
-        {
-          title: "Office Relocation Services",
-          desc: "Professional office relocation services for safe movement of office furniture, workstations, files, and IT equipment.",
-          link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "Office Relocation Services"
-        },
-        {
-          title: "Car Transportation and Bike Shifting",
-          desc: "Reliable car and bike transport services using specialized carriers for safe vehicle relocation across cities.",
-          link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "Car & Bike Transport Services"
-        },
-        {
-          title: "Commercial Shifting Services",
-          desc: "Professional commercial relocation services for warehouses, shops, and industrial equipment with safe handling.",
-          link: "https://gatishiftingpackers.com/commercial-shifting",
-          linkText: "Commercial Shifting Services"
-        },
-        {
-          title: "Packing and Unpacking Services",
-          desc: "High-quality packing and unpacking services using bubble wrap, foam sheets, and durable cartons for safety.",
-          link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "Packing Services"
-        },
-        {
-          title: "Storage and Warehouse Services",
-          desc: "Secure warehouse and home storage solutions for temporary and long-term storage of household goods.",
-          link: "https://gatishiftingpackers.com/warehouse",
-          linkText: "Warehouse Services"
-        }
-      ],
-
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
-
-      whyChoose: [
-        "Experienced relocation professionals",
-        "High-quality packing materials",
-        "Affordable relocation pricing",
-        "Timely pickup and delivery",
-        "Secure vehicle transportation",
-        "Complete relocation support"
-      ],
-
-      routeHeading: "Long Distance Movers from Agra",
-
-      routeDesc: "We provide interstate relocation services including major routes such as Agra to Delhi, Agra to Mumbai, Agra to Bangalore, Agra to Pune, and other cities across India with safe packing and timely delivery.",
-
-      nearbyCitiesHeading: "Cities We Also Serve",
-
-      nearbyCities: [
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi",
-          linkText: "Packers and Movers in Delhi",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-noida",
-          linkText: "Packers and Movers in Noida",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-ghaziabad",
-          linkText: "Packers and Movers in Ghaziabad",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-jaipur",
-          linkText: "Packers and Movers in Jaipur",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-kanpur",
-          linkText: "Packers and Movers in Kanpur",
-          text: ""
-        }
-      ],
-
-      faqHeading: "FAQs – Packers and Movers in Agra",
-
-      faqs: [
-        {
-          q: "What are the charges for packers and movers in Agra?",
-          a: "The relocation cost depends on distance, number of goods, packing materials, and transport vehicle required."
-        },
-        {
-          q: "Do you provide local shifting in Agra?",
-          a: "Yes, we provide reliable local relocation services for household and office shifting within Agra."
-        },
-        {
-          q: "Do you offer car transportation from Agra?",
-          a: "Yes, we provide secure car and bike transport services to major cities across India."
-        },
-        {
-          q: "Do you provide storage services in Agra?",
-          a: "Yes, we offer warehouse and home storage services for temporary and long-term storage."
-        },
-        {
-          q: "Do you provide interstate relocation from Agra?",
-          a: "Yes, we provide long-distance relocation services including Agra to Delhi and other interstate routes."
-        }
-      ]
-    }
+  metaDetails: {
+    title: "Best Packers & Movers in Gurgaon | Safe & Reliable Relocation",
+    description: "Looking for trusted Packers and Movers in Gurgaon? Get secure, fast, and affordable relocation services for homes, offices, and vehicles.",
+    keywords: "packers and movers Gurgaon, home shifting Gurgaon, office relocation Gurgaon, car transport Gurgaon, bike transport Gurgaon",
+    ogDescription: "Reliable Packers & Movers in Gurgaon with safe and smart relocation services.",
+    twitterDescription: "Professional Packers & Movers in Gurgaon offering secure and hassle-free moving services.",
+    canonical: "https://safeshiftingpackers.com/city/gurgaon"
   },
+
+  pageData: {
+    mainHeading: "Best Packers & Movers in Gurgaon",
+
+    paragraph: [
+      "Finding the right packers and movers in Gurgaon is the most critical step toward a stress-free transition. Our expert team ensures a seamless, zero-damage relocation experience.",
+      "Upgrade your moving experience with Safe Shifting Packers. We combine GPS-enabled tracking and advanced logistics systems to deliver a smart, secure, and hassle-free relocation.",
+      "If you are looking for packers and movers in Gurgaon, our services are designed to provide safe, efficient, and reliable shifting solutions for homes, offices, and vehicles."
+    ],
+
+    servicesHeading: "Our Packers & Movers Services in Gurgaon",
+    serviceSecondHeading: "Reliable Packers and Movers in Gurgaon: Smart & Secure Relocation Services ",
+    services: [
+      {
+        title: "Home Shifting Services",
+        desc: "Safe and secure household shifting with high-quality packing materials.",
+        link: "/home-shifting",
+        linkText: "Home Shifting"
+      },
+      {
+        title: "Office Relocation",
+        desc: "Professional office relocation ensuring minimal downtime.",
+        link: "/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Domestic Relocation",
+        desc: "Reliable intercity relocation services across India.",
+        link: "/domestic-relocation",
+        linkText: "Domestic Moving"
+      },
+      {
+        title: "International Moving",
+        desc: "Complete international relocation including packing and customs clearance.",
+        link: "/international-moving",
+        linkText: "International Moving"
+      },
+      {
+        title: "Car & Bike Transport",
+        desc: "Safe vehicle transport using specialized carriers.",
+        link: "/car-bike-transport",
+        linkText: "Vehicle Transport"
+      },
+      {
+        title: "Packing & Unpacking",
+        desc: "Professional packing and unpacking services for damage-free relocation.",
+        link: "/packing-services",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Corporate Relocation",
+        desc: "Efficient corporate relocation for offices, factories, and businesses.",
+        link: "/corporate-relocation",
+        linkText: "Corporate Moving"
+      },
+      {
+        title: "Warehouse & Storage",
+        desc: "Secure storage solutions for short-term and long-term needs.",
+        link: "/warehouse",
+        linkText: "Storage Services"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Safexpress Gurgaon?",
+
+    whyChoose: [
+      "Experienced & verified movers",
+      "Premium packing materials",
+      "GPS enabled vehicles",
+      "Affordable transparent pricing",
+      "Transit insurance",
+      "24×7 customer support"
+    ],
+
+    processHeading: "How Packers & Movers Work?",
+
+    process: [
+      "Pre-Move Survey – Assessment of goods and requirements",
+      "Quotation & Planning – Transparent pricing based on volume and distance",
+      "Packing – High-quality materials used for safety",
+      "Loading – Proper handling using tools and manpower",
+      "Transportation – Secure and timely delivery",
+      "Unloading & Unpacking – Safe placement at your new location"
+    ],
+
+    costHeading: "Packers & Movers Charges in Gurgaon",
+
+    costDesc: "Charges depend on distance, number of goods, type of services, and moving date. Request a quote for accurate pricing.",
+
+    factorsHeading: "Factors Affecting Moving Cost",
+
+    factors: [
+      "Distance",
+      "Volume of Goods",
+      "Floor & Lift Availability",
+      "Season & Timing",
+      "Type of Services"
+    ],
+
+    extraHeading: "Why We Are the Best Packers & Movers in Gurgaon",
+
+    extraPoints: [
+      "Experienced and trained professionals",
+      "Affordable and transparent pricing",
+      "Modern equipment and transport vehicles",
+      "Timely delivery with real-time updates",
+      "24/7 customer support",
+      "100% safety assurance"
+    ],
+
+    nearbyCitiesHeading: "Our Service Locations",
+
+    nearbyCities: [
+      {
+        link: "/city/ghaziabad",
+        linkText: "Packers and Movers in Ghaziabad",
+        text: ""
+      },
+      {
+        link: "/city/guwahati",
+        linkText: "Packers and Movers in Guwahati",
+        text: ""
+      },
+      {
+        link: "/city/mumbai",
+        linkText: "Packers and Movers in Mumbai",
+        text: ""
+      },
+      {
+        link: "/city/hyderabad",
+        linkText: "Packers and Movers in Hyderabad",
+        text: ""
+      },
+      {
+        link: "/city/noida",
+        linkText: "Packers and Movers in Noida",
+        text: ""
+      }
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      {
+        q: "How do I calculate the cost of packers and movers in Gurgaon?",
+        a: "The cost depends on quantity of goods, packing material, distance, and labor required."
+      },
+      {
+        q: "How do I book your moving services?",
+        a: "You can call, WhatsApp, or fill out the enquiry form on our website to get a customized quotation."
+      },
+      {
+        q: "Do you provide insurance for home shifting in Gurgaon?",
+        a: "Yes, we provide transit insurance to cover any unforeseen damages."
+      },
+      {
+        q: "Can I change my moving date after booking?",
+        a: "Yes, you can reschedule by informing us 24–48 hours in advance."
+      }
+    ]
+  }
+},
   {
     slug: "hubli", city: "Hubli", img: Hubli, offer: "25%", address: "Shop No.102, Subhas Arcade, Gokul Rd, opp. IDBI BANK, Silver Town, Manjunath Nagar, Hubballi, Karnataka 580030", metaDetails: {
       title: "Packers and Movers in Hubli | safexpress",

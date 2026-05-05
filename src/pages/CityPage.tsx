@@ -102,7 +102,7 @@ const CityPage = () => {
                 {/* Canonical URL */}
                 <link rel="canonical" href={`https://safeshiftingpackers.com/city/${slug}`} />
             </Helmet>
-            {(city != "Ghaziabad" ) ? (
+            {(city != "Ghaziabad" && city != "Agra" && city != "Gurgaon" && city != "Delhi") ? (
 
                 <section id="city-page-sec">
                     <div className="offer-headling"></div>
