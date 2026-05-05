@@ -872,7 +872,7 @@ export const pagesData = [
     }
   },
   {
-    slug: "hyderabad", city: "Hyderabad", img: HyderabadImg, offer: "15%", address: "Shop 115, Street No. 5, maitrivan colony, Old Bowenpally, Hyderabad, Secunderabad, Telangana 500011", 
+    slug: "hyderabad", city: "Hyderabad", img: HyderabadImg, offer: "15%", address: "Shop 115, Street No. 5, maitrivan colony, Old Bowenpally, Hyderabad, Secunderabad, Telangana 500011",
     metaDetails: {
       title: "Affordable Packers and Movers Hyderabad| Book Now",
       description: "Safe Shifting Packers offers professional packers and movers in Hyderabad with affordable rates, secure packing, and quick, stress-free moving services.",
@@ -1368,183 +1368,188 @@ export const pagesData = [
   //   }
   // },
   {
-  slug: "ghaziabad",
-  city: "Ghaziabad",
-  img: GhaziabadImg,
-  offer: "15%",
-  address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043",
+    slug: "ghaziabad",
+    city: "Ghaziabad",
+    img: GhaziabadImg,
+    offer: "15%",
+    address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043",
 
-  keywords: [
-    "packers and movers Ghaziabad",
-    "best packers and movers in Ghaziabad",
-    "home shifting Ghaziabad",
-    "office relocation Ghaziabad",
-    "car transport Ghaziabad",
-    "bike transport Ghaziabad",
-    "international movers Ghaziabad",
-    "affordable packers movers Ghaziabad"
-  ],
-
-  metaDetails: {
-    title: "Best Packers & Movers in Ghaziabad | Safe & Affordable Shifting",
-    description: "Looking for reliable Packers and Movers in Ghaziabad? Safe Shifting Packers provide secure, affordable, and professional relocation services for homes, offices, and vehicles.",
-    keywords: "packers and movers Ghaziabad, home shifting Ghaziabad, office relocation Ghaziabad, car transport Ghaziabad, bike transport Ghaziabad, cheap packers movers Ghaziabad",
-    ogDescription: "Safe, reliable, and affordable Packers & Movers in Ghaziabad. Enjoy smooth and stress-free relocation services today.",
-    twitterDescription: "Professional Packers & Movers in Ghaziabad with safe and affordable relocation services.",
-    canonical: "https://yourwebsite.com/packers-and-movers-in-ghaziabad"
-  },
-
-  pageData: {
-    mainHeading: "Best Packers & Movers in Ghaziabad",
-
-    paragraph: [
-      "Relocating to a new place can feel overwhelming — from packing your belongings to ensuring everything reaches safely. That’s why Safe Shifting Packers is here to make your move smooth, secure, and completely stress-free.",
-      "As trusted packers and movers in Ghaziabad, we provide professional relocation services tailored to your needs. Whether you’re moving your home, shifting your office, or transporting your vehicle, our experienced team handles every step with care and precision.",
-      "We believe your belongings deserve more than just transportation — they deserve attention, protection, and reliability. With quality packing materials, skilled staff, and timely delivery, we ensure a hassle-free moving experience from start to finish."
+    keywords: [
+      "packers and movers Ghaziabad",
+      "best packers and movers in Ghaziabad",
+      "home shifting Ghaziabad",
+      "office relocation Ghaziabad",
+      "car transport Ghaziabad",
+      "bike transport Ghaziabad",
+      "international movers Ghaziabad",
+      "affordable packers movers Ghaziabad"
     ],
 
-    servicesHeading: "Our Packers & Movers Services in Ghaziabad",
-    serviceSecondHeading: "Packers & Movers in Ghaziabad: Safe, Reliable & Affordable Relocation Services ",
-    services: [
-      {
-        title: "Home Shifting Services",
-        desc: "Safe and secure household shifting services with high-quality packing materials.",
-        link: "/home-shifting",
-        linkText: "Home Shifting"
-      },
-      {
-        title: "Office Relocation",
-        desc: "Professional office shifting services ensuring minimal downtime and safe transport.",
-        link: "/office-relocation",
-        linkText: "Office Relocation"
-      },
-      {
-        title: "Domestic Relocation",
-        desc: "Reliable intercity relocation services across India with timely delivery.",
-        link: "/domestic-relocation",
-        linkText: "Domestic Moving"
-      },
-      {
-        title: "International Moving",
-        desc: "Complete international relocation including packing, customs clearance, and delivery.",
-        link: "/international-moving",
-        linkText: "International Moving"
-      },
-      {
-        title: "Car & Bike Transport",
-        desc: "Secure vehicle transportation using specialized carriers.",
-        link: "/car-bike-transport",
-        linkText: "Vehicle Transport"
-      },
-      {
-        title: "Packing & Unpacking",
-        desc: "Professional packing and unpacking services for damage-free relocation.",
-        link: "/packing-services",
-        linkText: "Packing Services"
-      },
-      {
-        title: "Warehouse & Storage",
-        desc: "Safe and secure storage solutions for short-term and long-term needs.",
-        link: "/warehouse",
-        linkText: "Storage Services"
-      }
-    ],
+    metaDetails: {
+      title: "Best Packers & Movers in Ghaziabad | Safe & Affordable Shifting",
+      description: "Looking for reliable Packers and Movers in Ghaziabad? Safe Shifting Packers provide secure, affordable, and professional relocation services for homes, offices, and vehicles.",
+      keywords: "packers and movers Ghaziabad, home shifting Ghaziabad, office relocation Ghaziabad, car transport Ghaziabad, bike transport Ghaziabad, cheap packers movers Ghaziabad",
+      ogDescription: "Safe, reliable, and affordable Packers & Movers in Ghaziabad. Enjoy smooth and stress-free relocation services today.",
+      twitterDescription: "Professional Packers & Movers in Ghaziabad with safe and affordable relocation services.",
+      canonical: "https://yourwebsite.com/packers-and-movers-in-ghaziabad"
+    },
 
-    whyChooseHeading: "Why Choose Safe Shifting Packers in Ghaziabad",
+    pageData: {
+      mainHeading: "Best Packers & Movers in Ghaziabad",
 
-    whyChoose: [
-      "Experienced & verified movers",
-      "Premium packing materials",
-      "GPS enabled vehicles",
-      "Affordable transparent pricing",
-      "Transit insurance available",
-      "24×7 customer support"
-    ],
+      paragraph: [
+        "Relocating to a new place can feel overwhelming — from packing your belongings to ensuring everything reaches safely. That’s why Safe Shifting Packers is here to make your move smooth, secure, and completely stress-free.",
+        "As trusted packers and movers in Ghaziabad, we provide professional relocation services tailored to your needs. Whether you’re moving your home, shifting your office, or transporting your vehicle, our experienced team handles every step with care and precision.",
+        "We believe your belongings deserve more than just transportation — they deserve attention, protection, and reliability. With quality packing materials, skilled staff, and timely delivery, we ensure a hassle-free moving experience from start to finish."
+      ],
 
-    processHeading: "Our Simple & Safe Moving Process",
+      servicesHeading: "Our Packers & Movers Services in Ghaziabad",
+      serviceSecondHeading: "Packers & Movers in Ghaziabad: Safe, Reliable & Affordable Relocation Services ",
+      services: [
+        {
+          title: "Home Shifting Services",
+          desc: "Safe and secure household shifting services with high-quality packing materials.",
+          link: "/home-shifting",
+          linkText: "Home Shifting"
+        },
+        {
+          title: "Office Relocation",
+          desc: "Professional office shifting services ensuring minimal downtime and safe transport.",
+          link: "/office-relocation",
+          linkText: "Office Relocation"
+        },
+        {
+          title: "Domestic Relocation",
+          desc: "Reliable intercity relocation services across India with timely delivery.",
+          link: "/domestic-relocation",
+          linkText: "Domestic Moving"
+        },
+        {
+          title: "International Moving",
+          desc: "Complete international relocation including packing, customs clearance, and delivery.",
+          link: "/international-moving",
+          linkText: "International Moving"
+        },
+        {
+          title: "Car & Bike Transport",
+          desc: "Secure vehicle transportation using specialized carriers.",
+          link: "/car-bike-transport",
+          linkText: "Vehicle Transport"
+        },
+        {
+          title: "Packing & Unpacking",
+          desc: "Professional packing and unpacking services for damage-free relocation.",
+          link: "/packing-services",
+          linkText: "Packing Services"
+        },
+        {
+          title: "Warehouse & Storage",
+          desc: "Safe and secure storage solutions for short-term and long-term needs.",
+          link: "/warehouse",
+          linkText: "Storage Services"
+        }
+      ],
 
-    process: [
-      "Pre-Move Survey – Understanding your requirements",
-      "Quotation & Planning – Transparent pricing",
-      "Packing – High-quality materials used",
-      "Loading – Safe handling with modern equipment",
-      "Transportation – Secure and timely delivery",
-      "Unloading & Unpacking – Hassle-free setup"
-    ],
+      whyChooseHeading: "Why Choose Safe Shifting Packers in Ghaziabad",
 
-    costHeading: "Packers & Movers Charges in Ghaziabad",
+      whyChoose: [
+        "Experienced & verified movers",
+        "Premium packing materials",
+        "GPS enabled vehicles",
+        "Affordable transparent pricing",
+        "Transit insurance available",
+        "24×7 customer support"
+      ],
 
-    costDesc: "The cost depends on distance, volume of goods, floor level, and services required. Local shifting usually ranges between ₹3,000 to ₹15,000.",
+      processHeading: "Our Simple & Safe Moving Process",
 
-    factors: [
-      "Distance",
-      "Volume of Goods",
-      "Floor & Lift Availability",
-      "Season & Timing",
-      "Type of Services"
-    ],
+      process: [
+        "Pre-Move Survey – Understanding your requirements",
+        "Quotation & Planning – Transparent pricing",
+        "Packing – High-quality materials used",
+        "Loading – Safe handling with modern equipment",
+        "Transportation – Secure and timely delivery",
+        "Unloading & Unpacking – Hassle-free setup"
+      ],
 
-    areasHeading: "Areas We Serve in Ghaziabad",
+      costHeading: "Packers & Movers Charges in Ghaziabad",
 
-    areas: [
-      "Indirapuram",
-      "Vaishali",
-      "Vasundhara",
-      "Raj Nagar",
-      "Kaushambi"
-    ],
+      costDesc: "The cost depends on distance, volume of goods, floor level, and services required. Local shifting usually ranges between ₹3,000 to ₹15,000.",
 
-    nearbyCitiesHeading: "Our Service Locations",
+      factors: [
+        "Distance",
+        "Volume of Goods",
+        "Floor & Lift Availability",
+        "Season & Timing",
+        "Type of Services"
+      ],
 
+      areasHeading: "Areas We Serve in Ghaziabad",
+
+      areas: [
+        "Indirapuram",
+        "Vaishali",
+        "Vasundhara",
+        "Raj Nagar",
+        "Kaushambi"
+      ],
+
+      nearbyCitiesHeading: "Our Service Locations",
+      nearbyCitiesParagraph: "We provide reliable relocation services across multiple cities including Gurgaon, Mumbai, Hyderabad, and more.",
     nearbyCities: [
-      {
-        link: "/city/gurgaon",
-        linkText: "Packers and Movers in Gurgaon"
-      },
-      {
-        link: "/city/guwahati",
-        linkText: "Packers and Movers in Guwahati"
-      },
-      {
-        link: "/city/mumbai",
-        linkText: "Packers and Movers in Mumbai"
-      },
-      {
-        link: "/city/hyderabad",
-        linkText: "Packers and Movers in Hyderabad"
-      },
-      {
-        link: "/city/noida",
-        linkText: "Packers and Movers in Noida"
-      }
-    ],
+        {
+          link: "/city/gurgaon",
+          linkText: "Packers and Movers in Gurgaon",
+          text: ""
+        },
+        {
+          link: "/city/guwahati",
+          linkText: "Packers and Movers in Guwahati",
+          text: ""
+        },
+        {
+          link: "/city/mumbai",
+          linkText: "Packers and Movers in Mumbai",
+          text: ""
+        },
+        {
+          link: "/city/hyderabad",
+          linkText: "Packers and Movers in Hyderabad",
+          text: ""
+        },
+        {
+          link: "/city/noida",
+          linkText: "Packers and Movers in Noida",
+          text: ""
+        }
+      ],
 
-    faqHeading: "Frequently Asked Questions",
+      faqHeading: "Frequently Asked Questions",
 
-    faqs: [
-      {
-        q: "Do you provide insurance for goods during relocation?",
-        a: "Yes, we offer transit insurance to cover any unexpected damage during the move."
-      },
-      {
-        q: "Do you handle fragile items?",
-        a: "Yes, we use specialized packing for glassware, electronics, and delicate items."
-      },
-      {
-        q: "What items are not allowed?",
-        a: "Hazardous materials like chemicals, flammable liquids, and explosives are not allowed."
-      },
-      {
-        q: "Do you provide packing and unpacking?",
-        a: "Yes, complete packing and unpacking services are included in most packages."
-      },
-      {
-        q: "What are the charges for packers and movers in Ghaziabad?",
-        a: "Charges depend on distance, goods volume, and services. Typically ₹3,000–₹15,000 for local shifting."
-      }
-    ]
-  }
-},
+      faqs: [
+        {
+          q: "Do you provide insurance for goods during relocation?",
+          a: "Yes, we offer transit insurance to cover any unexpected damage during the move."
+        },
+        {
+          q: "Do you handle fragile items?",
+          a: "Yes, we use specialized packing for glassware, electronics, and delicate items."
+        },
+        {
+          q: "What items are not allowed?",
+          a: "Hazardous materials like chemicals, flammable liquids, and explosives are not allowed."
+        },
+        {
+          q: "Do you provide packing and unpacking?",
+          a: "Yes, complete packing and unpacking services are included in most packages."
+        },
+        {
+          q: "What are the charges for packers and movers in Ghaziabad?",
+          a: "Charges depend on distance, goods volume, and services. Typically ₹3,000–₹15,000 for local shifting."
+        }
+      ]
+    }
+  },
   { slug: "gwalior", city: "Gwalior", img: GwaliorImg, offer: "15%", address: "G-7 The Legacy Plaza, Airport Rd, Gwalior, Madhya Pradesh 474005" },
   { slug: "indore", city: "Indore", img: Indore, offer: "15%", address: "4/3, opp. Mangal city, Vijay Nagar, Scheme No 54, Indore, Madhya Pradesh 452010" },
   { slug: "jamnagar", city: "Jamnagar", img: Jamnagar, offer: "15%", address: "Shop - 1465, Akhilam Cornar Mayur Villa Road, near Samrpan Circle, Ajanta Society, Jamnagar, Gujarat 361006" },
@@ -1574,7 +1579,7 @@ export const pagesData = [
       ogDescription: "Looking for reliable Packers and Movers in Mumbai? safexpress offers secure, timely and affordable relocation for homes, offices and vehicles in Mumbai and Maharashtra.",
       twitterDescription: "Safe, professional and affordable Packers and Movers in Mumbai by safexpress. Make your relocation smooth and stress-free today!"
     },
-     pageData: {
+    pageData: {
       mainHeading: "Best Packers and Movers in Mumbai for Fast & Stress-Free Shifting",
 
       paragraph: [
@@ -1762,7 +1767,7 @@ export const pagesData = [
       twitterDescription: "Safe, professional and affordable Packers and Movers in Chennai by safexpress. Make your relocation smooth and stress-free today!",
       canonical: "https://gatishiftingpackers.com/city/chennai"
     },
-     pageData: {
+    pageData: {
       mainHeading: "Trusted Packers and Movers in Chennai: 100% Verified & Safe Shifting",
 
       paragraph: [
@@ -1931,7 +1936,7 @@ export const pagesData = [
       twitterDescription: "Safe, professional and affordable Packers and Movers in Delhi by safexpress. Make your relocation smooth and stress-free today!",
       canonical: "https://gatishiftingpackers.com/city/delhi"
     },
-      pageData: {
+    pageData: {
       mainHeading: "Reliable Packers and Movers in Delhi: Damage-Free & Secure Shifting",
 
       paragraph: [
