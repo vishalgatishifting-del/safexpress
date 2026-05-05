@@ -278,3 +278,125 @@
     font-size: 26px;
   }
 }
+
+
+
+#city-page-sec {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* HERO SECTION */
+#city-page-sec .box {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+
+  background: linear-gradient(135deg, #081c15, #1b4332);
+  border-radius: 20px;
+  color: white;
+}
+
+/* LEFT CONTENT */
+#city-page-sec .text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#city-page-sec h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+#city-page-sec .city-name {
+  font-size: 28px;
+  color: #52b788;
+  margin-bottom: 10px;
+}
+
+#city-page-sec .address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* OFFER */
+#city-page-sec h2 {
+  margin: 15px 0;
+}
+
+/* BUTTON */
+#city-page-sec .redirect-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #40916c, #52b788);
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#city-page-sec .redirect-link:hover {
+  transform: translateY(-3px);
+}
+
+/* IMAGE */
+#city-page-sec .box img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* CONTENT */
+#city-page-sec .content {
+  max-width: 900px;
+  margin: 40px auto;
+  line-height: 1.7;
+  color: #333;
+}
+
+#city-page-sec .content h2 {
+  margin: 30px 0 10px;
+  font-size: 22px;
+}
+
+#city-page-sec .content p {
+  font-size: 15px;
+}
+
+/* LISTS */
+#city-page-sec ul li,
+#city-page-sec ol li {
+  margin-bottom: 8px;
+}
+
+/* IMAGE BOX */
+#city-page-sec .img-bx {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#city-page-sec .chargesImg {
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  #city-page-sec .box {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  #city-page-sec h1 {
+    font-size: 28px;
+  }
+}

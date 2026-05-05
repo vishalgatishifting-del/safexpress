@@ -1221,153 +1221,330 @@ export const pagesData = [
 
   { slug: "chandigarh", city: "Chandigarh", img: ChandigarhImg, offer: "15%", address: "plot no.261, Transport Area, Sector 26, Chandigarh, 160019" },
   { slug: "dehradun", city: "Dehradun", img: DehradunImg, offer: "15%", address: "Shop - 131, Chandrabani Rd, Chandrabani, Chandrwani Khalsa, Dehradun, Uttarakhand 248002" },
+  // {
+  //   slug: "ghaziabad", city: "Ghaziabad", img: GhaziabadImg, offer: "15%", address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043", keywords: [
+  //     "packers and movers Ghaziabad",
+  //     "gati packers and movers",
+  //     "best packers and movers in Ghaziabad",
+  //     "house shifting services Ghaziabad",
+  //     "home relocation Ghaziabad",
+  //     "office relocation Ghaziabad",
+  //     "car transport service Ghaziabad",
+  //     "bike transport Ghaziabad",
+  //     "vehicle transportation Ghaziabad",
+  //     "warehouse services Ghaziabad",
+  //     "storage services Ghaziabad",
+  //     "local movers Ghaziabad",
+  //     "affordable packers and movers Ghaziabad",
+  //     "long distance movers Ghaziabad",
+  //     "international movers Ghaziabad",
+  //     "packing unpacking services Ghaziabad"
+  //   ],
+  //    metaDetails: {
+  //     title: "Best Packers and Movers in Ghaziabad | Lowest Price Guaranteed",
+  //     description: "Don't overpay for shifting! Safe Shifting Packers and Movers in Ghaziabad offer premium packing and moving at wholesale rates. Request a free estimate today!",
+  //     keywords: "Local movers near me Hyderabad, Packers and Movers in Hyderabad, safexpress Hyderabad, Best Packers and Movers Hyderabad, Affordable Packers and Movers Hyderabad, Trusted Packers and Movers Hyderabad Telangana, Local Packers and Movers Hyderabad, Professional Movers and Packers Hyderabad, Home Shifting Services Hyderabad, Office Relocation Hyderabad, Vehicle Transport Hyderabad, Car Transport Service Hyderabad, Bike Transport Hyderabad, Household Goods Shifting Hyderabad, Industrial Packers and Movers Hyderabad, Door-to-Door Shifting Services Hyderabad, Packing and Unpacking Services Hyderabad, Furniture Movers Hyderabad, Intercity Packers and Movers Hyderabad, Packers and Movers Hyderabad to Delhi, Packers and Movers Hyderabad to Mumbai, Packers and Movers Hyderabad to Bengaluru, Packers and Movers Hyderabad to Kolkata, Reliable Relocation Company Hyderabad, Cost-Effective Packers and Movers Hyderabad, Quick Packers and Movers Hyderabad, 24x7 Packers and Movers Hyderabad, Mini Truck for Shifting Hyderabad, Tempo Service Hyderabad, Best Relocation Services Hyderabad, Safe and Secure Moving Services Hyderabad, Budget-Friendly Movers Hyderabad, Professional Relocation Company Hyderabad, Long-Distance Packers and Movers Hyderabad, Trusted Shifting Company Hyderabad, Goods Transport Services Hyderabad, Moving Experts Hyderabad, Packers Movers with Insurance Hyderabad, Verified Packers and Movers Hyderabad, Logistics and Transport Services Hyderabad, Gati Shifting Movers Hyderabad, Local Movers Hyderabad, Home Shifting Services in Hyderabad, Office Shifting Services in Hyderabad, Factory Relocation Services Hyderabad, Vehicle Shifting Hyderabad, Household Shifting Hyderabad, Movers and Packers near me Hyderabad, Relocation Company in Hyderabad, Moving Company Hyderabad, IBA Approved Packers and Movers Hyderabad, Packers and Movers Hyderabad Price, Packers and Movers Hyderabad Charges, Packers and Movers Hyderabad Cost, Reliable Packers and Movers Hyderabad, Door to Door Packers and Movers Hyderabad, Packers and Movers for Local Shifting in Hyderabad, Packers and Movers for Long Distance in Hyderabad, Loading and Unloading Services Hyderabad, Warehouse Shifting Hyderabad, Logistics Services Hyderabad, Transport Services Hyderabad, Relocation Company Hyderabad Telangana, Household Relocation Services Hyderabad, Home Packers Hyderabad, Professional Packers and Movers Hyderabad, Intercity Movers Hyderabad, Shifting Services Hyderabad, Goods Transport Hyderabad, Safe Relocation Services Hyderabad, Local Household Movers Hyderabad, Best Shifting Company Hyderabad, Trusted Relocation Services Hyderabad, safexpress and Movers Telangana, Gati Shifting Relocation Services Hyderabad, Gati Shifting Logistics Hyderabad, safexpress for Home Shifting Hyderabad, safexpress Office Movers Hyderabad, safexpress Affordable Moving Hyderabad.",
+  //     ogDescription: "Looking for reliable Packers and Movers in Hyderabad? safexpress offers secure, timely, and affordable relocation services for homes, offices, and vehicles.",
+  //     twitterDescription: "Safe, professional, and affordable Packers and Movers in Hyderabad by safexpress. Enjoy smooth, secure, and stress-free moving services today!",
+  //     canonical: "https://gatishiftingpackers.com/city/hyderabad"
+  //   }, 
+  //   pageData: {
+  //     mainHeading: "Best Packers & Movers in Ghaziabad",
+
+  //     paragraph: [
+  //       "Relocating to a new place can feel overwhelming — from packing your belongings to ensuring everything reaches safely. That’s why Safe Shifting Packers is here to make your move smooth, secure, and completely stress-free. As trusted packers and movers in Ghaziabad, we provide professional relocation services tailored to your needs. Whether you’re moving your home, shifting your office, or transporting your vehicle, our experienced team handles every step with care and precision. We believe your belongings deserve more than just transportation — they deserve attention, protection, and reliability. With quality packing materials, skilled staff, and timely delivery, we ensure a hassle-free moving experience from start to finish."
+  //     ],
+
+  //     servicesHeading: "Professional Packing and Moving Services in Agra",
+
+  //     services: [
+  //       {
+  //         title: "Household Shifting Services in Agra",
+  //         desc: "Secure home shifting services for apartments, villas, and residential houses using high-quality packing materials for safety.",
+  //         link: "https://gatishiftingpackers.com/home-shifting",
+  //         linkText: "Home Shifting Services"
+  //       },
+  //       {
+  //         title: "Office Relocation Services",
+  //         desc: "Professional office relocation services for safe movement of office furniture, workstations, files, and IT equipment.",
+  //         link: "https://gatishiftingpackers.com/office-relocation",
+  //         linkText: "Office Relocation Services"
+  //       },
+  //       {
+  //         title: "Car Transportation and Bike Shifting",
+  //         desc: "Reliable car and bike transport services using specialized carriers for safe vehicle relocation across cities.",
+  //         link: "https://gatishiftingpackers.com/car-bike-transport",
+  //         linkText: "Car & Bike Transport Services"
+  //       },
+  //       {
+  //         title: "Commercial Shifting Services",
+  //         desc: "Professional commercial relocation services for warehouses, shops, and industrial equipment with safe handling.",
+  //         link: "https://gatishiftingpackers.com/commercial-shifting",
+  //         linkText: "Commercial Shifting Services"
+  //       },
+  //       {
+  //         title: "Packing and Unpacking Services",
+  //         desc: "High-quality packing and unpacking services using bubble wrap, foam sheets, and durable cartons for safety.",
+  //         link: "https://gatishiftingpackers.com/home-shifting",
+  //         linkText: "Packing Services"
+  //       },
+  //       {
+  //         title: "Storage and Warehouse Services",
+  //         desc: "Secure warehouse and home storage solutions for temporary and long-term storage of household goods.",
+  //         link: "https://gatishiftingpackers.com/warehouse",
+  //         linkText: "Warehouse Services"
+  //       }
+  //     ],
+
+  //     whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+
+  //     whyChoose: [
+  //       "Experienced relocation professionals",
+  //       "High-quality packing materials",
+  //       "Affordable relocation pricing",
+  //       "Timely pickup and delivery",
+  //       "Secure vehicle transportation",
+  //       "Complete relocation support"
+  //     ],
+
+  //     routeHeading: "Long Distance Movers from Agra",
+
+  //     routeDesc: "We provide interstate relocation services including major routes such as Agra to Delhi, Agra to Mumbai, Agra to Bangalore, Agra to Pune, and other cities across India with safe packing and timely delivery.",
+
+  //     nearbyCitiesHeading: "Cities We Also Serve",
+
+  //     nearbyCities: [
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi",
+  //         linkText: "Packers and Movers in Delhi",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-noida",
+  //         linkText: "Packers and Movers in Noida",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-ghaziabad",
+  //         linkText: "Packers and Movers in Ghaziabad",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-jaipur",
+  //         linkText: "Packers and Movers in Jaipur",
+  //         text: ""
+  //       },
+  //       {
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-kanpur",
+  //         linkText: "Packers and Movers in Kanpur",
+  //         text: ""
+  //       }
+  //     ],
+
+  //     faqHeading: "FAQs – Packers and Movers in Agra",
+
+  //     faqs: [
+  //       {
+  //         q: "What are the charges for packers and movers in Agra?",
+  //         a: "The relocation cost depends on distance, number of goods, packing materials, and transport vehicle required."
+  //       },
+  //       {
+  //         q: "Do you provide local shifting in Agra?",
+  //         a: "Yes, we provide reliable local relocation services for household and office shifting within Agra."
+  //       },
+  //       {
+  //         q: "Do you offer car transportation from Agra?",
+  //         a: "Yes, we provide secure car and bike transport services to major cities across India."
+  //       },
+  //       {
+  //         q: "Do you provide storage services in Agra?",
+  //         a: "Yes, we offer warehouse and home storage services for temporary and long-term storage."
+  //       },
+  //       {
+  //         q: "Do you provide interstate relocation from Agra?",
+  //         a: "Yes, we provide long-distance relocation services including Agra to Delhi and other interstate routes."
+  //       }
+  //     ]
+  //   }
+  // },
   {
-    slug: "ghaziabad", city: "Ghaziabad", img: GhaziabadImg, offer: "15%", address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043", keywords: [
-      "packers and movers Ghaziabad",
-      "gati packers and movers",
-      "best packers and movers in Ghaziabad",
-      "house shifting services Ghaziabad",
-      "home relocation Ghaziabad",
-      "office relocation Ghaziabad",
-      "car transport service Ghaziabad",
-      "bike transport Ghaziabad",
-      "vehicle transportation Ghaziabad",
-      "warehouse services Ghaziabad",
-      "storage services Ghaziabad",
-      "local movers Ghaziabad",
-      "affordable packers and movers Ghaziabad",
-      "long distance movers Ghaziabad",
-      "international movers Ghaziabad",
-      "packing unpacking services Ghaziabad"
-    ],
-     metaDetails: {
-      title: "Best Packers and Movers in Ghaziabad | Lowest Price Guaranteed",
-      description: "Don't overpay for shifting! Safe Shifting Packers and Movers in Ghaziabad offer premium packing and moving at wholesale rates. Request a free estimate today!",
-      keywords: "Local movers near me Hyderabad, Packers and Movers in Hyderabad, safexpress Hyderabad, Best Packers and Movers Hyderabad, Affordable Packers and Movers Hyderabad, Trusted Packers and Movers Hyderabad Telangana, Local Packers and Movers Hyderabad, Professional Movers and Packers Hyderabad, Home Shifting Services Hyderabad, Office Relocation Hyderabad, Vehicle Transport Hyderabad, Car Transport Service Hyderabad, Bike Transport Hyderabad, Household Goods Shifting Hyderabad, Industrial Packers and Movers Hyderabad, Door-to-Door Shifting Services Hyderabad, Packing and Unpacking Services Hyderabad, Furniture Movers Hyderabad, Intercity Packers and Movers Hyderabad, Packers and Movers Hyderabad to Delhi, Packers and Movers Hyderabad to Mumbai, Packers and Movers Hyderabad to Bengaluru, Packers and Movers Hyderabad to Kolkata, Reliable Relocation Company Hyderabad, Cost-Effective Packers and Movers Hyderabad, Quick Packers and Movers Hyderabad, 24x7 Packers and Movers Hyderabad, Mini Truck for Shifting Hyderabad, Tempo Service Hyderabad, Best Relocation Services Hyderabad, Safe and Secure Moving Services Hyderabad, Budget-Friendly Movers Hyderabad, Professional Relocation Company Hyderabad, Long-Distance Packers and Movers Hyderabad, Trusted Shifting Company Hyderabad, Goods Transport Services Hyderabad, Moving Experts Hyderabad, Packers Movers with Insurance Hyderabad, Verified Packers and Movers Hyderabad, Logistics and Transport Services Hyderabad, Gati Shifting Movers Hyderabad, Local Movers Hyderabad, Home Shifting Services in Hyderabad, Office Shifting Services in Hyderabad, Factory Relocation Services Hyderabad, Vehicle Shifting Hyderabad, Household Shifting Hyderabad, Movers and Packers near me Hyderabad, Relocation Company in Hyderabad, Moving Company Hyderabad, IBA Approved Packers and Movers Hyderabad, Packers and Movers Hyderabad Price, Packers and Movers Hyderabad Charges, Packers and Movers Hyderabad Cost, Reliable Packers and Movers Hyderabad, Door to Door Packers and Movers Hyderabad, Packers and Movers for Local Shifting in Hyderabad, Packers and Movers for Long Distance in Hyderabad, Loading and Unloading Services Hyderabad, Warehouse Shifting Hyderabad, Logistics Services Hyderabad, Transport Services Hyderabad, Relocation Company Hyderabad Telangana, Household Relocation Services Hyderabad, Home Packers Hyderabad, Professional Packers and Movers Hyderabad, Intercity Movers Hyderabad, Shifting Services Hyderabad, Goods Transport Hyderabad, Safe Relocation Services Hyderabad, Local Household Movers Hyderabad, Best Shifting Company Hyderabad, Trusted Relocation Services Hyderabad, safexpress and Movers Telangana, Gati Shifting Relocation Services Hyderabad, Gati Shifting Logistics Hyderabad, safexpress for Home Shifting Hyderabad, safexpress Office Movers Hyderabad, safexpress Affordable Moving Hyderabad.",
-      ogDescription: "Looking for reliable Packers and Movers in Hyderabad? safexpress offers secure, timely, and affordable relocation services for homes, offices, and vehicles.",
-      twitterDescription: "Safe, professional, and affordable Packers and Movers in Hyderabad by safexpress. Enjoy smooth, secure, and stress-free moving services today!",
-      canonical: "https://gatishiftingpackers.com/city/hyderabad"
-    }, 
-    pageData: {
-      mainHeading: "Best Packers and Movers in Ghaziabad for Home, Office, and Vehicle Shifting",
+  slug: "ghaziabad",
+  city: "Ghaziabad",
+  img: GhaziabadImg,
+  offer: "15%",
+  address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043",
 
-      paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
-        "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
-      ],
+  keywords: [
+    "packers and movers Ghaziabad",
+    "best packers and movers in Ghaziabad",
+    "home shifting Ghaziabad",
+    "office relocation Ghaziabad",
+    "car transport Ghaziabad",
+    "bike transport Ghaziabad",
+    "international movers Ghaziabad",
+    "affordable packers movers Ghaziabad"
+  ],
 
-      servicesHeading: "Professional Packing and Moving Services in Agra",
-
-      services: [
-        {
-          title: "Household Shifting Services in Agra",
-          desc: "Secure home shifting services for apartments, villas, and residential houses using high-quality packing materials for safety.",
-          link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "Home Shifting Services"
-        },
-        {
-          title: "Office Relocation Services",
-          desc: "Professional office relocation services for safe movement of office furniture, workstations, files, and IT equipment.",
-          link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "Office Relocation Services"
-        },
-        {
-          title: "Car Transportation and Bike Shifting",
-          desc: "Reliable car and bike transport services using specialized carriers for safe vehicle relocation across cities.",
-          link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "Car & Bike Transport Services"
-        },
-        {
-          title: "Commercial Shifting Services",
-          desc: "Professional commercial relocation services for warehouses, shops, and industrial equipment with safe handling.",
-          link: "https://gatishiftingpackers.com/commercial-shifting",
-          linkText: "Commercial Shifting Services"
-        },
-        {
-          title: "Packing and Unpacking Services",
-          desc: "High-quality packing and unpacking services using bubble wrap, foam sheets, and durable cartons for safety.",
-          link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "Packing Services"
-        },
-        {
-          title: "Storage and Warehouse Services",
-          desc: "Secure warehouse and home storage solutions for temporary and long-term storage of household goods.",
-          link: "https://gatishiftingpackers.com/warehouse",
-          linkText: "Warehouse Services"
-        }
-      ],
-
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
-
-      whyChoose: [
-        "Experienced relocation professionals",
-        "High-quality packing materials",
-        "Affordable relocation pricing",
-        "Timely pickup and delivery",
-        "Secure vehicle transportation",
-        "Complete relocation support"
-      ],
-
-      routeHeading: "Long Distance Movers from Agra",
-
-      routeDesc: "We provide interstate relocation services including major routes such as Agra to Delhi, Agra to Mumbai, Agra to Bangalore, Agra to Pune, and other cities across India with safe packing and timely delivery.",
-
-      nearbyCitiesHeading: "Cities We Also Serve",
-
-      nearbyCities: [
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi",
-          linkText: "Packers and Movers in Delhi",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-noida",
-          linkText: "Packers and Movers in Noida",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-ghaziabad",
-          linkText: "Packers and Movers in Ghaziabad",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-jaipur",
-          linkText: "Packers and Movers in Jaipur",
-          text: ""
-        },
-        {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-kanpur",
-          linkText: "Packers and Movers in Kanpur",
-          text: ""
-        }
-      ],
-
-      faqHeading: "FAQs – Packers and Movers in Agra",
-
-      faqs: [
-        {
-          q: "What are the charges for packers and movers in Agra?",
-          a: "The relocation cost depends on distance, number of goods, packing materials, and transport vehicle required."
-        },
-        {
-          q: "Do you provide local shifting in Agra?",
-          a: "Yes, we provide reliable local relocation services for household and office shifting within Agra."
-        },
-        {
-          q: "Do you offer car transportation from Agra?",
-          a: "Yes, we provide secure car and bike transport services to major cities across India."
-        },
-        {
-          q: "Do you provide storage services in Agra?",
-          a: "Yes, we offer warehouse and home storage services for temporary and long-term storage."
-        },
-        {
-          q: "Do you provide interstate relocation from Agra?",
-          a: "Yes, we provide long-distance relocation services including Agra to Delhi and other interstate routes."
-        }
-      ]
-    }
+  metaDetails: {
+    title: "Best Packers & Movers in Ghaziabad | Safe & Affordable Shifting",
+    description: "Looking for reliable Packers and Movers in Ghaziabad? Safe Shifting Packers provide secure, affordable, and professional relocation services for homes, offices, and vehicles.",
+    keywords: "packers and movers Ghaziabad, home shifting Ghaziabad, office relocation Ghaziabad, car transport Ghaziabad, bike transport Ghaziabad, cheap packers movers Ghaziabad",
+    ogDescription: "Safe, reliable, and affordable Packers & Movers in Ghaziabad. Enjoy smooth and stress-free relocation services today.",
+    twitterDescription: "Professional Packers & Movers in Ghaziabad with safe and affordable relocation services.",
+    canonical: "https://yourwebsite.com/packers-and-movers-in-ghaziabad"
   },
+
+  pageData: {
+    mainHeading: "Best Packers & Movers in Ghaziabad",
+
+    paragraph: [
+      "Relocating to a new place can feel overwhelming — from packing your belongings to ensuring everything reaches safely. That’s why Safe Shifting Packers is here to make your move smooth, secure, and completely stress-free.",
+      "As trusted packers and movers in Ghaziabad, we provide professional relocation services tailored to your needs. Whether you’re moving your home, shifting your office, or transporting your vehicle, our experienced team handles every step with care and precision.",
+      "We believe your belongings deserve more than just transportation — they deserve attention, protection, and reliability. With quality packing materials, skilled staff, and timely delivery, we ensure a hassle-free moving experience from start to finish."
+    ],
+
+    servicesHeading: "Our Packers & Movers Services in Ghaziabad",
+    serviceSecondHeading: "Packers & Movers in Ghaziabad: Safe, Reliable & Affordable Relocation Services ",
+    services: [
+      {
+        title: "Home Shifting Services",
+        desc: "Safe and secure household shifting services with high-quality packing materials.",
+        link: "/home-shifting",
+        linkText: "Home Shifting"
+      },
+      {
+        title: "Office Relocation",
+        desc: "Professional office shifting services ensuring minimal downtime and safe transport.",
+        link: "/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Domestic Relocation",
+        desc: "Reliable intercity relocation services across India with timely delivery.",
+        link: "/domestic-relocation",
+        linkText: "Domestic Moving"
+      },
+      {
+        title: "International Moving",
+        desc: "Complete international relocation including packing, customs clearance, and delivery.",
+        link: "/international-moving",
+        linkText: "International Moving"
+      },
+      {
+        title: "Car & Bike Transport",
+        desc: "Secure vehicle transportation using specialized carriers.",
+        link: "/car-bike-transport",
+        linkText: "Vehicle Transport"
+      },
+      {
+        title: "Packing & Unpacking",
+        desc: "Professional packing and unpacking services for damage-free relocation.",
+        link: "/packing-services",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Warehouse & Storage",
+        desc: "Safe and secure storage solutions for short-term and long-term needs.",
+        link: "/warehouse",
+        linkText: "Storage Services"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Safe Shifting Packers in Ghaziabad",
+
+    whyChoose: [
+      "Experienced & verified movers",
+      "Premium packing materials",
+      "GPS enabled vehicles",
+      "Affordable transparent pricing",
+      "Transit insurance available",
+      "24×7 customer support"
+    ],
+
+    processHeading: "Our Simple & Safe Moving Process",
+
+    process: [
+      "Pre-Move Survey – Understanding your requirements",
+      "Quotation & Planning – Transparent pricing",
+      "Packing – High-quality materials used",
+      "Loading – Safe handling with modern equipment",
+      "Transportation – Secure and timely delivery",
+      "Unloading & Unpacking – Hassle-free setup"
+    ],
+
+    costHeading: "Packers & Movers Charges in Ghaziabad",
+
+    costDesc: "The cost depends on distance, volume of goods, floor level, and services required. Local shifting usually ranges between ₹3,000 to ₹15,000.",
+
+    factors: [
+      "Distance",
+      "Volume of Goods",
+      "Floor & Lift Availability",
+      "Season & Timing",
+      "Type of Services"
+    ],
+
+    areasHeading: "Areas We Serve in Ghaziabad",
+
+    areas: [
+      "Indirapuram",
+      "Vaishali",
+      "Vasundhara",
+      "Raj Nagar",
+      "Kaushambi"
+    ],
+
+    nearbyCitiesHeading: "Our Service Locations",
+
+    nearbyCities: [
+      {
+        link: "/city/gurgaon",
+        linkText: "Packers and Movers in Gurgaon"
+      },
+      {
+        link: "/city/guwahati",
+        linkText: "Packers and Movers in Guwahati"
+      },
+      {
+        link: "/city/mumbai",
+        linkText: "Packers and Movers in Mumbai"
+      },
+      {
+        link: "/city/hyderabad",
+        linkText: "Packers and Movers in Hyderabad"
+      },
+      {
+        link: "/city/noida",
+        linkText: "Packers and Movers in Noida"
+      }
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      {
+        q: "Do you provide insurance for goods during relocation?",
+        a: "Yes, we offer transit insurance to cover any unexpected damage during the move."
+      },
+      {
+        q: "Do you handle fragile items?",
+        a: "Yes, we use specialized packing for glassware, electronics, and delicate items."
+      },
+      {
+        q: "What items are not allowed?",
+        a: "Hazardous materials like chemicals, flammable liquids, and explosives are not allowed."
+      },
+      {
+        q: "Do you provide packing and unpacking?",
+        a: "Yes, complete packing and unpacking services are included in most packages."
+      },
+      {
+        q: "What are the charges for packers and movers in Ghaziabad?",
+        a: "Charges depend on distance, goods volume, and services. Typically ₹3,000–₹15,000 for local shifting."
+      }
+    ]
+  }
+},
   { slug: "gwalior", city: "Gwalior", img: GwaliorImg, offer: "15%", address: "G-7 The Legacy Plaza, Airport Rd, Gwalior, Madhya Pradesh 474005" },
   { slug: "indore", city: "Indore", img: Indore, offer: "15%", address: "4/3, opp. Mangal city, Vijay Nagar, Scheme No 54, Indore, Madhya Pradesh 452010" },
   { slug: "jamnagar", city: "Jamnagar", img: Jamnagar, offer: "15%", address: "Shop - 1465, Akhilam Cornar Mayur Villa Road, near Samrpan Circle, Ajanta Society, Jamnagar, Gujarat 361006" },
