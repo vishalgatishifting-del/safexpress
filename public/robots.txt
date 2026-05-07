@@ -3,5 +3,11 @@
 User-agent: *
 Allow: /
 
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
 # Sitemap for better crawling
-Sitemap: https://safeshiftingpackers.com//sitemap.xml
+Sitemap: https://safeshiftingpackers.com/sitemap.xml
