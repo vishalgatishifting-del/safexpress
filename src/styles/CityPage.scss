@@ -280,7 +280,17 @@
 }
 
 
+.internal-linking{
+  text-decoration: none;
+}
+.why-choose-list{
+  border-left:3px solid green;
 
+  li{
+    list-style: none;
+    margin: 20px 0;
+  }
+}
 #city-page-sec {
   font-family: "Poppins", sans-serif;
   padding: 20px;
@@ -315,9 +325,10 @@
 }
 
 #city-page-sec .city-name {
-  font-size: 28px;
+  // font-size: 28px;
   color: #52b788;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 #city-page-sec .address {

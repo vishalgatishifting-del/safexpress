@@ -71,8 +71,11 @@ const CityPage = () => {
     // const keywords = cityMeta.keywords
     const pageData = cityMeta.pageData;
     console.log(pageData)
-
     const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+    const toggleFAQ = (index: number) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
     return (
         <>
             <Helmet>
@@ -276,9 +279,10 @@ const CityPage = () => {
 
                                 <div className="text-area">
 
-                                    <h1>{pageData?.mainHeading}</h1>
+                                    <h1>{pageData?.mainHeading}
 
-                                    <div className="city-name">{city}</div>
+                                        <div className="city-name">{city}</div>
+                                    </h1>
 
                                     <span className="address">
                                         <LocationOnIcon />
@@ -299,7 +303,7 @@ const CityPage = () => {
 
 
                             {/* PARAGRAPHS */}
-                           <h2> {pageData?.serviceSecondHeading}</h2>
+                            <h2> {pageData?.serviceSecondHeading}</h2>
                             {Array.isArray(pageData?.paragraph) &&
                                 pageData.paragraph.map((p, i) => (
                                     <p key={i}>{p}</p>
@@ -313,9 +317,7 @@ const CityPage = () => {
 
                             {pageData?.services?.map((service, i) => (
                                 <div key={i}>
-                                    <h3>{service.title}</h3>
-                                    <p style={{ whiteSpace: "pre-line" }}>{service.desc}</p>
-                                    <a href={service.link}>{service.linkText}</a>
+                                    <a className="internal-linking"  href={service.link}>{service.linkText}</a>
                                 </div>
                             ))}
 
@@ -323,8 +325,8 @@ const CityPage = () => {
                             {/* WHY CHOOSE */}
 
                             <h2>{pageData?.whyChooseHeading}</h2>
-
-                            <ul>
+                            <p>{pageData?.whyChooseParagraph}</p>
+                            <ul className="why-choose-list">
                                 {pageData?.whyChoose?.map((item, i) => (
                                     <li key={i}>{item}</li>
                                 ))}
@@ -361,7 +363,7 @@ const CityPage = () => {
                             <h2>Packers and Movers Charges in {city}</h2>
 
                             <div className="img-bx">
-                                <img className="chargesImg" src={chargesImg} alt="charges" />
+                                <img className="chargesImg" src={chargesImg} alt={`Packers and Movers Charges ${city}`} />
                             </div>
 
 
@@ -372,24 +374,29 @@ const CityPage = () => {
 
                                     <h2>{pageData?.faqHeading}</h2>
 
-                                    {pageData?.faqs?.map((item, index) => (
+                                    {pageData?.faqs?.map((item: any, index: number) => (
                                         <div
                                             key={index}
                                             className={`faq-item ${openIndex === index ? "active" : ""}`}
                                         >
                                             <button
                                                 className="faq-question"
-                                                onClick={() =>
-                                                    setOpenIndex(openIndex === index ? null : index)
-                                                }
+                                                onClick={() => toggleFAQ(index)}
                                             >
                                                 {item.q}
-                                                <span className="icon">{openIndex === index ? "−" : "+"}</span>
+                                                <span className="icon">
+                                                    {openIndex === index ? "−" : "+"}
+                                                </span>
                                             </button>
 
-                                            <div className="faq-answer">
-                                                <p>{item.a}</p>
-                                            </div>
+                                            {
+                                                openIndex === index && (
+                                                    <div className="faq-answer">
+                                                        <p>{item.a}</p>
+                                                    </div>
+                                                )
+                                            }
+
                                         </div>
                                     ))}
                                 </div>
