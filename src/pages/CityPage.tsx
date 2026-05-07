@@ -88,17 +88,17 @@ const CityPage = () => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Packers and Movers in Bhiwandi | Safexpress" />
+                <meta property="og:title" content={metaData?.title} />
                 <meta property="og:description" content={metaData?.ogDescription} />
                 <meta property="og:url" content={`https://safeshiftingpackers.com/city/${slug}`} />
                 <meta property="og:site_name" content="Safexpress" />
-                <meta property="og:image" content="" />
+                <meta property="og:image" content={img} />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Packers and Movers in Bhiwandi | Safexpress" />
+                <meta name="twitter:title" content={metaData?.title} />
                 <meta name="twitter:description" content={metaData?.twitterDescription} />
-                <meta name="twitter:image" content="" />
+                <meta name="twitter:image" content={img} />
 
                 <meta http-equiv="Content-Language" content="en" />
 
