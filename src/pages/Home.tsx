@@ -175,22 +175,22 @@ const Home = () => {
     <>
       <Helmet>
         <title>Safe Shifting Packers Logistics | Home, Office & Vehicle Moving</title>
-        <meta name="description" content="Learn about Safe Shifting Packers – a reliable packers and movers company in India offering safe, affordable, and professional home, office, and vehicle relocation services." />
+        <meta name="description" content="Choose Safe Shifting Packers for house shifting, office relocation, car transport, bike transport and Safe Express logistics company India solutions" />
         <meta name="keywords" content="About Safe Shifting Packers, Packers and Movers Company, Trusted Packers and Movers, Relocation Services India, Home Shifting Services, Office Relocation, Vehicle Transportation" />
         <meta name="author" content="Safe Shifting Packers" />
         <meta name="robots" content="index, follow" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="About Safe Shifting Packers | Professional Relocation Services" />
-        <meta property="og:description" content="Know more about Safe Shifting Packers – your trusted partner for safe and hassle-free moving solutions across India." />
-        <meta property="og:url" content="https://safeshiftingpackers.com/about" />
+        <meta property="og:title" content="Safe Shifting Packers Logistics | Home, Office & Vehicle Moving" />
+        <meta property="og:description" content="Choose Safe Shifting Packers for house shifting, office relocation, car transport, bike transport and Safe Express logistics company India solutions" />
+        <meta property="og:url" content="https://safeshiftingpackers.com" />
         <meta property="og:site_name" content="Safe Shifting Packers" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Safe Shifting Packers | Trusted Moving Company" />
-        <meta name="twitter:description" content="Safe Shifting Packers provides reliable, secure, and affordable packing and moving services across India." />
+        <meta name="twitter:title" content="Safe Shifting Packers Logistics | Home, Office & Vehicle Moving" />
+        <meta name="twitter:description" content="Choose Safe Shifting Packers for house shifting, office relocation, car transport, bike transport and Safe Express logistics company India solutions" />
 
-        <link rel="canonical" href="https://safeshiftingpackers.com/about" />
+        <link rel="canonical" href="https://safeshiftingpackers.com" />
       </Helmet>
       <Hero />
 

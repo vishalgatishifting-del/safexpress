@@ -12,7 +12,7 @@ import BikeStorage from "../pages/BikeStorage.tsx";
 import PrivacyPolicy from "../pages/PrivacyPolicy.tsx";
 import TermsCondition from "../pages/TermsCondition.tsx";
 import PhotoGallery from "../pages/PhotoGallery.tsx";
-import VideoGallery from "../pages/VideoGallery.tsx";
+// import VideoGallery from "../pages/VideoGallery.tsx";
 import WhoWeAre from "../pages/WhoWeAre.tsx";
 import WhySafexpress from "../pages/WhySafexpress.tsx";
 import HomeShifting from "../pages/HomeShifting.tsx";
@@ -60,7 +60,7 @@ const AppRoutes = () => {
                         <Route path="/privacy-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
                         <Route path="/terms-condition" element={<TermsCondition></TermsCondition>}></Route>
                         <Route path="/photo-gallery" element={<PhotoGallery></PhotoGallery>}></Route>
-                        <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
+                        {/* <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route> */}
                         <Route path="/who-we-are" element={<WhoWeAre></WhoWeAre>}></Route>
                         <Route path="/why-safexpress" element={<WhySafexpress></WhySafexpress>}></Route>
                         <Route path="/home-shifting" element={<HomeShifting></HomeShifting>}></Route>
