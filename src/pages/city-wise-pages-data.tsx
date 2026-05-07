@@ -14,7 +14,7 @@ import AhmedabadImg from "../assets/CityPages/Ahmedabad.webp";
 import AurangabadImg from "../assets/CityPages/Aurangabad.webp"
 import BhopalImg from "../assets/CityPages/Bhopal.webp"
 import ChandigarhImg from "../assets/CityPages/Chandigarh.webp"
-import DehradunImg from "../assets/CityPages/Fehradun.webp"
+import DehradunImg from "../assets/CityPages/Dehradun.webp"
 import GhaziabadImg from "../assets/CityPages/Ghaziabad.webp"
 import GwaliorImg from "../assets/CityPages/Gwalior.webp"
 import Indore from "../assets/CityPages/Indore.webp"
