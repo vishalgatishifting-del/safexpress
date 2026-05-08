@@ -47,7 +47,7 @@ const Service = () => {
         { id: 14, tt: "Cold", title: "Cold Storage", description: "Temperature-controlled storage for sensitive items like electronics, pharmaceuticals, and perishables.", Img: Cold_icon_png },
     ];
     return (
-        <>
+        <section id="service-section">
             <Helmet>
              
             </Helmet>
@@ -145,7 +145,7 @@ const Service = () => {
             </section>
                 <FAQ />
 
-        </>
+        </section>
     )
 }
 

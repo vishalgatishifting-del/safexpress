@@ -481,7 +481,7 @@ export const pagesData = [
   //     mainHeading: "Affordable Packers and Movers in Agra: Quality Shifting at Best Prices",
 
   //     paragraph: [
-  //       "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+  //       "Relocating to a new home or office in Agra can be stressful without professional assistance. Safexpress provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
   //       "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
   //     ],
 
@@ -526,7 +526,7 @@ export const pagesData = [
   //       }
   //     ],
 
-  //     whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+  //     whyChooseHeading: "Why Choose Safexpress in Agra",
 
   //     whyChoose: [
   //       "Experienced relocation professionals",
@@ -625,23 +625,30 @@ export const pagesData = [
     },
 
     pageData: {
-      mainHeading: "Best Packers & Movers in",
+      mainHeading: "Packers and Movers in Agra – Trusted & Hassle-Free Relocation Services",
+
+      serviceSecondHeading: "Trusted Packers and Movers in Agra for Safe & Hassle-Free Relocation ",
 
       paragraph: [
         "Shifting your home or office in a historic and busy city like Agra can feel overwhelming, but with experienced packers and movers like Safexpress, the entire process becomes easy, secure, and well-organized. Whether you are moving within the city or relocating to another destination, professional movers ensure careful handling, strong packing, and timely delivery of your belongings without stress. ",
         "Agra is a fast-growing city where relocation needs are increasing for families, students, and businesses. With professional packers and movers in Agra, you can enjoy a safe and organized moving experience without worrying about packing damage, transportation delays, or heavy lifting. Our expert team ensures every item is carefully packed, transported securely, and delivered to your destination on time with complete professionalism."
       ],
 
+      internationalHeading: "🌍 International Packers and Movers in Agra",
+      internationalParagraph: [
+        "We provide reliable international relocation services from Agra with complete support for safe and smooth overseas shifting. Our team handles professional packing, secure transportation, documentation, customs clearance, and timely delivery to ensure a hassle-free moving experience.",
+        "Whether you are moving abroad for work, education, or business, our trusted global logistics network ensures your belongings are delivered safely to the destination. We offer customized and affordable international moving solutions with dedicated customer support at every step."
+      ],
+
       servicesHeading: "Our Packers & Movers Services in Agra",
 
-      serviceSecondHeading: "Trusted Packers and Movers in Agra for Safe & Hassle-Free Relocation ",
       services: [
         {
           link: "/home-shifting",
           linkText: "🏠 Home Shifting Services"
         },
         {
-          link: "/home-shifting",
+          link: "/office-relocation",
           linkText: "🏢 Office Relocation"
         },
         {
@@ -649,15 +656,15 @@ export const pagesData = [
           linkText: "🚚 Domestic Relocation"
         },
         {
-          link: "/home-shifting",
+          link: "/international-moving",
           linkText: "✈️ International Moving"
         },
         {
-          link: "/home-shifting",
+          link: "/car-bike-transport",
           linkText: "🚗 Car & Bike Transport"
         },
         {
-          link: "/home-shifting",
+          link: "/packing-and-unpacking",
           linkText: "📦 Packing & Unpacking"
         },
         {
@@ -665,34 +672,51 @@ export const pagesData = [
           linkText: "🏭 Corporate Relocation"
         },
         {
-          link: "/home-shifting",
+          link: "/storage",
           linkText: "🏬 Warehouse & Storage"
         },
       ],
 
-      whyChooseHeading: "Benefits of Hiring Professional Packers and Movers in Agra",
-      whyChooseParagraph: "Hiring professionals ensures:",
+      whyChooseHeading: "Why We Are the Best Packers and Movers in Agra",
+      whyChooseParagraph: "Hiring professional packers and movers ensures a safe, smooth, and stress-free relocation experience. Here are some key benefits:",
       whyChoose: [
-        "No risk of damage to goods",
-        "Time-saving and efficient shifting",
-        "Stress-free relocation experience",
-        "Proper handling of fragile items",
-        "Access to insurance coverage"
+        { title: "No Risk of Damage to Goods", paragraph: "Experts use quality packing materials and safe handling techniques to protect your belongings during transit." },
+        { title: "Time-Saving and Efficient Shifting", paragraph: "Professional teams manage packing, loading, transportation, and unloading quickly and efficiently." },
+        { title: "Stress-Free Relocation Experience", paragraph: "You can relax while trained professionals handle the entire moving process with proper planning." },
+        { title: "Proper Handling of Fragile Items", paragraph: "Delicate items like glassware, electronics, and furniture are packed carefully to avoid breakage." },
+        { title: "Access to Insurance Coverage", paragraph: "Many moving companies provide transit insurance for added safety and financial protection." },
+        { title: "Safe Loading and Unloading", paragraph: "Skilled staff use the right equipment and techniques to move heavy items without damage." },
+        { title: "Affordable and Cost-Effective Services", paragraph: "Professional relocation helps avoid hidden expenses caused by damages or delays in DIY shifting." },
+      ],
+      whyChooseNote: "DIY shifting can often lead to unexpected costs, delays, and damage risks, while professional packers and movers ensure a smooth and hassle-free move.",
+
+
+      areasHeading: "Areas We Serve in Agra",
+      areas: [
+        {
+          title: "Local Packers and Movers in Agra",
+          paragraph: ["Our local packers and movers in Agra provide affordable and professional relocation services across major residential and commercial areas including Sikandra, Dayal Bagh, Kamla Nagar, Raja Ki Mandi, Tajganj, Fatehabad Road, Shahganj, Sanjay Place, Civil Lines, Trans Yamuna Colony, Balkeshwar, Lohamandi, and surrounding locations.", "Our experienced local packers and movers in Agra ensure secure packing, safe transportation, timely delivery, and smooth shifting support according to your schedule. We focus on making your local home or office relocation quick, convenient, and completely hassle-free."]
+        },
+        {
+          title: "Intercity Packers and Movers from Agra",
+          paragraph: ["Safe Shifting Packers offers secure and professional intercity relocation services from Agra to major cities including Delhi, Noida, Gurgaon, Mumbai, Pune, Bangalore, Chennai, Kolkata, Jaipur, Ahmedabad, and Hyderabad. Our long-distance moving services include premium packing, safe loading, dedicated transportation, real-time coordination, timely delivery, and careful unloading to ensure a smooth and stress-free relocation experience across India."]
+        }
       ],
 
       processHeading: "Step-by-Step Moving Process",
-
+      processParagraph: "We follow a smooth and organized relocation process to ensure safe and hassle-free shifting:",
       process: [
-        "Request a Quote – Fill out your details online",
-        "Pre-Move Survey – Assess items and requirements",
-        "Packing – Secure packing with quality materials",
-        "Loading – Safe handling and loading",
-        "Transportation – Timely and secure transit",
-        "Unloading & Setup – Placement and unpacking"
+      {title: "Request a Quote", paragraph: "Share your moving details online or by phone to get a quick and accurate relocation estimate."},
+      {title: "Pre-Move Survey", paragraph: "Our team evaluates the quantity of goods, moving requirements, and special handling needs before shifting."},
+      {title: "Packing", paragraph: "We use high-quality packing materials and secure techniques to protect household and office items from damage."},
+      {title: "Loading", paragraph: "Trained professionals carefully lift and load your belongings using proper equipment for maximum safety."},
+      {title: "Transportation", paragraph: "Your goods are transported through secure and timely transit with real-time coordination and tracking support"},
+      {title: "Unloading & Setup", paragraph: "After reaching the destination, we safely unload, unpack, and place items as per your instructions."}
       ],
 
-      costHeading: "Packers & Movers Charges in Agra",
 
+
+      costHeading: "Packers & Movers Charges in Agra",
 
       factorsHeading: "Key Factors That Influence Moving Costs in Agra",
 
@@ -704,35 +728,34 @@ export const pagesData = [
         { heading: "Service Requirements", paragraph: "Additional services like packing, unpacking, storage, or vehicle transport can impact the total cost." },
       ],
 
-      nearbyCitiesHeading: "Our Service Locations",
 
+      nearbyCitiesHeading: "Our Service Locations",
       nearbyCities: [
         {
-          link: "/packers-and-movers-in-delhi",
+          link: "/city/delhi",
           linkText: "Packers and Movers in Delhi",
           text: ""
         },
         {
-          link: "/packers-and-movers-in-chennai",
+          link: "/city/chennai",
           linkText: "Packers and Movers in Chennai",
           text: ""
         },
         {
-          link: "/packers-and-movers-in-mumbai",
+          link: "/city/mumbai",
           linkText: "Packers and Movers in Mumbai",
           text: ""
         },
         {
-          link: "/packers-and-movers-in-bengaluru",
+          link: "/city/bengaluru",
           linkText: "Packers and Movers in Bengaluru",
           text: ""
         },
         {
-          link: "/packers-and-movers-in-noida",
+          link: "/city/noida",
           linkText: "Packers and Movers in Noida",
           text: ""
-        }
-      ],
+        }],
 
       faqHeading: "Frequently Asked Questions",
 
@@ -918,7 +941,7 @@ export const pagesData = [
       mainHeading: "Fast & Professional Packers and Movers in Guwahati: Your Trusted Shifting Partner",
 
       paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+        "Relocating to a new home or office in Agra can be stressful without professional assistance. Safexpress provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
         "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
       ],
 
@@ -963,7 +986,7 @@ export const pagesData = [
         }
       ],
 
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+      whyChooseHeading: "Why Choose Safexpress in Agra",
 
       whyChoose: [
         "Experienced relocation professionals",
@@ -1065,7 +1088,7 @@ export const pagesData = [
       mainHeading: "Affordable Packers and Movers in Hyderabad: Quality Shifting at Best Prices",
 
       paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+        "Relocating to a new home or office in Agra can be stressful without professional assistance. Safexpress provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
         "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
       ],
 
@@ -1110,7 +1133,7 @@ export const pagesData = [
         }
       ],
 
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+      whyChooseHeading: "Why Choose Safexpress in Agra",
 
       whyChoose: [
         "Experienced relocation professionals",
@@ -1459,7 +1482,7 @@ export const pagesData = [
   //       }
   //     ],
 
-  //     whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+  //     whyChooseHeading: "Why Choose Safexpress in Agra",
 
   //     whyChoose: [
   //       "Experienced relocation professionals",
@@ -1746,7 +1769,7 @@ export const pagesData = [
       mainHeading: "Best Packers and Movers in Mumbai for Fast & Stress-Free Shifting",
 
       paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+        "Relocating to a new home or office in Agra can be stressful without professional assistance. Safexpress provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
         "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
       ],
 
@@ -1791,7 +1814,7 @@ export const pagesData = [
         }
       ],
 
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+      whyChooseHeading: "Why Choose Safexpress in Agra",
 
       whyChoose: [
         "Experienced relocation professionals",
@@ -1934,7 +1957,7 @@ export const pagesData = [
       mainHeading: "Trusted Packers and Movers in Chennai: 100% Verified & Safe Shifting",
 
       paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+        "Relocating to a new home or office in Agra can be stressful without professional assistance. Safexpress provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
         "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
       ],
 
@@ -1979,7 +2002,7 @@ export const pagesData = [
         }
       ],
 
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+      whyChooseHeading: "Why Choose Safexpress in Agra",
 
       whyChoose: [
         "Experienced relocation professionals",
@@ -2103,7 +2126,7 @@ export const pagesData = [
   //     mainHeading: "Reliable Packers and Movers in Delhi: Damage-Free & Secure Shifting",
 
   //     paragraph: [
-  //       "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+  //       "Relocating to a new home or office in Agra can be stressful without professional assistance. Safexpress provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
   //       "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
   //     ],
 
@@ -2148,7 +2171,7 @@ export const pagesData = [
   //       }
   //     ],
 
-  //     whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+  //     whyChooseHeading: "Why Choose Safexpress in Agra",
 
   //     whyChoose: [
   //       "Experienced relocation professionals",
@@ -2443,7 +2466,7 @@ export const pagesData = [
       mainHeading: "Reliable Packers and Movers in Noida: Safe, Timely, and Damage-Free Relocation",
 
       paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+        "Relocating to a new home or office in Agra can be stressful without professional assistance. Safexpress provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
         "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
       ],
 
@@ -2488,7 +2511,7 @@ export const pagesData = [
         }
       ],
 
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+      whyChooseHeading: "Why Choose Safexpress in Agra",
 
       whyChoose: [
         "Experienced relocation professionals",
@@ -2572,7 +2595,7 @@ export const pagesData = [
   //     mainHeading: "Reliable Packers and Movers in Gurgaon for a Safe & Stress-Free Move",
 
   //     paragraph: [
-  //       "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+  //       "Relocating to a new home or office in Agra can be stressful without professional assistance. Safexpress provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
   //       "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
   //     ],
 
@@ -2617,7 +2640,7 @@ export const pagesData = [
   //       }
   //     ],
 
-  //     whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+  //     whyChooseHeading: "Why Choose Safexpress in Agra",
 
   //     whyChoose: [
   //       "Experienced relocation professionals",
@@ -3425,7 +3448,7 @@ export const pagesData = [
       mainHeading: "Affordable Packers and Movers in Bengaluru: Stress-Free Moving with Zero Hidden Costs",
 
       paragraph: [
-        "Relocating to a new home or office in Agra can be stressful without professional assistance. Gati Shifting Packers provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
+        "Relocating to a new home or office in Agra can be stressful without professional assistance. Safexpress provides reliable packers and movers in Agra with safe packing, organized transportation, and timely delivery services.",
         "Our experienced team manages complete relocation including packing, loading, transportation, unloading, and unpacking for household, office, and commercial moves."
       ],
 
@@ -3470,7 +3493,7 @@ export const pagesData = [
         }
       ],
 
-      whyChooseHeading: "Why Choose Gati Shifting Packers in Agra",
+      whyChooseHeading: "Why Choose Safexpress in Agra",
 
       whyChoose: [
         "Experienced relocation professionals",

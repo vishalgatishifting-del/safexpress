@@ -19,6 +19,37 @@ const Footer = () => {
     const [visibleCount, setVisibleCount] = useState(28);
   return (
     <footer className="footer">
+      {/* Middle Section */}
+      <div className="footer-middle">
+        {/* <div className="service-tabs">
+          <button className="active">PACKERS AND MOVERS</button>
+          <button>HIRE MINI TRUCK</button>
+          <button>STORAGE</button>
+          <button>CAR TRANSPORT</button>
+          <button>BIKE TRANSPORT</button>
+        </div> */}
+
+        <div className="cities">
+          <div className="container">
+            <ul>
+              {cities.slice(0, visibleCount).map((item, i) => (
+                <li key={i}>
+                  <Link to={`/city/${item.slug}`}>
+
+                    <span><LocationOnIcon></LocationOnIcon> Movers and Packers {item.city}</span>
+                  </Link>
+                </li>
+              ))}
+
+            </ul>
+            {visibleCount < cities.length && (
+              <button className="show-more-btn" onClick={() => setVisibleCount(prev => prev + 28)}>
+                Show More
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
       {/* Top Footer */}
       <div className="footer-top">
         {/* Brand Section */}
@@ -82,37 +113,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Middle Section */}
-      <div className="footer-middle">
-        {/* <div className="service-tabs">
-          <button className="active">PACKERS AND MOVERS</button>
-          <button>HIRE MINI TRUCK</button>
-          <button>STORAGE</button>
-          <button>CAR TRANSPORT</button>
-          <button>BIKE TRANSPORT</button>
-        </div> */}
-
-        <div className="cities">
-          <div className="container">
-            <ul>
-              {cities.slice(0, visibleCount).map((item, i) => (
-                <li key={i}>
-                  <Link to={`/city/${item.slug}`}>
-
-                    <span><LocationOnIcon></LocationOnIcon> Movers and Packers {item.city}</span>
-                  </Link>
-                </li>
-              ))}
-
-            </ul>
-            {visibleCount < cities.length && (
-              <button className="show-more-btn" onClick={() => setVisibleCount(prev => prev + 28)}>
-                Show More
-              </button>
-            )}
-          </div>
-        </div>
-      </div>
+      
 
       {/* Bottom Bar */}
       <div className="footer-bottom">
