@@ -59,7 +59,7 @@ const CitySchema = ({ cityMeta }: any) => {
 
     "@type": "MovingCompany",
 
-    name: "Gati Shifting Packers",
+    name: "Safexpress",
 
     url: `https://safeshiftingpackers.com/city/${cityMeta?.slug}`,
 
@@ -113,7 +113,7 @@ const CitySchema = ({ cityMeta }: any) => {
     itemReviewed: {
       "@type": "MovingCompany",
 
-      name: "Gati Shifting Packers"
+      name: "Safexpress"
     }
   };
 
