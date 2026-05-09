@@ -4,6 +4,7 @@ const CitySchema = ({ cityMeta }: any) => {
 
   if (!cityMeta) return null;
 
+  // FAQ SCHEMA
   const faqSchema = {
     "@context": "https://schema.org",
 
@@ -23,11 +24,122 @@ const CitySchema = ({ cityMeta }: any) => {
       })) || []
   };
 
+  // BREADCRUMB SCHEMA
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+
+    "@type": "BreadcrumbList",
+
+    itemListElement: [
+      {
+        "@type": "ListItem",
+
+        position: 1,
+
+        name: "Home",
+
+        item: "https://safeshiftingpackers.com"
+      },
+
+      {
+        "@type": "ListItem",
+
+        position: 2,
+
+        name: cityMeta?.city,
+
+        item: `https://safeshiftingpackers.com/city/${cityMeta?.slug}`
+      }
+    ]
+  };
+
+  // SERVICE SCHEMA
+  const serviceSchema = {
+    "@context": "https://schema.org",
+
+    "@type": "MovingCompany",
+
+    name: "Gati Shifting Packers",
+
+    url: `https://safeshiftingpackers.com/city/${cityMeta?.slug}`,
+
+    telephone: "+91-9422799477",
+
+    image: "https://safeshiftingpackers.com/logo.png",
+
+    address: {
+      "@type": "PostalAddress",
+
+      streetAddress: cityMeta?.address,
+
+      addressCountry: "IN"
+    },
+
+    areaServed: {
+      "@type": "City",
+
+      name: cityMeta?.city
+    },
+
+    serviceType:
+      cityMeta?.pageData?.services?.map(
+        (service: any) => service?.linkText
+      ) || []
+  };
+
+  // REVIEW SCHEMA
+  const reviewSchema = {
+    "@context": "https://schema.org",
+
+    "@type": "Review",
+
+    reviewRating: {
+      "@type": "Rating",
+
+      ratingValue: "5",
+
+      bestRating: "5"
+    },
+
+    author: {
+      "@type": "Person",
+
+      name: "Rahul Sharma"
+    },
+
+    reviewBody:
+      `Professional packing and relocation services in ${cityMeta?.city}. Safe delivery and affordable pricing.`,
+
+    itemReviewed: {
+      "@type": "MovingCompany",
+
+      name: "Gati Shifting Packers"
+    }
+  };
+
   return (
     <Helmet>
+
+      {/* FAQ SCHEMA */}
       <script type="application/ld+json">
         {JSON.stringify(faqSchema)}
       </script>
+
+      {/* BREADCRUMB SCHEMA */}
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
+      </script>
+
+      {/* SERVICE SCHEMA */}
+      <script type="application/ld+json">
+        {JSON.stringify(serviceSchema)}
+      </script>
+
+      {/* REVIEW SCHEMA */}
+      <script type="application/ld+json">
+        {JSON.stringify(reviewSchema)}
+      </script>
+
     </Helmet>
   );
 };
