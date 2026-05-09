@@ -459,7 +459,7 @@ export const pagesData = [
     city: "Agra",
     img: agraImg,
     offer: "15%",
-    address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043",
+    address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007",
 
     keywords: [
       "packers and movers Agra",
