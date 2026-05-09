@@ -57,18 +57,18 @@ const CitySchema = ({ cityMeta }: any) => {
   const serviceSchema = {
     "@context": "https://schema.org",
 
-    "@type": "MovingCompany",
+    "@type": "Packers and Movers",
 
     name: "Safexpress",
 
     url: `https://safeshiftingpackers.com/city/${cityMeta?.slug}`,
 
-    telephone: "+91-9422799477",
+    telephone: "+91-7290008200",
 
-    image: "https://safeshiftingpackers.com/logo.png",
+    image: "https://safeshiftingpackers.com/safexpress.png",
 
     address: {
-      "@type": "PostalAddress",
+      "@type": "Postal Address",
 
       streetAddress: cityMeta?.address,
 
@@ -104,14 +104,14 @@ const CitySchema = ({ cityMeta }: any) => {
     author: {
       "@type": "Person",
 
-      name: "Rahul Sharma"
+      name: "Abhishek Gupta"
     },
 
     reviewBody:
       `Professional packing and relocation services in ${cityMeta?.city}. Safe delivery and affordable pricing.`,
 
     itemReviewed: {
-      "@type": "MovingCompany",
+      "@type": "Packers and Movers",
 
       name: "Safexpress"
     }
