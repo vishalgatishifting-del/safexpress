@@ -1,73 +1,33 @@
 import { Helmet } from "react-helmet-async";
 
-const CitySchema = ({ cityData }: any) => {
+const CitySchema = ({ cityMeta }: any) => {
+
+  if (!cityMeta) return null;
 
   const faqSchema = {
     "@context": "https://schema.org",
+
     "@type": "FAQPage",
-    mainEntity: cityData.pageData.faqs.map((faq: any) => ({
-      "@type": "Question",
-      name: faq.q,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.a
-      }
-    }))
-  };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://safeshiftingpackers.com/"
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: cityData.city,
-        item: `https://safeshiftingpackers.com//city/${cityData.slug}`
-      }
-    ]
-  };
+    mainEntity:
+      cityMeta?.pageData?.faqs?.map((faq: any) => ({
+        "@type": "Question",
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "MovingCompany",
-    name: "Safexpress",
-    url: `https://safeshiftingpackers.com//city/${cityData.slug}`,
-    telephone: "+91-9422799477",
+        name: faq?.q,
 
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: cityData.address,
-      addressCountry: "IN"
-    },
+        acceptedAnswer: {
+          "@type": "Answer",
 
-    areaServed: {
-      "@type": "City",
-      name: cityData.city
-    }
+          text: faq?.a
+        }
+      })) || []
   };
 
   return (
     <Helmet>
-
       <script type="application/ld+json">
         {JSON.stringify(faqSchema)}
       </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify(breadcrumbSchema)}
-      </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify(serviceSchema)}
-      </script>
-
     </Helmet>
   );
 };

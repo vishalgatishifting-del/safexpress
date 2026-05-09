@@ -393,9 +393,9 @@ const CityPage = () => {
         <meta http-equiv="Content-Language" content="en" />
         <link rel="canonical" href={`https://safeshiftingpackers.com/city/${slug}`} />
 
-      </Helmet>
-        <CitySchema cityMeta={cityMeta} />
 
+      </Helmet>
+      <CitySchema cityMeta={cityMeta} />
       <main className="cp-root">
         {isSpecial ? (
           <SpecialCityPage
