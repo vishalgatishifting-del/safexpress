@@ -16,7 +16,7 @@ import { cities } from "../components/CitiesData";
 import { pagesData } from "./city-wise-pages-data";
 import { useState } from "react";
 
-const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi"];
+const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi", "Guwahati", "Mumbai"];
 
 const WHY_ICONS = [
   <VerifiedIcon />,
@@ -246,14 +246,14 @@ const SpecialCityPage = ({ city, img, address, offer, pageData, }: { city: strin
         <div className="cp-container">
           <h2 className="cp-heading">{pageData?.whyChooseHeading}</h2>
           <p className="cp-why__lead">{pageData?.whyChooseParagraph}</p>
-          <div className="cp-why__grid">
+          <ul className="cp-why__grid">
             {pageData?.whyChoose?.map((item: any, i: number) => (
               <div className="cp-why__card" key={i}>
                 {/* <span className="cp-why__icon">{WHY_ICONS[i % WHY_ICONS.length]}</span> */}
-                <p><strong>{item.title}</strong> - {item.paragraph}</p>
+                <li><strong>{item.title}</strong> - {item.paragraph}</li>
               </div>
             ))}
-          </div>
+          </ul>
           <p className="cp-why__note">{pageData?.whyChooseNote}</p>
         </div>
       </section>
@@ -266,8 +266,10 @@ const SpecialCityPage = ({ city, img, address, offer, pageData, }: { city: strin
             {pageData?.areas?.map((item: any, i: number) => (
               <div className="cp-areas__card" key={i}>
                 {/* <span className="cp-why__icon">{WHY_ICONS[i % WHY_ICONS.length]}</span> */}
-                <h3>{item.title}</h3>
-                <p>{item.paragraph}</p>
+                <h3><strong>{item.title}</strong></h3>
+                {item.paragraph.map((para: any) => (
+                  <p>{para}</p>
+                ))}
               </div>
             ))}
           </div>
@@ -282,7 +284,7 @@ const SpecialCityPage = ({ city, img, address, offer, pageData, }: { city: strin
             {pageData?.process?.map((step: any, i: number) => (
               <div className="cp-process__step" key={i}>
                 {/* <span className="cp-process__num">{String(i + 1).padStart(2, "0")}</span> */}
-                <li>{step.title} - {step.paragraph}</li>
+                <li><strong>{step.title}</strong> - {step.paragraph}</li>
               </div>
             ))}
           </ol>
@@ -300,7 +302,7 @@ const SpecialCityPage = ({ city, img, address, offer, pageData, }: { city: strin
         </div>
       </section>
 
-      
+
       <section className="cp-key-factor">
         <div className="cp-container">
           <h2 className="cp-heading">{pageData?.factorsHeading}</h2>
@@ -308,7 +310,7 @@ const SpecialCityPage = ({ city, img, address, offer, pageData, }: { city: strin
             {pageData?.factors?.map((item: any, i: number) => (
               <div className="cp-areas__card" key={i}>
                 {/* <span className="cp-why__icon">{WHY_ICONS[i % WHY_ICONS.length]}</span> */}
-                <li>{item.heading} - {item.paragraph}</li>
+                <li><strong>{item.heading}</strong> - {item.paragraph}</li>
               </div>
             ))}
           </ul>

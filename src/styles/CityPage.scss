@@ -27,6 +27,11 @@ $transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   color: $c-white;
   min-height: 100vh;
   overflow-x: hidden;
+
+
+  strong{
+    font-weight: bold;
+  }
 }
 
 // ─── HERO ──────────────────────────────────────────────────────────────────────
@@ -388,7 +393,6 @@ padding: 0 24px;
     // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     // gap: 16px;
     border-left: 3px solid $c-green;
-    padding-left:40px;
   }
 
   &__card {
@@ -400,19 +404,15 @@ padding: 0 24px;
     align-items: flex-start;
     gap: 12px;
     transition: $transition;
+    margin-left: 25px;
 
     // &:hover {
     //   background: rgba($c-accent, 0.06);
     //   border-color: rgba($c-accent, 0.4);
     // }
 
-    p {
-      font-size: 14px;
-      color: $c-white;
-      margin: 0;
-      line-height: 1.5;
-      margin-bottom: 0;
-
+    li{
+      color: #000;
       strong{
         font-weight: bold;
       }
@@ -625,6 +625,7 @@ padding: 0 24px;
   .cp-key-factor__list{
     li{
       color: #000;
+      margin: 10px 0;
     }
   }
 }
