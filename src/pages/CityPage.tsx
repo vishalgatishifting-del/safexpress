@@ -15,6 +15,7 @@ import TrustUsSection from "../components/TrustUsSection";
 import { cities } from "../components/CitiesData";
 import { pagesData } from "./city-wise-pages-data";
 import { useState } from "react";
+import CitySchema from "../components/schema/CitySchema";
 
 const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi", "Guwahati", "Mumbai"];
 
@@ -391,7 +392,9 @@ const CityPage = () => {
         <meta name="twitter:image" content={img} />
         <meta http-equiv="Content-Language" content="en" />
         <link rel="canonical" href={`https://safeshiftingpackers.com/city/${slug}`} />
+
       </Helmet>
+        <CitySchema cityMeta={cityMeta} />
 
       <main className="cp-root">
         {isSpecial ? (
