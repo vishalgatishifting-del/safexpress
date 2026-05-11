@@ -17,7 +17,7 @@ import { pagesData } from "./city-wise-pages-data";
 import { useState } from "react";
 import CitySchema from "../components/schema/CitySchema";
 
-const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi", "Guwahati", "Mumbai"];
+const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi", "Guwahati", "Mumbai", "Amritsar", "Ajmer"];
 
 const WHY_ICONS = [
   <VerifiedIcon />,

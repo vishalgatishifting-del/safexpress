@@ -1146,6 +1146,603 @@ export const pagesData = [
     ]
   }
 },
+
+{
+  slug: "amritsar",
+  city: "Amritsar",
+  img: Amritsar,
+  offer: "15%",
+  address: "P14, Near Gurudwara Gurprakash, Street No. 8, Amritsar, Punjab",
+
+  metaDetails: {
+    title: "Packers and Movers in Amritsar| Safe & Relible Shifting",
+    description:
+      "Choose Safe Shifting Packers for professional Packers and movers in Amritsar with secure packing, timely delivery, and affordable shifting.",
+    keywords:
+      "Packers and Movers in Amritsar, Best Packers and Movers Amritsar, Affordable Packers and Movers Amritsar, Local Packers and Movers Amritsar, Professional Packers and Movers Amritsar, Home Shifting Services Amritsar, Office Relocation Amritsar, Car Transport Service Amritsar, Bike Transport Amritsar, Household Goods Shifting Amritsar, Packing and Unpacking Services Amritsar, Intercity Packers and Movers Amritsar, Packers and Movers Amritsar to Delhi, Packers and Movers Amritsar to Mumbai, Packers and Movers Amritsar to Bengaluru, Packers and Movers Amritsar Punjab, Reliable Relocation Company Amritsar, Cost-Effective Packers and Movers Amritsar, Door-to-Door Shifting Services Amritsar, Local Movers Amritsar, Office Shifting Services in Amritsar, Vehicle Shifting Amritsar, Household Relocation Services Amritsar, Packers and Movers Charges Amritsar, Packers and Movers Cost Amritsar, Movers and Packers near me Amritsar, Trusted Packers and Movers Amritsar.",
+    ogDescription:
+      "Looking for reliable Packers and Movers in Amritsar? Safe Shifting Packers offers secure, timely, and affordable relocation services for homes, offices, and vehicles.",
+    twitterDescription:
+      "Safe, professional, and affordable Packers and Movers in Amritsar by Safe Shifting Packers. Enjoy smooth, secure, and stress-free moving services today!",
+    canonical: "https://gatishiftingpackers.com/city/amritsar",
+  },
+
+  keywords: [
+    "packers and movers Amritsar",
+    "best packers and movers Amritsar",
+    "affordable packers and movers Amritsar",
+    "local packers and movers Amritsar",
+    "professional movers and packers Amritsar",
+    "household shifting Amritsar",
+    "home relocation service Amritsar",
+    "office relocation Amritsar",
+    "car transportation Amritsar",
+    "bike shifting Amritsar",
+    "packing and unpacking services Amritsar",
+    "intercity packers and movers from Amritsar",
+    "Amritsar to Delhi packers and movers",
+    "Amritsar to Mumbai movers",
+    "packers and movers Amritsar charges",
+    "packers and movers Amritsar near me",
+    "trusted relocation services Amritsar",
+    "safe shifting packers Amritsar",
+  ],
+
+  pageData: {
+    mainHeading:
+      "Professional Packers and Movers in Amritsar For Safe & Reliable Shifting",
+
+    serviceSecondHeading:
+      "Safe Shifting Packers - Professional Packers and Movers in Amritsar with Secure Packing",
+
+    paragraph: [
+      "Safe Shifting Packers provides professional Packers and Movers in Amritsar with secure packing and dependable relocation services for households, offices, apartments, and commercial spaces. Our experienced team understands that every move is important, which is why we handle your furniture, electronics, appliances, and personal belongings with complete care and attention throughout the shifting process.",
+
+      "From careful packing and safe loading to smooth transportation and timely delivery, we focus on making your relocation simple, organized, and stress-free. We use durable packing materials and practical moving techniques to reduce the risk of damage during transit. Whether it is a local move within Amritsar or an intercity relocation, our goal is to provide affordable, safe, and hassle-free shifting services with reliable support at every step.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Amritsar",
+
+    internationalParagraph: [
+      "We provide reliable international relocation services from Amritsar with complete support for safe and smooth overseas shifting. Our team handles professional packing, secure transportation, documentation, customs clearance, and timely delivery to ensure a hassle-free moving experience.",
+
+      "Whether you are moving abroad for work, education, or business, our trusted global logistics network ensures your belongings are delivered safely to the destination. We offer customized and affordable international moving solutions with dedicated customer support at every step.",
+    ],
+
+    servicesHeading:
+      "Our Packers and Movers Services in Amritsar",
+
+    services: [
+      {
+        link: "/home-shifting",
+        linkText: "🏠 Home Shifting Services",
+      },
+      {
+        link: "/office-relocation",
+        linkText: "🏢 Office Relocation",
+      },
+      {
+        link: "/home-shifting",
+        linkText: "🚚 Domestic Relocation",
+      },
+      {
+        link: "/international-moving",
+        linkText: "✈️ International Moving",
+      },
+      {
+        link: "/car-bike-transport",
+        linkText: "🚗 Car & Bike Transport",
+      },
+      {
+        link: "/packing-and-unpacking",
+        linkText: "📦 Packing & Unpacking",
+      },
+      {
+        link: "/home-shifting",
+        linkText: "🏭 Corporate Relocation",
+      },
+      {
+        link: "/storage",
+        linkText: "🏬 Warehouse & Storage",
+      },
+    ],
+
+    whyChooseHeading:
+      "Why We Are the Best Packers and Movers in Amritsar",
+
+    whyChooseParagraph:
+      "Hiring professional packers and movers ensures a safe, smooth, and stress-free relocation experience. Here are some key benefits:",
+
+    whyChoose: [
+      {
+        title: "No Risk of Damage to Goods",
+        paragraph:
+          "Experts use quality packing materials and safe handling techniques to protect your belongings during transit.",
+      },
+      {
+        title: "Time-Saving and Efficient Shifting",
+        paragraph:
+          "Professional teams manage packing, loading, transportation, and unloading quickly and efficiently.",
+      },
+      {
+        title: "Stress-Free Relocation Experience",
+        paragraph:
+          "You can relax while trained professionals handle the entire moving process with proper planning.",
+      },
+      {
+        title: "Proper Handling of Fragile Items",
+        paragraph:
+          "Delicate items like glassware, electronics, and furniture are packed carefully to avoid breakage.",
+      },
+      {
+        title: "Access to Insurance Coverage",
+        paragraph:
+          "Many moving companies provide transit insurance for added safety and financial protection.",
+      },
+      {
+        title: "Safe Loading and Unloading",
+        paragraph:
+          "Skilled staff use the right equipment and techniques to move heavy items without damage.",
+      },
+      {
+        title: "Affordable and Cost-Effective Services",
+        paragraph:
+          "Professional relocation helps avoid hidden expenses caused by damages or delays in DIY shifting.",
+      },
+    ],
+
+    whyChooseNote:
+      "DIY shifting can often lead to unexpected costs, delays, and damage risks, while professional packers and movers ensure a smooth and hassle-free move.",
+
+    areasHeading:
+      "Packers and Movers Services Across Amritsar",
+
+    areas: [
+      {
+        title: "Local Packers and Movers in Amritsar",
+        paragraph: [
+          "Safe Shifting Packers provides reliable local packers and movers services in Amritsar for homes, offices, apartments, and commercial spaces. We serve major areas including Ranjit Avenue, Green Avenue, Batala Road, Lawrence Road, GT Road, Chheharta, and nearby localities. Our experienced team carefully handles packing, loading, transportation, unloading, and setup to make every move smooth and stress-free. Using quality packing materials and safe handling methods.",
+
+          "We focus on timely delivery, affordable pricing, and secure shifting services designed around your schedule and relocation needs within the city.",
+        ],
+      },
+      {
+        title: "Intercity Packers and Movers from Amritsar",
+        paragraph: [
+          "Safe Shifting Packers also offers dependable intercity relocation services from Amritsar to cities including Delhi, Noida, Gurgaon, Jaipur, Mumbai, Pune, Hyderabad, Bengaluru, Chennai, and Ahmedabad. We provide complete long-distance shifting solutions for household goods, office items, furniture, cars, bikes, and commercial belongings.",
+
+          "Our trained team manages secure packing, organized loading, safe transportation, and careful unloading to ensure your belongings reach safely. With proper planning, reliable logistics support, and timely updates, we aim to make your intercity relocation comfortable, organized, and hassle-free from beginning to end.",
+        ],
+      },
+    ],
+
+    processHeading: "Step-by-Step Moving Process",
+
+    processParagraph:
+      "We follow a smooth and organized relocation process to ensure safe and hassle-free shifting:",
+
+    process: [
+      {
+        title: "Request a Quote",
+        paragraph:
+          "Share your moving details online or by phone to get a quick and accurate relocation estimate.",
+      },
+      {
+        title: "Pre-Move Survey",
+        paragraph:
+          "Our team evaluates the quantity of goods, moving requirements, and special handling needs before shifting.",
+      },
+      {
+        title: "Packing",
+        paragraph:
+          "We use high-quality packing materials and secure techniques to protect household and office items from damage.",
+      },
+      {
+        title: "Loading",
+        paragraph:
+          "Trained professionals carefully lift and load your belongings using proper equipment for maximum safety.",
+      },
+      {
+        title: "Transportation",
+        paragraph:
+          "Your goods are transported through secure and timely transit with real-time coordination and tracking support.",
+      },
+      {
+        title: "Unloading & Setup",
+        paragraph:
+          "After reaching the destination, we safely unload, unpack, and place items as per your instructions.",
+      },
+    ],
+
+    costHeading:
+      "Packers & Movers Charges in Amritsar",
+
+    factorsHeading:
+      "Important Factors That Affect Moving Costs in Amritsar",
+
+    factors: [
+      {
+        heading: "Relocation Distance",
+        paragraph:
+          "The longer the distance between pickup and drop location, the higher the cost.",
+      },
+      {
+        heading: "Quantity of Belongings",
+        paragraph:
+          "More items require extra packing material, labor, and transportation space.",
+      },
+      {
+        heading: "Floor Level & Lift Access",
+        paragraph:
+          "Higher floors without lifts may increase handling charges.",
+      },
+      {
+        heading: "Moving Date & Season",
+        paragraph:
+          "Peak times, weekends, and month-end slots often have higher pricing.",
+      },
+      {
+        heading: "Service Requirements",
+        paragraph:
+          "Additional services like packing, unpacking, storage, or vehicle transport can impact the total cost.",
+      },
+    ],
+
+    nearbyCitiesHeading: "Our Service Locations",
+
+    nearbyCities: [
+      {
+        link: "/city/noida",
+        linkText: "Packers and Movers in Noida",
+        text: "",
+      },
+      {
+        link: "/city/hyderabad",
+        linkText: "Packers and Movers in Hyderabad",
+        text: "",
+      },
+      {
+        link: "/city/ghaziabad",
+        linkText: "Packers and Movers in Ghaziabad",
+        text: "",
+      },
+      {
+        link: "/city/bengaluru",
+        linkText: "Packers and Movers in Bengaluru",
+        text: "",
+      },
+      {
+        link: "/city/gurgaon",
+        linkText: "Packers and Movers in Gurgaon",
+        text: "",
+      },
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      {
+        q: "How much do Packers and Movers in Amritsar usually charge?",
+        a: "The cost of hiring Packers and Movers in Amritsar depends on factors like distance, number of items, floor level, and packing requirements. Local shifting generally costs less than intercity relocation. Most companies provide customized quotes after checking your moving needs.",
+      },
+      {
+        q: "How many days before shifting should I book packers and movers?",
+        a: "It is better to book packers and movers at least 5–7 days before your moving date, especially during weekends or month-end periods. Early booking gives you better availability, smoother planning, and enough time to prepare your belongings properly.",
+      },
+      {
+        q: "Is it safe to move fragile items with packers and movers?",
+        a: "Yes, professional packers and movers use bubble wrap, foam sheets, cartons, and secure packing methods for fragile items like glassware, TVs, and electronics. Experienced staff also handle loading and unloading carefully to reduce the risk of damage during transportation.",
+      },
+      {
+        q: "Do packers and movers provide office relocation services in Amritsar?",
+        a: "Most professional relocation companies in Amritsar offer office shifting services for small businesses, shops, and corporate spaces. These services usually include packing office furniture, IT equipment, files, and safe transportation with minimal work disruption.",
+      },
+      {
+        q: "What should I check before hiring packers and movers in Amritsar?",
+        a: "Before hiring a moving company, check customer reviews, pricing transparency, service details, and packing quality. It is also important to confirm transportation arrangements, delivery timelines, and whether the company provides proper support during the relocation process.",
+      },
+    ],
+  },
+},
+
+{
+  slug: "ajmer",
+  city: "Ajmer",
+  img: Ajmer,
+  offer: "15%",
+  address: "Shop No 133, Near Ana Sagar Rd, Ajmer, Rajasthan",
+
+  metaDetails: {
+    title: "Trusted Packers and Movers in Ajmer| Verified Experts",
+    description:
+      "Reliable packers and movers in Ajmer offering safe, affordable home, office, and vehicle relocation services with secure packing and timely delivery.",
+    keywords:
+      "Packers and Movers in Ajmer, Best Packers and Movers Ajmer, Affordable Packers and Movers Ajmer, Local Packers and Movers Ajmer, Professional Packers and Movers Ajmer, Home Shifting Services Ajmer, Office Relocation Ajmer, Car Transport Service Ajmer, Bike Transport Ajmer, Household Goods Shifting Ajmer, Packing and Unpacking Services Ajmer, Intercity Packers and Movers Ajmer, Packers and Movers Ajmer to Delhi, Packers and Movers Ajmer to Mumbai, Packers and Movers Ajmer Rajasthan, Reliable Relocation Company Ajmer, Cost-Effective Packers and Movers Ajmer, Door-to-Door Shifting Services Ajmer, Local Movers Ajmer, Office Shifting Services in Ajmer, Vehicle Shifting Ajmer, Household Relocation Services Ajmer, Packers and Movers Charges Ajmer, Packers and Movers Cost Ajmer, Movers and Packers near me Ajmer, Trusted Packers and Movers Ajmer.",
+    ogDescription:
+      "Looking for reliable Packers and Movers in Ajmer? Safe Shifting Packers offers secure, timely, and affordable relocation services for homes, offices, and vehicles.",
+    twitterDescription:
+      "Safe, professional, and affordable Packers and Movers in Ajmer by Safe Shifting Packers. Enjoy smooth, secure, and stress-free moving services today!",
+    canonical: "https://gatishiftingpackers.com/city/ajmer",
+  },
+
+  keywords: [
+    "packers and movers Ajmer",
+    "best packers and movers Ajmer",
+    "affordable packers and movers Ajmer",
+    "local packers and movers Ajmer",
+    "professional movers and packers Ajmer",
+    "household shifting Ajmer",
+    "home relocation service Ajmer",
+    "office relocation Ajmer",
+    "car transportation Ajmer",
+    "bike shifting Ajmer",
+    "packing and unpacking services Ajmer",
+    "intercity packers and movers from Ajmer",
+    "Ajmer to Delhi packers and movers",
+    "Ajmer to Mumbai movers",
+    "packers and movers Ajmer charges",
+    "packers and movers Ajmer near me",
+    "trusted relocation services Ajmer",
+    "safe shifting packers Ajmer",
+  ],
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Ajmer– Secure & Affordable Shifting Services",
+
+    serviceSecondHeading:
+      "Reliable Packers and Movers in Ajmer for Smooth & Secure Shifting",
+
+    paragraph: [
+      "Finding reliable Packers and movers in Ajmer is important for a safe and stress-free relocation experience. Professional shifting services help customers move household goods, office items, furniture, and vehicles with proper packing and secure transportation methods.",
+
+      "Experienced movers in Ajmer use quality packing materials, trained staff, and modern vehicles to ensure smooth loading and timely delivery. Whether it is local shifting or intercity relocation, customers can expect affordable pricing, organized moving support, and complete safety for their belongings throughout the shifting process.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Ajmer",
+
+    internationalParagraph: [
+      "We provide reliable international relocation services from Ajmer with complete support for safe and smooth overseas shifting. Our team handles professional packing, secure transportation, documentation, customs clearance, and timely delivery to ensure a hassle-free moving experience.",
+
+      "Whether you are moving abroad for work, education, or business, our trusted global logistics network ensures your belongings are delivered safely to the destination. We offer customized and affordable international moving solutions with dedicated customer support at every step.",
+    ],
+
+    servicesHeading:
+      "Our Packers and Movers Services in Ajmer",
+
+    services: [
+      {
+        link: "/home-shifting",
+        linkText: "🏠 Home Shifting Services",
+      },
+      {
+        link: "/office-relocation",
+        linkText: "🏢 Office Relocation",
+      },
+      {
+        link: "/home-shifting",
+        linkText: "🚚 Domestic Relocation",
+      },
+      {
+        link: "/international-moving",
+        linkText: "✈️ International Moving",
+      },
+      {
+        link: "/car-bike-transport",
+        linkText: "🚗 Car & Bike Transport",
+      },
+      {
+        link: "/packing-and-unpacking",
+        linkText: "📦 Packing & Unpacking",
+      },
+      {
+        link: "/home-shifting",
+        linkText: "🏭 Corporate Relocation",
+      },
+      {
+        link: "/storage",
+        linkText: "🏬 Warehouse & Storage",
+      },
+    ],
+
+    whyChooseHeading:
+      "Why We Are the Best Packers and Movers in Ajmer",
+
+    whyChooseParagraph:
+      "Hiring professional packers and movers in Ajmer ensures a safe, smooth, and hassle-free relocation experience. Here are some key benefits:",
+
+    whyChoose: [
+      {
+        title: "No Risk of Damage to Goods",
+        paragraph:
+          "Our experts use premium packing materials and secure handling methods to protect your belongings during shifting.",
+      },
+      {
+        title: "Time-Saving and Efficient Shifting",
+        paragraph:
+          "Experienced professionals handle packing, loading, transportation, and unloading quickly and systematically.",
+      },
+      {
+        title: "Stress-Free Relocation Experience",
+        paragraph:
+          "Our trained team manages the complete relocation process, allowing you to move without unnecessary stress.",
+      },
+      {
+        title: "Proper Handling of Fragile Items",
+        paragraph:
+          "Delicate items like electronics, glassware, furniture, and appliances are packed carefully for maximum safety.",
+      },
+      {
+        title: "Access to Insurance Coverage",
+        paragraph:
+          "We provide transit insurance support for added protection and peace of mind during transportation.",
+      },
+      {
+        title: "Safe Loading and Unloading",
+        paragraph:
+          "Skilled movers use proper equipment and safe lifting techniques to avoid damage while handling heavy goods.",
+      },
+      {
+        title: "Affordable and Cost-Effective Services",
+        paragraph:
+          "Professional moving services help prevent extra expenses caused by damages, delays, or poor handling.",
+      },
+    ],
+
+    whyChooseNote:
+      "Self-moving can be stressful and time-consuming, while professional packers and movers provide a safe, quick, and organized relocation experience.",
+
+    areasHeading: "Areas We Serve in Ajmer",
+
+    areas: [
+      {
+        title: "Local Packers and Movers in Ajmer",
+        paragraph: [
+          "Our local packers and movers in Ajmer provide affordable and professional relocation services across major residential and commercial areas including Vaishali Nagar, Panchsheel Nagar, Civil Lines, Adarsh Nagar, Kotra, Pushkar Road, Jaipur Road, Chandra Vardai Nagar, Shastri Nagar, Alwar Gate, Beawar Road, and nearby locations.",
+
+          "Our experienced local packers and movers in Ajmer ensure secure packing, safe transportation, timely delivery, and smooth shifting support according to your schedule. We focus on making your local home or office relocation quick, convenient, and completely hassle-free.",
+        ],
+      },
+      {
+        title: "Intercity Packers and Movers from Ajmer",
+        paragraph: [
+          "Safe Shifting Packers offers trusted and professional intercity relocation services from Ajmer to major cities including Delhi, Noida, Gurgaon, Jaipur, Ahmedabad, Mumbai, Pune, Hyderabad, Bangalore, Kolkata, and Chandigarh. Our long-distance shifting services include premium packing, careful loading, secure transportation, timely delivery, and safe unloading for a smooth and hassle-free moving experience.",
+
+          "With experienced staff, modern transport vehicles, and quality packing materials, we ensure complete safety of household goods, office items, furniture, and vehicles during transit. Whether you are relocating for work, business, or personal reasons, our Packers and movers in Ajmer provide reliable support for stress-free intercity shifting across India.",
+        ],
+      },
+    ],
+
+    processHeading: "Step-by-Step Moving Process",
+
+    processParagraph:
+      "We follow a smooth and organized relocation process to ensure safe and hassle-free shifting:",
+
+    process: [
+      {
+        title: "Request a Quote",
+        paragraph:
+          "Share your moving details online or by phone to get a quick and accurate relocation estimate.",
+      },
+      {
+        title: "Pre-Move Survey",
+        paragraph:
+          "Our team evaluates the quantity of goods, moving requirements, and special handling needs before shifting.",
+      },
+      {
+        title: "Packing",
+        paragraph:
+          "We use high-quality packing materials and secure techniques to protect household and office items from damage.",
+      },
+      {
+        title: "Loading",
+        paragraph:
+          "Trained professionals carefully lift and load your belongings using proper equipment for maximum safety.",
+      },
+      {
+        title: "Transportation",
+        paragraph:
+          "Your goods are transported through secure and timely transit with real-time coordination and tracking support.",
+      },
+      {
+        title: "Unloading & Setup",
+        paragraph:
+          "After reaching the destination, we safely unload, unpack, and place items as per your instructions.",
+      },
+    ],
+
+    costHeading:
+      "Packers & Movers Charges in Ajmer",
+
+    factorsHeading:
+      "Key Factors That Influence Moving Costs in Ajmer",
+
+    factors: [
+      {
+        heading: "Relocation Distance",
+        paragraph:
+          "The overall distance between the pickup and destination location directly affects the transportation cost.",
+      },
+      {
+        heading: "Quantity of Belongings",
+        paragraph:
+          "More household or office items require additional packing materials, labor, and vehicle space.",
+      },
+      {
+        heading: "Floor Level & Lift Access",
+        paragraph:
+          "Moving from higher floors without elevator facilities may increase loading and unloading charges.",
+      },
+      {
+        heading: "Moving Date & Season",
+        paragraph:
+          "Weekends, festive seasons, and month-end dates often come with higher relocation pricing due to increased demand.",
+      },
+      {
+        heading: "Service Requirements",
+        paragraph:
+          "Extra services such as unpacking, storage, furniture dismantling, or vehicle transportation can increase the total moving cost.",
+      },
+    ],
+
+    nearbyCitiesHeading: "Our Service Locations",
+
+    nearbyCities: [
+      {
+        link: "/city/delhi",
+        linkText: "Packers and Movers in Delhi",
+        text: "",
+      },
+      {
+        link: "/city/agra",
+        linkText: "Packers and Movers in Agra",
+        text: "",
+      },
+      {
+        link: "/city/mumbai",
+        linkText: "Packers and Movers in Mumbai",
+        text: "",
+      },
+      {
+        link: "/city/bengaluru",
+        linkText: "Packers and Movers in Bengaluru",
+        text: "",
+      },
+      {
+        link: "/city/chennai",
+        linkText: "Packers and Movers in Chennai",
+        text: "",
+      },
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      {
+        q: "How much time does home shifting in Ajmer usually take?",
+        a: "The time required for shifting depends on the distance, quantity of goods, traffic conditions, and type of relocation. Local shifting within Ajmer is usually completed within the same day, while intercity relocation may take a few days depending on the destination.",
+      },
+      {
+        q: "Do packers and movers in Ajmer provide insurance services?",
+        a: "Yes, professional packers and movers in Ajmer offer transit insurance services to protect your belongings against accidental damage or loss during transportation. Insurance provides extra safety and peace of mind during relocation.",
+      },
+      {
+        q: "What types of packing materials are used for shifting?",
+        a: "Professional movers use quality packing materials such as bubble wrap, corrugated sheets, foam, stretch film, carton boxes, and waterproof coverings to ensure maximum protection for household and office items during transit.",
+      },
+      {
+        q: "Can I schedule my relocation according to my preferred date and time?",
+        a: "Yes, most packers and movers in Ajmer offer flexible scheduling options based on customer convenience. You can book your shifting service on weekdays, weekends, or even during urgent relocation requirements.",
+      },
+      {
+        q: "Do you provide office and commercial shifting services in Ajmer?",
+        a: "Yes, professional movers offer office and commercial relocation services including packing of office equipment, furniture handling, document safety, IT equipment shifting, and organized transportation for smooth business relocation.",
+      },
+    ],
+  },
+},
   {
     slug: "ankleshwar", city: "Ankleshwar", img: ankleshwarImg, offer: "15%", address: "Plot No. D-2529, Brahmanpuri, Ankleshwar GIDC, 6th Road, near Asian Paint, Chokdi, Ankleshwar, Gujarat 393002", keywords: [
       "gati packers and movers",
@@ -6126,7 +6723,7 @@ export const pagesData = [
     }
   },
   { slug: "Kohima", city: "Kohima", img: Kohima, offer: "16%", address: "Shop No - 17, Naga Bazar Junction, Kohima, Nagaland 797001, India." },
-  { slug: "Amritsar", city: "Amritsar", img: Amritsar, offer: "16%", address: "P14, Near Gurudwara Gurprakash, Street No. 8, Amritsar, Punjab" },
+  // { slug: "Amritsar", city: "Amritsar", img: Amritsar, offer: "16%", address: "P14, Near Gurudwara Gurprakash, Street No. 8, Amritsar, Punjab" },
   { slug: "Jalandhar", city: "Jalandhar", img: Jalandhar, offer: "16%", address: "Shop No - 104, near BMC Chowk, Jalandhar, Punjab" },
   { slug: "Patiala", city: "Patiala", img: Patiala, offer: "16%", address: "Plot No - 13, Standard Medical Store, near Civil Hospital, Patiala" },
 
@@ -6136,7 +6733,7 @@ export const pagesData = [
   { slug: "Bathinda", city: "Bathinda", img: Bathinda, offer: "16%", address: "Shop No - 12, Hopnext Wellness, SCO No.14, 2nd Floor, Bibi Wala Road, Bathinda, Punjab." },
   { slug: "Jodhpur", city: "Jodhpur", img: Jodhpur, offer: "16%", address: "Shop No - 504 - near Mahatma Gandhi Hospital, Jodhpur, Rajasthan" },
   { slug: "Kota", city: "Kota", img: Kota, offer: "16%", address: "Plot No 07, Near Government Hospital, Kota, Rajasthan" },
-  { slug: "Ajmer", city: "Ajmer", img: Ajmer, offer: "16%", address: "Shop No 133, Near Ana Sagar Rd, Ajmer, Rajasthan" },
+  // { slug: "Ajmer", city: "Ajmer", img: Ajmer, offer: "16%", address: "Shop No 133, Near Ana Sagar Rd, Ajmer, Rajasthan" },
   { slug: "Udaipur", city: "Udaipur", img: Udaipur, offer: "16%", address: "Shop No 107, Near City Palace Rd, Udaipur, Rajasthan" },
   { slug: "Agartala", city: "Agartala", img: Agartala, offer: "16%", address: "Shop No 9, Malancha Nagar, near Sonali Guest House, Kunjaban, Agartala, Tripura 799006" },
 
