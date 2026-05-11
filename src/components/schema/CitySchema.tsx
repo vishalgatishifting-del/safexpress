@@ -40,11 +40,20 @@ const CitySchema = ({ cityMeta }: any) => {
 
         item: "https://safeshiftingpackers.com"
       },
-
       {
         "@type": "ListItem",
 
         position: 2,
+
+        name: "City",
+
+        item: "https://safeshiftingpackers.com/city"
+      },
+
+      {
+        "@type": "ListItem",
+
+        position: 3,
 
         name: cityMeta?.city,
 
@@ -57,7 +66,7 @@ const CitySchema = ({ cityMeta }: any) => {
   const serviceSchema = {
     "@context": "https://schema.org",
 
-    "@type": "Packers and Movers",
+    "@type": "MovingCompany",
 
     name: "Safexpress",
 
@@ -68,7 +77,7 @@ const CitySchema = ({ cityMeta }: any) => {
     image: "https://safeshiftingpackers.com/safexpress.png",
 
     address: {
-      "@type": "Postal Address",
+      "@type": "PostalAddress",
 
       streetAddress: cityMeta?.address,
 
@@ -98,7 +107,7 @@ const CitySchema = ({ cityMeta }: any) => {
 
       ratingValue: "5",
 
-      bestRating: "5"
+      bestRating: "4.8"
     },
 
     author: {
@@ -111,9 +120,10 @@ const CitySchema = ({ cityMeta }: any) => {
       `Professional packing and relocation services in ${cityMeta?.city}. Safe delivery and affordable pricing.`,
 
     itemReviewed: {
-      "@type": "Packers and Movers",
+      "@type": "MovingCompany",
+      name: "Safexpress",
+      url: `https://safeshiftingpackers.com/city/${cityMeta?.slug}`
 
-      name: "Safexpress"
     }
   };
 
