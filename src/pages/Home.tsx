@@ -4,10 +4,10 @@ import Hero from "../components/Hero.tsx";
 import ZohoForm from "../components/ZohoForm.tsx";
 import { useState } from "react";
 
-import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.png"
-import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
-import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
-import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
+// import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.png"
+// import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
+// import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
+// import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
 // import ISOcertificate from "../assets/homePagePng/isoCertificate.png"
 // import gatiCertificate from "../assets/homePagePng/gatiCertificate.png"
 
@@ -213,8 +213,7 @@ const Home = () => {
         </div>
       </div>
 
-      <section id="certificate-section">
-        {/* <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1> */}
+      {/* <section id="certificate-section">
         <div className="container">
           <div className="card">
             <a href={justDialCertificateImg} className="hidden" target="_blank">
@@ -245,7 +244,7 @@ const Home = () => {
             <h3>GST Certificate</h3>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <ProductImageSlider images={sliderImages}></ProductImageSlider>
 
