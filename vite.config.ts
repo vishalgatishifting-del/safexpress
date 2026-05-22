@@ -13,9 +13,10 @@ export default defineConfig({
     vitePrerender({
       staticDir: path.join(__dirname, 'dist'),
       routes: ['/', '/about', '/contact-us', '/services'],
-      renderer: new PuppeteerRenderer({        // <-- add karo
+      renderer: new PuppeteerRenderer({
         launchOptions: {
-          executablePath: '/usr/bin/chromium-browser', // <-- system chrome
+          executablePath: '/snap/bin/chromium',
+          headless: true,
           args: ['--no-sandbox', '--disable-setuid-sandbox']
         }
       }),
