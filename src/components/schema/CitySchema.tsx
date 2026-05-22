@@ -88,7 +88,7 @@ const CitySchema = ({ cityMeta }: any) => {
 
       ratingValue: "5",
 
-      bestRating: "4.8"
+      bestRating: "5"
     },
 
     author: {

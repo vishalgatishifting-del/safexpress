@@ -19,13 +19,13 @@ const formatImageName = (slug) =>
     .join("");
 
 for (const page of pagesData) {
-  const slug = page.city.toLowerCase();
+  const slug = page.slug.toLowerCase();
 
   const htmlPath = join(
     __dirname,
     "dist",
     "city",
-    city,
+    slug,
     "index.html"
   );
 
@@ -34,7 +34,7 @@ for (const page of pagesData) {
   try {
     html = readFileSync(htmlPath, "utf-8");
   } catch {
-    console.warn(`❌ Skipping ${slug} - file not found`);
+    console.warn(`Skipping ${slug} - file not found`);
     continue;
   }
 
@@ -83,7 +83,7 @@ for (const page of pagesData) {
   // Save file
   writeFileSync(htmlPath, html);
 
-  console.log(`✅ Injected meta: /city/${slug}`);
+  console.log(`Injected meta: /city/${slug}`);
 }
 
-console.log("🎉 All meta tags injected successfully!");
+console.log("All meta tags injected successfully!");
