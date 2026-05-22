@@ -71,7 +71,7 @@ const Service = () => {
 
                 <meta
                     property="og:title"
-                    content="Professional Packers and Movers Services Across India"
+                    content="Packers and Movers Services Across India"
                 />
 
                 <meta
