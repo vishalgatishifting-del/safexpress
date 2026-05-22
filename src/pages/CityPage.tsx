@@ -17,7 +17,7 @@ import { pagesData } from "./city-wise-pages-data";
 import { useState } from "react";
 import CitySchema from "../components/schema/CitySchema";
 
-const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi", "Guwahati", "Mumbai", "Amritsar", "Ajmer", "Aligarh", "Hyderabad", "Bengaluru", "Noida", "Chennai", "Ahmedabad", "Almora", "Ahmednagar", "Alappuzha", "Angul", "Ankleshwar", "Arrah", "Asansol", "Anantnag", "Anantapur", "Amravati", "Along", "Akola", "Aizawl", "Adilabad", "Bhilai", "Agartala", "Bhagalpur", "Adoni", "Bareilly", "Ambala","Ballari", "Bagalkot", "Aurangabad", "Balasore", "Ayodhya"];
+const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi", "Guwahati", "Mumbai", "Amritsar", "Ajmer", "Aligarh", "Hyderabad", "Bengaluru", "Noida", "Chennai", "Ahmedabad", "Almora", "Ahmednagar", "Alappuzha", "Angul", "Ankleshwar", "Arrah", "Asansol", "Anantnag", "Anantapur", "Amravati", "Along", "Akola", "Aizawl", "Adilabad", "Bhilai", "Agartala", "Bhagalpur", "Adoni", "Bareilly", "Ambala", "Ballari", "Bagalkot", "Aurangabad", "Balasore", "Ayodhya"];
 
 const WHY_ICONS = [
   <VerifiedIcon />,
@@ -372,7 +372,7 @@ const CityPage = () => {
   const img = cityImage.img;
   const metaData = cityMeta.metaDetails;
   const isSpecial = SPECIAL_CITIES.includes(city);
-  console.log(city)
+  console.log(img)
   return (
     <>
       <Helmet>
@@ -384,18 +384,25 @@ const CityPage = () => {
         <meta property="og:title" content={metaData?.title} />
         <meta property="og:description" content={metaData?.ogDescription} />
         <meta property="og:url" content={`https://safeshiftingpackers.com/city/${slug}`} />
-        <meta property="og:site_name" content="Safexpress" />
-        <meta property="og:image" content="https://safeshiftingpackers.com/newMetaImg.png" />
+        <meta property="og:site_name" content="Safexpress" /><meta
+          property="og:image"
+          content={`https://safeshiftingpackers.com${img}`}
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={metaData?.title} />
-        <meta name="twitter:description" content={metaData?.twitterDescription} />
-        <meta name="twitter:image" content={img} />
+        <meta name="twitter:description" content={metaData?.twitterDescription} /><meta
+          name="twitter:image"
+          content={`https://safeshiftingpackers.com${img}`}
+        />
         <meta http-equiv="Content-Language" content="en" />
         <link rel="canonical" href={`https://safeshiftingpackers.com/city/${slug}`} />
 
 
       </Helmet>
-      
+
       <CitySchema cityMeta={cityMeta} />
       <main className="cp-root">
         {isSpecial ? (
