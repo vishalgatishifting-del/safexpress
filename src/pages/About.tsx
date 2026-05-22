@@ -132,8 +132,8 @@ const About = () => {
                 <meta name="robots" content="index, follow" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="About Safe Shifting Packers | Professional Relocation Services" />
-                <meta property="og:description" content="Know more about Safe Shifting Packers – your trusted partner for safe and hassle-free moving solutions across India." />
+                <meta property="og:title" content="testing" />
+                <meta property="og:description" content="testing" />
                 <meta property="og:url" content="https://safeshiftingpackers.com/about" />
                 <meta property="og:site_name" content="Safe Shifting Packers" />
 
