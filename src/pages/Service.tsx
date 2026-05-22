@@ -30,7 +30,7 @@ type Services = {
 };
 const Service = () => {
 
-        const services: Services[] = [
+    const services: Services[] = [
         { id: 1, tt: "House", title: "House Shifting", description: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home.", Img: House_icon_png },
         { id: 2, tt: "AC", title: "AC Shifting", description: "Expert AC dismantling, secure packaging, and reinstallation at your destination by skilled technicians.", Img: AV_icon_png },
         { id: 3, tt: "Bike", title: "Bike Transport", description: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery.", Img: Bike_icon_png },
@@ -49,7 +49,92 @@ const Service = () => {
     return (
         <section id="service-section">
             <Helmet>
-             
+                <title>
+                    Packers and Movers Services | Home, Office & Vehicle Relocation
+                </title>
+
+                <meta
+                    name="description"
+                    content="Explore Safe Shifting Packers services including home shifting, office relocation, car transport, bike transport, warehouse shifting and complete logistics solutions across India."
+                />
+
+                <meta
+                    name="keywords"
+                    content="Packers and Movers Services, Home Shifting Services, Office Relocation Services, Car Transport Services, Bike Transport Services, Logistics Company India, Household Shifting, Warehouse Relocation, Safe Shifting Packers"
+                />
+
+                <meta name="author" content="Safe Shifting Packers" />
+                <meta name="robots" content="index, follow" />
+
+                {/* Open Graph Meta Tags */}
+                <meta property="og:type" content="website" />
+
+                <meta
+                    property="og:title"
+                    content="Professional Packers and Movers Services Across India"
+                />
+
+                <meta
+                    property="og:description"
+                    content="Safe Shifting Packers offers reliable home shifting, office relocation, vehicle transportation and logistics services with safe packing and timely delivery."
+                />
+
+                <meta
+                    property="og:url"
+                    content="https://safeshiftingpackers.com/services"
+                />
+
+                <meta
+                    property="og:site_name"
+                    content="Safe Shifting Packers"
+                />
+
+                <meta
+                    property="og:image"
+                    content="https://safeshiftingpackers.com/newMetaImg.png"
+                />
+
+                <meta
+                    property="og:image:width"
+                    content="1200"
+                />
+
+                <meta
+                    property="og:image:height"
+                    content="630"
+                />
+
+                <meta
+                    property="og:image:alt"
+                    content="Safe Shifting Packers Services"
+                />
+
+                {/* Twitter Meta Tags */}
+                <meta
+                    name="twitter:card"
+                    content="summary_large_image"
+                />
+
+                <meta
+                    name="twitter:title"
+                    content="Professional Packers and Movers Services Across India"
+                />
+
+                <meta
+                    name="twitter:description"
+                    content="Trusted home shifting, office relocation, car transport and bike transport services by Safe Shifting Packers."
+                />
+
+                <meta
+                    name="twitter:image"
+                    content="https://safeshiftingpackers.com/images/services-og-image.jpg"
+                />
+
+                {/* Canonical */}
+                <link
+                    rel="canonical"
+                    href="https://safeshiftingpackers.com/services"
+                />
             </Helmet>
             <section className="surface-network top-element">
                 <div className="surface-overlay">
@@ -88,7 +173,7 @@ const Service = () => {
             <h1 className="main-heading">Our Key Services</h1>
 
             <section id="services-section">
-                {services.map((element)=>(
+                {services.map((element) => (
                     <div className="card">
                         <img src={element.Img} />
                         <span>{element.title}</span>
@@ -143,7 +228,7 @@ const Service = () => {
 
                 </div>
             </section>
-                <FAQ />
+            <FAQ />
 
         </section>
     )
