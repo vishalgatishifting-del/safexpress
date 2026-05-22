@@ -10,7 +10,7 @@ import SecurityIcon from "@mui/icons-material/Security";
 import GpsFixedIcon from "@mui/icons-material/GpsFixed";
 import PaidIcon from "@mui/icons-material/Paid";
 
-import chargesImg from "../assets/CityPages/packers & movers charges.webp";
+import chargesImg from "../assets/packers & movers charges.webp";
 import TrustUsSection from "../components/TrustUsSection";
 import { cities } from "../components/CitiesData";
 import { pagesData } from "./city-wise-pages-data";
