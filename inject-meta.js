@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Apna pagesData yahan import karo
-const { pagesData } = await import('./src/pages/city-wise-pages-data.tsx');
+const { pagesData } = await import('./src/pages/data.js');
 
 for (const page of pagesData) {
   const slug = page.slug.toLowerCase();
