@@ -19,13 +19,13 @@ const formatImageName = (slug) =>
     .join("");
 
 for (const page of pagesData) {
-  const slug = page.slug.toLowerCase();
+  const slug = page.city.toLowerCase();
 
   const htmlPath = join(
     __dirname,
     "dist",
     "city",
-    slug,
+    city,
     "index.html"
   );
 
