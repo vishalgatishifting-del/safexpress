@@ -385,7 +385,7 @@ const CityPage = () => {
         <meta property="og:description" content={metaData?.ogDescription} />
         <meta property="og:url" content={`https://safeshiftingpackers.com/city/${slug}`} />
         <meta property="og:site_name" content="Safexpress" />
-        <meta property="og:image" content={`https://safeshiftingpackers.com/cityPages/${img}.webp`} />
+        <meta property="og:image" content={`https://safeshiftingpackers.com/cityPages/${city}.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={metaData?.title} />
         <meta name="twitter:description" content={metaData?.twitterDescription} />
