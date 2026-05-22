@@ -14,6 +14,7 @@ export default defineConfig({
       staticDir: path.join(__dirname, 'dist'),
       routes: ['/', '/about', '/contact-us', '/services', '/city/ghaziabad', '/city/agra', '/city/gurgaon', '/city/delhi', '/city/guwahati', '/city/mumbai', '/city/amritsar', '/city/ajmer', '/city/aligarh', '/city/hyderabad', '/city/bengaluru', '/city/noida', '/city/chennai', '/city/ahmedabad', '/city/almora', '/city/ahmednagar', '/city/alappuzha', '/city/angul', '/city/ankleshwar', '/city/arrah', '/city/asansol', '/city/anantnag', '/city/anantapur', '/city/amravati', '/city/along', '/city/akola', '/city/aizawl', '/city/adilabad', '/city/bhilai', '/city/agartala', '/city/bhagalpur', '/city/adoni', '/city/bareilly', '/city/ambala', '/city/ballari', '/city/bagalkot', '/city/aurangabad', '/city/balasore', '/city/ayodhya'],
       renderer: new PuppeteerRenderer({
+        renderAfterDocumentEvent: 'prerender-ready',
         maxConcurrentRoutes: 4,
         launchOptions: {
           executablePath: '/snap/bin/chromium',

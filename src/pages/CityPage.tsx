@@ -14,7 +14,7 @@ import chargesImg from "../assets/packers & movers charges.webp";
 import TrustUsSection from "../components/TrustUsSection";
 import { cities } from "../components/CitiesData";
 import { pagesData } from "./city-wise-pages-data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CitySchema from "../components/schema/CitySchema";
 
 const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi", "Guwahati", "Mumbai", "Amritsar", "Ajmer", "Aligarh", "Hyderabad", "Bengaluru", "Noida", "Chennai", "Ahmedabad", "Almora", "Ahmednagar", "Alappuzha", "Angul", "Ankleshwar", "Arrah", "Asansol", "Anantnag", "Anantapur", "Amravati", "Along", "Akola", "Aizawl", "Adilabad", "Bhilai", "Agartala", "Bhagalpur", "Adoni", "Bareilly", "Ambala", "Ballari", "Bagalkot", "Aurangabad", "Balasore", "Ayodhya"];
@@ -360,6 +360,12 @@ const SpecialCityPage = ({ city, img, address, offer, pageData, }: { city: strin
 };
 
 const CityPage = () => {
+  useEffect(() => {
+    // Helmet render hone ke baad event fire karo
+    setTimeout(() => {
+      document.dispatchEvent(new Event('prerender-ready'));
+    }, 1000);
+  }, []);
   const { slug } = useParams();
   const normalizedSlug = slug?.toLowerCase();
 
