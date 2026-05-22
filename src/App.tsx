@@ -12,6 +12,8 @@ function App() {
       preHero.remove();
     }
   }, []);
+
+  
   return (
     <>
       <BrowserRouter>
