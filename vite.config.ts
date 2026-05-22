@@ -5,7 +5,7 @@ import { createRequire } from 'module';
 
 const require = createRequire(import.meta.url);
 const vitePrerender = require('vite-plugin-prerender');
-const PuppeteerRenderer = require('vite-plugin-prerender/es6/PuppeteerRenderer'); // <-- add karo
+const { PuppeteerRenderer } = require('@prerenderer/renderer-puppeteer');// <-- add karo
 
 export default defineConfig({
   plugins: [
