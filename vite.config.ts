@@ -375,6 +375,7 @@ export default defineConfig({
 '/city/yingkiong',
 '/city/ziro'],
       renderer: new PuppeteerRenderer({
+        maxConcurrentRoutes: 4,
         launchOptions: {
           executablePath: '/snap/bin/chromium',
           headless: true,
