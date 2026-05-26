@@ -12,7 +12,7 @@ export default defineConfig({
     react(),
     vitePrerender({
       staticDir: path.join(__dirname, 'dist'),
-      routes: ['/city/ghaziabad', '/city/agra', '/city/gurgaon', '/city/delhi', '/city/guwahati', '/city/mumbai', '/city/amritsar', '/city/ajmer', '/city/aligarh', '/city/hyderabad', '/city/bengaluru', '/city/noida', '/city/chennai', '/city/ahmedabad', '/city/almora', '/city/ahmednagar', '/city/alappuzha', '/city/angul', '/city/ankleshwar', '/city/arrah', '/city/asansol', '/city/anantnag', '/city/anantapur', '/city/amravati', '/city/along', '/city/akola', '/city/aizawl', '/city/adilabad', '/city/bhilai', '/city/agartala', '/city/bhagalpur', '/city/adoni', '/city/bareilly', '/city/ambala', '/city/ballari', '/city/bagalkot', '/city/aurangabad', '/city/balasore', '/city/ayodhya'],
+      routes: ['/city/ghaziabad', '/city/agra', '/city/gurgaon', '/city/delhi', '/city/guwahati', '/city/mumbai', '/city/amritsar', '/city/ajmer', '/city/aligarh', '/city/hyderabad', '/city/bengaluru', '/city/noida', '/city/chennai', '/city/ahmedabad', '/city/almora', '/city/ahmednagar', '/city/alappuzha', '/city/angul', '/city/ankleshwar', '/city/arrah', '/city/asansol', '/city/anantnag', '/city/anantapur', '/city/amravati', '/city/along', '/city/akola', '/city/aizawl', '/city/adilabad', '/city/bhilai', '/city/agartala', '/city/bhagalpur', '/city/adoni', '/city/bareilly', '/city/ambala', '/city/ballari', '/city/bagalkot', '/city/aurangabad', '/city/balasore', '/city/ayodhya', '/city/Bandipora', '/city/Banashankari', '/city/Baramulla', '/city/Bardhaman', '/city/Baripada'],
       renderer: new PuppeteerRenderer({
         renderAfterDocumentEvent: 'prerender-ready',
         maxConcurrentRoutes: 4,
