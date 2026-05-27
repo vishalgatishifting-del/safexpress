@@ -17,7 +17,7 @@ import { pagesData } from "./city-wise-pages-data";
 import { useEffect, useState } from "react";
 import CitySchema from "../components/schema/CitySchema";
 
-const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi", "Guwahati", "Mumbai", "Amritsar", "Ajmer", "Aligarh", "Hyderabad", "Bengaluru", "Noida", "Chennai", "Ahmedabad", "Almora", "Ahmednagar", "Alappuzha", "Angul", "Ankleshwar", "Arrah", "Asansol", "Anantnag", "Anantapur", "Amravati", "Along", "Akola", "Aizawl", "Adilabad", "Bhilai", "Agartala", "Bhagalpur", "Adoni", "Bareilly", "Ambala", "Ballari", "Bagalkot", "Aurangabad", "Balasore", "Ayodhya", "Bandipora", "Banashankari", "Baramulla", "Bardhaman", "Baripada"];
+const SPECIAL_CITIES = ["Ghaziabad", "Agra", "Gurgaon", "Delhi", "Guwahati", "Mumbai", "Amritsar", "Ajmer", "Aligarh", "Hyderabad", "Bengaluru", "Noida", "Chennai", "Ahmedabad", "Almora", "Ahmednagar", "Alappuzha", "Angul", "Ankleshwar", "Arrah", "Asansol", "Anantnag", "Anantapur", "Amravati", "Along", "Akola", "Aizawl", "Adilabad", "Bhilai", "Agartala", "Bhagalpur", "Adoni", "Bareilly", "Ambala", "Ballari", "Bagalkot", "Aurangabad", "Balasore", "Ayodhya", "Bandipora", "Banashankari", "Baramulla", "Bardhaman", "Baripada", "Bargarh", "Basavanagudi", "Bathinda", "Belagavi", "Begusarai", "Belgaum", "Berhampore",  "Berhampur", "Bhadrak", "Bhavnagar", "Bharuch", "Bhiwandi", "Bhopal", "Bhubaneswar", "Bicholim", "Bidar", "Bikaner"];
 
 const WHY_ICONS = [
   <VerifiedIcon />,
