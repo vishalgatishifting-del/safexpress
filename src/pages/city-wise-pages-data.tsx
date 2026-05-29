@@ -16659,8 +16659,8 @@ export const pagesData = [
   //   }
   // },
   {
-  slug: "champai",
-  city: "Champai",
+  slug: "champhai",
+  city: "Champhai",
   img: Champhai,
   offer: "15%",
   address: "Main Rd, Vengthlang, Champhai, Mizoram 796321",
