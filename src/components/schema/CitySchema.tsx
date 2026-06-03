@@ -47,7 +47,7 @@ const CitySchema = ({ cityMeta }: any) => {
   const serviceSchema = {
     "@context": "https://schema.org",
 
-    "@type": "MovingCompany",
+    "@type": "LocalBusiness",
 
     name: "Safexpress",
 
@@ -86,9 +86,9 @@ const CitySchema = ({ cityMeta }: any) => {
     reviewRating: {
       "@type": "Rating",
 
-      ratingValue: "5",
-
-      bestRating: "5"
+      ratingValue: 5,
+      bestRating: 5,
+      worstRating: 1
     },
 
     author: {
@@ -101,7 +101,7 @@ const CitySchema = ({ cityMeta }: any) => {
       `Professional packing and relocation services in ${cityMeta?.city}. Safe delivery and affordable pricing.`,
 
     itemReviewed: {
-      "@type": "MovingCompany",
+      "@type": "LocalBusiness",
       name: "Safexpress",
       url: `https://safeshiftingpackers.com/city/${cityMeta?.slug}`
 
