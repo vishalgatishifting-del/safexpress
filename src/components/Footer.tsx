@@ -15,7 +15,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { COMPANY } from "../config/Company";
 
 const Footer = () => {
-  
+  console.log(cities.length);
     const [visibleCount, setVisibleCount] = useState(28);
   return (
     <footer className="footer">
@@ -33,6 +33,7 @@ const Footer = () => {
           <div className="container">
             <ul>
               {cities.slice(0, visibleCount).map((item, i) => (
+                
                 <li key={i}>
                   <Link to={`/city/${item.slug}`}>
 
