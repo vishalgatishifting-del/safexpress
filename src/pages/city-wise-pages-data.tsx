@@ -385,7 +385,7 @@ import Kashipur from "../assets/CityPages/Kashipur.webp"
 
 
 
-import Nainital from "../assets/CityPages/Nanital.webp"
+import Nainital from "../assets/CityPages/Nainital.webp"
 import Almora from "../assets/CityPages/Almora.webp"
 import Mussoorie from "../assets/CityPages/Mussoorie.webp"
 import Bareilly from "../assets/CityPages/Bareilly.webp"
