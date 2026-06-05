@@ -39,7 +39,7 @@ for (const page of pagesData) {
   }
 
   const meta = page.metaDetails;
-
+  console.log(meta)
   // Dynamic image from public/CityPage/
   const imageName = formatImageName(slug);
 
