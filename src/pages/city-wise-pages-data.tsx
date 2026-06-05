@@ -366,7 +366,6 @@ import Cuddalore from "../assets/CityPages/Cuddalore.webp"
 import Nagercoil from "../assets/CityPages/Nagercoil.webp"
 import Hosur from "../assets/CityPages/Hosur.webp"
 import Sivakasi from "../assets/CityPages/Sivakasi.webp"
-import Davangere from "../assets/CityPages/Davangere.webp"
 import Hospet from "../assets/CityPages/Hospet.webp"
 import Rajkot from "../assets/CityPages/Rajkot.webp"
 import Mundra from "../assets/CityPages/Mundra.webp"
@@ -26458,16 +26457,7 @@ export const pagesData = [
       canonical: "https://gatishiftingpackers.com/city/Sivakasi"
     }
   },
-  {
-    slug: "Davangere", city: "Davangere", img: Davangere, offer: "23%", address: "S O G Colony, Shri Ramanagara, Davanagere, Karnataka 577005", metaDetails: {
-      title: "Packers and Movers in Davangere | safexpress",
-      description: "Hire trusted Packers and Movers in Davangere with safexpress. We provide safe, affordable and professional home, office and vehicle relocation services in Davangere and across Karnataka.",
-      keywords: "Local movers near me Davangere, Packers and Movers in Davangere, safexpress Davangere, Best Packers and Movers Davangere, Affordable Packers and Movers Davangere, Trusted Packers and Movers Davangere Karnataka, Local Packers and Movers Davangere, Professional Movers and Packers Davangere, Home Shifting Services Davangere, Office Relocation Davangere, Vehicle Transport Davangere, Car Transport Service Davangere, Bike Transport Davangere, Household Goods Shifting Davangere, Industrial Packers and Movers Davangere, Door-to-Door Shifting Services Davangere, Packing and Unpacking Services Davangere, Furniture Movers Davangere, Intercity Packers and Movers Davangere, Packers and Movers Davangere to Bangalore, Packers and Movers Davangere to Mysore, Packers and Movers Davangere to Mangalore, Packers and Movers Davangere to Hubli, Packers and Movers Davangere to Hyderabad, Reliable Relocation Company Davangere, Cost-Effective Packers and Movers Davangere, Quick Packers and Movers Davangere, 24x7 Packers and Movers Davangere, Mini Truck for Shifting Davangere, Tempo Service Davangere, Best Relocation Services Davangere, Safe and Secure Moving Services Davangere, Budget-Friendly Movers Davangere, Professional Relocation Company Davangere, Long-Distance Packers and Movers Davangere, Trusted Shifting Company Davangere, Goods Transport Services Davangere.",
-      ogDescription: "Looking for reliable Packers and Movers in Davangere? safexpress offers safe, timely and affordable relocation for homes, offices and vehicles in Davangere and across Karnataka.",
-      twitterDescription: "Safe, professional and affordable Packers and Movers in Davangere by safexpress. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/city/Davangere"
-    }
-  },
+  
   {
     slug: "Hospet", city: "Hospet", img: Hospet, offer: "23%", address: "Basaveshwara Badavane, Hosapete Tq, DIST, VIJAYANAGAR, Hosapete, Karnataka 585201", metaDetails: {
       title: "Packers and Movers in Hospet | safexpress",
