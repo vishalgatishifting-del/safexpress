@@ -98,7 +98,7 @@ const OfficeLocation = () => {
 
                         <li>
                             <CallIcon />
-                            <span>+91 {COMPANY.phone}</span>
+                            <span>+91 7065994000 </span><i style={{fontStyle:"italic"}}>(For Orders Enquiry)</i>
                         </li>
 
                         <li>
