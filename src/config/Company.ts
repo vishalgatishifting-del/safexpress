@@ -2,7 +2,7 @@ export const COMPANY = {
   name: "Safexpress",
   phone: "7065515000",
   email: "safexpressshifting@gmail.com",
-  whatsapp: "https://wa.me/917290008200",
+  whatsapp: "https://wa.me/917065515000",
   instagram: "https://www.instagram.com/saf_eexpress/",
   facebook: "https://www.facebook.com/profile.php?id=61587270281087",
   twitter: "https://x.com/SPackers48232",
