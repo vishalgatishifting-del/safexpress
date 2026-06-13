@@ -2756,9 +2756,9 @@ export const pagesData = [
     address: "Sarthak Palace, Plot No.: 1570/1571, CDA Sector VI, Cuttack, Odisha 753014",
 
     metaDetails: {
-      title: "Packers and Movers in Cuttack For Local & Intercity Moves",
+      title: "Packers and Movers in Cuttack | Safe Shifting Packers",
       description:
-        "Get trusted relocation services in Cuttack with Safe Shifting Packers. We provide professional packing, secure transportation, and affordable moving solutions.",
+        "Safe Shifting Packers provides dependable Packers and Movers in Cuttack with professional packing & relocation services.",
       keywords:
         "Packers and Movers in Cuttack, Best Packers and Movers Cuttack, Affordable Packers and Movers Cuttack, Local Packers and Movers Cuttack, Professional Packers and Movers Cuttack, Home Shifting Services Cuttack, Office Relocation Cuttack, Car Transport Service Cuttack, Bike Transport Cuttack, Household Goods Shifting Cuttack, Packing and Unpacking Services Cuttack, Intercity Packers and Movers Cuttack, Packers and Movers Cuttack to Delhi, Packers and Movers Cuttack to Bengaluru, Packers and Movers Cuttack Odisha, Reliable Relocation Company Cuttack, Cost-Effective Packers and Movers Cuttack, Door-to-Door Shifting Services Cuttack, Local Movers Cuttack, Office Shifting Services in Cuttack, Vehicle Shifting Cuttack, Household Relocation Services Cuttack, Packers and Movers Charges Cuttack, Packers and Movers Cost Cuttack, Movers and Packers near me Cuttack, Trusted Packers and Movers Cuttack.",
       ogDescription:

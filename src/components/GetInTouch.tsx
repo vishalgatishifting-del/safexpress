@@ -72,7 +72,7 @@ const GetInTouch = () => {
         <div className="git-img-side">
           <img
             src={getInTouchImg}
-            alt="Gati Shifting Packers team"
+            alt="Safe Shifting Packers team"
             title="Get In Touch"
             loading="lazy"
             decoding="async"
