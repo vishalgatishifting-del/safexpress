@@ -39,10 +39,10 @@ for (const page of pagesData) {
   }
 
   const meta = page.metaDetails;
-  console.log(meta)
   // Dynamic image from public/CityPage/
   const imageName = formatImageName(slug);
 
+  console.log(imageName)
   const img = `https://safeshiftingpackers.com/CityPages/${imageName}.webp`;
 
   // Remove old meta tags if already exist
