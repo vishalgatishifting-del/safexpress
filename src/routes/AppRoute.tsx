@@ -75,7 +75,7 @@ const AppRoutes = () => {
                         <Route path="/review" element={<Review></Review>}></Route>
                         <Route path="/item-selection" element={<MultiStepMoving></MultiStepMoving>}></Route>
                         <Route path="/track-order" element={<TrackOrder></TrackOrder>}></Route>
-
+                        <Route path="/track-order/:id" element={<TrackOrder />} />
 
                         {/* {
                             pagesData.map((page) => (
