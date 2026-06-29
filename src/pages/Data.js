@@ -1,3 +1,455 @@
+import agraImg from "../assets/CityPages/Agra.webp"
+import ankleshwarImg from "../assets/CityPages/Ankleshwar.webp"
+import BhiwandiImg from "../assets/CityPages/Bhiwandi.webp"
+import CalicutImg from "../assets/CityPages/Calicut.webp"
+import CuttackImg from "../assets/CityPages/Cuttack.webp"
+import GandhidhamImg from "../assets/CityPages/Gandhidham.webp"
+import GuwahatiImg from "../assets/CityPages/Guwahati.webp"
+import HyderabadImg from "../assets/CityPages/Hyderabad.webp"
+import JamshedpurImg from "../assets/CityPages/Jamshedpur.webp"
+import KolhapurImg from "../assets/CityPages/Kolhapur.webp"
+import LucknowImg from "../assets/CityPages/Lucknow.webp"
+import MeerutImg from "../assets/CityPages/Meerut.webp"
+import AhmedabadImg from "../assets/CityPages/Ahmedabad.webp";
+import AurangabadImg from "../assets/CityPages/Aurangabad.webp"
+import BhopalImg from "../assets/CityPages/Bhopal.webp"
+import ChandigarhImg from "../assets/CityPages/Chandigarh.webp"
+import DehradunImg from "../assets/CityPages/Dehradun.webp"
+import GhaziabadImg from "../assets/CityPages/Ghaziabad.webp"
+import GwaliorImg from "../assets/CityPages/Gwalior.webp"
+import Indore from "../assets/CityPages/Indore.webp"
+import Jamnagar from "../assets/CityPages/Jamnagar.webp"
+import Kolkata from "../assets/CityPages/Kolkata.webp"
+import Ludhiana from "../assets/CityPages/Ludhiana.webp"
+import Mumbai from "../assets/CityPages/Mumbai.webp"
+import Allahabad from "../assets/CityPages/Prayagraj.webp"
+import Alwar from "../assets/CityPages/Rajasthan.webp"
+import Ambala from "../assets/CityPages/Ambala.webp"
+import Vadodara from "../assets/CityPages/Vadodara.webp"
+import Bikaner from "../assets/CityPages/Bikaner.webp"
+import Bhubaneswar from "../assets/CityPages/Bhubaneswar.webp"
+import Chennai from "../assets/CityPages/Chennai.webp"
+import Kochi from "../assets/CityPages/Kochi.webp"
+import Delhi from "../assets/CityPages/Delhi.webp"
+import Dwarka from "../assets/CityPages/Dwarka.webp"
+import Faridabad from "../assets/CityPages/Faridabad.webp"
+import Goa from "../assets/CityPages/Goa.webp"
+import GreaterNoida from "../assets/CityPages/Greater-noida.webp"
+import Gurgaon from "../assets/CityPages/Gurgaon.webp"
+import Hubli from "../assets/CityPages/Hubli.webp"
+import Jammu from "../assets/CityPages/Jammu.webp"
+import Kanpur from "../assets/CityPages/Kanpur.webp"
+import Kottayam from "../assets/CityPages/Kottayam.webp"
+import Mangalore from "../assets/CityPages/Mangalore.webp"
+import Nashik from "../assets/CityPages/Nashik.webp"
+import Noida from "../assets/CityPages/Noida.webp"
+import Patna from "../assets/CityPages/Patna.webp"
+import Pune from "../assets/CityPages/Pune.webp"
+import Surat from "../assets/CityPages/Surat.webp"
+import Jaipur from "../assets/CityPages/Jaipur.webp"
+import Nagaon from "../assets/CityPages/Nagaon.webp"
+import Thrissur from "../assets/CityPages/Thrissur.webp"
+import Vishakhapatnam from "../assets/CityPages/Visakhapatnam.webp"
+import Trivandrumpuram from "../assets/CityPages/Thiruvananthapuram.webp"
+import Coimbatore from "../assets/CityPages/Coimbatore.webp"
+import Manipur from "../assets/CityPages/Manipur.webp"
+import Dimapur from "../assets/CityPages/Dimapur.webp"
+import Shilong from "../assets/CityPages/Shillong.webp"
+import Rishikesh from "../assets/CityPages/Rishikesh.webp"
+import Haridwar from "../assets/CityPages/Haridwar.webp"
+import Gorakhpur from "../assets/CityPages/Gorakhpur.webp"
+import Ranipet from "../assets/CityPages/Ranipet.webp"
+import Amrawati from "../assets/CityPages/Amravati.webp"
+import Jorhat from "../assets/CityPages/Jorhat.webp"
+import Palakkad from "../assets/CityPages/Palakkad.webp"
+import Sambalpur from "../assets/CityPages/Sambalpur.webp"
+import Berhampur from "../assets/CityPages/Berhampur.webp"
+import Imphal from "../assets/CityPages/Imphal.webp"
+import Rourkela from "../assets/CityPages/Rourkela.webp"
+import Balasore from "../assets/CityPages/Balasore.webp"
+import Puri from "../assets/CityPages/Puri.webp"
+import Baripada from "../assets/CityPages/Baripada.webp"
+import Jharsuguda from "../assets/CityPages/Jharsuguda.webp"
+import Angul from "../assets/CityPages/Angul.webp"
+
+import Bhadrak from "../assets/CityPages/Bhadrak.webp"
+import Bargarh from "../assets/CityPages/Bargarh.webp"
+import Jeypore from "../assets/CityPages/Jeypore.webp"
+import Kendrapara from "../assets/CityPages/Kendrapara.webp"
+import Rayagada from "../assets/CityPages/Rayagada.webp"
+
+import Whitefield from "../assets/CityPages/Whitefield.webp"
+import Electronic_City from "../assets/CityPages/Electronic-City.webp"
+import Koramangala from "../assets/CityPages/Koramangala.webp"
+import Indiranagar from "../assets/CityPages/Indiranagar.webp"
+import Marathahalli from "../assets/CityPages/Marathahalli.webp"
+import Yelahanka from "../assets/CityPages/Yelahanka.webp"
+import Jayanagar from "../assets/CityPages/Jayanagar.webp"
+import Rajajinagar from "../assets/CityPages/Rajajinagar.webp"
+import HSR_Layout from "../assets/CityPages/HSR-Layout.webp"
+import BTM_Layout from "../assets/CityPages/BTM-Layout.webp"
+
+import Hebbal from "../assets/CityPages/Hebbal.webp"
+import Malleshwaram from "../assets/CityPages/Malleshwaram.webp"
+import Kalyan_Dombivli from "../assets/CityPages/Kalyan-Dombivli.webp"
+import Banashankari from "../assets/CityPages/Banashankari.webp"
+import Nagpur from "../assets/CityPages/Nagpur.webp"
+
+import Solapur from "../assets/CityPages/Solapur.webp"
+import Sangli from "../assets/CityPages/Sangli.webp"
+import Jalgaon from "../assets/CityPages/Jalgaon.webp"
+import Akola from "../assets/CityPages/Akola.webp"
+import Latur from "../assets/CityPages/Latur.webp"
+
+
+
+import Dhule from "../assets/CityPages/Dhule.webp"
+import Ahmednagar from "../assets/CityPages/Ahmednagar.webp"
+import Chandrapur from "../assets/CityPages/Chandrapur.webp"
+import Parbhani from "../assets/CityPages/Parbhani.webp"
+import Nanded from "../assets/CityPages/Nanded.webp"
+
+
+import Wardha from "../assets/CityPages/Wardha.webp"
+import Satara from "../assets/CityPages/Satara.webp"
+import Ratnagiri from "../assets/CityPages/Ratnagiri.webp"
+import Palghar from "../assets/CityPages/Palghar.webp"
+import Basavanagudi from "../assets/CityPages/Basavanagudi.webp"
+
+
+
+import Bengaluru from "../assets/CityPages/Bengaluru.webp"
+import Mysuru from "../assets/CityPages/Mysuru.webp"
+import Dharwad from "../assets/CityPages/Dharwad.webp"
+import Belagavi from "../assets/CityPages/Belagavi.webp"
+import Belgaum from "../assets/CityPages/Belgaum.webp"
+
+
+import Kalaburagi from "../assets/CityPages/Kalaburagi.webp"
+import Gulbarga from "../assets/CityPages/Gulbarga.webp"
+import Ballari from "../assets/CityPages/Ballari.webp"
+import Davanagere from "../assets/CityPages/Davanagere.webp"
+import Tumakuru from "../assets/CityPages/Tumakuru.webp"
+
+
+import Shivamogga from "../assets/CityPages/Shivamogga.webp"
+import Raichur from "../assets/CityPages/Raichur.webp"
+import Vijayapura from "../assets/CityPages/Vijayapura.webp"
+import Bidar from "../assets/CityPages/Bidar.webp"
+import Hassan from "../assets/CityPages/Hassan.webp"
+import Chitradurga from "../assets/CityPages/Chitradurga.webp"
+import Kolar from "../assets/CityPages/Kolar.webp"
+import Udupi from "../assets/CityPages/Udupi.webp"
+import Karwar from "../assets/CityPages/Karwar.webp"
+import Bagalkot from "../assets/CityPages/Bagalkot.webp"
+
+
+import Varanasi from "../assets/CityPages/Varanasi.webp"
+import Thoubal from "../assets/CityPages/Thoubal.webp"
+import Churachandpur from "../assets/CityPages/Churachandpur.webp"
+import Bishnupur from "../assets/CityPages/Bishnupur.webp"
+import Ukhrul from "../assets/CityPages/Ukhrul.webp"
+
+
+
+
+import Senapati from "../assets/CityPages/Senapati.webp"
+import Kakching from "../assets/CityPages/Kakching.webp"
+import Tamenglong from "../assets/CityPages/Tamenglong.webp"
+import Jiribam from "../assets/CityPages/Jiribam.webp"
+import Moreh from "../assets/CityPages/Moreh.webp"
+
+
+
+import Shimla from "../assets/CityPages/Shimla.webp"
+import Manali from "../assets/CityPages/Manali.webp"
+import Kullu from "../assets/CityPages/Kullu.webp"
+import Mandi from "../assets/CityPages/Mandi.webp"
+import Solan from "../assets/CityPages/Solan.webp"
+
+
+
+import Dharamshala from "../assets/CityPages/Dharamshala.webp"
+import Kangra from "../assets/CityPages/Kangra.webp"
+import Hamirpur from "../assets/CityPages/Hamirpur.webp"
+import Una from "../assets/CityPages/Una.webp"
+import Chamba from "../assets/CityPages/Chamba.webp"
+
+
+import Palampur from "../assets/CityPages/Palampur.webp"
+import Nahan from "../assets/CityPages/Nahan.webp"
+import Kinnaur from "../assets/CityPages/Kinnaur.webp"
+import Keylong from "../assets/CityPages/Keylong.webp"
+import Srinagar from "../assets/CityPages/Srinagar.webp"
+
+
+import Anantnag from "../assets/CityPages/Anantnag.webp"
+import Baramulla from "../assets/CityPages/Baramulla.webp"
+import Udhampur from "../assets/CityPages/Udhampur.webp"
+import Kathua from "../assets/CityPages/Kathua.webp"
+import Sopore from "../assets/CityPages/Sopore.webp"
+
+
+
+import Kupwara from "../assets/CityPages/Kupwara.webp"
+import Pulwama from "../assets/CityPages/Pulwama.webp"
+import Rajouri from "../assets/CityPages/Rajouri.webp"
+import Poonch from "../assets/CityPages/Poonch.webp"
+import Bandipora from "../assets/CityPages/Bandipora.webp"
+
+
+import Ganderbal from "../assets/CityPages/Ganderbal.webp"
+import Kulgam from "../assets/CityPages/Kulgam.webp"
+import Doda from "../assets/CityPages/Doda.webp"
+import Kishtwar from "../assets/CityPages/Kishtwar.webp"
+import Samba from "../assets/CityPages/Samba.webp"
+
+
+
+import Shopian from "../assets/CityPages/Shopian.webp"
+import Leh from "../assets/CityPages/Leh.webp"
+import Kargil from "../assets/CityPages/Kargil.webp"
+import Itanagar from "../assets/CityPages/Itanagar.webp"
+import Naharlagun from "../assets/CityPages/Naharlagun.webp"
+
+
+import Tawang from "../assets/CityPages/Tawang.webp"
+import Bomdila from "../assets/CityPages/Bomdila.webp"
+import Ziro from "../assets/CityPages/Samba.webp"
+import Pasighat from "../assets/CityPages/Pasighat.webp"
+import Roing from "../assets/CityPages/Roing.webp"
+
+
+import Tezu from "../assets/CityPages/Tezu.webp"
+import Namsai from "../assets/CityPages/Namsai.webp"
+import Yingkiong from "../assets/CityPages/Yingkiong.webp"
+import Along from "../assets/CityPages/Along.webp"
+import Daporijo from "../assets/CityPages/Daporijo.webp"
+
+import Seppa from "../assets/CityPages/Seppa.webp"
+import Khonsa from "../assets/CityPages/Khonsa.webp"
+import Changlang from "../assets/CityPages/Changlang.webp"
+import Longding from "../assets/CityPages/Longding.webp"
+import Mizoram from "../assets/CityPages/Mizoram.webp"
+
+
+import Aizawl from "../assets/CityPages/Aizawl.webp"
+import Lunglei from "../assets/CityPages/Lunglei.webp"
+import Champhai from "../assets/CityPages/Champhai.webp"
+import Serchhip from "../assets/CityPages/Serchhip.webp"
+import Kolasib from "../assets/CityPages/Kolasib.webp"
+
+
+import Mamit from "../assets/CityPages/Mamit.webp"
+import Lawngtlai from "../assets/CityPages/Lawngtlai.webp"
+import Saiha from "../assets/CityPages/Saiha.webp"
+import Khawzawl from "../assets/CityPages/Khawzawl.webp"
+import Saitual from "../assets/CityPages/Saitual.webp"
+
+import Hnahthial from "../assets/CityPages/Hnahthial.webp"
+import Gangtok from "../assets/CityPages/Gangtok.webp"
+import Namchi from "../assets/CityPages/Namchi.webp"
+import Gyalshing from "../assets/CityPages/Gyalshing.webp"
+import Mangan from "../assets/CityPages/Mangan.webp"
+
+
+
+import Singtam from "../assets/CityPages/Singtam.webp"
+import Rangpo from "../assets/CityPages/Rangpo.webp"
+import Jorethang from "../assets/CityPages/Jorethang.webp"
+import Soreng from "../assets/CityPages/Soreng.webp"
+import Chungthang from "../assets/CityPages/Chungthang.webp"
+import Pakyong from "../assets/CityPages/Pakyong.webp"
+import Ravangla from "../assets/CityPages/Ravangla.webp"
+import Lachung from "../assets/CityPages/Lachung.webp"
+import Gaya from "../assets/CityPages/Gaya.webp"
+import Bhagalpur from "../assets/CityPages/Bhagalpur.webp"
+
+
+import Muzaffarpur from "../assets/CityPages/Muzaffarpur.webp"
+import Darbhanga from "../assets/CityPages/Darbhanga.webp"
+import Purnia from "../assets/CityPages/Purnia.webp"
+import Arrah from "../assets/CityPages/Arrah.webp"
+import Hajipur from "../assets/CityPages/Hajipur.webp"
+import Begusarai from "../assets/CityPages/Begusarai.webp"
+import Chhapra from "../assets/CityPages/Chhapra.webp"
+import Samastipur from "../assets/CityPages/Samastipur.webp"
+import Lakhisarai from "../assets/CityPages/Lakhisarai.webp"
+import Buxar from "../assets/CityPages/Buxar.webp"
+
+
+import Vijayawada from "../assets/CityPages/Vijayawada.webp"
+import Guntur from "../assets/CityPages/Guntur.webp"
+import Nellore from "../assets/CityPages/Nellore.webp"
+import Tirupati from "../assets/CityPages/Tirupati.webp"
+import Kurnool from "../assets/CityPages/Kurnool.webp"
+import Rajahmundry from "../assets/CityPages/Rajahmundry.webp"
+import Kadapa from "../assets/CityPages/Kadapa.webp"
+import Anantapur from "../assets/CityPages/Anantapur.webp"
+import Eluru from "../assets/CityPages/Eluru.webp"
+import Ongole from "../assets/CityPages/Ongole.webp"
+
+
+import Srikakulam from "../assets/CityPages/Srikakulam.webp"
+import Vizianagaram from "../assets/CityPages/Vizianagaram.webp"
+import Chittoor from "../assets/CityPages/Chittoor.webp"
+import Proddatur from "../assets/CityPages/Proddatur.webp"
+import Hindupur from "../assets/CityPages/Hindupur.webp"
+import Tenali from "../assets/CityPages/Tenali.webp"
+import Nandyal from "../assets/CityPages/Nandyal.webp"
+import Adoni from "../assets/CityPages/Adoni.webp"
+import Nepal from "../assets/CityPages/Nepal.webp"
+import Kollam from "../assets/CityPages/Kollam.webp"
+
+import Alappuzha from "../assets/CityPages/Alappuzha.webp"
+import Idukki from "../assets/CityPages/Idukki.webp"
+import Kozhikode from "../assets/CityPages/Kozhikode.webp"
+import Wayanad from "../assets/CityPages/Wayanad.webp"
+import Kannur from "../assets/CityPages/Kannur.webp"
+import Kasaragod from "../assets/CityPages/Kasaragod.webp"
+import Pathanamthitta from "../assets/CityPages/Pathanamthitta.webp"
+import Warangal from "../assets/CityPages/Warangal.webp"
+import Nizamabad from "../assets/CityPages/Nizamabad.webp"
+import Khammam from "../assets/CityPages/Khammam.webp"
+
+
+import Karimnagar from "../assets/CityPages/Karimnagar.webp"
+import Mahbubnagar from "../assets/CityPages/Mahbubnagar.webp"
+import Adilabad from "../assets/CityPages/Adilabad.webp"
+import Nagarkurnool from "../assets/CityPages/Nagarkurnool.webp"
+import Medak from "../assets/CityPages/Medak.webp"
+import Vikarabad from "../assets/CityPages/Vikarabad.webp"
+import Suryapet from "../assets/CityPages/Suryapet.webp"
+import Wanaparthy from "../assets/CityPages/Wanaparthy.webp"
+
+
+import Howrah from "../assets/CityPages/Howrah.webp"
+import Durgapur from "../assets/CityPages/Durgapur.webp"
+import Asansol from "../assets/CityPages/Asansol.webp"
+import Siliguri from "../assets/CityPages/Siliguri.webp"
+import Darjeeling from "../assets/CityPages/Darjeeling.webp"
+import Kharagpur from "../assets/CityPages/Kharagpur.webp"
+import Haldia from "../assets/CityPages/Haldia.webp"
+import Malda from "../assets/CityPages/Malda.webp"
+import Bardhaman from "../assets/CityPages/Bardhaman.webp"
+import Jalpaiguri from "../assets/CityPages/Jalpaiguri.webp"
+
+
+import Berhampore from "../assets/CityPages/Berhampore.webp"
+import Cooch from "../assets/CityPages/Cooch-Behar.webp"
+import Krishnanagar from "../assets/CityPages/Krishnanagar.webp"
+import Chandannagar from "../assets/CityPages/Chandannagar.webp"
+import Panaji from "../assets/CityPages/Panaji.webp"
+import Mapusa from "../assets/CityPages/Mapusa.webp"
+import Bicholim from "../assets/CityPages/Bicholim.webp"
+import Sanquelim from "../assets/CityPages/Sanquelim.webp"
+import Ponda from "../assets/CityPages/Ponda.webp"
+import Margao from "../assets/CityPages/Margao.webp"
+
+
+import Vasco_da_Gama from "../assets/CityPages/Vasco-da-Gama.webp"
+import Madurai from "../assets/CityPages/Madurai.webp"
+import Tiruchirappalli from "../assets/CityPages/Tiruchirappalli.webp"
+import Salem from "../assets/CityPages/Salem.webp"
+import Tirunelveli from "../assets/CityPages/Tirunelveli.webp"
+import Erode from "../assets/CityPages/Erode.webp"
+import Vellore from "../assets/CityPages/Vellore.webp"
+import Thanjavur from "../assets/CityPages/Thanjavur.webp"
+import Thoothukudi from "../assets/CityPages/Thoothukudi.webp"
+import Dindigul from "../assets/CityPages/Dindigul.webp"
+
+
+
+import Kanchipuram from "../assets/CityPages/Kanchipuram.webp"
+import Tiruppur from "../assets/CityPages/Tiruppur.webp"
+import Cuddalore from "../assets/CityPages/Cuddalore.webp"
+import Nagercoil from "../assets/CityPages/Nagercoil.webp"
+import Hosur from "../assets/CityPages/Hosur.webp"
+import Sivakasi from "../assets/CityPages/Sivakasi.webp"
+import Hospet from "../assets/CityPages/Hospet.webp"
+import Rajkot from "../assets/CityPages/Rajkot.webp"
+import Mundra from "../assets/CityPages/Mundra.webp"
+
+
+import Gandhinagar from "../assets/CityPages/Gandhinagar.webp"
+import Morbi from "../assets/CityPages/Morbi.webp"
+import Mehsana from "../assets/CityPages/Mehsana.webp"
+import Navsari from "../assets/CityPages/Navsari.webp"
+import Bharuch from "../assets/CityPages/Bharuch.webp"
+import Valsad from "../assets/CityPages/Valsad.webp"
+import Roorkee from "../assets/CityPages/Roorkee.webp"
+import Haldwani from "../assets/CityPages/Haldwani.webp"
+import Rudrapur from "../assets/CityPages/Rudrapur.webp"
+import Kashipur from "../assets/CityPages/Kashipur.webp"
+
+
+
+import Nainital from "../assets/CityPages/Nainital.webp"
+import Almora from "../assets/CityPages/Almora.webp"
+import Mussoorie from "../assets/CityPages/Mussoorie.webp"
+import Bareilly from "../assets/CityPages/Bareilly.webp"
+import Aligarh from "../assets/CityPages/Aligarh.webp"
+import Moradabad from "../assets/CityPages/Moradabad.webp"
+import Saharanpur from "../assets/CityPages/Saharanpur.webp"
+import Jhansi from "../assets/CityPages/Jhansi.webp"
+import Mathura from "../assets/CityPages/Mathura.webp"
+import Firozabad from "../assets/CityPages/Firozabad.webp"
+
+
+
+import Ayodhya from "../assets/CityPages/Ayodhya.webp"
+import Muzaffarnagar from "../assets/CityPages/Muzaffarnagar.webp"
+import Rajasthan from "../assets/CityPages/Rajasthan.webp"
+import Kakinada from "../assets/CityPages/Kakinada.webp"
+import Dibrugarh from "../assets/CityPages/Dibrugarh.webp"
+import Silchar from "../assets/CityPages/Silchar.webp"
+import Bhilai from "../assets/CityPages/Bhilai.webp"
+import Durg from "../assets/CityPages/Durg.webp"
+import Bilaspur from "../assets/CityPages/Bilaspur.webp"
+import Junagadh from "../assets/CityPages/Junagadh.webp"
+
+
+import Bhavnagar from "../assets/CityPages/Bhavnagar.webp"
+import Nadiad from "../assets/CityPages/Nadiad.webp"
+import Hisar from "../assets/CityPages/Hisar.webp"
+import Panipat from "../assets/CityPages/Panipat.webp"
+import Rohtak from "../assets/CityPages/Rohtak.webp"
+import Yamunanagar from "../assets/CityPages/Yamunanagar.webp"
+import Karnal from "../assets/CityPages/Karnal.webp"
+import Dhanbad from "../assets/CityPages/Dhanbad.webp"
+import Hazaribagh from "../assets/CityPages/Hazaribagh.webp"
+import Bokaro from "../assets/CityPages/Bokaro-Steel-City.webp"
+
+
+
+// import Bangalore from "../assets/CityPages/Bangalore.webp"
+import Mysore from "../assets/CityPages/Mysore.webp"
+import Jabalpur from "../assets/CityPages/Jabalpur.webp"
+import Ujjain from "../assets/CityPages/Ujjain.webp"
+import Sagar from "../assets/CityPages/Sagar.webp"
+import Satna from "../assets/CityPages/Satna.webp"
+import Kohima from "../assets/CityPages/Kohima.webp"
+import Amritsar from "../assets/CityPages/Amritsar.webp"
+import Jalandhar from "../assets/CityPages/Jalandhar.webp"
+import Patiala from "../assets/CityPages/Patiala.webp"
+
+import Bathinda from "../assets/CityPages/Bathinda.webp"
+import Jodhpur from "../assets/CityPages/Jodhpur.webp"
+import Kota from "../assets/CityPages/Kota.webp"
+import Ajmer from "../assets/CityPages/Ajmer.webp"
+import Udaipur from "../assets/CityPages/Udaipur.webp"
+import Agartala from "../assets/CityPages/Agartala.webp"
+
+
+import portbiller from "../assets/CityPages/Portbiller.webp"
+import Katni from "../assets/CityPages/Katni.webp"
+import Rewa from "../assets/CityPages/Rewa.webp"
+import Korba from "../assets/CityPages/Korba.webp"
+import Chhattisgarh from "../assets/CityPages/Chhattisgarh.webp"
+import Raigarh from "../assets/CityPages/Raigarh.webp"
+import Manipal from "../assets/CityPages/Manipal.webp"
+
+
 
 
 export const pagesData = [
@@ -25391,7 +25843,7 @@ export const pagesData = [
   city: "Kakching",
 
   offer: "15%",
-  address: "",
+  address: "Shop No - 11, Near Basu Ground Thoubal  795138",
 
   keywords: [],
 
@@ -32212,16 +32664,301 @@ export const pagesData = [
       canonical: "https://gatishiftingpackers.com/city/Rangpo"
     }
   },
+  // {
+  //   slug: "Jorethang", city: "Jorethang", offer: "18%", address: "Santinagar ward no.1, Jorethang, Sikkim 737121", metaDetails: {
+  //     title: "Packers and Movers in Jorethang | safexpress",
+  //     description: "Hire trusted Packers and Movers in Jorethang with safexpress. We provide safe, affordable and professional home, office and vehicle relocation services in Jorethang and across Sikkim.",
+  //     keywords: "Local movers near me Jorethang, Packers and Movers in Jorethang, safexpress Jorethang, Best Packers and Movers Jorethang, Affordable Packers and Movers Jorethang, Trusted Packers and Movers Jorethang Sikkim, Local Packers and Movers Jorethang, Professional Movers and Packers Jorethang, Home Shifting Services Jorethang, Office Relocation Jorethang, Vehicle Transport Jorethang, Car Transport Service Jorethang, Bike Transport Jorethang, Household Goods Shifting Jorethang, Industrial Packers and Movers Jorethang, Door-to-Door Shifting Services Jorethang, Packing and Unpacking Services Jorethang, Furniture Movers Jorethang, Intercity Packers and Movers Jorethang, Packers and Movers Jorethang to Gangtok, Packers and Movers Jorethang to Namchi, Packers and Movers Jorethang to Singtam, Packers and Movers Jorethang to Rangpo, Packers and Movers Jorethang to Siliguri, Packers and Movers Jorethang to Kolkata, Packers and Movers Jorethang to Delhi, Reliable Relocation Company Jorethang, Cost-Effective Packers and Movers Jorethang, Quick Packers and Movers Jorethang, 24x7 Packers and Movers Jorethang, Mini Truck for Shifting Jorethang, Tempo Service Jorethang, Best Relocation Services Jorethang, Safe and Secure Moving Services Jorethang, Budget-Friendly Movers Jorethang, Professional Relocation Company Jorethang, Long-Distance Packers and Movers Jorethang, Trusted Shifting Company Jorethang, Goods Transport Services Jorethang.",
+  //     ogDescription: "Looking for reliable Packers and Movers in Jorethang? safexpress offers safe, timely and affordable relocation for homes, offices and vehicles in Jorethang and across Sikkim.",
+  //     twitterDescription: "Safe, professional and affordable Packers and Movers in Jorethang by safexpress. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/city/Jorethang"
+  //   }
+  // },
   {
-    slug: "Jorethang", city: "Jorethang", offer: "18%", address: "Santinagar ward no.1, Jorethang, Sikkim 737121", metaDetails: {
-      title: "Packers and Movers in Jorethang | safexpress",
-      description: "Hire trusted Packers and Movers in Jorethang with safexpress. We provide safe, affordable and professional home, office and vehicle relocation services in Jorethang and across Sikkim.",
-      keywords: "Local movers near me Jorethang, Packers and Movers in Jorethang, safexpress Jorethang, Best Packers and Movers Jorethang, Affordable Packers and Movers Jorethang, Trusted Packers and Movers Jorethang Sikkim, Local Packers and Movers Jorethang, Professional Movers and Packers Jorethang, Home Shifting Services Jorethang, Office Relocation Jorethang, Vehicle Transport Jorethang, Car Transport Service Jorethang, Bike Transport Jorethang, Household Goods Shifting Jorethang, Industrial Packers and Movers Jorethang, Door-to-Door Shifting Services Jorethang, Packing and Unpacking Services Jorethang, Furniture Movers Jorethang, Intercity Packers and Movers Jorethang, Packers and Movers Jorethang to Gangtok, Packers and Movers Jorethang to Namchi, Packers and Movers Jorethang to Singtam, Packers and Movers Jorethang to Rangpo, Packers and Movers Jorethang to Siliguri, Packers and Movers Jorethang to Kolkata, Packers and Movers Jorethang to Delhi, Reliable Relocation Company Jorethang, Cost-Effective Packers and Movers Jorethang, Quick Packers and Movers Jorethang, 24x7 Packers and Movers Jorethang, Mini Truck for Shifting Jorethang, Tempo Service Jorethang, Best Relocation Services Jorethang, Safe and Secure Moving Services Jorethang, Budget-Friendly Movers Jorethang, Professional Relocation Company Jorethang, Long-Distance Packers and Movers Jorethang, Trusted Shifting Company Jorethang, Goods Transport Services Jorethang.",
-      ogDescription: "Looking for reliable Packers and Movers in Jorethang? safexpress offers safe, timely and affordable relocation for homes, offices and vehicles in Jorethang and across Sikkim.",
-      twitterDescription: "Safe, professional and affordable Packers and Movers in Jorethang by safexpress. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/city/Jorethang"
-    }
+  slug: "jorethang",
+  city: "Jorethang",
+  
+  offer: "15%",
+  address: "Santinagar ward no.1, Jorethang, Sikkim 737121",
+
+  keywords: [
+    "packers and movers Jorethang",
+    "best packers and movers in Jorethang",
+    "home shifting Jorethang",
+    "office relocation Jorethang",
+    "car transport Jorethang",
+    "bike transport Jorethang",
+    "international movers Jorethang",
+    "affordable packers movers Jorethang"
+  ],
+
+  metaDetails: {
+    title: "",
+    description: "",
+    keywords: "",
+    ogDescription: "",
+    twitterDescription: "",
+    canonical: ""
   },
+
+  pageData: {
+    mainHeading:
+      "Premium Packers and Movers in Jorethang For Damage Free Shifting",
+
+    serviceSecondHeading:
+      "Trusted and Experienced Packers and Movers in Jorethang for Secure Relocation Services",
+
+    paragraph: [
+      "Moving your home, office, or business can be simple and worry-free with the professional assistance of Safe Shifting Packers. We offer dependable and efficient Packers and Movers in Jorethang, providing complete relocation solutions for household shifting, office moves, vehicle transportation, and commercial relocation requirements.",
+      "Whether you are relocating within Jorethang or moving to another city, our skilled team ensures a seamless and organized moving experience from beginning to end. We take care of every stage of the relocation process, including quality packing, safe loading, secure transportation, on-time delivery, unloading, and unpacking of your belongings.",
+      "At Safe Shifting Packers, we are committed to delivering exceptional customer service and reliable moving solutions. Our team uses premium packing materials, modern handling equipment, and proven relocation techniques to keep your valuables protected throughout the journey. Every move is handled with professionalism and attention to detail, ensuring a cost-effective, safe, and hassle-free relocation experience."
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Jorethang",
+
+    internationalParagraph: [
+      "In addition to domestic relocation, Safe Shifting Packers provides trusted international moving services from Jorethang to destinations worldwide. Our overseas relocation experts manage every aspect of the moving process, including export-standard packing, customs documentation support, freight coordination, secure shipping, and final delivery at your destination.",
+      "Whether you are moving abroad for career opportunities, higher studies, business expansion, or personal reasons, we ensure that your belongings reach their destination safely and on time. Backed by an extensive global logistics network and experienced relocation specialists, we offer personalized international moving solutions tailored to your unique needs.",
+      "Our responsive customer support team stays connected throughout the relocation process, keeping you informed and assisting you whenever needed."
+    ],
+
+    servicesHeading:
+      "Our Packers and Movers Services in Jorethang",
+
+    services: [
+      {
+        link: "/home-shifting",
+        linkText: "🏠 Home Shifting Services"
+      },
+      {
+        link: "/office-relocation",
+        linkText: "🏢 Office Relocation"
+      },
+      {
+        link: "/home-shifting",
+        linkText: "🚚 Domestic Relocation"
+      },
+      {
+        link: "/international-moving",
+        linkText: "✈️ International Moving"
+      },
+      {
+        link: "/car-bike-transport",
+        linkText: "🚗 Car & Bike Transport"
+      },
+      {
+        link: "/packing-and-unpacking",
+        linkText: "📦 Packing & Unpacking"
+      },
+      {
+        link: "/home-shifting",
+        linkText: "🏭 Corporate Relocation"
+      },
+      {
+        link: "/storage",
+        linkText: "🏬 Warehouse & Storage"
+      }
+    ],
+
+    whyChooseHeading:
+      "Why choose Safe Shifting Packers in Jorethang",
+
+    whyChooseParagraph:
+      "Hiring professional Packers and Movers in Jorethang ensures a smooth, secure, and stress-free relocation experience. Here’s why customers rely on our trusted moving services:",
+
+    whyChoose: [
+      {
+        title: "Safe Packing and Secure Transportation",
+        paragraph:
+          "We use high-quality packing materials and proven packing techniques to protect your household and office belongings during every stage of the move. Each item is packed carefully to prevent damage while in transit."
+      },
+      {
+        title: "Timely and Well-Managed Relocation Services",
+        paragraph:
+          "Our skilled relocation team handles packing, loading, transportation, unloading, and unpacking with precision and efficiency, ensuring your move is completed on schedule."
+      },
+      {
+        title: "Hassle-Free Moving Experience",
+        paragraph:
+          "From planning your relocation to delivering your belongings safely, our professionals take care of every detail, allowing you to settle into your new home or office without unnecessary stress."
+      },
+      {
+        title: "Extra Protection for Fragile and Valuable Items",
+        paragraph:
+          "We provide special handling for delicate items such as glassware, electronics, furniture, antiques, artwork, and kitchen appliances to ensure maximum safety throughout the relocation process."
+      },
+      {
+        title: "Transit Insurance Support",
+        paragraph:
+          "To provide additional peace of mind, we offer transit insurance assistance that helps safeguard your valuable possessions against unexpected incidents during transportation."
+      },
+      {
+        title: "Expert Loading and Unloading Services",
+        paragraph:
+          "Our trained movers use modern equipment and safe handling methods to load and unload heavy, bulky, and fragile items efficiently while minimizing the risk of damage."
+      },
+      {
+        title: "Cost-Effective and Dependable Relocation Solutions",
+        paragraph:
+          "Our affordable moving services help save time, reduce relocation risks, and prevent extra expenses that can arise from improper packing or transportation."
+      }
+    ],
+
+    whyChooseNote:
+      "Choosing trusted Packers and Movers in Jorethang ensures a safe, efficient, and worry-free relocation experience for your household or business move.",
+
+    areasHeading:
+      "Areas We Serve in Jorethang",
+
+    areas: [
+      {
+        title: "Local Packers and Movers in Jorethang",
+        paragraph: [
+          "Moving within Jorethang has become simple, secure, and hassle-free with our professional packing and moving services. Whether you are relocating to Nayabazar, Melly, Soreng, Legship, Gyalshing, Namchi, Ravangla, Pelling, Dentam, Uttarey, Kaluk, Rinchenpong, or any nearby locality, we provide customized relocation solutions designed to meet your specific requirements.",
+          "Our experienced relocation specialists carefully handle household goods, office equipment, furniture, electronic appliances, vehicles, and delicate items with the highest level of professionalism. By using premium-quality packing materials and advanced handling methods, we ensure complete safety and protection of your belongings throughout the entire moving process."
+        ]
+      },
+      {
+        title: "Intercity Packers and Movers from Jorethang",
+        paragraph: [
+          "Safe Shifting Packers offers dependable intercity relocation services from Jorethang to major cities across India, including Delhi NCR, Noida, Gurugram, Mumbai, Pune, Bengaluru, Hyderabad, Chennai, Ahmedabad, Surat, Jaipur, Chandigarh, Kolkata many more.",
+          "Our skilled moving professionals manage every stage of the relocation process, including high-quality packing, secure loading, safe transportation, careful unloading, and timely delivery to your new destination. We are committed to providing a smooth, reliable, and stress-free moving experience for every customer."
+        ]
+      }
+    ],
+
+    processHeading:
+      "Step-by-Step Moving Process",
+
+    processParagraph:
+      "We follow a structured relocation process to ensure safe and efficient moving services:",
+
+    process: [
+      {
+        title: "Get a Moving Quote",
+        paragraph:
+          "Share your moving requirements through a phone call or online inquiry and receive a transparent, affordable, and customized relocation estimate."
+      },
+      {
+        title: "Pre-Move Survey",
+        paragraph:
+          "Our relocation experts assess the quantity of goods and understand your specific requirements before planning the entire moving process."
+      },
+      {
+        title: "Professional Packing",
+        paragraph:
+          "We use durable packing materials and advanced packing techniques to provide maximum protection for household and office belongings during transportation."
+      },
+      {
+        title: "Secure Loading",
+        paragraph:
+          "Our trained movers carefully load your items using proper equipment, tools, and safe handling procedures."
+      },
+      {
+        title: "Unloading and Arrangement",
+        paragraph:
+          "Upon reaching the destination, our team unloads, unpacks and ensures a smooth and comfortable relocation experience."
+      }
+    ],
+
+    costHeading:
+      "Packers & Movers Charges in Jorethang",
+
+    factorsHeading:
+      "Key Factors That Influence Moving Costs in Jorethang",
+
+    factors: [
+      {
+        heading: "Relocation Distance",
+        paragraph:
+          "The distance between your current location and the destination, whether within Jorethang or to another city, significantly affects transportation charges, fuel costs, travel time, and the overall relocation budget."
+      },
+      {
+        heading: "Volume of Goods to Be Moved",
+        paragraph:
+          "The amount of household items, office equipment, furniture, electronics, and other belongings being transported plays a crucial role in determining packing materials, vehicle size, and overall moving expenses."
+      },
+      {
+        heading: "Property Accessibility & Floor Level",
+        paragraph:
+          "Relocating from or to apartments, residential complexes, multi-story buildings, or areas with limited vehicle access in Jorethang may require additional manpower and specialized equipment."
+      },
+      {
+        heading: "Preferred Shifting Date",
+        paragraph:
+          "Moving charges in Jorethang may vary depending on the selected relocation date."
+      },
+      {
+        heading: "Additional Services Required",
+        paragraph:
+          "Value-added services such as professional packing and unpacking, furniture dismantling can increase the total cost of relocation."
+      },
+      {
+        heading: "Traffic & Road Conditions",
+        paragraph:
+          "Traffic movement, road connectivity, accessibility to certain localities can impact transportation planning and overall relocation expenses."
+      }
+    ],
+
+    nearbyCitiesHeading:
+      "Our Service Locations",
+
+    nearbyCities: [
+      {
+        link: "/city/dhanbad",
+        linkText: "Packers and Movers in Dhanbad",
+        text: ""
+      },
+      {
+        link: "/city/hyderabad",
+        linkText: "Packers and Movers in Hyderabad",
+        text: ""
+      },
+      {
+        link: "/city/amravati",
+        linkText: "Packers and Movers in Amravati",
+        text: ""
+      },
+      {
+        link: "/city/kanpur",
+        linkText: "Packers and Movers in Kanpur",
+        text: ""
+      },
+      {
+        link: "/city/mumbai",
+        linkText: "Packers and Movers in Mumbai",
+        text: ""
+      }
+    ],
+
+    faqHeading:
+      "Frequently Asked Questions",
+
+    faqs: [
+      {
+        q: "How do I choose the best Packers and Movers in Jorethang?",
+        a: "When selecting Packers and Movers in Jorethang, consider factors such as experience, customer reviews, service quality, pricing transparency, and insurance options. Safe Shifting Packers is known for reliable relocation services, professional staff, and secure transportation solutions."
+      },
+      {
+        q: "What factors affect the cost of relocation in Jorethang?",
+        a: "The cost of shifting depends on the volume of goods, distance between locations, type of relocation, packing requirements, and any additional services such as storage or vehicle transportation. Safe Shifting Packers offers customized quotes based on your specific moving needs."
+      },
+      {
+        q: "How long does it take to complete a move from Jorethang?",
+        a: "The relocation timeline varies depending on the destination, quantity of goods, weather conditions, and transportation route. Safe Shifting Packers plans every move carefully to ensure timely pickup and delivery of your belongings."
+      },
+      {
+        q: "Do Packers and Movers in Jorethang provide packing materials?",
+        a: "Yes, Safe Shifting Packers use high-quality packing materials, including corrugated boxes, bubble wrap, packing paper, and protective covers to ensure the safety of household and office items during transit."
+      },
+      {
+        q: "Can I relocate my car or bike through Packers and Movers in Jorethang?",
+        a: "Yes, Safe Shifting Packers provides safe and efficient vehicle transportation services for cars and bikes. Specialized carriers and secure loading methods are used to ensure your vehicle reaches its destination safely and on time."
+      }
+    ]
+  }
+},
   {
     slug: "Soreng", city: "Soreng", offer: "18%", address: "Darmadatt Sharma Marg, Soreng, Sikkim 737121", metaDetails: {
       title: "Packers and Movers in Soreng | safexpress",
