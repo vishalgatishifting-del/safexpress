@@ -32693,11 +32693,11 @@ img: Kangra,
   ],
 
   metaDetails: {
-    title: "",
-    description: "",
+    title: "Best Packers and Movers in Jorethang | Safe Shifting Packers",
+    description: "Get the best relocation experience in Jorethang with Safe Shifting Packers. We provide reliable packing, secure and affordable moving solutions.",
     keywords: "",
-    ogDescription: "",
-    twitterDescription: "",
+    ogDescription: "Get the best relocation experience in Jorethang with Safe Shifting Packers. We provide reliable packing, secure and affordable moving solutions.",
+    twitterDescription: "Get the best relocation experience in Jorethang with Safe Shifting Packers. We provide reliable packing, secure and affordable moving solutions.",
     canonical: ""
   },
 
