@@ -1,187 +1,389 @@
-// import AwardCertification from "../components/AwardCertification";
-// import BrandList from "../components/BrandsList";
-// import FAQList from "../components/FAQList";
-// import GetInTouch from "../components/GetInTouch";
-// import ReviewVideo from "../components/ReviewVideos";
-// import TrustUsSection from "../components/TrustUsSection";
-import commercialShiftingImg from "../assets/CommercialShifting/commercialShiftingPriceImg.png"
+import "../styles/Common.scss";
+
 import { Helmet } from "react-helmet-async";
-import "../styles/Common.scss"
-// import ReviewDialog from "../components/ReviewDialog";
-// import "./CommercialShifting.scss"
+
+import commercialShiftingImg from "../assets/CommercialShifting/commercialShiftingPriceImg.png";
 
 import FAQ from "../components/FAQ.tsx";
 
-const CommercialShifting = () => {
+const PAGE_URL = "https://gatishiftingpackers.com/commercial-shifting";
+const OG_IMAGE_URL =
+    "https://gatishiftingpackers.com/images/CommercialShifting/commercial-shifting-og.webp";
 
-    // const keywords = [
-    //     "gati packers and movers",
-    //     "commercial movers",
-    //     "commercial moving company",
-    //     "office movers",
-    //     "office relocation services",
-    //     "commercial moving services",
-    //     "business movers",
-    //     "office moving company",
-    //     "office furniture movers",
-    //     "corporate relocation services",
-    //     "industrial shifting services",
-    //     "warehouse relocation services",
-    //     "factory relocation services",
-    //     "retail shifting services",
-    //     "business relocation services near me",
-    //     "commercial shifting company in delhi"
-    // ];
+const CommercialShifting = () => {
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://gatishiftingpackers.com/",
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                name: "Commercial Shifting Services",
+                item: PAGE_URL,
+            },
+        ],
+    };
+
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Commercial Shifting Services",
+        serviceType: "Commercial and Business Relocation Services",
+        description:
+            "Gati Shifting Packers provides commercial shifting services for offices, warehouses, retail outlets, showrooms, and business establishments across serviceable locations in India.",
+        url: PAGE_URL,
+        provider: {
+            "@type": "Organization",
+            name: "Gati Shifting Packers",
+            url: "https://gatishiftingpackers.com/",
+        },
+        areaServed: {
+            "@type": "Country",
+            name: "India",
+        },
+        hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Commercial Relocation Services",
+            itemListElement: [
+                {
+                    "@type": "Offer",
+                    itemOffered: {
+                        "@type": "Service",
+                        name: "Office Shifting Services",
+                    },
+                },
+                {
+                    "@type": "Offer",
+                    itemOffered: {
+                        "@type": "Service",
+                        name: "Warehouse Relocation Services",
+                    },
+                },
+                {
+                    "@type": "Offer",
+                    itemOffered: {
+                        "@type": "Service",
+                        name: "Retail and Showroom Shifting",
+                    },
+                },
+                {
+                    "@type": "Offer",
+                    itemOffered: {
+                        "@type": "Service",
+                        name: "Commercial Goods Transportation",
+                    },
+                },
+            ],
+        },
+    };
 
     return (
         <>
             <Helmet>
+                <title>
+                    Commercial Shifting Services in India | Gati Shifting Packers
+                </title>
 
-                {/* Meta Tags for commercial shifting Page */}
+                <meta
+                    name="description"
+                    content="Book commercial shifting services with Gati Shifting Packers for office, warehouse, retail, showroom, and business relocation with professional packing and transport support."
+                />
 
-             
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href={PAGE_URL} />
 
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={PAGE_URL} />
+                <meta
+                    property="og:title"
+                    content="Commercial Shifting Services in India | Gati Shifting Packers"
+                />
+                <meta
+                    property="og:description"
+                    content="Professional commercial relocation services for offices, warehouses, retail outlets, showrooms, and business establishments."
+                />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content={OG_IMAGE_URL} />
+                <meta property="og:image:secure_url" content={OG_IMAGE_URL} />
+                <meta property="og:image:type" content="image/webp" />
+                <meta
+                    property="og:image:alt"
+                    content="Commercial shifting services by Gati Shifting Packers"
+                />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta
+                    name="twitter:title"
+                    content="Commercial Shifting Services in India | Gati Shifting Packers"
+                />
+                <meta
+                    name="twitter:description"
+                    content="Commercial relocation support for offices, warehouses, retail outlets, showrooms, and business establishments."
+                />
+                <meta name="twitter:image" content={OG_IMAGE_URL} />
+
+                <script type="application/ld+json">
+                    {JSON.stringify(breadcrumbSchema)}
+                </script>
+
+                <script type="application/ld+json">
+                    {JSON.stringify(serviceSchema)}
+                </script>
             </Helmet>
-            {/* <div className="bg-attached">
-                <h1>Commercial Shifting</h1>
-            </div> */}
-            {/* <div className="bg-attached-sec top-element">
-                <h1>Commercial Vehicle Transport Services in India</h1>
-            </div> */}
 
-            <section id="pet-relocation-sec" className="top-element">
-                <div className="container">
-                    <h1>Safexpress – Trusted commercial vehicle transport services in India</h1>
-                    <p>Safexpress is one of the leading and most reliable names in commercial vehicle transport services across India. We specialize in relocating large-scale commercial spaces, including warehouses, showrooms, retail outlets, manufacturing units, and corporate establishments. Our professional team ensures a seamless, secure, and timely relocation that minimizes downtime and business disruption.
-                        <br />
-                        With a strong nationwide network, Safexpress is known for its strategic planning, efficient packing, and end-to-end coordination. Whether it’s machinery, furniture, or sensitive equipment, we handle everything with the utmost care and precision. Our commercial moving solutions include insurance coverage, vehicle tracking, and trained professionals to ensure your valuable assets reach safely and on time.
+            <main className="commercial-shifting-page">
+                <section
+                    id="pet-relocation-sec"
+                    className="top-element"
+                    aria-labelledby="commercial-shifting-heading"
+                >
+                    <div className="container">
+                        <h1 id="commercial-shifting-heading">
+                            Commercial Shifting Services in India
+                        </h1>
 
-                    </p>
-                    <div className="content 6-steps">
-                        <h2>🏡 Simple 6-Step Booking Process with Safexpress</h2>
-
-                        <h3>Step 1: Share Your Moving Details & Get a Quote</h3>
-                        <ul>
-                            <li>📋 Provide your moving requirements — items, location, and distance.</li>
-                            <li>💬 Get a fair, customized quote from our verified professionals.</li>
-                        </ul>
-
-                        <h3>Step 2: Confirm Booking with Advance Payment</h3>
-                        <ul>
-                            <li>📅 Choose your preferred pickup date and time.</li>
-                            <li>💳 Secure your booking by paying a small advance (adjusted later).</li>
-                        </ul>
-
-                        <h3>Step 3: Safe Packing & Doorstep Pickup</h3>
-                        <ul>
-                            <li>🔧 Our trained team arrives with top-quality packing materials to pack your belongings carefully.</li>
-                            <li>✔ Dismantling, labeling, and secure loading are done under expert supervision.</li>
-                        </ul>
-
-                        <h3>Step 4: Transparent Invoice & Payment Settlement</h3>
-                        <ul>
-                            <li>📄 Receive a detailed invoice based on your provided list.</li>
-                            <li>💸 Pay the remaining amount after deducting your advance payment.</li>
-                        </ul>
-
-                        <h3>Step 5: Secure Transportation & Real-Time Updates</h3>
-                        <ul>
-                            <li>🚛 Your goods are dispatched safely to the destination.</li>
-                            <li>📱 Track your shipment with live updates until delivery.</li>
-                        </ul>
-
-
-                        <h3>Step 6: Hassle-Free Delivery & Feedback</h3>
-                        <ul>
-                            <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
-                                <br />
-                            </li>
-                            {/* <ReviewDialog></ReviewDialog> */}
-                        </ul>
-                    </div>
-                    <div className="content types">
-                        <h2>Commercial Items We Shift</h2>
-                        <p style={{ marginBottom: "10px" }}>At Safexpress, we provide comprehensive commercial moving services covering all essential items and equipment:</p>
-                        <ul>
-                            <li>Machinery & Equipment: Heavy machinery, production units, and industrial tools.</li>
-                            <li>Furniture & Fixtures: Display racks, shelves, counters, tables, and chairs.</li>
-                            <li>Electronics & Appliances: Computers, POS systems, AC units, lighting, and other devices.</li>
-                            <li>Inventory & Stock: Products, materials, and goods packed securely for transport.</li>
-                            <li>Files & Documents: Important records and paperwork handled with confidentiality.</li>
-                        </ul>
-
-                        <h2>Affordable Commercial Shifting Charges in India</h2>
                         <p>
-                            We offer cost-effective and transparent commercial vehicle transport services designed for all types of businesses — from small enterprises to large corporations. Our pricing depends on your specific requirements and ensures no hidden charges. Whether you’re relocating locally or across cities, Safexpress guarantees a smooth, hassle-free, and budget-friendly experience.
+                            Gati Shifting Packers provides professional commercial shifting
+                            services for offices, warehouses, retail outlets, showrooms, and
+                            other business establishments. Our relocation process focuses on
+                            planning, packing, handling, transportation, and coordinated
+                            delivery to help businesses move their assets efficiently.
                         </p>
 
+                        <p>
+                            Commercial relocations can involve office furniture, inventory,
+                            machinery, electronics, documents, and operational equipment.
+                            Our team coordinates the shifting process according to the type
+                            of goods, relocation route, and business requirements.
+                        </p>
 
-                        <img src={commercialShiftingImg} />
+                        <div
+                            className="content 6-steps"
+                            aria-labelledby="commercial-booking-process-heading"
+                        >
+                            <h2 id="commercial-booking-process-heading">
+                                Simple 6-Step Commercial Shifting Process
+                            </h2>
+
+                            <h3>Step 1: Share Your Business Relocation Requirements</h3>
+                            <ul>
+                                <li>
+                                    Provide details about the pickup location, destination,
+                                    type of commercial space, and items to be shifted.
+                                </li>
+                                <li>
+                                    Share your preferred relocation schedule and any specific
+                                    handling requirements.
+                                </li>
+                            </ul>
+
+                            <h3>Step 2: Get a Commercial Shifting Quotation</h3>
+                            <ul>
+                                <li>
+                                    The relocation requirements are reviewed to understand the
+                                    expected packing, manpower, and transportation needs.
+                                </li>
+                                <li>
+                                    Receive a quotation based on the information provided and
+                                    applicable service requirements.
+                                </li>
+                            </ul>
+
+                            <h3>Step 3: Packing, Labelling, and Pickup Preparation</h3>
+                            <ul>
+                                <li>
+                                    Commercial goods are prepared for relocation using
+                                    suitable packing and handling methods.
+                                </li>
+                                <li>
+                                    Items can be organised and labelled to support coordinated
+                                    loading and delivery.
+                                </li>
+                            </ul>
+
+                            <h3>Step 4: Loading and Transportation Coordination</h3>
+                            <ul>
+                                <li>
+                                    Goods are loaded according to their size, weight, and
+                                    handling requirements.
+                                </li>
+                                <li>
+                                    Transportation is coordinated based on the relocation
+                                    route and selected service arrangement.
+                                </li>
+                            </ul>
+
+                            <h3>Step 5: Transit and Delivery Support</h3>
+                            <ul>
+                                <li>
+                                    The commercial shipment is moved towards the agreed
+                                    destination.
+                                </li>
+                                <li>
+                                    Our team provides shipment coordination and status support
+                                    during the relocation process.
+                                </li>
+                            </ul>
+
+                            <h3>Step 6: Delivery and Relocation Completion</h3>
+                            <ul>
+                                <li>
+                                    Commercial goods are delivered at the agreed destination
+                                    or delivery point.
+                                </li>
+                                <li>
+                                    Check the delivered items and confirm completion of the
+                                    shifting service.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            className="content types"
+                            aria-labelledby="commercial-items-heading"
+                        >
+                            <h2 id="commercial-items-heading">
+                                Commercial Items We Shift
+                            </h2>
+
+                            <p style={{ marginBottom: "10px" }}>
+                                Our commercial relocation services support different types of
+                                business assets and operational goods.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <strong>Machinery & Equipment:</strong> Supported
+                                    industrial equipment, operational tools, and business
+                                    machinery based on handling requirements.
+                                </li>
+                                <li>
+                                    <strong>Furniture & Fixtures:</strong> Office tables,
+                                    chairs, shelves, counters, racks, and other commercial
+                                    fixtures.
+                                </li>
+                                <li>
+                                    <strong>Electronics & Appliances:</strong> Computers, POS
+                                    systems, office electronics, and supported appliances.
+                                </li>
+                                <li>
+                                    <strong>Inventory & Stock:</strong> Products, packaged
+                                    materials, and business inventory prepared for relocation.
+                                </li>
+                                <li>
+                                    <strong>Files & Documents:</strong> Business records,
+                                    files, and document boxes prepared for organised handling.
+                                </li>
+                            </ul>
+
+                            <h2>Commercial Shifting Charges in India</h2>
+
+                            <p>
+                                Commercial shifting charges depend on the size of the move,
+                                quantity and type of goods, packing requirements, manpower,
+                                transport distance, vehicle requirements, and relocation
+                                schedule. The pricing information below is intended as a
+                                general reference. Request a quotation for charges based on
+                                your specific commercial relocation requirements.
+                            </p>
+
+                            <img
+                                src={commercialShiftingImg}
+                                alt="Commercial shifting pricing and service information"
+                                loading="lazy"
+                            />
+                        </div>
+
+                        <div
+                            className="content why-choose"
+                            aria-labelledby="why-commercial-shifting-heading"
+                        >
+                            <h2 id="why-commercial-shifting-heading">
+                                Why Choose Professional Commercial Shifting Services?
+                            </h2>
+
+                            <ul>
+                                <li>
+                                    <strong>Planned Handling:</strong> Commercial goods are
+                                    organised according to their size, type, and handling
+                                    requirements.
+                                </li>
+                                <li>
+                                    <strong>Business-Focused Coordination:</strong> The
+                                    relocation process can be scheduled according to agreed
+                                    service availability and business requirements.
+                                </li>
+                                <li>
+                                    <strong>Packing Support:</strong> Suitable packing methods
+                                    can be used for furniture, electronics, inventory, and
+                                    other supported commercial goods.
+                                </li>
+                                <li>
+                                    <strong>Professional Manpower:</strong> Loading and
+                                    handling are coordinated according to the requirements of
+                                    the commercial move.
+                                </li>
+                                <li>
+                                    <strong>Managed Transportation:</strong> Pickup, loading,
+                                    transport, and delivery are coordinated as part of the
+                                    shifting process.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            className="content factors"
+                            aria-labelledby="commercial-shifting-cost-factors-heading"
+                        >
+                            <h2 id="commercial-shifting-cost-factors-heading">
+                                Factors Affecting Commercial Shifting Costs
+                            </h2>
+
+                            <ol>
+                                <li>
+                                    <strong>Relocation Distance:</strong> Longer routes can
+                                    increase transportation costs because of fuel, tolls,
+                                    transit time, and vehicle requirements.
+                                </li>
+
+                                <li>
+                                    <strong>Quantity and Weight of Goods:</strong> Larger
+                                    commercial moves or heavier goods may require additional
+                                    manpower and transport capacity.
+                                </li>
+
+                                <li>
+                                    <strong>Type of Commercial Goods:</strong> Electronics,
+                                    machinery, furniture, inventory, and fragile items can
+                                    require different packing and handling arrangements.
+                                </li>
+
+                                <li>
+                                    <strong>Vehicle Requirements:</strong> The size and type
+                                    of transport vehicle required for the commercial shipment
+                                    can affect the final quotation.
+                                </li>
+
+                                <li>
+                                    <strong>Moving Schedule and Service Availability:</strong>
+                                    Relocation dates, carrier availability, and seasonal demand
+                                    may influence commercial shifting charges.
+                                </li>
+                            </ol>
+                        </div>
                     </div>
-                    <div className="content why-choose">
-                        <h2>Why Choose Professional commercial vehicle transport services in India?</h2>
-                        <ul>
-                            <li>Safe Handling: Specialized team for heavy and delicate commercial goods.</li>
-                            <li>Minimal Downtime: Quick relocation with minimal impact on business operations.</li>
-                            <li>End-to-End Management: From dismantling to reinstallation, we handle it all.</li>
-                            <li>Trained Staff: Experienced professionals using modern tools and equipment.</li>
-                            <li>Insurance Protection: Comprehensive coverage for goods in transit.</li>
-                        </ul>
-                    </div>
-                    <div className="content factors">
-                        <h2>Factors Affecting the Cost of Commercial Shifting in India</h2>
+                </section>
 
-                        <ol>
-                            <li>Distance -
-                                Longer distances increase fuel, labor, and time requirements.
-
-                            </li>
-                            <li>Quantity & Weight of Goods -
-                                More items or heavy machinery require larger vehicles and more manpower.
-
-
-                            </li>
-                            <li>
-                                Type of Goods -
-                                Fragile or high-value items need special packing and careful handling, adding to cost.
-
-                            </li>
-                            <li>
-                                Vehicle Type -
-                                Depending on load capacity, open trucks or closed containers are used — larger ones cost more.
-
-
-                            </li>
-                            <li>
-                                Timing & Season -
-                                Shifting during weekends, month-ends, or peak seasons may cost more than off-peak days.
-
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </section>
-
-
-            {/* <ReviewVideo></ReviewVideo>
-            <GetInTouch></GetInTouch>
-            <AwardCertification></AwardCertification>
-            <TrustUsSection></TrustUsSection>
-            <BrandList></BrandList>
-            <FAQList></FAQList>
-
-            <section id="keywords-section">
-                <h1>People also search for these Queries</h1>
-                <div className="container">
-                    {keywords.map((col) => {
-                        return <h5 className="keyword">{col}</h5>
-                    })}
-                </div>
-            </section> */}
-
-            <FAQ />
+                <FAQ />
+            </main>
         </>
-    )
-}
+    );
+};
 
 export default CommercialShifting;
