@@ -13,9 +13,9 @@ import OfficeLocation from "../components/OfficeLocation.tsx";
 import TrustUsSection from "../components/TrustUsSection.tsx";
 import HappyClients from "../components/HappyClients.tsx";
 
-const PAGE_URL = "https://gatishiftingpackers.com/contact-us";
+const PAGE_URL = "https://safeshiftingpackers.com/contact-us";
 const OG_IMAGE_URL =
-  "https://gatishiftingpackers.com/images/contact/contact-us-og.webp";
+  "https://safeshiftingpackers.com/images/contact/contact-us-og.webp";
 
 type ContactFormData = {
   Name: string;
@@ -82,7 +82,7 @@ const ContactForm = () => {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://gatishiftingpackers.com/",
+        item: "https://safeshiftingpackers.com/",
       },
       {
         "@type": "ListItem",
@@ -103,7 +103,7 @@ const ContactForm = () => {
     mainEntity: {
       "@type": "Organization",
       name: "Gati Shifting Packers",
-      url: "https://gatishiftingpackers.com/",
+      url: "https://safeshiftingpackers.com/",
       telephone: `+91${COMPANY.phone}`,
       email: COMPANY.email,
     },

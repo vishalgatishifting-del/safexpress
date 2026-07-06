@@ -48,9 +48,9 @@ import sampleImg8 from "../assets/BikeStorage/sample8.jpeg";
 import { COMPANY } from "../config/Company";
 import FAQ from "../components/FAQ.tsx";
 
-const PAGE_URL = "https://gatishiftingpackers.com/bike-storage";
+const PAGE_URL = "https://safeshiftingpackers.com/bike-storage";
 const OG_IMAGE_URL =
-    "https://gatishiftingpackers.com/images/BikeStorage/hero-section-img.png";
+    "https://safeshiftingpackers.com/images/BikeStorage/hero-section-img.png";
 
 const BRANDS = [
     { icon: abhibusIcon, name: "Abhibus" },
@@ -114,13 +114,13 @@ const BikeStorage = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://gatishiftingpackers.com/",
+                item: "https://safeshiftingpackers.com/",
             },
             {
                 "@type": "ListItem",
                 position: 2,
                 name: "Storage Services",
-                item: "https://gatishiftingpackers.com/storage",
+                item: "https://safeshiftingpackers.com/storage",
             },
             {
                 "@type": "ListItem",
@@ -143,7 +143,7 @@ const BikeStorage = () => {
         provider: {
             "@type": "Organization",
             name: "Gati Shifting Packers",
-            url: "https://gatishiftingpackers.com/",
+            url: "https://safeshiftingpackers.com/",
         },
         areaServed: {
             "@type": "Country",

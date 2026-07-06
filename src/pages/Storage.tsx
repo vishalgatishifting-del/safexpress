@@ -200,7 +200,7 @@ const Storage = () => {
                     property="og:description"
                     content="Need safe Storage and Warehouse service? Safe Shifting Packers offers secure Storage Services for household goods, office items, furniture, and vehicles across India."
                 />
-                <meta property="og:image" content="https://gatishiftingpackers.com/images/storage/hero-section-img.webp" />
+                <meta property="og:image" content="https://safeshiftingpackers.com//images/storage/hero-section-img.webp" />
                 <meta property="og:image:alt" content="safexpress secure storage services" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Storage Services | Reliable Storage and Warehouse Service" />
@@ -208,7 +208,7 @@ const Storage = () => {
                     name="twitter:description"
                     content="Need safe Storage and Warehouse service? Safe Shifting Packers offers secure Storage Services for household goods, office items, furniture, and vehicles across India."
                 />
-                <meta name="twitter:image" content="https://gatishiftingpackers.com/images/storage/hero-section-img.webp" />
+                <meta name="twitter:image" content="https://safeshiftingpackers.com//images/storage/hero-section-img.webp" />
                 {/* Breadcrumb Schema */}
                 <script type="application/ld+json">
                     {JSON.stringify({
@@ -219,13 +219,13 @@ const Storage = () => {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://gatishiftingpackers.com/"
+                                "item": "https://safeshiftingpackers.com//"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Storage Services",
-                                "item": "https://gatishiftingpackers.com/storage"
+                                "item": "https://safeshiftingpackers.com//storage"
                             }
                         ]
                     })}
@@ -240,12 +240,12 @@ const Storage = () => {
                         "serviceType": "Storage and Warehouse Services",
                         "description":
                             "Safe Shifting Packers offers secure storage and warehouse services for household goods, office items, furniture, documents, bikes, cars and commercial inventory across India.",
-                        "url": "https://gatishiftingpackers.com/storage",
-                        "image": "https://gatishiftingpackers.com/images/storage.webp",
+                        "url": "https://safeshiftingpackers.com//storage",
+                        "image": "https://safeshiftingpackers.com//images/storage.webp",
                         "provider": {
                             "@type": "Organization",
                             "name": "Safe Shifting Packers",
-                            "url": "https://gatishiftingpackers.com/"
+                            "url": "https://safeshiftingpackers.com//"
                         },
                         "areaServed": {
                             "@type": "Country",

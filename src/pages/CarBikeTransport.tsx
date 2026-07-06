@@ -7,9 +7,9 @@ import bikePricingImg from "../assets/CarBikeTransport/bikePricingImg.png";
 
 import FAQ from "../components/FAQ.tsx";
 
-const PAGE_URL = "https://gatishiftingpackers.com/car-bike-transport";
+const PAGE_URL = "https://safeshiftingpackers.com/car-bike-transport";
 const OG_IMAGE_URL =
-    "https://gatishiftingpackers.com/images/CarBikeTransport/car-bike-transport-og.webp";
+    "https://safeshiftingpackers.com/images/CarBikeTransport/car-bike-transport-og.webp";
 
 const CarBikeTransport = () => {
     const breadcrumbSchema = {
@@ -20,7 +20,7 @@ const CarBikeTransport = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://gatishiftingpackers.com/",
+                item: "https://safeshiftingpackers.com/",
             },
             {
                 "@type": "ListItem",
@@ -42,7 +42,7 @@ const CarBikeTransport = () => {
         provider: {
             "@type": "Organization",
             name: "Gati Shifting Packers",
-            url: "https://gatishiftingpackers.com/",
+            url: "https://safeshiftingpackers.com/",
         },
         areaServed: {
             "@type": "Country",

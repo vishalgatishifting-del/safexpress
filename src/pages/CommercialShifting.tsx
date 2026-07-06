@@ -6,9 +6,9 @@ import commercialShiftingImg from "../assets/CommercialShifting/commercialShifti
 
 import FAQ from "../components/FAQ.tsx";
 
-const PAGE_URL = "https://gatishiftingpackers.com/commercial-shifting";
+const PAGE_URL = "https://safeshiftingpackers.com/commercial-shifting";
 const OG_IMAGE_URL =
-    "https://gatishiftingpackers.com/images/CommercialShifting/commercial-shifting-og.webp";
+    "https://safeshiftingpackers.com/images/CommercialShifting/commercial-shifting-og.webp";
 
 const CommercialShifting = () => {
     const breadcrumbSchema = {
@@ -19,7 +19,7 @@ const CommercialShifting = () => {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://gatishiftingpackers.com/",
+                item: "https://safeshiftingpackers.com/",
             },
             {
                 "@type": "ListItem",
@@ -41,7 +41,7 @@ const CommercialShifting = () => {
         provider: {
             "@type": "Organization",
             name: "Gati Shifting Packers",
-            url: "https://gatishiftingpackers.com/",
+            url: "https://safeshiftingpackers.com/",
         },
         areaServed: {
             "@type": "Country",
