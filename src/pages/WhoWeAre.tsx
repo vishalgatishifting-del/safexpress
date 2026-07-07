@@ -1,97 +1,255 @@
 
-import "../styles/WhoWeAre.scss"
-// import Slider from "react-slick";
-// import { Box } from "@mui/material";
-// import Avatar from '@mui/material/Avatar';
-// import TrustUsSection from "../components/TrustUsSection";
+import { Helmet } from "react-helmet-async";
 
-
-import "../styles/Common.scss"
-
+import "../styles/WhoWeAre.scss";
+import "../styles/Common.scss";
 
 const WhoWeAre = () => {
-    
-    // const settings2 = {
-    //     dots: false,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     variableWidth: true,
-    //     centerMode: true,
-    //     centerPadding: "0px",
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    //     pauseOnHover: false,
-    //     pauseOnFocus: false,
-    //     swipeToSlide: true
-    // };
-
-//     const keywords = [
-//   "safexpress about us",
-//   "gati packers and movers",
-//   "trusted packers and movers in India",
-//   "reliable packers and movers",
-//   "packers and movers company profile",
-//   "packers and movers with experience",
-//   "leading packers and movers in India",
-//   "about us moving company",
-//   "trusted moving services India",
-//   "professional relocation services",
-//   "experienced home shifting company",
-//   "about our relocation company",
-//   "packing and unpacking services",
-//   "best packers and movers",
-//   "cheap packers and movers"
-// ];
-
     return (
         <>
-                {/* <div className="bg-attached-who-we-are">
-                    <h1>Who we are?</h1>
-                </div> */}
-            <section id="who-we-are-section" className="top-element">
+            <Helmet>
+                <title>
+                    Who We Are | About Safexpress Relocation Services
+                </title>
+
+                <meta
+                    name="description"
+                    content="Learn about Safexpress, a trusted relocation and logistics service provider in India offering home shifting, office relocation, vehicle transportation, packing, and storage solutions."
+                />
+
+                <meta
+                    name="keywords"
+                    content="Safexpress about us, trusted relocation company India, packers and movers company profile, professional relocation services, home shifting company, office relocation services, logistics company India"
+                />
+
+                <meta
+                    name="robots"
+                    content="index, follow"
+                />
+
+                <meta
+                    property="og:title"
+                    content="Who We Are | Safexpress Relocation Services"
+                />
+
+                <meta
+                    property="og:description"
+                    content="Discover Safexpress and our commitment to safe, transparent, and professional relocation services across India."
+                />
+
+                <meta
+                    property="og:type"
+                    content="website"
+                />
+
+                <meta
+                    name="twitter:card"
+                    content="summary_large_image"
+                />
+
+                <meta
+                    name="twitter:title"
+                    content="Who We Are | Safexpress"
+                />
+
+                <meta
+                    name="twitter:description"
+                    content="Learn more about Safexpress and our professional relocation and logistics services across India."
+                />
+                
+                <link rel="canonical" href="https://safeshiftingpackers.com/who-we-are" />
+            </Helmet>
+
+            <main
+                id="who-we-are-section"
+                className="top-element"
+            >
                 <div className="container">
-                    <div className="content">
-                        <h1>Who We Are</h1>
-                        <p>Founded in <b>2006, Safexpress</b> has emerged as one of the most reliable and respected names in the Indian relocation and logistics industry. With our headquarters based in Mumbai and a wide network of branches across the country, we are committed to delivering top-notch shifting experiences with unmatched professionalism and care.
+                    <header className="content who-we-are-intro">
+                        <h1>
+                            Who We Are
+                        </h1>
 
-                            Over the years, we have helped thousands of families, individuals, and businesses move safely and efficiently — whether it’s local, intercity, or interstate shifting. Our services include comprehensive packing, secure transportation, careful loading and unloading, organized unpacking, and even warehouse storage and vehicle transportation. Every move is handled with personal attention, precision, and a promise of on-time delivery.
+                        <p>
+                            Founded in <strong>2006</strong>, Safexpress has
+                            emerged as a trusted name in the Indian relocation
+                            and logistics industry. With a growing service
+                            network across India, we are committed to providing
+                            professional, reliable, and carefully managed
+                            relocation solutions.
+                        </p>
 
-                            At the heart of Safexpress and Movers is a team of highly skilled professionals with over a decade of hands-on experience in the logistics and moving industry. Our staff is thoroughly trained to handle fragile items, heavy furniture, electronics, office equipment, and vehicles using modern techniques and the best-quality packing materials. From bubble wrap to tamper-proof cartons and GPS-tracked transport vehicles, we ensure maximum safety at every step.
+                        <p>
+                            Over the years, we have helped families,
+                            individuals, and businesses relocate their
+                            belongings safely and efficiently. Whether it is a
+                            local move, intercity relocation, or interstate
+                            shifting requirement, our team focuses on making
+                            every relocation organized and stress-free.
+                        </p>
+                    </header>
 
-                            What sets us apart is our unwavering commitment to our core values: <b>transparency, accountability, safety, timeliness, and customer satisfaction</b>. We provide upfront quotations with no hidden charges, round-the-clock customer support, and end-to-end responsibility for every move. Our clients trust us not just because we move their belongings, but because we move them with care, responsibility, and integrity.
+                    <section className="content our-relocation-services">
+                        <h2>
+                            Complete Relocation and Shifting Solutions
+                        </h2>
 
-                            Our 24/7 customer care team is always ready to assist, provide real-time updates, and resolve concerns, ensuring your peace of mind throughout the shifting process. Whether you are a student moving into a hostel, a family relocating to a new city, a corporate office shifting workspace, or a car owner transporting your vehicle across states — Safexpress and Movers is your all-in-one relocation solution.
+                        <p>
+                            Safexpress provides comprehensive relocation
+                            services designed for different moving
+                            requirements. Our services include professional
+                            packing, secure loading, transportation, unloading,
+                            unpacking support, warehouse storage, and vehicle
+                            transportation.
+                        </p>
 
-                            With over <b>18+ years of experience</b>, a growing base of loyal customers, and a passion for excellence, Gati Shifting is more than just a packers and movers company — we are your trusted relocation partner. We continue to evolve and expand, staying ahead of industry trends, investing in technology, and improving our service standards to ensure that your next move is not just a transfer of goods, but a smooth and memorable experience.
+                        <p>
+                            Every relocation is handled with careful planning
+                            and attention to detail. Our team works to ensure
+                            that household goods, office assets, vehicles, and
+                            other belongings are transported safely and
+                            delivered according to the planned relocation
+                            schedule.
+                        </p>
+                    </section>
 
-                            Choose Safexpress and Movers for a moving experience that is smooth, transparent, affordable, and backed by professionals who care. Your journey begins with us — and we ensure it begins on the right foot.</p>
-                    </div>
+                    <section className="content experienced-team">
+                        <h2>
+                            Experienced and Professional Relocation Team
+                        </h2>
+
+                        <p>
+                            At Safexpress, our relocation team consists of
+                            trained professionals with practical experience in
+                            packing, moving, and logistics operations. Our team
+                            understands the different handling requirements of
+                            household goods, office equipment, electronics,
+                            furniture, and vehicles.
+                        </p>
+
+                        <p>
+                            We use suitable packing techniques and quality
+                            packing materials to help protect belongings during
+                            transportation. Bubble wrap, protective sheets,
+                            cartons, and other packing materials are selected
+                            according to the type of goods being relocated.
+                        </p>
+
+                        <p>
+                            From careful packing and labeling to loading and
+                            transportation coordination, every stage of the
+                            relocation process is managed professionally.
+                        </p>
+                    </section>
+
+                    <section className="content our-values">
+                        <h2>
+                            Our Commitment to Safe and Transparent Relocation
+                        </h2>
+
+                        <p>
+                            Our services are built around the values of
+                            <strong>
+                                {" "}
+                                transparency, accountability, safety,
+                                timeliness, and customer satisfaction
+                            </strong>
+                            . These values guide our team throughout every
+                            relocation project.
+                        </p>
+
+                        <p>
+                            We believe customers should clearly understand
+                            their relocation requirements and service charges.
+                            Our team provides detailed relocation information
+                            and quotations based on the moving requirements
+                            shared by the customer.
+                        </p>
+
+                        <p>
+                            Our goal is to maintain clear communication
+                            throughout the moving process and provide
+                            responsible support from the initial enquiry to the
+                            final delivery.
+                        </p>
+                    </section>
+
+                    <section className="content customer-support">
+                        <h2>
+                            Customer Support Throughout Your Relocation
+                        </h2>
+
+                        <p>
+                            Our customer support team assists customers
+                            throughout the relocation process. From answering
+                            service-related questions to providing shipment and
+                            relocation updates, we focus on maintaining clear
+                            communication during every stage of the move.
+                        </p>
+
+                        <p>
+                            Whether you are a student relocating to a hostel, a
+                            family moving to another city, a business shifting
+                            its office, or a vehicle owner arranging
+                            transportation to another state, Safexpress provides
+                            relocation support based on your specific moving
+                            requirements.
+                        </p>
+                    </section>
+
+                    <section className="content industry-experience">
+                        <h2>
+                            Years of Experience in Relocation and Logistics
+                        </h2>
+
+                        <p>
+                            With years of experience in the relocation and
+                            logistics industry, Safexpress continues to improve
+                            its moving processes and service standards. We focus
+                            on adopting better relocation practices,
+                            transportation coordination methods, and
+                            customer-focused service solutions.
+                        </p>
+
+                        <p>
+                            Our experience allows us to understand the
+                            challenges involved in different types of
+                            relocation. Every move is planned according to the
+                            distance, volume of goods, transportation
+                            requirements, and delivery schedule.
+                        </p>
+                    </section>
+
+                    <section className="content why-safexpress">
+                        <h2>
+                            Why Choose Safexpress for Your Relocation?
+                        </h2>
+
+                        <p>
+                            Safexpress aims to provide a smooth, transparent,
+                            and professionally managed moving experience. Our
+                            team takes responsibility for coordinating
+                            different stages of the relocation process while
+                            keeping safety and customer requirements in focus.
+                        </p>
+
+                        <p>
+                            Whether you need home shifting, office relocation,
+                            vehicle transportation, storage, or other moving
+                            services, our team is ready to assist with a
+                            suitable relocation solution.
+                        </p>
+
+                        <p>
+                            Choose Safexpress for professional relocation
+                            services designed to make your moving journey
+                            organized, secure, and convenient.
+                        </p>
+                    </section>
                 </div>
-            </section>
-{/* 
-            <ReviewVideo></ReviewVideo>
-
-            
-            <GetInTouch></GetInTouch>
-            <AwardCertification></AwardCertification>
-            
-            <TrustUsSection></TrustUsSection>
-
-            <BrandList></BrandList> */}
-           
-            {/* <FAQList></FAQList> */}
-            {/* <section id="keywords-section">
-                <h1>People also search for these Queries</h1>
-                <div className="container">
-                    {keywords.map((col) => {
-                        return <h5 className="keyword">{col}</h5>
-                    })}
-                </div>
-            </section> */}
+            </main>
         </>
-    )
-}
+    );
+};
 
 export default WhoWeAre;

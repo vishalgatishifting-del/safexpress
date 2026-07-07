@@ -25,7 +25,7 @@
     --font-label: "Barlow Condensed", "Segoe UI", sans-serif;
     --font-body: "Inter", "Segoe UI", sans-serif;
 
-    background: var(--paper);
+    // background: var(--paper);
     color: var(--slate);
     font-family: var(--font-body);
 
@@ -55,7 +55,7 @@
     }
 
     .accent {
-        color: var(--amber);
+        color: v.$primary-color;
     }
 
     .btn {
@@ -86,9 +86,8 @@
     .btn--solid {
         padding: 14px 32px;
         font-size: 16px;
-        background: var(--amber);
+        background: v.$primary-color;
         color: var(--ink);
-        box-shadow: 0 14px 28px rgba(242, 169, 59, 0.35);
 
         &:hover {
             transform: translateY(-3px);
@@ -103,9 +102,9 @@
 /* ---------- HERO ---------- */
 #hero-section {
     padding-top: 60px;
-    background:
-        linear-gradient(180deg, rgba(16, 32, 58, 0.02), transparent 60%),
-        var(--paper);
+    // background:
+    //     linear-gradient(180deg, rgba(16, 32, 58, 0.02), transparent 60%),
+    //     var(--paper);
 
     .container {
         max-width: 1200px;
@@ -413,7 +412,7 @@
         }
 
         a:hover {
-            color: var(--amber);
+            color: v.$primary-color;
         }
     }
 }
@@ -550,7 +549,7 @@
 
                 .icon {
                     font-size: 34px;
-                    color: var(--amber);
+                    color: v.$primary-color;
                 }
 
                 span {

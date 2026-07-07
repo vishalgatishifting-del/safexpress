@@ -1,100 +1,190 @@
-import FAQList from "../components/FAQ"
-import "../styles/FAQPage.scss";
-import car5 from "../assets/FAQPageImg/hero-section-img.png"
+
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
-import "../styles/Common.scss"
+import FAQList from "../components/FAQ";
+import car5 from "../assets/FAQPageImg/hero-section-img.png";
+
+import "../styles/FAQPage.scss";
+import "../styles/Common.scss";
 
 const FAQ = () => {
     return (
         <>
             <Helmet>
-                <title>FAQ | Safexpress</title>
-                <meta name="description" content="Frequently Asked Questions about Safexpress. Learn about our relocation services, packing solutions, cost estimates, and how we ensure a smooth move across India." />
-                <meta name="keywords" content="Gati FAQ, Packers and Movers FAQ, relocation questions, moving tips, Safexpress customer support" />
-                <meta name="robots" content="index, follow" />
+                <title>
+                    Frequently Asked Questions | Safexpress
+                </title>
 
-                {/* Open Graph */}
-                <meta property="og:title" content="FAQ | Safexpress & Movers" />
-                <meta property="og:description" content="Get answers to common questions about Safexpress. From local to pan-India moves, understand our services, packing quality, and cost transparency." />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://gatishiftingpackers.com/" />
-                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
+                <meta
+                    name="description"
+                    content="Find answers to frequently asked questions about Safexpress relocation services, packing solutions, moving charges, transportation, and shifting services across India."
+                />
 
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="FAQ | Safexpress" />
-                <meta name="twitter:description" content="Find answers to FAQs about Safexpress, including services, pricing, and relocation tips." />
+                <meta
+                    name="keywords"
+                    content="Safexpress FAQ, packers and movers FAQ, relocation questions, moving services FAQ, packing and moving questions, shifting services India"
+                />
 
-                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
-                <link rel="canonical" href={`https://safeshiftingpackers.com/faq`} />
+                <meta
+                    name="robots"
+                    content="index, follow"
+                />
+
+                <meta
+                    property="og:title"
+                    content="Frequently Asked Questions | Safexpress"
+                />
+
+                <meta
+                    property="og:description"
+                    content="Get answers to common questions about Safexpress relocation, packing, transportation, pricing, and moving services across India."
+                />
+
+                <meta
+                    property="og:type"
+                    content="website"
+                />
+
+                <meta
+                    name="twitter:card"
+                    content="summary_large_image"
+                />
+
+                <meta
+                    name="twitter:title"
+                    content="Frequently Asked Questions | Safexpress"
+                />
+
+                <meta
+                    name="twitter:description"
+                    content="Find answers to common questions about Safexpress relocation, packing, transportation, and moving services."
+                />
+                
+                <link rel="canonical" href="https://safeshiftingpackers.com/faq" />
             </Helmet>
-            <section className="info-section top-element">
-                <div className="info-left">
-                    <span className="badge">Trusted Movers Across India</span>
 
-                    <h2>
-                        Reliable Moving & Packing <br />
-                        Solutions Across India
-                    </h2>
+            <main
+                id="faq-page"
+                className="top-element"
+            >
+                <section className="info-section">
+                    <div className="info-left">
+                        <span className="badge">
+                            Trusted Relocation Services Across India
+                        </span>
 
-                    <p>
-                        At <strong>Safexpress</strong>, relocating is more
-                        than transport — it’s about trust, safety, and peace of mind. Our
-                        expert team ensures secure packing, smooth transportation, and
-                        timely delivery using modern equipment and high-quality materials.
-                    </p>
+                        <h1>
+                            Frequently Asked Questions About Safexpress
+                            Relocation Services
+                        </h1>
 
-                    <p>
-                        From local household shifting to corporate and pan-India relocation,
-                        we offer transparent pricing, zero hidden charges, and dedicated
-                        customer support at every stage of your move.
-                    </p>
+                        <p>
+                            At <strong>Safexpress</strong>, relocation is more
+                            than transporting belongings from one location to
+                            another. Proper planning, careful packing, secure
+                            handling, and transportation coordination are
+                            important parts of a professionally managed move.
+                        </p>
 
-                    <div className="cta-group">
-                        <Link to="/services" className="primary-btn">
-                            Explore Our Services
-                        </Link>
-                        <Link to="/contact-us" className="secondary-btn">
-                            Get Free Quote
-                        </Link>
+                        <p>
+                            Our team provides relocation support for household
+                            shifting, office relocation, vehicle
+                            transportation, storage, and other moving
+                            requirements across multiple locations in India.
+                        </p>
+
+                        <p>
+                            Explore our frequently asked questions to learn more
+                            about relocation services, packing processes,
+                            shifting charges, transportation, and the different
+                            stages involved in planning your move.
+                        </p>
+
+                        <div className="cta-group">
+                            <Link
+                                to="/services"
+                                className="primary-btn"
+                            >
+                                Explore Our Services
+                            </Link>
+
+                            <Link
+                                to="/contact-us"
+                                className="secondary-btn"
+                            >
+                                Get a Free Quote
+                            </Link>
+                        </div>
+
+                        <div
+                            className="trust-stats"
+                            aria-label="Safexpress service information"
+                        >
+                            <div>
+                                <strong>Professional</strong>
+                                <span>Moving Support</span>
+                            </div>
+
+                            <div>
+                                <strong>Multiple</strong>
+                                <span>Service Locations</span>
+                            </div>
+
+                            <div>
+                                <strong>Customer</strong>
+                                <span>Focused Service</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="trust-stats">
-                        <div>
-                            <h4>10K+</h4>
-                            <span>Happy Customers</span>
-                        </div>
-                        <div>
-                            <h4>100+</h4>
-                            <span>Cities Covered</span>
-                        </div>
-                        <div>
-                            <h4>5★</h4>
-                            <span>Customer Rating</span>
-                        </div>
+                    <div className="info-right">
+                        <figure className="image-card">
+                            <img
+                                src={car5}
+                                alt="Safexpress relocation and moving service vehicle"
+                                loading="eager"
+                                fetchPriority="high"
+                            />
+
+                            <figcaption className="overlay">
+                                <h2>
+                                    Professional Packing and Moving Services
+                                </h2>
+
+                                <p>
+                                    Carefully planned packing, transportation,
+                                    and relocation support for different moving
+                                    requirements across India.
+                                </p>
+                            </figcaption>
+                        </figure>
                     </div>
-                </div>
+                </section>
 
-                <div className="info-right">
-                    <div className="image-card">
-                        <img src={car5} alt="Safexpress Moving Vehicle" />
+                <section
+                    className="faq-content-section"
+                    aria-labelledby="faq-heading"
+                >
+                    <div className="container">
+                        <header className="faq-section-header">
+                            <h2 id="faq-heading">
+                                Common Questions About Packing and Relocation
+                            </h2>
 
-                        <div className="overlay">
-                            <h4>Top Rated Packers & Movers</h4>
                             <p>
-                                Safe packing, insured transport & on-time delivery trusted by
-                                thousands of customers across India.
+                                Find useful information about our moving
+                                process, relocation planning, packing services,
+                                transportation, and shifting requirements.
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        </header>
 
-            <FAQList></FAQList>
+                        <FAQList />
+                    </div>
+                </section>
+            </main>
         </>
-    )
-}
+    );
+};
 
 export default FAQ;

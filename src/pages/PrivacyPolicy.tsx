@@ -1,137 +1,492 @@
+
+import { Helmet } from "react-helmet-async";
+
 import "../styles/PrivacyPolicy.scss";
-import "../styles/Common.scss"
+import "../styles/Common.scss";
+
 const PrivacyPolicy = () => {
-  return (
-    <>
-      <section id="privacypolicysec" className="top-element">
-        <div className="container">
-          <div className="content">
-            <h1>Privacy Policy for Safexpress</h1>
+    return (
+        <>
+            <Helmet>
+                <title>
+                    Privacy Policy | Safexpress
+                </title>
 
-            <p>
-              At Safexpress, we value your privacy and are committed to protecting
-              your personal information. This Privacy Policy explains how we
-              collect, use, and safeguard your information when you visit our
-              website or use our logistics, transportation, and packers & movers
-              services. By accessing our website or using our services, you agree
-              to the terms outlined in this Privacy Policy.
-            </p>
+                <meta
+                    name="description"
+                    content="Read the Safexpress Privacy Policy to understand how we collect, use, store, protect, and process personal information when you use our website and relocation services."
+                />
 
-            <div className="card">
-              <h2>Information We Collect</h2>
-              <p>
-                When you contact Safexpress directly, we may collect personal
-                details such as your name, email address, phone number, service
-                requirements, and any other information you choose to share with
-                us.
-                <br /><br />
-                If you register or submit a service enquiry, we may collect your
-                contact information including name, address, email address,
-                phone number, and company details (if applicable).
-                <br /><br />
-                We may also share necessary customer details with our verified
-                service partners through our internal systems or applications.
-                All partners are verified through phone numbers, email IDs,
-                office addresses, and required government documents such as GST
-                registration.
-              </p>
-            </div>
+                <meta
+                    name="keywords"
+                    content="Safexpress privacy policy, relocation service privacy policy, customer data privacy, personal information policy, moving service data protection"
+                />
 
-            <div className="card">
-              <h2>How We Use Your Information</h2>
-              <p>Safexpress uses the collected information for the following purposes:</p>
-              <ul>
-                <li>To provide, manage, and improve our services</li>
-                <li>To respond to customer queries and service requests</li>
-                <li>To personalise and enhance user experience</li>
-                <li>To analyse usage patterns and improve service quality</li>
-                <li>To develop new services and features</li>
-                <li>To communicate updates, offers, and important notices</li>
-                <li>To prevent fraud and ensure service security</li>
-              </ul>
-            </div>
+                <meta
+                    name="robots"
+                    content="index, follow"
+                />
 
-            <div className="card">
-              <h2>CCPA Privacy Rights</h2>
-              <p>
-                Under the California Consumer Privacy Act (CCPA), users have the
-                right to request disclosure of the personal information collected
-                about them. Safexpress does not sell, trade, or rent personal
-                information of users to third parties.
-              </p>
-            </div>
+                <meta
+                    property="og:title"
+                    content="Privacy Policy | Safexpress"
+                />
 
-            <div className="card">
-              <h2>GDPR Data Protection Rights</h2>
-              <p>
-                If you are a resident of the European Economic Area (EEA), you are
-                entitled to certain rights under the General Data Protection
-                Regulation (GDPR). These include the right to access, correct,
-                delete, restrict, or object to the processing of your personal
-                data. To exercise these rights, you may contact us directly.
-              </p>
-            </div>
+                <meta
+                    property="og:description"
+                    content="Learn how Safexpress collects, uses, stores, and protects personal information related to website enquiries and relocation services."
+                />
 
-            <div className="card">
-              <h2>Children’s Information</h2>
-              <p>
-                Safexpress does not knowingly collect personal information from
-                children under the age of 13. Our services are intended for
-                individuals above this age. If you believe that a child has
-                shared personal information with us, please contact us
-                immediately so we can take appropriate action.
-              </p>
-            </div>
+                <meta
+                    property="og:type"
+                    content="website"
+                />
 
-            <div className="card">
-              <h2>Data Retention</h2>
-              <p>
-                We retain personal data only for as long as necessary to fulfil
-                the purposes outlined in this Privacy Policy, comply with legal
-                obligations, resolve disputes, and enforce our agreements.
-              </p>
-            </div>
+                <meta
+                    name="twitter:card"
+                    content="summary_large_image"
+                />
 
-            <div className="card">
-              <h2>Security</h2>
-              <p>
-                Safexpress follows industry-standard security practices to
-                protect your personal information from unauthorised access,
-                misuse, or disclosure. However, no online data transmission or
-                storage system can be guaranteed to be 100% secure.
-              </p>
-            </div>
+                <meta
+                    name="twitter:title"
+                    content="Privacy Policy | Safexpress"
+                />
 
-            <div className="card">
-              <h2>Changes to This Privacy Policy</h2>
-              <p>
-                Safexpress reserves the right to update or modify this Privacy
-                Policy at any time. Any changes will be posted on this page or
-                communicated via email where required. Continued use of our
-                website or services indicates acceptance of the updated policy.
-              </p>
-            </div>
+                <meta
+                    name="twitter:description"
+                    content="Review the Safexpress Privacy Policy and learn how personal information may be collected, used, and protected."
+                />
+                
+                <link rel="canonical" href="https://safeshiftingpackers.com/privacy-policy" /> 
+            </Helmet>
 
-            <div className="card">
-              <h2>Contact Us</h2>
-              <p>
-                If you have any questions or concerns regarding this Privacy
-                Policy or our data practices, please contact us at
-                <br />
-                <a href="mailto:safexpressshifting@gmail.com">
-                  safexpressshifting@gmail.com
-                </a>
-                <br /><br />
-                Thank you for trusting Safexpress with your logistics and moving
-                needs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <main
+                id="privacy-policy-sec"
+                className="top-element"
+            >
+                <div className="container">
+                    <header className="content privacy-policy-intro">
+                        <h1>
+                            Privacy Policy for Safexpress
+                        </h1>
 
-    </>
-  );
+                        <p>
+                            At Safexpress, we value the privacy of our customers
+                            and website visitors. This Privacy Policy explains
+                            how personal information may be collected, used,
+                            stored, and processed when you visit our website,
+                            submit an enquiry, or use our logistics,
+                            transportation, packing, and relocation services.
+                        </p>
+
+                        <p>
+                            By accessing our website or voluntarily providing
+                            personal information through our enquiry forms,
+                            contact channels, or service booking process, you
+                            acknowledge the data practices described in this
+                            Privacy Policy.
+                        </p>
+
+                        <p>
+                            We encourage you to read this Privacy Policy
+                            carefully to understand how information related to
+                            our services may be handled.
+                        </p>
+                    </header>
+
+                    <section
+                        className="content privacy-policy-content"
+                        aria-labelledby="privacy-policy-heading"
+                    >
+                        <h2 id="privacy-policy-heading">
+                            How We Handle Personal Information
+                        </h2>
+
+                        <article className="card">
+                            <h3>
+                                Information We May Collect
+                            </h3>
+
+                            <p>
+                                When you contact Safexpress, submit a service
+                                enquiry, or request a relocation quotation, we
+                                may collect information that you voluntarily
+                                provide.
+                            </p>
+
+                            <p>
+                                This information may include your name, email
+                                address, phone number, pickup location,
+                                destination, service requirements, and other
+                                details required to understand your relocation
+                                or transportation needs.
+                            </p>
+
+                            <p>
+                                Where services are requested on behalf of a
+                                business, we may also receive company-related
+                                contact information provided during the enquiry
+                                or booking process.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                Information Shared for Service Coordination
+                            </h3>
+
+                            <p>
+                                Certain information may be shared with
+                                authorized service providers, transportation
+                                personnel, logistics partners, or other parties
+                                involved in coordinating the requested service.
+                            </p>
+
+                            <p>
+                                Only information reasonably required for
+                                service coordination, pickup, transportation,
+                                delivery, customer communication, or other
+                                operational requirements should be shared for
+                                these purposes.
+                            </p>
+
+                            <p>
+                                Service providers and partners may be subject to
+                                applicable contractual, operational, and legal
+                                requirements relating to the handling of
+                                customer information.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                How We Use Your Information
+                            </h3>
+
+                            <p>
+                                Personal information may be used for purposes
+                                related to providing and managing our services.
+                            </p>
+
+                            <ul>
+                                <li>
+                                    To respond to customer enquiries and service
+                                    requests
+                                </li>
+
+                                <li>
+                                    To understand relocation and transportation
+                                    requirements
+                                </li>
+
+                                <li>
+                                    To prepare service quotations and coordinate
+                                    bookings
+                                </li>
+
+                                <li>
+                                    To coordinate pickup, transportation, and
+                                    delivery requirements
+                                </li>
+
+                                <li>
+                                    To communicate service-related information
+                                    and updates
+                                </li>
+
+                                <li>
+                                    To improve website functionality and
+                                    customer experience
+                                </li>
+
+                                <li>
+                                    To analyze service usage and operational
+                                    requirements
+                                </li>
+
+                                <li>
+                                    To help detect misuse, fraudulent activity,
+                                    or security concerns
+                                </li>
+
+                                <li>
+                                    To comply with applicable legal and
+                                    regulatory obligations
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                Marketing and Service Communications
+                            </h3>
+
+                            <p>
+                                We may use contact information to communicate
+                                about an enquiry, booking, relocation request,
+                                or other service-related matter.
+                            </p>
+
+                            <p>
+                                Where permitted by applicable law and based on
+                                available communication preferences, we may also
+                                send information about services, updates, or
+                                promotional offers.
+                            </p>
+
+                            <p>
+                                Customers may request to stop receiving
+                                applicable promotional communications through
+                                the available contact or unsubscribe methods.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                Cookies and Website Usage Information
+                            </h3>
+
+                            <p>
+                                Our website may use cookies or similar
+                                technologies to support website functionality,
+                                understand website usage, and improve the user
+                                experience.
+                            </p>
+
+                            <p>
+                                Certain technical information, such as browser
+                                type, device information, referring pages, and
+                                general website interaction data, may be
+                                processed through website analytics or related
+                                technologies.
+                            </p>
+
+                            <p>
+                                Available cookie controls may depend on your
+                                browser settings and the technologies used on
+                                our website.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                Privacy Rights Under Applicable Laws
+                            </h3>
+
+                            <p>
+                                Depending on your location and the applicable
+                                privacy law, you may have certain rights
+                                regarding your personal information.
+                            </p>
+
+                            <p>
+                                These rights may include requesting access to
+                                personal information, requesting correction of
+                                inaccurate information, requesting deletion
+                                where applicable, or raising concerns about how
+                                personal information is processed.
+                            </p>
+
+                            <p>
+                                Privacy requests will be reviewed according to
+                                applicable legal requirements and available
+                                information required to verify the request.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                CCPA Privacy Rights
+                            </h3>
+
+                            <p>
+                                Where the California Consumer Privacy Act or
+                                other applicable California privacy laws apply,
+                                eligible individuals may have rights relating
+                                to access, disclosure, correction, or deletion
+                                of certain personal information.
+                            </p>
+
+                            <p>
+                                Applicable requests will be handled according to
+                                the requirements and limitations of the relevant
+                                privacy law.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                GDPR Data Protection Rights
+                            </h3>
+
+                            <p>
+                                Where the General Data Protection Regulation
+                                applies to the processing of personal data,
+                                eligible individuals may have rights relating
+                                to access, correction, deletion, restriction,
+                                objection, or data portability.
+                            </p>
+
+                            <p>
+                                The availability of a particular right depends
+                                on the applicable legal basis, processing
+                                activity, and requirements of data protection
+                                law.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                Children's Privacy
+                            </h3>
+
+                            <p>
+                                Our relocation and transportation services are
+                                not specifically designed or directed toward
+                                children.
+                            </p>
+
+                            <p>
+                                We do not knowingly seek to collect personal
+                                information directly from children where
+                                parental or guardian authorization is required
+                                under applicable law.
+                            </p>
+
+                            <p>
+                                If you believe personal information relating to
+                                a child has been submitted to us inappropriately,
+                                please contact us so the matter can be reviewed.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                Data Retention
+                            </h3>
+
+                            <p>
+                                Personal information may be retained for as long
+                                as reasonably necessary to fulfill the purposes
+                                for which it was collected.
+                            </p>
+
+                            <p>
+                                Retention periods may depend on service
+                                requirements, customer communication, legal
+                                obligations, dispute resolution, accounting,
+                                fraud prevention, and other legitimate
+                                operational requirements.
+                            </p>
+
+                            <p>
+                                Information may be deleted, anonymized, or
+                                otherwise handled according to applicable
+                                retention requirements when it is no longer
+                                reasonably required.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                Information Security
+                            </h3>
+
+                            <p>
+                                Safexpress aims to use reasonable administrative,
+                                technical, and operational measures to help
+                                protect personal information against
+                                unauthorized access, misuse, alteration, or
+                                disclosure.
+                            </p>
+
+                            <p>
+                                However, no internet transmission, electronic
+                                communication, or data storage method can be
+                                guaranteed to be completely secure.
+                            </p>
+
+                            <p>
+                                Customers should also take appropriate measures
+                                to protect personal information when
+                                communicating or sharing service-related
+                                documents online.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                Third-Party Services
+                            </h3>
+
+                            <p>
+                                Our website or service process may use
+                                third-party technologies, communication tools,
+                                analytics services, payment systems, or other
+                                service providers.
+                            </p>
+
+                            <p>
+                                Third-party services may process information
+                                according to their own terms, privacy policies,
+                                and applicable legal obligations.
+                            </p>
+
+                            <p>
+                                Customers should review applicable third-party
+                                privacy information where relevant to the
+                                service being used.
+                            </p>
+                        </article>
+
+                        <article className="card">
+                            <h3>
+                                Changes to This Privacy Policy
+                            </h3>
+
+                            <p>
+                                Safexpress may update this Privacy Policy to
+                                reflect changes in our services, website
+                                functionality, operational practices, or
+                                applicable legal requirements.
+                            </p>
+
+                            <p>
+                                Updated versions of this Privacy Policy may be
+                                published on this page. Customers and website
+                                visitors are encouraged to review this page
+                                periodically for changes.
+                            </p>
+                        </article>
+                    </section>
+
+                    <section className="content privacy-contact">
+                        <h2>
+                            Contact Us About Privacy
+                        </h2>
+
+                        <p>
+                            If you have questions or concerns regarding this
+                            Privacy Policy or the handling of personal
+                            information, you can contact us using the email
+                            address below.
+                        </p>
+
+                        <address>
+                            <a href="mailto:safexpressshifting@gmail.com">
+                                safexpressshifting@gmail.com
+                            </a>
+                        </address>
+
+                        <p>
+                            Thank you for trusting Safexpress with your
+                            relocation and moving requirements.
+                        </p>
+                    </section>
+                </div>
+            </main>
+        </>
+    );
 };
 
 export default PrivacyPolicy;

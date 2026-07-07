@@ -1,180 +1,414 @@
-// import AwardCertification from "../components/AwardCertification";
-// import BrandList from "../components/BrandsList";
-// import FAQList from "../components/FAQList";
-// import GetInTouch from "../components/GetInTouch";
-// import ReviewVideo from "../components/ReviewVideos";
-// import TrustUsSection from "../components/TrustUsSection";
-// import officeRelocationImg from "../assets/OfficeRelocation/office-relocation-img.jpg"
-// import { Helmet } from "react-helmet-async";
-// import ReviewDialog from "../components/ReviewDialog";
-// import "../styles/OfficeRelocation.scss"
-import "../styles/OfficeRelocation.scss"
 
-import "../styles/Common.scss"
+import { Helmet } from "react-helmet-async";
+
+import "../styles/OfficeRelocation.scss";
+import "../styles/Common.scss";
 
 import FAQ from "../components/FAQ.tsx";
-const OfficeRelocation = () => {
-    // const keywords = [
-    //     "office relocation services",
-    //     "office movers",
-    //     "commercial moving services",
-    //     "office shifting services",
-    //     "business relocation services",
-    //     "office furniture movers",
-    //     "small office movers",
-    //     "corporate relocation services",
-    //     "commercial movers",
-    //     "office moving company",
-    //     "office shifting company near me",
-    //     "office move planning services",
-    //     "office relocation cost",
-    //     "office move checklist",
-    //     "professional office movers",
-    //     "gati packers and movers"
-    // ];
 
+const OfficeRelocation = () => {
     return (
         <>
-  
+            <Helmet>
+                <title>
+                    Office Shifting Services in India | Safexpress
+                </title>
 
-            {/* <div className="bg-attached">
-                <h1>Office Relocation</h1>
-            </div> */}
-            <section id="pet-relocation-sec" className="top-element">
+                <meta
+                    name="description"
+                    content="Get reliable and affordable office shifting services in India with Safexpress. Professional packing, IT equipment handling, secure transportation, tracking, and complete office relocation solutions."
+                />
+
+                <meta
+                    name="keywords"
+                    content="office shifting services, office relocation services, office movers, commercial moving services, corporate relocation services, business relocation services, professional office movers, office shifting company in India"
+                />
+
+                <meta name="robots" content="index, follow" />
+
+                <link
+                    rel="canonical"
+                    href="https://www.safexpress.com/office-relocation"
+                />
+
+                <meta
+                    property="og:title"
+                    content="Reliable Office Shifting Services in India | Safexpress"
+                />
+
+                <meta
+                    property="og:description"
+                    content="Safexpress provides professional office shifting and corporate relocation services across India with secure packing, transportation, tracking, and timely delivery."
+                />
+
+                <meta property="og:type" content="website" />
+
+                <meta
+                    property="og:url"
+                    content="https://www.safexpress.com/office-relocation"
+                />
+
+                <meta
+                    name="twitter:card"
+                    content="summary_large_image"
+                />
+
+                <meta
+                    name="twitter:title"
+                    content="Office Shifting Services in India | Safexpress"
+                />
+
+                <meta
+                    name="twitter:description"
+                    content="Move your office safely with professional office shifting and corporate relocation services from Safexpress."
+                />
+            </Helmet>
+
+            <main
+                id="office-relocation-sec"
+                className="top-element"
+            >
                 <div className="container">
-                    <h1>Safexpress – Reliable Office Shifting Services in India</h1>
-                    <p>Safexpress is one of the most trusted names in office relocation and commercial moving services in India. We provide smooth, professional, and affordable office shifting solutions that help businesses move without affecting productivity. Whether you’re relocating a small office or a large corporate setup, our expert team ensures a safe and organized move from start to finish.
-                        <br />
-                        With a strong presence across major Indian cities, Safexpress is known for its efficient handling, careful packing, and timely delivery of office assets. From furniture and computers to confidential files and IT equipment, we manage everything with precision. We also provide insurance and live vehicle tracking, ensuring complete transparency and peace of mind throughout the move.
+                    <header className="content office-relocation-intro">
+                        <h1>
+                            Reliable Office Shifting Services in India
+                        </h1>
 
-
-                    </p>
-                    <div className="content 6-steps">
-                        <h2>🏡 Simple 6-Step Booking Process with Safexpress</h2>
-
-                        <h3>Step 1: Share Your Moving Details & Get a Quote</h3>
-                        <ul>
-                            <li>📋 Provide your moving requirements — items, location, and distance.</li>
-                            <li>💬 Get a fair, customized quote from our verified professionals.</li>
-                        </ul>
-
-                        <h3>Step 2: Confirm Booking with Advance Payment</h3>
-                        <ul>
-                            <li>📅 Choose your preferred pickup date and time.</li>
-                            <li>💳 Secure your booking by paying a small advance (adjusted later).</li>
-                        </ul>
-
-                        <h3>Step 3: Safe Packing & Doorstep Pickup</h3>
-                        <ul>
-                            <li>🔧 Our trained team arrives with top-quality packing materials to pack your belongings carefully.</li>
-                            <li>✔ Dismantling, labeling, and secure loading are done under expert supervision.</li>
-                        </ul>
-
-                        <h3>Step 4: Transparent Invoice & Payment Settlement</h3>
-                        <ul>
-                            <li>📄 Receive a detailed invoice based on your provided list.</li>
-                            <li>💸 Pay the remaining amount after deducting your advance payment.</li>
-                        </ul>
-
-                        <h3>Step 5: Secure Transportation & Real-Time Updates</h3>
-                        <ul>
-                            <li>🚛 Your goods are dispatched safely to the destination.</li>
-                            <li>📱 Track your shipment with live updates until delivery.</li>
-                        </ul>
-
-
-                        <h3>Step 6: Hassle-Free Delivery & Feedback</h3>
-                        <ul>
-                            <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
-                                <br />
-
-                            </li>
-                            {/* <ReviewDialog></ReviewDialog> */}
-                        </ul>
-                    </div>
-                    <div className="content types">
-                        <h2>Office Items We Shift</h2>
-                        <p style={{ marginBottom: "10px" }}>At Safexpress, we provide complete office shifting solutions across India, covering all essential workplace items:</p>
-                        <ul>
-                            <li>Office Furniture: Desks, chairs, tables, cabinets, and workstations.</li>
-                            <li>IT Equipment: Computers, servers, printers, scanners, and networking devices.</li>
-                            <li>Files & Documents: Confidential papers and records packed securely.</li>
-                            <li>Electrical Items: Projectors, AC units, lighting systems, and other devices.</li>
-                            <li>Pantry & Miscellaneous: Kitchen equipment, décor items, and other accessories.</li>
-                        </ul>
-
-                        <h2>Affordable Office Shifting Charges in India</h2>
                         <p>
-                            We offer cost-effective and reliable office shifting services to meet every business need. Our transparent pricing ensures there are no hidden costs, and you pay only for what you use. Whether it’s a local office move, intercity relocation, or corporate shifting, Safexpress ensures a stress-free experience at the best possible price.
+                            Safexpress is one of the trusted names in office
+                            relocation and commercial moving services in India.
+                            We provide smooth, professional, and affordable
+                            office shifting solutions designed to help
+                            businesses relocate with minimal disruption to
+                            their daily operations.
                         </p>
 
+                        <p>
+                            Whether you are relocating a small office or a large
+                            corporate workspace, our experienced team manages
+                            the entire office moving process in an organized and
+                            professional manner.
+                        </p>
 
-                        {/* <img src={officeRelocationImg} /> */}
-                    </div>
-                    <div className="content why-choose">
-                        <h2>Why Choose Professional Office Shifting Services in India?</h2>
+                        <p>
+                            With a strong presence across major Indian cities,
+                            Safexpress provides careful packing, secure handling,
+                            and timely transportation of office assets. From
+                            furniture and computers to confidential documents
+                            and IT equipment, every item is handled with care.
+                        </p>
+
+                        <p>
+                            We also provide insurance support and shipment
+                            tracking assistance for better transparency
+                            throughout the office relocation process.
+                        </p>
+                    </header>
+
+                    <section className="content six-steps">
+                        <h2>
+                            Simple 6-Step Office Shifting Booking Process
+                        </h2>
+
+                        <div className="shifting-step">
+                            <h3>
+                                Step 1: Share Your Office Moving Details and Get
+                                a Quote
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    Provide your office relocation requirements,
+                                    including office items, pickup location,
+                                    destination, and moving distance.
+                                </li>
+
+                                <li>
+                                    Receive a customized office shifting quote
+                                    based on your business relocation
+                                    requirements.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="shifting-step">
+                            <h3>
+                                Step 2: Confirm Your Office Relocation Booking
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    Select your preferred office pickup date and
+                                    relocation time.
+                                </li>
+
+                                <li>
+                                    Secure your booking by paying a small advance
+                                    amount that is adjusted in the final invoice.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="shifting-step">
+                            <h3>
+                                Step 3: Professional Packing and Office Pickup
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    Our trained moving team arrives with suitable
+                                    packing materials to securely pack office
+                                    furniture, equipment, and documents.
+                                </li>
+
+                                <li>
+                                    Dismantling, labeling, packing, and loading
+                                    are completed under professional supervision.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="shifting-step">
+                            <h3>
+                                Step 4: Transparent Invoice and Payment
+                                Settlement
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    Receive a detailed invoice based on the
+                                    provided office inventory and relocation
+                                    requirements.
+                                </li>
+
+                                <li>
+                                    Pay the remaining amount after adjustment of
+                                    the advance payment.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="shifting-step">
+                            <h3>
+                                Step 5: Secure Office Transportation and
+                                Shipment Updates
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    Your office assets are securely loaded and
+                                    transported to the new business location.
+                                </li>
+
+                                <li>
+                                    Receive shipment updates during the office
+                                    relocation process until delivery.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="shifting-step">
+                            <h3>
+                                Step 6: Office Delivery, Reinstallation, and
+                                Feedback
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    After delivery and reinstallation support,
+                                    share your feedback to help us improve our
+                                    office relocation services.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section className="content types">
+                        <h2>
+                            Office Items We Shift Safely
+                        </h2>
+
+                        <p>
+                            Safexpress provides complete office shifting
+                            solutions across India for different types of
+                            workplace assets and business equipment.
+                        </p>
+
                         <ul>
-                            <li>Safe & Secure Handling: Expert movers ensure delicate equipment and files are moved safely.</li>
-                            <li>Minimal Downtime: Quick and well-planned relocation keeps your business running smoothly.</li>
-                            <li>Professional Team: Skilled staff manage dismantling, packing, loading, and setup efficiently.</li>
-                            <li>End-to-End Service: From packing to reinstallation, everything is handled by professionals.</li>
-                            <li>Insurance Support: Get insurance coverage for your valuable office assets during transit.</li>
+                            <li>
+                                <strong>Office Furniture:</strong> Desks, chairs,
+                                conference tables, cabinets, and workstations.
+                            </li>
+
+                            <li>
+                                <strong>IT Equipment:</strong> Computers,
+                                servers, printers, scanners, and networking
+                                devices.
+                            </li>
+
+                            <li>
+                                <strong>Files and Documents:</strong>{" "}
+                                Confidential business papers, records, and office
+                                documents packed securely.
+                            </li>
+
+                            <li>
+                                <strong>Electrical Equipment:</strong>{" "}
+                                Projectors, air conditioning units, lighting
+                                systems, and other electrical devices.
+                            </li>
+
+                            <li>
+                                <strong>Pantry and Office Accessories:</strong>{" "}
+                                Kitchen equipment, décor items, and other
+                                workplace accessories.
+                            </li>
                         </ul>
-                    </div>
-                    <div className="content factors">
-                        <h2>Factors Affecting the Cost of Office Shifting in India</h2>
+                    </section>
+
+                    <section className="content office-shifting-charges">
+                        <h2>
+                            Affordable Office Shifting Charges in India
+                        </h2>
+
+                        <p>
+                            Safexpress provides cost-effective and reliable
+                            office shifting services designed for different
+                            business relocation requirements. Our transparent
+                            pricing approach helps businesses understand their
+                            relocation costs without unnecessary hidden charges.
+                        </p>
+
+                        <p>
+                            Whether you need a local office move, intercity
+                            business relocation, or corporate shifting support,
+                            our team manages the relocation process efficiently
+                            and professionally.
+                        </p>
+                    </section>
+
+                    <section className="content why-choose">
+                        <h2>
+                            Why Choose Professional Office Shifting Services?
+                        </h2>
+
+                        <ul>
+                            <li>
+                                <strong>Safe and Secure Handling:</strong>{" "}
+                                Professional movers carefully handle office
+                                equipment, furniture, and business documents.
+                            </li>
+
+                            <li>
+                                <strong>Minimal Business Downtime:</strong>{" "}
+                                Organized relocation planning helps reduce
+                                disruption to business operations.
+                            </li>
+
+                            <li>
+                                <strong>Professional Moving Team:</strong>{" "}
+                                Trained professionals manage dismantling,
+                                packing, loading, transportation, and setup.
+                            </li>
+
+                            <li>
+                                <strong>End-to-End Office Relocation:</strong>{" "}
+                                The complete moving process is managed from
+                                packing to delivery and reinstallation support.
+                            </li>
+
+                            <li>
+                                <strong>Insurance Support:</strong> Insurance
+                                assistance provides additional protection for
+                                eligible office assets during transportation.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section className="content factors">
+                        <h2>
+                            Factors Affecting Office Shifting Cost in India
+                        </h2>
+
+                        <p>
+                            Office relocation charges depend on several factors.
+                            Understanding these factors can help businesses plan
+                            their office shifting budget more effectively.
+                        </p>
 
                         <ol>
-                            <li>Distance -
-                                The farther the move, the higher the cost. Longer distances require more fuel, time, and resources, whether you’re shifting a home, office, or other goods.
-
-                            </li>
-                            <li>Number of Items -
-                                If you have more or heavier items to move, you’ll need a bigger vehicle and more labor, which increases the cost.
-
-
-                            </li>
                             <li>
-                                Packing Quality -
-                                Using good packing materials like bubble wrap and boxes keeps your items safe but adds a little extra to the cost, especially for fragile items.
+                                <h3>
+                                    Distance Between Old and New Office
+                                Locations
+                                </h3>
 
-
+                                <p>
+                                    Longer relocation distances may increase
+                                    transportation costs because of additional
+                                    fuel, travel time, and logistics resources.
+                                </p>
                             </li>
+
                             <li>
-                                Type of Vehicle -
-                                The type of truck or container used depends on how many goods you have. Bigger or special vehicles cost more than small ones.
+                                <h3>
+                                    Number and Volume of Office Items
+                                </h3>
 
-
+                                <p>
+                                    Offices with more furniture, equipment, or
+                                    heavy assets may require larger vehicles and
+                                    additional manpower.
+                                </p>
                             </li>
+
                             <li>
-                                Time of Moving -
-                                Moving on weekends, month-end, or during busy seasons usually costs more. Choosing a weekday or off-season date can help you save money.
+                                <h3>
+                                    Quality of Packing Materials
+                                </h3>
 
+                                <p>
+                                    Computers, servers, electronics, and fragile
+                                    office equipment may require protective
+                                    packing materials such as bubble wrap,
+                                    cartons, and cushioning materials.
+                                </p>
+                            </li>
 
+                            <li>
+                                <h3>
+                                    Type and Size of Moving Vehicle
+                                </h3>
+
+                                <p>
+                                    The moving vehicle is selected based on the
+                                    volume and type of office assets. Larger or
+                                    specialized vehicles may affect the overall
+                                    relocation cost.
+                                </p>
+                            </li>
+
+                            <li>
+                                <h3>
+                                    Office Moving Date and Relocation Schedule
+                                </h3>
+
+                                <p>
+                                    Office shifting during weekends, month-end
+                                    periods, or peak relocation seasons may
+                                    affect moving charges. Planning the move
+                                    during suitable business hours or weekdays
+                                    may help optimize relocation costs.
+                                </p>
                             </li>
                         </ol>
-                    </div>
+                    </section>
                 </div>
-            </section>
-                <FAQ />
+            </main>
 
-            {/* <ReviewVideo></ReviewVideo>
-            <GetInTouch></GetInTouch>
-            <AwardCertification></AwardCertification>
-            <TrustUsSection></TrustUsSection>
-            <BrandList></BrandList>
-            <FAQList></FAQList>
-
-            <section id="keywords-section">
-                <h1>People also search for these Queries</h1>
-                <div className="container">
-                    {keywords.map((col) => {
-                        return <h5 className="keyword">{col}</h5>
-                    })}
-                </div>
-            </section> */}
+            <FAQ />
         </>
-    )
-}
+    );
+};
 
 export default OfficeRelocation;

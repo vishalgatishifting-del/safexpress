@@ -234,72 +234,37 @@ const Storage = () => {
 
                 {/* Service Schema */}
                 <script type="application/ld+json">
+
                     {JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "Service",
-                        "name": "Storage Services",
-                        "serviceType": "Storage and Warehouse Services",
-                        "description":
-                            "Safe Shifting Packers offers secure storage and warehouse services for household goods, office items, furniture, documents, bikes, cars and commercial inventory across India.",
-                        "url": "https://safeshiftingpackers.com/storage",
-                        "image": "https://safeshiftingpackers.com/images/storage.webp",
-                        "provider": {
+
+                        name: "Storage Services",
+
+                        serviceType: [
+                            "Household Storage",
+                            "Box Storage",
+                            "Bike Storage",
+                            "Car Storage",
+                            "Document Storage",
+                            "Commercial Storage",
+                        ],
+
+                        description:
+                            "Safexpress provides storage and warehouse solutions for household goods, office items, furniture, documents, bikes, cars, and commercial inventory across India.",
+
+                        url: "https://safeshiftingpackers.com/storage",
+
+                        provider: {
                             "@type": "Organization",
-                            "name": "Safe Shifting Packers",
-                            "url": "https://safeshiftingpackers.com/"
+                            name: "Safexpress",
+                            url: "https://safeshiftingpackers.com/",
                         },
-                        "areaServed": {
+
+                        areaServed: {
                             "@type": "Country",
-                            "name": "India"
+                            name: "India",
                         },
-                        "hasOfferCatalog": {
-                            "@type": "OfferCatalog",
-                            "name": "Storage Services",
-                            "itemListElement": [
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Household Storage"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Box Storage"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Bike Storage"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Car Storage"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Document Storage"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "name": "Commercial Storage"
-                                    }
-                                }
-                            ]
-                        }
                     })}
                 </script>
             </Helmet>

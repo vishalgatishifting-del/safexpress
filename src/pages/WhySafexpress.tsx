@@ -1,76 +1,258 @@
-// import AwardCertification from "../components/AwardCertification";
-// import ContactForm from "../components/ContactForm";
-// import FAQList from "../components/FAQList";
-import "../styles/WhySafexpress.scss"
 
+import { Helmet } from "react-helmet-async";
 
-import "../styles/Common.scss"
+import "../styles/WhySafexpress.scss";
+import "../styles/Common.scss";
 
-// interface props {
-//     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
-// }
 const WhySafexpress = () => {
-
-    // const keywords = [
-    //     "why choose packers and movers",
-    //     "why choose us packers and movers",
-    //     "trusted packers and movers in India",
-    //     "best packers and movers",
-    //     "packers and movers benefits",
-    //     "experienced relocation services India",
-    //     "why hire professional packers and movers",
-    //     "packers movers reliability and safety",
-    //     "why Safexpress",
-    //     "gati packers and movers"
-    // ];
-
     return (
         <>
-            <section id="why-gati-sec" className="top-element">
-                {/* <div className="bg-attached">
-                    <h1>Why Safexpress?</h1>
-                </div> */}
-                <div className="container">
-                    <div className="content">
-                        <h1>Why Choose Safexpress?</h1>
-                        <p>Relocating can be stressful, but with Safexpress, your move becomes smooth, reliable, and hassle-free. Whether you are shifting within the city or across India, our experienced team, modern equipment, and customer-first approach ensure your valuables are handled with the utmost care and delivered on time.</p>
+            <Helmet>
+                <title>
+                    Why Choose Safexpress | Trusted Relocation Services
+                </title>
 
-                        <h3>Trusted Relocation Services Across India</h3>
-                        <p>We provide professional packing and moving services in almost every major city. Whether you are looking for Safexpress in Delhi, Safexpress in Mumbai, or Safexpress in Bangalore, our network ensures a seamless moving experience.
-                            From north to south, we are your trusted relocation partner. Choose Safexpress in Hyderabad, Chennai, Kolkata, Pune, Ahmedabad, Surat, Jaipur, Lucknow, Kanpur, Nagpur, Indore, Bhopal, Patna, Ranchi, Raipur, Chandigarh, Dehradun, Ludhiana, Amritsar, Jalandhar, Guwahati, Bhubaneswar, Cuttack, Coimbatore, Madurai, Kochi, Trivandrum, Mysore, Mangalore, Vadodara, Rajkot, Nashik, Aurangabad, Meerut, Ghaziabad, Noida, and Faridabad for stress-free shifting.
+                <meta
+                    name="description"
+                    content="Discover why customers choose Safexpress for professional relocation services in India. Get secure packing, reliable transportation, transparent pricing, and professional moving support."
+                />
+
+                <meta
+                    name="keywords"
+                    content="why choose Safexpress, trusted relocation services India, professional packers and movers, reliable moving services, safe relocation services, affordable shifting services"
+                />
+
+                <meta
+                    name="robots"
+                    content="index, follow"
+                />
+
+                <meta
+                    property="og:title"
+                    content="Why Choose Safexpress for Relocation Services?"
+                />
+
+                <meta
+                    property="og:description"
+                    content="Choose Safexpress for safe, professional, and reliable relocation services with secure packing, transportation support, and transparent pricing."
+                />
+
+                <meta
+                    property="og:type"
+                    content="website"
+                />
+
+                <meta
+                    name="twitter:card"
+                    content="summary_large_image"
+                />
+
+                <meta
+                    name="twitter:title"
+                    content="Why Choose Safexpress?"
+                />
+
+                <meta
+                    name="twitter:description"
+                    content="Learn why Safexpress is a trusted choice for professional relocation and shifting services across India."
+                />
+                
+                <link rel="canonical" href="https://safeshiftingpackers.com/why-safexpress" />
+            </Helmet>
+
+            <main
+                id="why-safexpress-sec"
+                className="top-element"
+            >
+                <div className="container">
+                    <header className="content why-safexpress-intro">
+                        <h1>
+                            Why Choose Safexpress?
+                        </h1>
+
+                        <p>
+                            Relocating can be a complex and time-consuming
+                            process, but professional planning and moving
+                            support can make the journey easier. Safexpress
+                            provides reliable relocation solutions designed to
+                            make household, office, and vehicle shifting more
+                            organized and convenient.
                         </p>
 
-                        <h3>Why We Stand Out</h3>
+                        <p>
+                            Whether you are relocating within your city or
+                            moving to another location in India, our team
+                            focuses on careful handling, secure transportation,
+                            and professional relocation coordination.
+                        </p>
+
+                        <p>
+                            Our customer-focused approach helps us understand
+                            different moving requirements and provide suitable
+                            relocation solutions based on the type of goods,
+                            moving distance, and transportation needs.
+                        </p>
+                    </header>
+
+                    <section className="content trusted-relocation">
+                        <h2>
+                            Trusted Relocation Services Across India
+                        </h2>
+
+                        <p>
+                            Safexpress provides professional packing and moving
+                            services across multiple cities in India. Our
+                            relocation services are designed for customers
+                            planning local, intercity, and interstate moves.
+                        </p>
+
+                        <p>
+                            We provide relocation support in major cities,
+                            including Delhi, Mumbai, Bengaluru, Hyderabad,
+                            Chennai, Kolkata, Pune, Ahmedabad, Jaipur, Lucknow,
+                            Noida, Ghaziabad, Faridabad, Chandigarh, Dehradun,
+                            Indore, Bhopal, Patna, Ranchi, Kochi, and other
+                            service locations.
+                        </p>
+
+                        <p>
+                            Our team coordinates packing, loading,
+                            transportation, and delivery according to the
+                            customer's relocation requirements and planned
+                            moving schedule.
+                        </p>
+                    </section>
+
+                    <section className="content why-we-stand-out">
+                        <h2>
+                            Why Safexpress Stands Out
+                        </h2>
+
                         <ul>
-                            <li>Safe & Secure Packing – Premium quality packing materials to safeguard your belongings.</li>
-                            <li>On-Time Delivery – Advanced tracking and reliable transport for punctual moves.</li>
-                            <li>Pan-India Network – Availability of services in all major Indian cities.</li>
-                            <li>Affordable & Transparent Pricing – No hidden charges, only fair quotes.</li>
-                            <li>Expert Team – Trained professionals who treat your items with care.</li>
-                        </ul>
+                            <li>
+                                <strong>Safe and Secure Packing:</strong>{" "}
+                                Suitable packing materials and professional
+                                packing techniques are used to help protect
+                                belongings during transportation.
+                            </li>
 
-                        <h3>Move Smart, Move with Safexpress</h3>
-                        <p>Whether you’re moving your household, office, or vehicle, Safexpress makes relocation simple and worry-free. From Delhi to Mumbai, Hyderabad to Chennai, or Kolkata to Bangalore, our services are designed to meet all your shifting needs.
-                            <br />
-                            Choose Safexpress today and experience a safe, fast, and reliable move anywhere in India!
+                            <li>
+                                <strong>Reliable Delivery Coordination:</strong>{" "}
+                                Our team plans transportation and delivery based
+                                on the selected relocation route and moving
+                                requirements.
+                            </li>
+
+                            <li>
+                                <strong>Wide Service Network:</strong>{" "}
+                                Relocation support is available across multiple
+                                major cities and service locations in India.
+                            </li>
+
+                            <li>
+                                <strong>Transparent Pricing:</strong>{" "}
+                                Relocation quotations are prepared according to
+                                the customer's moving requirements, distance,
+                                and volume of goods.
+                            </li>
+
+                            <li>
+                                <strong>Experienced Moving Team:</strong>{" "}
+                                Trained professionals manage packing, handling,
+                                loading, and transportation coordination.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section className="content relocation-solutions">
+                        <h2>
+                            Complete Relocation Solutions for Different Moving
+                            Needs
+                        </h2>
+
+                        <p>
+                            Every relocation has different requirements.
+                            Safexpress provides moving solutions for household
+                            shifting, office relocation, vehicle
+                            transportation, and other relocation needs.
                         </p>
 
-                    </div>
+                        <p>
+                            Our team evaluates the moving requirements and
+                            coordinates suitable packing and transportation
+                            arrangements based on the type and volume of goods.
+                        </p>
+                    </section>
+
+                    <section className="content safe-relocation">
+                        <h2>
+                            Professional Handling and Secure Transportation
+                        </h2>
+
+                        <p>
+                            Proper handling is an important part of the
+                            relocation process. Our moving team follows
+                            organized packing, labeling, loading, and
+                            transportation procedures to help reduce the risk of
+                            damage during transit.
+                        </p>
+
+                        <p>
+                            Household furniture, electronics, office equipment,
+                            and other belongings are handled according to their
+                            specific packing and transportation requirements.
+                        </p>
+                    </section>
+
+                    <section className="content transparent-pricing">
+                        <h2>
+                            Transparent and Affordable Relocation Pricing
+                        </h2>
+
+                        <p>
+                            Safexpress follows a transparent pricing approach
+                            based on the customer's relocation requirements.
+                            Moving charges may depend on factors such as
+                            distance, number of items, packing requirements,
+                            vehicle type, and relocation schedule.
+                        </p>
+
+                        <p>
+                            Our team provides relocation quotations based on the
+                            information shared by the customer, helping them
+                            understand the estimated moving cost before
+                            confirming the service.
+                        </p>
+                    </section>
+
+                    <section className="content move-with-safexpress">
+                        <h2>
+                            Move Smart with Safexpress
+                        </h2>
+
+                        <p>
+                            Whether you are moving your household belongings,
+                            relocating your office, or transporting a vehicle,
+                            Safexpress provides professional relocation support
+                            designed to make the moving process organized and
+                            convenient.
+                        </p>
+
+                        <p>
+                            From planning and packing to transportation and
+                            delivery coordination, our team assists throughout
+                            different stages of the relocation process.
+                        </p>
+
+                        <p>
+                            Choose Safexpress for reliable relocation services
+                            and professional moving support across India.
+                        </p>
+                    </section>
                 </div>
-            </section>
-            {/* <ContactForm successCondition={successCondition}></ContactForm>
-            <AwardCertification></AwardCertification>
-            <FAQList></FAQList> */}
-            {/* <section id="keywords-section">
-                <h1>People also search for these Queries</h1>
-                <div className="container">
-                    {keywords.map((col) => {
-                        return <h5 className="keyword">{col}</h5>
-                    })}
-                </div>
-            </section> */}
+            </main>
         </>
-    )
-}
+    );
+};
 
 export default WhySafexpress;
