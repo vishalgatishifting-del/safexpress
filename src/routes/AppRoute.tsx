@@ -47,7 +47,7 @@ const AppRoutes = () => {
             <ScrollToTop>
 
                 <SuccessScreen />
-                <section style={{ width: "100%", overflowX: "hidden" }}>
+                <main style={{ paddingTop:"var(--header-h)" }}>
 
                     <TopBar />
                     <Navbar />
@@ -91,7 +91,7 @@ const AppRoutes = () => {
                         />
                     </Routes>
                     <Footer></Footer>
-                </section>
+                </main>
             </ScrollToTop>
         </VisibilityProvider>
     )

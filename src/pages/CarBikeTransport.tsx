@@ -37,11 +37,11 @@ const CarBikeTransport = () => {
         name: "Car and Bike Transport Services",
         serviceType: "Vehicle Transportation and Relocation Services",
         description:
-            "Gati Shifting Packers provides car and bike transport services for secure vehicle relocation across serviceable locations in India.",
+            "Safexpress provides car and bike transport services for secure vehicle relocation across serviceable locations in India.",
         url: PAGE_URL,
         provider: {
             "@type": "Organization",
-            name: "Gati Shifting Packers",
+            name: "Safexpress",
             url: "https://safeshiftingpackers.com/",
         },
         areaServed: {
@@ -74,12 +74,12 @@ const CarBikeTransport = () => {
         <>
             <Helmet>
                 <title>
-                    Car & Bike Transport Services in India | Gati Shifting Packers
+                    Car & Bike Transport Services in India | Safexpress
                 </title>
 
                 <meta
                     name="description"
-                    content="Book car and bike transport services with Gati Shifting Packers. Get professional vehicle handling, doorstep pickup, secure transportation, and relocation support across India."
+                    content="Book car and bike transport services with Safexpress. Get professional vehicle handling, doorstep pickup, secure transportation, and relocation support across India."
                 />
 
                 <meta name="robots" content="index, follow" />
@@ -89,25 +89,25 @@ const CarBikeTransport = () => {
                 <meta property="og:url" content={PAGE_URL} />
                 <meta
                     property="og:title"
-                    content="Car & Bike Transport Services in India | Gati Shifting Packers"
+                    content="Car & Bike Transport Services in India | Safexpress"
                 />
                 <meta
                     property="og:description"
                     content="Professional car and bike transport services for secure vehicle relocation, doorstep pickup, and transportation support across India."
                 />
-                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:site_name" content="Safexpress" />
                 <meta property="og:image" content={OG_IMAGE_URL} />
                 <meta property="og:image:secure_url" content={OG_IMAGE_URL} />
                 <meta property="og:image:type" content="image/webp" />
                 <meta
                     property="og:image:alt"
-                    content="Car and bike transport services by Gati Shifting Packers"
+                    content="Car and bike transport services by Safexpress"
                 />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta
                     name="twitter:title"
-                    content="Car & Bike Transport Services in India | Gati Shifting Packers"
+                    content="Car & Bike Transport Services in India | Safexpress"
                 />
                 <meta
                     name="twitter:description"
@@ -136,7 +136,7 @@ const CarBikeTransport = () => {
                         </h1>
 
                         <p>
-                            Gati Shifting Packers provides professional car and bike
+                            Safexpress provides professional car and bike
                             transport services for customers relocating vehicles between
                             cities and serviceable locations across India. Our vehicle
                             relocation process focuses on careful handling, coordinated

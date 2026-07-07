@@ -1,4 +1,4 @@
-import "../styles/Storage.scss";
+import "../styles/BikeStorage.scss";
 import "../styles/Common.scss";
 
 import { Link } from "react-router-dom";
@@ -137,12 +137,12 @@ const BikeStorage = () => {
         name: "Bike Storage Services",
         serviceType: "Bike and Two-Wheeler Storage Services",
         description:
-            "Gati Shifting Packers provides secure bike and two-wheeler storage services with covered storage, CCTV monitoring, professional handling, and pickup and delivery support.",
+            "Safexpress provides secure bike and two-wheeler storage services with covered storage, CCTV monitoring, professional handling, and pickup and delivery support.",
         url: PAGE_URL,
         image: OG_IMAGE_URL,
         provider: {
             "@type": "Organization",
-            name: "Gati Shifting Packers",
+            name: "Safexpress",
             url: "https://safeshiftingpackers.com/",
         },
         areaServed: {
@@ -176,7 +176,7 @@ const BikeStorage = () => {
                 <meta property="og:image:type" content="image/png" />
                 <meta
                     property="og:image:alt"
-                    content="Secure bike and two-wheeler storage services by Gati Shifting Packers"
+                    content="Secure bike and two-wheeler storage services by Safexpress"
                 />
 
                 <meta name="twitter:card" content="summary_large_image" />
@@ -201,7 +201,6 @@ const BikeStorage = () => {
             <main className="bike-storage-page">
                 <section
                     id="serivce-hero-section"
-                    className="top-element"
                     aria-labelledby="bike-storage-heading"
                 >
                     <div className="container">
@@ -227,7 +226,7 @@ const BikeStorage = () => {
                                 <a
                                     className="call-btn"
                                     href={`tel:${COMPANY.phone}`}
-                                    aria-label={`Call Gati Shifting Packers at +91 ${COMPANY.phone}`}
+                                    aria-label={`Call Safexpress at +91 ${COMPANY.phone}`}
                                 >
                                     <LocalPhoneIcon aria-hidden="true" />
                                     Call Now
@@ -266,7 +265,7 @@ const BikeStorage = () => {
                     </h2>
                     <p>
                         Looking for a safe place to store your bike for a short or long
-                        duration? Gati Shifting Packers provides professional bike storage
+                        duration? Safexpress provides professional bike storage
                         services designed to keep two-wheelers protected and properly
                         managed until they are needed again.
                     </p>
@@ -398,7 +397,7 @@ const BikeStorage = () => {
                             Why Choose Our Bike Storage Services?
                         </h2>
                         <p>
-                            Gati Shifting Packers provides bike storage services for
+                            Safexpress provides bike storage services for
                             customers who need secure short-term or long-term two-wheeler
                             storage. Our storage solutions focus on covered facilities,
                             monitored spaces, professional handling, and convenient support

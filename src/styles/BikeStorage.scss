@@ -1,0 +1,748 @@
+@use "./variables" as v;
+
+/*
+  DESIGN TOKENS — "Shipping Manifest" system (shared with Storage.scss / CarStorage.scss)
+  Same brand language, scoped to the Bike Storage page's own markup.
+*/
+.bike-storage-page {
+    --ink: #0e1b16;
+    --primary: #0b6b3a;
+    --primary-dark: #084d29;
+    --primary-light: #e6f1ea;
+    --kraft: #b98653;
+    --paper: #faf8f2;
+    --paper-dim: #f1ede1;
+    --slate: #57616b;
+    --line: #e3ddcc;
+    --radius: 18px;
+
+    --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+    --font-label: "Barlow Condensed", "Segoe UI", sans-serif;
+    --font-body: "Inter", "Segoe UI", sans-serif;
+
+    color: var(--slate);
+    font-family: var(--font-body);
+
+    h1, h2, h3 {
+        font-family: var(--font-display);
+        color: var(--ink);
+        margin: 0;
+    }
+
+    .primary-color {
+        color: var(--primary);
+    }
+
+    section {
+        padding: 90px 20px;
+    }
+}
+
+/* ---------- HERO ---------- */
+#serivce-hero-section {
+    position: relative;
+    overflow: hidden;
+
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 50px;
+        align-items: center;
+
+        .content {
+            .badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-family: var(--font-label);
+                text-transform: uppercase;
+                letter-spacing: 0.16em;
+                font-size: 13px;
+                font-weight: 600;
+                color: var(--primary-dark);
+                background: var(--primary-light);
+                border: 1px solid var(--primary);
+                border-radius: 999px;
+                padding: 6px 16px;
+                margin-bottom: 18px;
+
+                &::before {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: var(--primary);
+                    display: inline-block;
+                }
+            }
+
+            h1 {
+                font-size: 44px;
+                line-height: 1.15;
+                font-weight: 700;
+                margin-bottom: 18px;
+                letter-spacing: -0.01em;
+            }
+
+            p.subtitle {
+                font-size: 18px;
+                color: var(--slate);
+                margin-bottom: 22px;
+                max-width: 48ch;
+            }
+
+            .offer {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--primary-dark);
+                background: #fff;
+                border: 2px dashed var(--primary);
+                border-radius: 10px;
+                padding: 10px 20px;
+                margin-bottom: 28px;
+                transform: rotate(-1deg);
+
+                strong {
+                    font-family: var(--font-display);
+                    font-size: 17px;
+                }
+            }
+
+            .links {
+                display: flex;
+                gap: 16px;
+                margin-bottom: 30px;
+                flex-wrap: wrap;
+
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    border-radius: 999px;
+                    padding: 14px 30px;
+                    font-size: 16px;
+                    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+                }
+
+                a.call-btn {
+                    background: #fff;
+                    color: var(--ink);
+                    border: 2px solid var(--line);
+                    justify-content: center;
+
+                    &:hover {
+                        background: var(--ink);
+                        color: #fff;
+                        border-color: var(--ink);
+                    }
+                }
+
+                a.quote-btn {
+                    background: var(--primary);
+                    color: #fff;
+                    box-shadow: 0 10px 24px rgba(11, 107, 58, 0.28);
+
+                    &:hover {
+                        transform: translateY(-3px);
+                        background: var(--primary-dark);
+                        box-shadow: 0 14px 30px rgba(11, 107, 58, 0.34);
+                    }
+                }
+            }
+
+            .trust-points {
+                display: flex;
+                gap: 14px;
+                flex-wrap: wrap;
+                padding-top: 24px;
+                border-top: 1px solid var(--line);
+
+                span {
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: var(--primary-dark);
+                    background: var(--primary-light);
+                    border-radius: 999px;
+                    padding: 7px 14px;
+                }
+            }
+        }
+
+        .img-bx {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            &::before {
+                content: "COVERED STORAGE · SAFEXPRESS · COVERED STORAGE · SAFEXPRESS";
+                position: absolute;
+                top: -30px;
+                right: -30px;
+                width: 180px;
+                height: 180px;
+                border: 2px solid var(--primary);
+                border-radius: 50%;
+                font-family: var(--font-label);
+                font-size: 10px;
+                letter-spacing: 0.05em;
+                color: var(--primary);
+                opacity: 0.28;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 18px;
+                transform: rotate(8deg);
+                z-index: 0;
+                pointer-events: none;
+            }
+
+            .img-card {
+                position: relative;
+                z-index: 1;
+                padding: 18px;
+                border-radius: var(--radius);
+                background: #fff;
+                box-shadow: 0 30px 60px rgba(14, 27, 22, 0.12);
+
+                img {
+                    border-radius: 12px;
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #serivce-hero-section .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        .content {
+            .links,
+            .trust-points {
+                justify-content: center;
+            }
+
+            p.subtitle {
+                margin-inline: auto;
+            }
+        }
+
+        .img-bx::before {
+            display: none;
+        }
+    }
+}
+
+/* ---------- ABOUT ---------- */
+#about-car-storage {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 20px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 65ch;
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        margin-top: 36px;
+
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                border-radius: 999px;
+                padding: 14px 32px;
+                font-size: 16px;
+                transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+            }
+
+            .quote-btn {
+                background: var(--primary);
+                color: #fff;
+                box-shadow: 0 10px 24px rgba(11, 107, 58, 0.28);
+
+                &:hover {
+                    transform: translateY(-3px);
+                    background: var(--primary-dark);
+                }
+            }
+
+            .call-btn {
+                background: #fff;
+                border: 2px solid var(--line);
+                color: var(--ink);
+
+                &:hover {
+                    background: var(--ink);
+                    color: #fff;
+                    border-color: var(--ink);
+                }
+            }
+        }
+    }
+}
+
+/* ---------- BRANDS ---------- */
+#brands-section {
+    background: #fff;
+
+    .heading-container {
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto 40px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 18px;
+        max-width: 1200px;
+        margin: auto;
+
+        .brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: var(--paper);
+            border-radius: 14px;
+            border: 1px solid var(--line);
+            filter: grayscale(1);
+            opacity: 0.7;
+            transition: filter 0.25s ease, opacity 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+
+            &:hover {
+                filter: none;
+                opacity: 1;
+                border-color: var(--primary);
+                transform: translateY(-3px);
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* ---------- NUMBERS ---------- */
+#numbers-section {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .numbers-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-top: 1px solid var(--line);
+        border-left: 1px solid var(--line);
+        border-radius: 14px;
+        overflow: hidden;
+
+        div {
+            padding: 34px 26px;
+            border-right: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: #fff;
+            transition: background 0.25s ease;
+            text-align: center;
+
+            &:hover {
+                background: var(--primary-light);
+            }
+
+            h3 {
+                font-size: 26px;
+                color: var(--primary-dark);
+                margin-bottom: 6px;
+            }
+
+            span {
+                font-size: 14px;
+                color: var(--slate);
+            }
+        }
+    }
+
+    .contact-container {
+        text-align: center;
+        margin-top: 46px;
+
+        span {
+            display: block;
+            font-size: 16px;
+            color: var(--slate);
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                border-radius: 999px;
+                padding: 14px 32px;
+                font-size: 16px;
+                transition: transform 0.25s ease, background 0.25s ease;
+            }
+
+            .quote-btn {
+                background: var(--primary);
+                color: #fff;
+                box-shadow: 0 10px 24px rgba(11, 107, 58, 0.28);
+
+                &:hover {
+                    transform: translateY(-3px);
+                    background: var(--primary-dark);
+                }
+            }
+
+            .call-btn {
+                background: #fff;
+                border: 2px solid var(--line);
+                color: var(--ink);
+
+                &:hover {
+                    background: var(--ink);
+                    color: #fff;
+                    border-color: var(--ink);
+                }
+            }
+        }
+    }
+}
+
+/* ---------- HIGHLIGHTS SLIDER ---------- */
+#slider-section {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2.heading {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    .container {
+        .card {
+            height: 190px;
+            border: 1px solid var(--line);
+            padding: 20px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #fff;
+            transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+            margin: 4px;
+
+            &:hover {
+                border-color: var(--primary);
+                box-shadow: 0 16px 30px rgba(14, 27, 22, 0.08);
+                transform: translateY(-4px);
+            }
+
+            .icon {
+                font-size: 26px;
+                margin-bottom: 4px;
+            }
+
+            span {
+                font-family: var(--font-label);
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                font-size: 12px;
+                color: var(--primary-dark);
+                margin: 6px 0;
+            }
+
+            h3 {
+                margin-bottom: 6px;
+                font-size: 15px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 13px;
+                color: var(--slate);
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--primary);
+        }
+    }
+}
+
+/* ---------- PRICE IMAGE ---------- */
+.price-img-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 90px auto;
+    padding: 0 20px;
+
+    .price-img {
+        width: 100%;
+        max-width: 900px;
+        border-radius: var(--radius);
+        box-shadow: 0 20px 50px rgba(14, 27, 22, 0.12);
+        border: 1px solid var(--line);
+    }
+}
+
+@media screen and (max-width: 1368px) {
+    .price-img-container .price-img {
+        width: 100%;
+    }
+}
+
+/* ---------- SAFETY ---------- */
+#safe-secure-section {
+    background: var(--ink);
+    color: #fff;
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+
+        h2 {
+            color: #fff;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            max-width: 70ch;
+            margin: 0 auto 50px;
+            font-size: 14px;
+            opacity: 0.75;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+
+            .card {
+                background: rgba(255, 255, 255, 0.05);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                height: 140px;
+                border-radius: 14px;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                transition: background 0.25s ease, border-color 0.25s ease;
+
+                &:hover {
+                    background: rgba(11, 107, 58, 0.25);
+                    border-color: var(--primary);
+                }
+
+                .icon {
+                    font-size: 34px;
+                    color: #7bd9a3;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* ---------- GALLERY ---------- */
+#sample-images {
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+
+        img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 16px;
+            transition: transform 0.4s ease;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 1257px) {
+    #brands-section .container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1228px) {
+    #about-car-storage {
+        padding: 60px 24px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #brands-section .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (max-width: 932px) {
+    #about-car-storage h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 911px) {
+    #safe-secure-section .container .content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 845px) {
+    #sample-images .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #numbers-section .numbers-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #brands-section .container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 756px) {
+    #safe-secure-section .container .content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    #about-car-storage h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 682px) {
+    #sample-images .container img {
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #brands-section .container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #safe-secure-section .container .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 478px) {
+    #about-car-storage .contact-container .links,
+    #numbers-section .contact-container .links {
+        flex-direction: column;
+
+        a {
+            display: block;
+            width: 100%;
+            margin: 10px 0 !important;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 454px) {
+    #sample-images .container {
+        grid-template-columns: repeat(2, 1fr);
+
+        img { height: 150px; }
+    }
+}
+
+@media screen and (max-width: 395px) {
+    #brands-section .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

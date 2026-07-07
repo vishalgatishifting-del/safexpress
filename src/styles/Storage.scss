@@ -1,33 +1,36 @@
 @use "./variables" as v;
 
 /*
-  DESIGN TOKENS — "Shipping Manifest" system
+  DESIGN TOKENS — "Shipping Manifest" system, v2
   Grounded in the subject: warehouse signage, crate stencils, kraft cardboard
-  and shipping labels. Add these two font families to your index.html (or
-  @import them here) if not already present:
+  and shipping labels — now built around safexpress's brand green as the
+  primary trust signal. Add these font families to your index.html if not
+  already present:
 
-  Space Grotesk   -> headlines (geometric, industrial)
+  Space Grotesk    -> headlines (geometric, industrial)
   Barlow Condensed -> eyebrows / labels (stencil, uppercase)
-  Inter           -> body copy
+  Inter            -> body copy
 */
 .storage-page {
-    --ink: #10203a;       // deep navy — headings, dark surfaces
-    --amber: #f2a93b;     // warehouse amber — primary accent / CTA
-    --kraft: #b98653;     // kraft cardboard — secondary accent, dividers
-    --paper: #faf7f1;     // warm paper background
-    --paper-dim: #f2ede3;
-    --slate: #57616e;     // body copy
-    --crate-red: #c1443c; // urgency accent, used sparingly
-    --line: #e4dccb;      // hairline / dashed border tone
+    --ink: #0e1b16;        // deep pine-charcoal — headings, dark surfaces
+    --primary: #0b6b3a;    // safexpress green — trust, security, primary CTA
+    --primary-dark: #084d29;
+    --primary-light: #e6f1ea; // pale green tint for chips / highlight fills
+    --kraft: #b98653;      // kraft cardboard — secondary accent, dividers, stamps
+    --paper: #faf8f2;      // warm paper background
+    --paper-dim: #f1ede1;
+    --slate: #57616b;      // body copy
+    --crate-red: #c1443c;  // urgency accent, used sparingly
+    --line: #e3ddcc;       // hairline / dashed border tone
     --radius: 18px;
 
     --font-display: "Space Grotesk", "Segoe UI", sans-serif;
     --font-label: "Barlow Condensed", "Segoe UI", sans-serif;
     --font-body: "Inter", "Segoe UI", sans-serif;
 
-    // background: var(--paper);
     color: var(--slate);
     font-family: var(--font-body);
+    // background: var(--paper);
 
     h1, h2, h3 {
         font-family: var(--font-display);
@@ -36,26 +39,36 @@
     }
 
     .eyebrow {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
         font-family: var(--font-label);
         text-transform: uppercase;
-        letter-spacing: 0.14em;
+        letter-spacing: 0.16em;
         font-size: 13px;
         font-weight: 600;
-        color: var(--kraft);
+        color: var(--primary-dark);
         margin-bottom: 14px;
+
+        &::before {
+            content: "";
+            width: 18px;
+            height: 1px;
+            background: var(--kraft);
+            display: inline-block;
+        }
 
         &--standalone {
             width: 100%;
+            justify-content: center;
             text-align: center;
             font-size: 15px;
             margin: 0 0 28px;
-            color: var(--kraft);
         }
     }
 
     .accent {
-        color: v.$primary-color;
+        color: var(--primary);
     }
 
     .btn {
@@ -65,7 +78,7 @@
         text-decoration: none;
         font-weight: 600;
         border-radius: 999px;
-        transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+        transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
         font-family: var(--font-body);
     }
 
@@ -86,25 +99,28 @@
     .btn--solid {
         padding: 14px 32px;
         font-size: 16px;
-        background: v.$primary-color;
-        color: var(--ink);
+        background: var(--primary);
+        color: #fff;
+        box-shadow: 0 10px 24px rgba(11, 107, 58, 0.28);
 
         &:hover {
             transform: translateY(-3px);
+            background: var(--primary-dark);
+            box-shadow: 0 14px 30px rgba(11, 107, 58, 0.34);
         }
     }
 
     section {
-        padding: 90px 20px;
+        padding: 96px 20px;
     }
 }
 
 /* ---------- HERO ---------- */
 #hero-section {
-    padding-top: 60px;
-    // background:
-    //     linear-gradient(180deg, rgba(16, 32, 58, 0.02), transparent 60%),
-    //     var(--paper);
+    padding-top: 64px;
+    position: relative;
+    overflow: hidden;
+
 
     .container {
         max-width: 1200px;
@@ -120,6 +136,7 @@
         line-height: 1.12;
         font-weight: 700;
         margin-bottom: 18px;
+        letter-spacing: -0.01em;
     }
 
     .subtitle {
@@ -135,16 +152,16 @@
         gap: 2px;
         padding: 12px 22px;
         margin-bottom: 34px;
-        border: 2px dashed var(--kraft);
+        border: 2px dashed var(--primary);
         border-radius: 10px;
         transform: rotate(-2deg);
-        background: #fff;
+        background: var(--primary-light);
 
         &__value {
             font-family: var(--font-display);
             font-weight: 700;
             font-size: 20px;
-            color: var(--crate-red);
+            color: var(--primary-dark);
         }
 
         &__label {
@@ -167,6 +184,8 @@
         display: flex;
         gap: 34px;
         margin: 0;
+        padding-top: 28px;
+        border-top: 1px solid var(--line);
 
         div {
             display: flex;
@@ -175,9 +194,9 @@
 
         dt {
             font-family: var(--font-display);
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 700;
-            color: var(--ink);
+            color: var(--primary-dark);
         }
 
         dd {
@@ -190,13 +209,41 @@
     .img-bx {
         display: flex;
         justify-content: center;
+        position: relative;
+
+        // Signature element: a rotated "verified secure" stamp, faint,
+        // sitting behind the hero photo like a customs / manifest seal.
+        &::before {
+            content: "VERIFIED · SECURE · SAFEXPRESS · VERIFIED · SECURE · SAFEXPRESS";
+            position: absolute;
+            top: -34px;
+            right: -34px;
+            width: 190px;
+            height: 190px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            font-family: var(--font-label);
+            font-size: 11px;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            opacity: 0.28;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            transform: rotate(8deg);
+            z-index: 0;
+            pointer-events: none;
+        }
 
         .img-card {
             position: relative;
+            z-index: 1;
             padding: 18px;
             border-radius: var(--radius);
             background: #fff;
-            box-shadow: 0 30px 60px rgba(16, 32, 58, 0.1);
+            box-shadow: 0 30px 60px rgba(14, 27, 22, 0.12);
 
             .tag-corner {
                 position: absolute;
@@ -210,7 +257,7 @@
                 font-size: 12px;
                 padding: 6px 14px;
                 border-radius: 999px;
-                box-shadow: 0 8px 16px rgba(16, 32, 58, 0.25);
+                box-shadow: 0 8px 16px rgba(14, 27, 22, 0.25);
             }
 
             img {
@@ -225,7 +272,7 @@
 
 @media (max-width: 768px) {
     #hero-section {
-        padding: 50px 16px;
+        padding: 54px 16px;
 
         .container {
             grid-template-columns: 1fr;
@@ -247,6 +294,10 @@
         .links,
         .trust-stats {
             justify-content: center;
+        }
+
+        .img-bx::before {
+            display: none;
         }
     }
 }
@@ -286,12 +337,14 @@
             border-radius: 14px;
             border: 1px solid var(--line);
             filter: grayscale(1);
-            opacity: 0.75;
-            transition: filter 0.25s ease, opacity 0.25s ease;
+            opacity: 0.7;
+            transition: filter 0.25s ease, opacity 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 
             &:hover {
                 filter: none;
                 opacity: 1;
+                border-color: var(--primary);
+                transform: translateY(-3px);
             }
 
             img {
@@ -311,15 +364,23 @@
         grid-template-columns: repeat(4, 1fr);
         border-top: 1px solid var(--line);
         border-left: 1px solid var(--line);
+        border-radius: 14px;
+        overflow: hidden;
 
         &__row {
             display: flex;
             flex-direction: column;
             gap: 6px;
-            padding: 28px 24px;
+            padding: 30px 26px;
             border-right: 1px solid var(--line);
             border-bottom: 1px solid var(--line);
             position: relative;
+            background: #fff;
+            transition: background 0.25s ease;
+
+            &:hover {
+                background: var(--primary-light);
+            }
         }
 
         &__line {
@@ -334,9 +395,9 @@
 
         &__value {
             font-family: var(--font-display);
-            font-size: 38px;
+            font-size: 40px;
             font-weight: 700;
-            color: var(--ink);
+            color: var(--primary-dark);
         }
 
         &__label {
@@ -385,6 +446,13 @@
         justify-content: center;
         text-align: center;
         background: #fff;
+        transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+
+        &:hover {
+            border-color: var(--primary);
+            box-shadow: 0 16px 30px rgba(14, 27, 22, 0.08);
+            transform: translateY(-4px);
+        }
 
         .icon {
             font-size: 26px;
@@ -396,7 +464,7 @@
             text-transform: uppercase;
             letter-spacing: 0.08em;
             font-size: 12px;
-            color: var(--kraft);
+            color: var(--primary-dark);
             margin: 6px 0;
         }
 
@@ -412,8 +480,14 @@
         }
 
         a:hover {
-            color: v.$primary-color;
+            color: var(--primary);
         }
+    }
+
+    // Navigation arrows inherit brand color
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: var(--primary);
     }
 }
 
@@ -468,7 +542,7 @@
                 margin-bottom: 12px;
 
                 .icon {
-                    background: var(--ink);
+                    background: var(--primary);
                     color: #fff;
                     display: flex;
                     align-items: center;
@@ -492,17 +566,23 @@
 
                 span {
                     padding: 8px 14px;
-                    background: var(--paper-dim);
+                    background: var(--primary-light);
                     border-radius: 50px;
                     font-size: 12px;
-                    color: var(--ink);
+                    color: var(--primary-dark);
+                    font-weight: 600;
                 }
             }
         }
 
-        .img-bx img {
-            width: 100%;
-            border-radius: var(--radius);
+        .img-bx {
+            position: relative;
+
+            img {
+                width: 100%;
+                border-radius: var(--radius);
+                box-shadow: 0 20px 40px rgba(14, 27, 22, 0.1);
+            }
         }
     }
 }
@@ -517,6 +597,14 @@
         max-width: 1200px;
         margin: auto;
         text-align: center;
+
+        .eyebrow {
+            color: #7bd9a3;
+
+            &::before {
+                background: #7bd9a3;
+            }
+        }
 
         h2 {
             color: #fff;
@@ -546,10 +634,16 @@
                 height: 140px;
                 border-radius: 14px;
                 border: 1px solid rgba(255, 255, 255, 0.12);
+                transition: background 0.25s ease, border-color 0.25s ease;
+
+                &:hover {
+                    background: rgba(11, 107, 58, 0.25);
+                    border-color: var(--primary);
+                }
 
                 .icon {
                     font-size: 34px;
-                    color: v.$primary-color;
+                    color: #7bd9a3;
                 }
 
                 span {
@@ -584,6 +678,11 @@
                 height: 320px;
                 object-fit: cover;
                 border-radius: 16px;
+                transition: transform 0.4s ease;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
             }
         }
     }

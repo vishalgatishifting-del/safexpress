@@ -189,7 +189,6 @@ const Service = () => {
 
             <main
                 id="service-page"
-                className="top-element"
             >
                 <section className="surface-network">
                     <div className="surface-overlay">

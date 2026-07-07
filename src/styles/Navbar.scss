@@ -1,5 +1,11 @@
 @use "./variables" as v;
+:root {
+  --header-h: 130.61px;
 
+  @media screen and (max-width: 768px) {
+    --header-h: 97.81px;
+  }
+}
 .navbar {
   position: fixed;
   top: 32px;

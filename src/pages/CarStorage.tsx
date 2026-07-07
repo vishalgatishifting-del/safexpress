@@ -137,12 +137,12 @@ const CarStorage = () => {
         name: "Car Storage Services",
         serviceType: "Car and Vehicle Storage Services",
         description:
-            "Gati Shifting Packers provides secure car and vehicle storage services with covered storage, CCTV monitoring, professional handling, and pickup and delivery support.",
+            "Safexpress provides secure car and vehicle storage services with covered storage, CCTV monitoring, professional handling, and pickup and delivery support.",
         url: PAGE_URL,
         image: OG_IMAGE_URL,
         provider: {
             "@type": "Organization",
-            name: "Gati Shifting Packers",
+            name: "Safexpress",
             url: "https://safeshiftingpackers.com/",
         },
         areaServed: {
@@ -176,7 +176,7 @@ const CarStorage = () => {
                 <meta property="og:image:type" content="image/png" />
                 <meta
                     property="og:image:alt"
-                    content="Secure car and vehicle storage services by Gati Shifting Packers"
+                    content="Secure car and vehicle storage services by Safexpress"
                 />
 
                 <meta name="twitter:card" content="summary_large_image" />
@@ -201,7 +201,7 @@ const CarStorage = () => {
             <main className="car-storage-page">
                 <section
                     id="serivce-hero-section"
-                    className="car-hero top-element"
+                    className="car-hero "
                     aria-labelledby="car-storage-heading"
                 >
                     <div className="container">
@@ -227,7 +227,7 @@ const CarStorage = () => {
                                 <a
                                     className="call-btn"
                                     href={`tel:${COMPANY.phone}`}
-                                    aria-label={`Call Gati Shifting Packers at +91 ${COMPANY.phone}`}
+                                    aria-label={`Call Safexpress at +91 ${COMPANY.phone}`}
                                 >
                                     <LocalPhoneIcon aria-hidden="true" />
                                     Call Now
@@ -266,7 +266,7 @@ const CarStorage = () => {
                     </h2>
                     <p>
                         Looking for a safe place to store your bike for a short or long
-                        duration? Gati Shifting Packers provides professional car storage
+                        duration? Safexpress provides professional car storage
                         services designed to keep cars protected and properly
                         managed until they are needed again.
                     </p>
@@ -398,7 +398,7 @@ const CarStorage = () => {
                             Why Choose Our Car Storage Services?
                         </h2>
                         <p>
-                            Gati Shifting Packers provides car storage services for
+                            Safexpress provides car storage services for
                             customers who need secure short-term or long-term vehicle storage. Our storage solutions focus on covered facilities,
                             monitored spaces, professional handling, and convenient support
                             across serviceable locations in India.

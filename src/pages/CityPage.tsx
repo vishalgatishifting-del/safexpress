@@ -73,7 +73,7 @@ const GenericCityPage = ({ city, img, address }: { city: string; img: string; ad
       <div className="cp-container">
         <h2 className="cp-heading">🌍 International Packers & Movers in {city}</h2>
         <p>
-          Gati Shifting Packers provides seamless international relocation for individuals, families, and businesses.
+          Safexpress provides seamless international relocation for individuals, families, and businesses.
           Whether moving abroad for work or returning to India — we manage packing to customs clearance.
         </p>
       </div>
@@ -106,7 +106,7 @@ const GenericCityPage = ({ city, img, address }: { city: string; img: string; ad
     {/* WHY CHOOSE */}
     <section className="cp-section cp-why">
       <div className="cp-container">
-        <h2 className="cp-heading">Why Choose Gati Shifting Packers {city}?</h2>
+        <h2 className="cp-heading">Why Choose Safexpress {city}?</h2>
         <div className="cp-why__grid">
           {[
             "Experienced & Verified Movers",

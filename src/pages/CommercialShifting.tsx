@@ -36,11 +36,11 @@ const CommercialShifting = () => {
         name: "Commercial Shifting Services",
         serviceType: "Commercial and Business Relocation Services",
         description:
-            "Gati Shifting Packers provides commercial shifting services for offices, warehouses, retail outlets, showrooms, and business establishments across serviceable locations in India.",
+            "Safexpress provides commercial shifting services for offices, warehouses, retail outlets, showrooms, and business establishments across serviceable locations in India.",
         url: PAGE_URL,
         provider: {
             "@type": "Organization",
-            name: "Gati Shifting Packers",
+            name: "Safexpress",
             url: "https://safeshiftingpackers.com/",
         },
         areaServed: {
@@ -87,12 +87,12 @@ const CommercialShifting = () => {
         <>
             <Helmet>
                 <title>
-                    Commercial Shifting Services in India | Gati Shifting Packers
+                    Commercial Shifting Services in India | Safexpress
                 </title>
 
                 <meta
                     name="description"
-                    content="Book commercial shifting services with Gati Shifting Packers for office, warehouse, retail, showroom, and business relocation with professional packing and transport support."
+                    content="Book commercial shifting services with Safexpress for office, warehouse, retail, showroom, and business relocation with professional packing and transport support."
                 />
 
                 <meta name="robots" content="index, follow" />
@@ -102,25 +102,25 @@ const CommercialShifting = () => {
                 <meta property="og:url" content={PAGE_URL} />
                 <meta
                     property="og:title"
-                    content="Commercial Shifting Services in India | Gati Shifting Packers"
+                    content="Commercial Shifting Services in India | Safexpress"
                 />
                 <meta
                     property="og:description"
                     content="Professional commercial relocation services for offices, warehouses, retail outlets, showrooms, and business establishments."
                 />
-                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:site_name" content="Safexpress" />
                 <meta property="og:image" content={OG_IMAGE_URL} />
                 <meta property="og:image:secure_url" content={OG_IMAGE_URL} />
                 <meta property="og:image:type" content="image/webp" />
                 <meta
                     property="og:image:alt"
-                    content="Commercial shifting services by Gati Shifting Packers"
+                    content="Commercial shifting services by Safexpress"
                 />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta
                     name="twitter:title"
-                    content="Commercial Shifting Services in India | Gati Shifting Packers"
+                    content="Commercial Shifting Services in India | Safexpress"
                 />
                 <meta
                     name="twitter:description"
@@ -149,7 +149,7 @@ const CommercialShifting = () => {
                         </h1>
 
                         <p>
-                            Gati Shifting Packers provides professional commercial shifting
+                            Safexpress provides professional commercial shifting
                             services for offices, warehouses, retail outlets, showrooms, and
                             other business establishments. Our relocation process focuses on
                             planning, packing, handling, transportation, and coordinated
